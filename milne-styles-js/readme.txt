@@ -22,3 +22,7 @@ Internetlib - Icons used in Milne Staff Directory
 Drupal - Floor Plan images for Floor Plans & Printers page
 LibApps - Chat Online & Offline images for LibChat widget
 
+/fonts
+Neutraface family - body and heading fonts (svg, eot, ttf, woff, woff2 formats)
+Material icons - Google material icons fonts (svg, eot, ttf, woff, woff2 formats)
+material-icons.css - css class for calling material icons

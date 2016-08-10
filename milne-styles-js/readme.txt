@@ -3,7 +3,6 @@ File and directory explanations:
 CSS:
 geneseo_all_milne_library.css = 'Human Readable' css file with comments; this is your working development file
 geneseo_all_milne_library.min.css  = minified compressed css; this is the file that must be called by your pages and applications.
-css_3p0-ulboANaIxHduuhceEQ9PTh3_5PW7gZ4pWXw-D30.css  = minified css for Drupal header; must be called by your pages and applications
 
 /js:
 js_3dSw5Vnr-sT0n6s8DygGm_0HVz27GmB8AQx3jH-gNKk.js  = minified JS for Drupal; MUST be called by your pages and applications

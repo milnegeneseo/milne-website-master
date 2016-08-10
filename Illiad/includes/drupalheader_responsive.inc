@@ -18,7 +18,10 @@ head of each document that takes the drupal template -->
 
 
 <!-- STYLES & JQUERY LIBRARIES FROM DRUPAL -->
-  <link type="text/css" href="//eres.geneseo.edu/milne-styles-js/css_3p0-ulboANaIxHduuhceEQ9PTh3_5PW7gZ4pWXw-D30.css" rel="stylesheet" media="all" /> 
+    <link type="text/css" rel="stylesheet" href="https://wwwdev2.geneseo.edu/sites/default/files/css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://wwwdev2.geneseo.edu/sites/default/files/css/css_8I8tOCPjIVP6mfeMJ_e9IPVH1CnLb6wMloNuja55pnc.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://wwwdev2.geneseo.edu/sites/default/files/css/css_nv8qXzNitN8uKzYeKCiD0FbAWjT4aM1rYM5eOMui9Vo.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://wwwdev2.geneseo.edu/sites/default/files/css/css_KlTez9E1gAVT0K7g7FdaTFO--WYutwg4vCuQPU9KkFo.css" media="all" />
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>window.jQuery || document.write("<script src='/sites/all/modules/contributed/jquery_update/replace/jquery/1.10/jquery.min.js'>\x3C/script>")</script>
 <script src="//eres.geneseo.edu/milne-styles-js/js/js_3TykeRWpejhD4-J3vdlaNXdULg9xhOZhbsppK0o2bUs.js"></script>
@@ -246,6 +249,6 @@ text-bottom;color:#345290;">favorite&nbsp;</i>Support Milne Library</a></strong>
 		
 <div id="rightSideContent" >		
 
-<div style="margin-top: 0px;" class="breadcrumb"><a href="https://www.geneseo.edu/">Home</a> &raquo; <a href="https://www.geneseo.edu/library">Milne Library</a> &raquo; <a href="https://illiad.geneseo.edu">Information Delivery Services</a></div>
+<div style="margin-top: 0px;" class="breadcrumb"><a href="https://www.geneseo.edu/">Home</a> &raquo; <a href="https://www.geneseo.edu/library">Milne Library</a> &raquo; <a href="https://illiad.geneseo.edu" style="color:#b85533 !important;">Information Delivery Services</a></div>
 
 <!--- BODY CONTENT RIGHT SIDE  BEGINS --->

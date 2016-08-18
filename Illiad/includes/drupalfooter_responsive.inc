@@ -20,12 +20,11 @@
 
 
 <!-- FOOTER--->
-
   <footer class="geneseo-footer mdl-mega-footer">
     <div class="mdl-mega-footer__middle-section geneseo-big-container">
       <div class="mdl-mega-footer__left-section">
                   <div class="mdl-logo geneseo-footer-logo">
-            <a href="/"><img src="/sites/all/themes/geneseo/logo-full.png" alt="SUNY Geneseo"/></a>
+            <a href="https://www.geneseo.edu/"><img src="https://www.geneseo.edu/sites/all/themes/geneseo/logo-full.png" alt="SUNY Geneseo"/></a>
           </div>
                 <div class="geneseo-footer-copyright">
           <span>&copy; 2016 SUNY Geneseo<br></span>
@@ -43,16 +42,16 @@
       <div class="mdl-mega-footer__right-section">
         <div class="mdl-mega-footer__drop-down-section">
           <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-          <h3 class="mdl-mega-footer__heading">Join Us</h3><ul class="mdl-mega-footer__link-list"><li class="menu-8138 first"><a href="/admissions/apply" title="">Apply to Geneseo</a></li>
-<li class="menu-1956"><a href="/hr/employment" title="">Work at Geneseo</a></li>
+          <h3 class="mdl-mega-footer__heading">Join Us</h3><ul class="mdl-mega-footer__link-list"><li class="menu-8138 first"><a href="http://www.geneseo.edu/admissions/apply" title="">Apply to Geneseo</a></li>
+<li class="menu-1956"><a href="http://www.geneseo.edu/hr/employment" title="">Work at Geneseo</a></li>
 <li class="menu-1957 last"><a href="http://uknight.geneseo.edu/" title="">Alumni Community</a></li>
 </ul>        </div>
 
         <div class="mdl-mega-footer__drop-down-section">
           <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-          <h3 class="mdl-mega-footer__heading">Quick Access Links</h3><ul class="mdl-mega-footer__link-list"><li class="menu-1966 first"><a href="/registrar/academic-calendar" title="">Academic Calendar</a></li>
-<li class="menu-1968"><a href="http://www.geneseo.edu" title="">Health and Counseling</a></li>
-<li class="menu-1967 last"><a href="http://www.geneseo.edu" title="">Donate to Geneseo</a></li>
+          <h3 class="mdl-mega-footer__heading">Quick Access Links</h3><ul class="mdl-mega-footer__link-list"><li class="menu-1966 first"><a href="http://www.geneseo.edu/registrar/academic-calendar" title="">Academic Calendar</a></li>
+<li class="menu-1968"><a href="http://www.geneseo.edu/health" title="">Health and Counseling</a></li>
+<li class="menu-1967 last"><a href="http://intranetlib.geneseo.edu/DataPortal/Requests/SupportMilneLibrary.aspx" title="">Donate to Geneseo</a></li>
 </ul>        </div>
 
         <div class="mdl-mega-footer__drop-down-section">
@@ -66,8 +65,8 @@
               <div class="geneseo-footer-bottom mdl-mega-footer__bottom-section">
           <ul class="mdl-mega-footer__link-list"><li class="menu-1996 first"><a href="/" title="">Home</a></li>
 <li class="menu-1998"><a href="http://www.gmail.com/" title="">Webmail</a></li>
-<li class="menu-1999"><a href="/emergencies" title="">Emergency Info</a></li>
-<li class="menu-2002 last"><a href="/cit/web-privacy-policy" title="">Privacy Policy</a></li>
+<li class="menu-1999"><a href="https://www.geneseo.edu/emergencies" title="">Emergency Info</a></li>
+<li class="menu-2002 last"><a href="https://www.geneseo.edu/cit/web-privacy-policy" title="">Privacy Policy</a></li>
 <li><a href="https://www.geneseo.edu/caslogin?destination=library">Log In</a></li></ul>        </div>
         </footer>
 

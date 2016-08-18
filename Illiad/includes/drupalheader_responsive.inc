@@ -18,10 +18,10 @@ head of each document that takes the drupal template -->
 
 
 <!-- STYLES & JQUERY LIBRARIES FROM DRUPAL -->
-    <link type="text/css" rel="stylesheet" href="https://wwwdev2.geneseo.edu/sites/default/files/css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4.css" media="all" />
-<link type="text/css" rel="stylesheet" href="https://wwwdev2.geneseo.edu/sites/default/files/css/css_8I8tOCPjIVP6mfeMJ_e9IPVH1CnLb6wMloNuja55pnc.css" media="all" />
-<link type="text/css" rel="stylesheet" href="https://wwwdev2.geneseo.edu/sites/default/files/css/css_nv8qXzNitN8uKzYeKCiD0FbAWjT4aM1rYM5eOMui9Vo.css" media="all" />
-<link type="text/css" rel="stylesheet" href="https://wwwdev2.geneseo.edu/sites/default/files/css/css_KlTez9E1gAVT0K7g7FdaTFO--WYutwg4vCuQPU9KkFo.css" media="all" />
+    <link type="text/css" rel="stylesheet" href="https://www.geneseo.edu/sites/default/files/css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.geneseo.edu/sites/default/files/css/css_8I8tOCPjIVP6mfeMJ_e9IPVH1CnLb6wMloNuja55pnc.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.geneseo.edu/sites/default/files/css/css_nv8qXzNitN8uKzYeKCiD0FbAWjT4aM1rYM5eOMui9Vo.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.geneseo.edu/sites/default/files/css/css_KlTez9E1gAVT0K7g7FdaTFO--WYutwg4vCuQPU9KkFo.css" media="all" />
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>window.jQuery || document.write("<script src='/sites/all/modules/contributed/jquery_update/replace/jquery/1.10/jquery.min.js'>\x3C/script>")</script>
 <script src="//eres.geneseo.edu/milne-styles-js/js/js_3TykeRWpejhD4-J3vdlaNXdULg9xhOZhbsppK0o2bUs.js"></script>
@@ -84,7 +84,7 @@ head of each document that takes the drupal template -->
 <header class="geneseo-header mdl-layout__header mdl-layout__header--fixed">
   <div class="mdl-layout__header-row">
           <span class="geneseo-title mdl-layout-title mdl-layout--large-screen-only">
-        <a href="https://wwwdev2.geneseo.edu/"><img class="geneseo-logo-image" src="https://wwwdev2.geneseo.edu/sites/all/themes/geneseo/logo.png"></a>
+        <a href="https://www.geneseo.edu/"><img class="geneseo-logo-image" src="https://www.geneseo.edu/sites/all/themes/geneseo/logo.png"></a>
       </span>
         <div class="android-header-spacer mdl-layout-spacer"></div>
       <div id="search-field">
@@ -110,9 +110,9 @@ head of each document that takes the drupal template -->
         <gcse:search></gcse:search>
       </div>
             <div class="android-navigation-container">
-      <nav class="android-navigation mdl-navigation" id="geneseo-main-nav-right"><a href="https://wwwdev2.geneseo.edu/prospective" title="" class="menu-1948 mdl-navigation__link mdl-typography--text-uppercase">Prospective Students</a><a href="https://wwwdev2.geneseo.edu/current-students" title="" class="menu-7244 mdl-navigation__link mdl-typography--text-uppercase">Current Students</a><a href="https://wwwdev2.geneseo.edu/parents" title="" class="menu-5454 mdl-navigation__link mdl-typography--text-uppercase">Parents</a><a href="https://wwwdev2.geneseo.edu/faculty_staff" title="" class="menu-3977 mdl-navigation__link mdl-typography--text-uppercase">Faculty &amp; Staff</a><a href="http://uknight.geneseo.edu" title="" class="menu-999 mdl-navigation__link mdl-typography--text-uppercase">Alumni</a>
-          |<a href="https://wwwdev2.geneseo.edu/directory" class="menu-999 mdl-navigation__link mdl-typography--text-uppercase" style="padding-left: 30px;">Directory</a>
-          <a class="mdl-navigation__link mdl-typography--text-uppercase" style="padding: 0px;"><img src="https://wwwdev2.geneseo.edu/sites/all/themes/geneseo/images/my-geneseo.png" style="height:40px; cursor: pointer; padding-top:12px;min-width: 70px;"></a>
+      <nav class="android-navigation mdl-navigation" id="geneseo-main-nav-right"><a href="https://www.geneseo.edu/prospective" title="" class="menu-1948 mdl-navigation__link mdl-typography--text-uppercase">Prospective Students</a><a href="https://www.geneseo.edu/current-students" title="" class="menu-7244 mdl-navigation__link mdl-typography--text-uppercase">Current Students</a><a href="https://www.geneseo.edu/parents" title="" class="menu-5454 mdl-navigation__link mdl-typography--text-uppercase">Parents</a><a href="https://www.geneseo.edu/faculty_staff" title="" class="menu-3977 mdl-navigation__link mdl-typography--text-uppercase">Faculty &amp; Staff</a><a href="http://uknight.geneseo.edu" title="" class="menu-999 mdl-navigation__link mdl-typography--text-uppercase">Alumni</a>
+          |<a href="https://www.geneseo.edu/directory" class="menu-999 mdl-navigation__link mdl-typography--text-uppercase" style="padding-left: 30px;">Directory</a>
+          <a class="mdl-navigation__link mdl-typography--text-uppercase" style="padding: 0px;"><img src="https://www.geneseo.edu/sites/all/themes/geneseo/images/my-geneseo.png" style="height:40px; cursor: pointer; padding-top:12px;min-width: 70px;"></a>
           
           <div style="min-width:250px; max-width: 250px; padding-left: 9px;">
               
@@ -139,7 +139,7 @@ head of each document that takes the drupal template -->
 
 
                     <span class="android-mobile-title mdl-layout-title">
-          <a href="https://wwwdev2.geneseo.edu/" style="pointer-events: all;"><img class="geneseo-logo-image" src="https://wwwdev2.geneseo.edu/sites/all/themes/geneseo/logo.png"></a>
+          <a href="https://www.geneseo.edu/" style="pointer-events: all;"><img class="geneseo-logo-image" src="https://www.geneseo.edu/sites/all/themes/geneseo/logo.png"></a>
         </span>
             <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
         <i class="material-icons">more_vert</i>
@@ -149,21 +149,21 @@ head of each document that takes the drupal template -->
       </ul>
   </div>
       <div class="geneseo-top-section mdl-shadow--3dp mdl-layout--large-screen-only">
-    <div class="geneseo-top-section-tabs mdl-layout__tab-bar mdl-js-ripple-effect"><a href="https://wwwdev2.geneseo.edu/about" title="" class="menu-494 geneseo-top-tab mdl-layout__tab">About</a><a href="https://wwwdev2.geneseo.edu/admissions" class="menu-495 geneseo-top-tab mdl-layout__tab">Admissions</a><a href="https://wwwdev2.geneseo.edu/academics" class="menu-1945 geneseo-top-tab mdl-layout__tab">Academics</a><a href="https://wwwdev2.geneseo.edu/campus_life" class="menu-1946 geneseo-top-tab mdl-layout__tab">Campus Life</a><a href="/news" title="" class="menu-3493 geneseo-top-tab mdl-layout__tab">News</a><a href="/library" title="" class="menu-7012 geneseo-top-tab mdl-layout__tab">Library</a><a href="http://geneseoknights.com/" title="" class="menu-1947 geneseo-top-tab mdl-layout__tab">Athletics</a></div>    </div>
+    <div class="geneseo-top-section-tabs mdl-layout__tab-bar mdl-js-ripple-effect"><a href="https://www.geneseo.edu/about" title="" class="menu-494 geneseo-top-tab mdl-layout__tab">About</a><a href="https://www.geneseo.edu/admissions" class="menu-495 geneseo-top-tab mdl-layout__tab">Admissions</a><a href="https://www.geneseo.edu/academics" class="menu-1945 geneseo-top-tab mdl-layout__tab">Academics</a><a href="https://www.geneseo.edu/campus_life" class="menu-1946 geneseo-top-tab mdl-layout__tab">Campus Life</a><a href="/news" title="" class="menu-3493 geneseo-top-tab mdl-layout__tab">News</a><a href="https://www.geneseo.edu/library" title="" class="menu-7012 geneseo-top-tab mdl-layout__tab">Library</a><a href="http://geneseoknights.com/" title="" class="menu-1947 geneseo-top-tab mdl-layout__tab">Athletics</a></div>    </div>
   </header>
 
 <div class="geneseo-drawer mdl-layout__drawer mdl-layout--small-screen-only">
       <span class="mdl-layout-title">
-      <a href="https://wwwdev2.geneseo.edu/"><img class="geneseo-logo-image" src="https://wwwdev2.geneseo.edu/sites/all/themes/geneseo/logo.png"></a>
+      <a href="https://www.geneseo.edu/"><img class="geneseo-logo-image" src="https://www.geneseo.edu/sites/all/themes/geneseo/logo.png"></a>
      </span>
     <nav class="mdl-navigation">
-    <span class="geneseo-dept-reveal mdl-navigation__link">Milne Library<i class="geneseo-expand-more material-icons">expand_more</i><i class="geneseo-expand-less material-icons">expand_less</i></span><div class="geneseo-dept-links"><a href="https://wwwdev2.geneseo.edu/library" class="mdl-navigation__link">Library</a><a href="http://www.geneseo.edu/library/mylibraryaccount" title="My Library Account" class="mdl-navigation__link">My Library Account</a><a href="https://wwwdev2.geneseo.edu/library/find-books-media" class="mdl-navigation__link">Find Books and Media</a><a href="https://wwwdev2.geneseo.edu/library/find-articles" class="mdl-navigation__link">Find Articles</a><a href="https://wwwdev2.geneseo.edu/library/requests-services" class="mdl-navigation__link">Requests &amp; Services</a><a href="https://wwwdev2.geneseo.edu/library/research-help" class="mdl-navigation__link">Research Help</a><a href="https://wwwdev2.geneseo.edu/library/about-milne-library" class="active-trail mdl-navigation__link">About Milne Library</a><a href="http://intranetlib.geneseo.edu/DataPortal/Requests/StaffDirectory.aspx" title="Contact Milne Library Staff and Departments" class="mdl-navigation__link">Contact</a></div>      <div class="geneseo-drawer-separator"></div>
+    <span class="geneseo-dept-reveal mdl-navigation__link">Milne Library<i class="geneseo-expand-more material-icons">expand_more</i><i class="geneseo-expand-less material-icons">expand_less</i></span><div class="geneseo-dept-links"><a href="https://www.geneseo.edu/library" class="mdl-navigation__link">Library</a><a href="http://www.geneseo.edu/library/mylibraryaccount" title="My Library Account" class="mdl-navigation__link">My Library Account</a><a href="https://www.geneseo.edu/library/find-books-media" class="mdl-navigation__link">Find Books and Media</a><a href="https://www.geneseo.edu/library/find-articles" class="mdl-navigation__link">Find Articles</a><a href="https://www.geneseo.edu/library/requests-services" class="mdl-navigation__link">Requests &amp; Services</a><a href="https://www.geneseo.edu/library/research-help" class="mdl-navigation__link">Research Help</a><a href="https://www.geneseo.edu/library/about-milne-library" class="active-trail mdl-navigation__link">About Milne Library</a><a href="http://intranetlib.geneseo.edu/DataPortal/Requests/StaffDirectory.aspx" title="Contact Milne Library Staff and Departments" class="mdl-navigation__link">Contact</a></div>      <div class="geneseo-drawer-separator"></div>
     
-    <a href="https://wwwdev2.geneseo.edu/about" title="" class="mdl-navigation__link">About</a><a href="https://wwwdev2.geneseo.edu/admissions" class="mdl-navigation__link">Admissions</a><a href="https://wwwdev2.geneseo.edu/academics" class="mdl-navigation__link">Academics</a><a href="https://wwwdev2.geneseo.edu/campus_life" class="mdl-navigation__link">Campus Life</a><a href="https://wwwdev2.geneseo.edu/news" title="" class="mdl-navigation__link">News</a><a href="https://wwwdev2.geneseo.edu/library" title="" class="mdl-navigation__link">Library</a><a href="http://geneseoknights.com/" title="" class="mdl-navigation__link">Athletics</a>      <div class="geneseo-drawer-separator"></div>
+    <a href="https://www.geneseo.edu/about" title="" class="mdl-navigation__link">About</a><a href="https://www.geneseo.edu/admissions" class="mdl-navigation__link">Admissions</a><a href="https://www.geneseo.edu/academics" class="mdl-navigation__link">Academics</a><a href="https://www.geneseo.edu/campus_life" class="mdl-navigation__link">Campus Life</a><a href="https://www.geneseo.edu/news" title="" class="mdl-navigation__link">News</a><a href="https://www.geneseo.edu/library" title="" class="mdl-navigation__link">Library</a><a href="http://geneseoknights.com/" title="" class="mdl-navigation__link">Athletics</a>      <div class="geneseo-drawer-separator"></div>
     
-    <a href="https://wwwdev2.geneseo.edu/prospective" title="" class="mdl-navigation__link">Prospective Students</a><a href="https://wwwdev2.geneseo.edu/current-students" title="" class="mdl-navigation__link">Current Students</a><a href="https://wwwdev2.geneseo.edu/parents" title="" class="mdl-navigation__link">Parents</a><a href="https://wwwdev2.geneseo.edu/faculty_staff" title="" class="mdl-navigation__link">Faculty &amp; Staff</a><a href="http://uknight.geneseo.edu" title="" class="mdl-navigation__link">Alumni</a>      <div class="geneseo-drawer-separator"></div>
+    <a href="https://www.geneseo.edu/prospective" title="" class="mdl-navigation__link">Prospective Students</a><a href="https://www.geneseo.edu/current-students" title="" class="mdl-navigation__link">Current Students</a><a href="https://www.geneseo.edu/parents" title="" class="mdl-navigation__link">Parents</a><a href="https://www.geneseo.edu/faculty_staff" title="" class="mdl-navigation__link">Faculty &amp; Staff</a><a href="http://uknight.geneseo.edu" title="" class="mdl-navigation__link">Alumni</a>      <div class="geneseo-drawer-separator"></div>
     
-    <a href="https://wwwdev2.geneseo.edu/directory" title="" class="mdl-navigation__link">Directory</a><a href="http://my.geneseo.edu" title="" class="mdl-navigation__link">myGeneseo</a><a href="http://wwwdev.geneseo.edu" title="" class="mdl-navigation__link">Campus Services</a>  </nav>
+    <a href="https://www.geneseo.edu/directory" title="" class="mdl-navigation__link">Directory</a><a href="http://my.geneseo.edu" title="" class="mdl-navigation__link">myGeneseo</a><a href="http://wwwdev.geneseo.edu" title="" class="mdl-navigation__link">Campus Services</a>  </nav>
 </div>
 
 <!-- end of Drupal Header --> 
@@ -180,11 +180,11 @@ head of each document that takes the drupal template -->
 			  
 <!-- Milne Logo Node start-->	
 
-<div style="text-align: center; width: 100%;"><a href="http://wwwdev2.geneseo.edu/library"><img alt="Milne Library" src="http://wwwdev2.geneseo.edu/sites/default/files/sites/library/milne-library-logo.png" style="width: 75%; padding:5px;" /></a></div>
+<div style="text-align: center; width: 100%;"><a href="http://www.geneseo.edu/library"><img alt="Milne Library" src="http://www.geneseo.edu/sites/default/files/sites/library/milne-library-logo.png" style="width: 75%; padding:5px;" /></a></div>
 
 <div class="library-hours-background">
 <div style="text-align: center !important;">
-<p class="geneseo-icon rtecenter"><script type="text/javascript" src="https://eres.geneseo.edu/libraryhours/library-hours-test.js"></script><i class="material-icons" style="vertical-align: top !important; font-size:1.2em;">alarm</i><a href="https://wwwdev2.geneseo.edu/library/library-hours" style="color: #345290;">View All Library Hours</a></p>
+<p class="geneseo-icon rtecenter"><script type="text/javascript" src="https://eres.geneseo.edu/libraryhours/library-hours.js"></script><a href="https://www.geneseo.edu/library/library-hours" style="color: #345290;"><i class="material-icons" style="vertical-align: text-bottom !important; font-size:1.6em;">alarm</i>View All Library Hours</a></p>
 </div>
 </div>
 
@@ -193,9 +193,8 @@ head of each document that takes the drupal template -->
 <script type="text/javascript" src="//v2.libanswers.com/load_chat.php?hash=068ecf51e9aaa8fcb0b3e5a7181b8042"></script>
 
 <div class="reference-link-background">
-<p style="padding:5px 0px 5px 5px; text-align:left;"><a href="http://wwwdev2.geneseo.edu/library/reference-calendar" style="color: #345290;"><i class="material-icons" style="vertical-align: text-bottom !important;">grid_on</i> Reference Calendar</a></p>
+<p style="padding:5px 0px 5px 5px; text-align:left;"><a href="http://www.geneseo.edu/library/reference-calendar" style="color: #345290;"><i class="material-icons" style="vertical-align: text-bottom !important;">grid_on</i> Reference Calendar</a></p>
 </div>
-
 <div data-web-developer-element-ancestors-outline="false" style="margin:0;padding:0;"><span style="display: none;">&nbsp;</span></div>
 
 </div>
@@ -207,41 +206,44 @@ head of each document that takes the drupal template -->
     
 <ul class="menu">
 <li class="menu__item is-leaf first leaf"><a href="http://www.geneseo.edu/library/mylibraryaccount" title="My Library Account" class="menu__link mdl-navigation__link">My Library Account</a></li>
-<li class="menu__item is-collapsed collapsed"><a href="https://wwwdev2.geneseo.edu/library/find-books-media" class="menu__link mdl-navigation__link">Find Books and Media</a></li>
-<li class="menu__item is-collapsed collapsed"><a href="https://wwwdev2.geneseo.edu/library/find-articles" class="menu__link mdl-navigation__link">Find Articles</a></li>
-<li class="menu__item is-collapsed collapsed"><a href="https://wwwdev2.geneseo.edu/library/requests-services" class="menu__link mdl-navigation__link">Requests &amp; Services</a></li>
-<li class="menu__item is-collapsed collapsed"><a href="https://wwwdev2.geneseo.edu/library/research-help" class="menu__link mdl-navigation__link">Research Help</a></li>
-<li class="menu__item is-collapsed collapsed"><a href="https://wwwdev2.geneseo.edu/library/about-milne-library" class="menu__link is-active-trail active-trail mdl-navigation__link">About Milne Library</a></li>
-<li class="menu__item is-leaf last leaf"><a href="http://intranetlib.geneseo.edu/DataPortal/Requests-DEV/StaffDirectory.aspx" title="Contact Milne Library Staff and Departments" class="menu__link mdl-navigation__link">Contact</a></li>
+<li class="menu__item is-collapsed collapsed"><a href="https://www.geneseo.edu/library/find-books-media" class="menu__link mdl-navigation__link">Find Books and Media</a></li>
+<li class="menu__item is-collapsed collapsed"><a href="https://www.geneseo.edu/library/find-articles" class="menu__link mdl-navigation__link">Find Articles</a></li>
+<li class="menu__item is-collapsed collapsed"><a href="https://www.geneseo.edu/library/requests-services" class="menu__link mdl-navigation__link">Requests &amp; Services</a></li>
+<li class="menu__item is-collapsed collapsed"><a href="https://www.geneseo.edu/library/research-help" class="menu__link mdl-navigation__link">Research Help</a></li>
+<li class="menu__item is-collapsed collapsed"><a href="https://www.geneseo.edu/library/about-milne-library" class="menu__link is-active-trail active-trail mdl-navigation__link">About Milne Library</a></li>
+<li class="menu__item is-leaf last leaf"><a href="http://intranetlib.geneseo.edu/DataPortal/Requests/StaffDirectory.aspx" title="Contact Milne Library Staff and Departments" class="menu__link mdl-navigation__link">Contact</a></li>
 </ul>
 </div>
 
 
 	<!-- Bottom Links below Menu Node -->
-	
-<div class="geneseo-icon" style="margin-bottom: 0.5em !important;"><strong><a alt="Center For Academic Excellence" href="https://wwwdev2.geneseo.edu/library/center-academic-excellence"><i class="material-icons" style="vertical-align:
-middle;color:#345290;">school&nbsp;</i>Center for Academic<br />
-&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Excellence (CAE)</a></strong></div>
+<link href="//eres.geneseo.edu/milne-styles-js/geneseo_all_milne_library.min.css" rel="stylesheet" type="text/css" />
+<div class="resources-link-background">
+<div style="padding-top:5px;padding-bottom:5px;">
+<p style="padding-bottom:5px !important;"><a alt="Center For Academic Excellence" href="https://www.geneseo.edu/library/center-academic-excellence"><i class="material-icons" style="vertical-align:middle;color:#345290;">school&nbsp;</i>Center for Academic<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Excellence (CAE)</a></p>
 
-<div class="geneseo-icon" style="margin-bottom: 0.5em !important;"><strong><a alt="Cite My Sources" href="http://libguides.geneseo.edu/citation"><i class="material-icons" style="vertical-align:
-text-bottom;color:#345290;">assignment&nbsp;</i>Cite My Sources</a></strong></div>
+<p><a alt="Cite My Sources" href="http://libguides.geneseo.edu/citation"><i class="material-icons" style="vertical-align:
+text-bottom;color:#345290;">assignment&nbsp;</i>Cite My Sources</a></p>
 
-<div class="geneseo-icon" style="margin-bottom: 0.5em !important;"><strong><a alt="How Do I?" href="http://libguides.geneseo.edu/sb.php?subject_id=17737"><i class="material-icons" style="vertical-align:
-text-bottom;color:#345290;">help&nbsp;</i>How Do I...?</a></strong></div>
+<p><a alt="How Do I?" href="http://libguides.geneseo.edu/sb.php?subject_id=17737"><i class="material-icons" style="vertical-align:
+text-bottom;color:#345290;">help&nbsp;</i>How Do I...?</a></p>
 
-<div class="geneseo-icon" style="margin-bottom: 0.5em !important;"><strong><a alt="Renew My Books" href="http://www.geneseo.edu/library/mylibraryaccount"><i class="material-icons" style="vertical-align:
-text-bottom;color:#345290;">check_circle&nbsp;</i>Renew My Books</a></strong></div>
+<p><a alt="Renew My Books" href="http://www.geneseo.edu/library/mylibraryaccount"><i class="material-icons" style="vertical-align:
+text-bottom;color:#345290;">check_circle&nbsp;</i>Renew My Books</a></p>
 
-<div class="geneseo-icon" style="margin-bottom: 0.5em !important;"><strong><a alt="Reserve a Room" href="http://intranetlib.geneseo.edu/DataPortal/Requests-DEV/RoomRequest.aspx"><i class="material-icons" style="vertical-align:
-text-bottom;color:#345290;">room&nbsp;</i>Reserve a Room</a></strong></div>
+<p><a alt="Reserve a Room" href="http://intranetlib.geneseo.edu/DataPortal/Requests-DEV/RoomRequest.aspx"><i class="material-icons" style="vertical-align:
+text-bottom;color:#345290;">room&nbsp;</i>Reserve a Room</a></p>
 
-<div class="geneseo-icon" style="margin-bottom: 0.5em !important;"><strong><a alt="Support Milne Library" href="http://intranetlib.geneseo.edu/DataPortal/Requests-DEV/SupportMilneLibrary.aspx"><i class="material-icons" style="vertical-align:
-text-bottom;color:#345290;">favorite&nbsp;</i>Support Milne Library</a></strong></div>
+<p><a alt="Support Milne Library" href="http://intranetlib.geneseo.edu/DataPortal/Requests/SupportMilneLibrary.aspx"><i class="material-icons" style="vertical-align:
+text-bottom;color:#345290;">favorite&nbsp;</i>Support Milne Library</a></p>
+</div>
+</div>
+	<!-- End Bottom Links below Menu Node -->		
   </section>
           </div>
         </div>
-		
-		
+				
  <!-- DIV BELOW IS EXTREMELY IMPORTANT; otherwise form and page content will drop below the menu -->
 <div id="content" class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--9-col-desktop rightSideContent" role="main">
         

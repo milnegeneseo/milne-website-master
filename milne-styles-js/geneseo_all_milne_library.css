@@ -1816,9 +1816,22 @@ box-shadow: 0px 1px 5px 0px #345290;
   font-family: "Open Sans",sans-serif;
   font-size: 14px;
 background-color: #b6daf2; 
-width: 100%; 
+width: 98%; 
 border-radius: 5px; 
 margin:5px 0px 0px 0px; 
+-webkit-box-shadow: 0px 1px 5px 0px #345290; 
+-moz-box-shadow: 0px 1px 5px 0px ##345290; 
+box-shadow: 0px 1px 5px 0px #345290;
+}
+
+.events-link-background{
+background-color: #f1f8fc; 
+  font-family: "Open Sans",sans-serif;
+  font-size: 14px;
+  line-height:0px !important;
+width: 98%; 
+border-radius: 5px; 
+margin:0px 0px 0px 0px !important; 
 -webkit-box-shadow: 0px 1px 5px 0px #345290; 
 -moz-box-shadow: 0px 1px 5px 0px ##345290; 
 box-shadow: 0px 1px 5px 0px #345290;
@@ -2884,11 +2897,13 @@ padding:0px;
 background-color: #f1f8fc; 
 width: 100%;  
 border-radius: 5px; 
+/*margin:5px 0px 5px 0px;*/
 margin:5px 0px 5px 0px;
 -webkit-box-shadow: 0px 1px 5px 0px #345290;
 -moz-box-shadow: 0px 1px 5px 0px ##345290;
 box-shadow: 0px 1px 5px 0px #345290;
 }
+
 
 .resources-link-background p{
 padding: 0px 0px 0px 5px;
@@ -2906,6 +2921,9 @@ padding:10px 0px 10px 10px;
 -moz-box-shadow: 0px 1px 5px 0px ##345290;
 box-shadow: 0px 1px 5px 0px #345290;
 }
+
+
+
 
 /*********************************************************/
 /*****Nivo Slider****/
@@ -3287,4 +3305,12 @@ font-weight:normal !important;
 margin-bottom:1em;
 /*font-size:1.4em;*/
 line-height:12px;
+}
+
+/* Serial Solutions Overrides */
+
+div#footer.ng-scope{
+	display:none !important;
+	background: transparent !important;
+	visibility:hidden;
 }

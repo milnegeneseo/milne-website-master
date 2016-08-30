@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Requests-DEV/RequestsMasterPage.master" AutoEventWireup="true" CodeFile="RoomRequest.aspx.cs" Inherits="Requests_RoomRequest" validateRequest="false" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Requests/RequestsMasterPage.master" AutoEventWireup="true" CodeFile="RoomRequest.aspx.cs" Inherits="Requests_RoomRequest" validateRequest="false" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
@@ -38,21 +38,21 @@
 
 
     <div id="rightSideContent" >
-                <div style="margin-top: 0px;" class="breadcrumb"><a href="https://wwwdev2.geneseo.edu/">Home</a> &raquo; <a href="https://wwwdev2.geneseo.edu/library">Milne Library</a> &raquo; <a href="https://wwwdev2.geneseo.edu/library/requests-services">Requests &amp; Services</a> &raquo; <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/RoomRequest.aspx" style="color:#b85533 !important;">Room Request/Reservation</a></div>
+                <div style="margin-top: 0px;" class="breadcrumb"><a href="https://www.geneseo.edu/">Home</a> &raquo; <a href="https://www.geneseo.edu/library">Milne Library</a> &raquo; <a href="https://www.geneseo.edu/library/requests-services">Requests &amp; Services</a> &raquo; <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/RoomRequest.aspx" style="color:#b85533 !important;">Room Request/Reservation</a></div>
 
         <h1>Room Request Form</h1> 
     
-    <span class="link-button-background"><a href="https://wwwdev2.geneseo.edu/library/classrooms-and-meeting-rooms">Room Descriptions & Policies</a></span>&nbsp; |&nbsp;  <span class="link-button-background"><a href="https://wwwdev2.geneseo.edu/library/milne-library-floor-plans">Floor Plans/Room Locations</a></span>&nbsp; |&nbsp;  <span class="link-button-background"><a href="http://emsprod.geneseo.edu/VirtualEMSPublic/CustomBrowseEvents.aspx?data=8imT11TVEgjXNgDJOAPMB4OcOxg1lJDzQDCUHCLgyvV%2bp3H99PcbRuP418vvqF%2br">Check Room Availability</a></span> 
+    <span class="link-button-background"><a href="https://www.geneseo.edu/library/classrooms-and-meeting-rooms">Room Descriptions & Policies</a></span>&nbsp; |&nbsp;  <span class="link-button-background"><a href="https://www.geneseo.edu/library/milne-library-floor-plans">Floor Plans/Room Locations</a></span>&nbsp; |&nbsp;  <span class="link-button-background"><a href="http://emsprod.geneseo.edu/VirtualEMSPublic/CustomBrowseEvents.aspx?data=8imT11TVEgjXNgDJOAPMB4OcOxg1lJDzQDCUHCLgyvV%2bp3H99PcbRuP418vvqF%2br">Check Room Availability</a></span> 
 <br /><br />
 
 
-<h3>Recording Studio Room 210, Room 305, Lobby Table</h3>
+<h3>Room 305 & Lobby Table</h3>
 <fieldset>
 <legend>Self-Reservation Instructions</legend>
 
    
 
-    <label>Use <a href="http://emsprod.geneseo.edu/VirtualEMSPublic/CustomBrowseEvents.aspx?data=8imT11TVEgjXNgDJOAPMB4OcOxg1lJDzQDCUHCLgyvV%2bp3H99PcbRuP418vvqF%2br"><strong>Virtual EMS</strong></a> to reserve Recording Studio Room 210, Room 305, or the Lobby Table.
+    <label>Use <a href="http://emsprod.geneseo.edu/VirtualEMSPublic/CustomBrowseEvents.aspx?data=8imT11TVEgjXNgDJOAPMB4OcOxg1lJDzQDCUHCLgyvV%2bp3H99PcbRuP418vvqF%2br"><strong>Virtual EMS</strong></a> to reserve Room 305 or the Lobby Table.
         <br /><br />
 <a href="https://cloud.ensemblevideo.com/Watch/Reserve"><strong>Instructions for Using Virtual EMS</strong></a><br /><br /></label>
     

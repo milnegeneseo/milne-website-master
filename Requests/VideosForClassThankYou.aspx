@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Requests-DEV/RequestsMasterPage.master" AutoEventWireup="true" CodeFile="VideosForClassThankYou.aspx.cs" Inherits="Requests_VideosForClassThankYou" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Requests/RequestsMasterPage.master" AutoEventWireup="true" CodeFile="VideosForClassThankYou.aspx.cs" Inherits="Requests_VideosForClassThankYou" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>

@@ -1,15 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Requests-DEV/RequestsMasterPage.master" AutoEventWireup="true" CodeFile="StaffDirectory.aspx.cs" Inherits="Requests_Consultation" validateRequest="false" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Requests/RequestsMasterPage.master" AutoEventWireup="true" CodeFile="StaffDirectory.aspx.cs" Inherits="Requests_Consultation" validateRequest="false" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-
-<%--    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#<%= txtDueDate.ClientID %>').attr('readonly', 'readonly').datepicker({
-            });
-        });
-    </script>--%>
 
 <div id="rightSideContent" >
             <div style="margin-top: 0px;" class="breadcrumb"><a href="https://wwwdev2.geneseo.edu/">Home</a> &raquo; <a href="https://wwwdev2.geneseo.edu/library">Milne Library</a> &raquo; <a href="https://wwwdev2.geneseo.edu/library/about-milne-library">About Milne Library</a> &raquo; <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/StaffDirectory.aspx" style="color:#b85533 !important;">Staff Directory & Contact Information</a></div>
@@ -18,53 +11,40 @@
 
 
 <div style="width:100%;">    
-    
-<%--<div style="width: 50%;float:left;">--%>
+
 <div class="left-50-percent">
-<%--<fieldset style="height:270px;">--%>
     <fieldset>
 <legend>General Information</legend>
-<%--<img src="img/phone-17px.png" class="icon"/> <strong>Phone</strong>  585-245-5594 <br /><br />--%>
     <i class="material-icons" style="vertical-align:text-bottom; color:#345290;">phone</i> <strong>Phone</strong>  585-245-5594 <br /><br />
-<%--    <img src="img/email-top-17px.png" class="icon" /> <strong>Email <a href="mailto:libref@geneseo.libanswers.com">libref@geneseo.libanswers.com</a></strong><br /><br />--%>
    <i class="material-icons" style="vertical-align:text-bottom;  color:#345290;">mail</i> <strong>Email <a href="mailto:libref@geneseo.libanswers.com">libref@geneseo.libanswers.com</a></strong><br /><br />
-<%--   <span class="icon">&nbsp;&nbsp;&nbsp;&nbsp;</span> <strong>Fax</strong> 585-245-5769<br /><br />--%>
+
     
    <i class="material-icons" style="vertical-align:text-bottom;  color:#345290;">print</i> <strong>Fax</strong> 585-245-5769<br /><br />
 
-<%--    <a href="http://libanswers.geneseo.edu/"><img src="img/question-mark-icon-20.png" class="icon"/> <strong>Ask A Librarian</strong></a> Reference librarians are available to answer your questions <br /><br />--%>
         <a href="http://libanswers.geneseo.edu/"><i class="material-icons" style="vertical-align:text-bottom;">help</i> <strong>Ask A Librarian</strong></a> Reference librarians are available to answer your questions <br /><br />
 
-<%--   <a href="http://www.geneseo.edu/library/webform/make-suggestion"><img src="img/editor_pencil_pen_edit_write_20.png" class="icon" /> <strong>Make a suggestion</strong></a> Suggestions &amp; Feedback--%>
    <a href="http://www.geneseo.edu/library/webform/make-suggestion"><i class="material-icons" style="vertical-align:text-bottom;">create</i> <strong>Make a suggestion</strong></a> Suggestions &amp; Feedback
 
 
 </fieldset>
     </div>
 
-<%--<div style="width: 50%;float:left;">--%>
 <div class="right-50-percent">
 
-<%--<fieldset style="height:270px;">--%>
+
 <fieldset>
 <legend>Related Services</legend>
     <strong>CIT HelpDesk</strong><br />
-<%--    <img src="img/phone-17px.png" class="icon"/> Phone  585-245-5588<br />--%>
     <i class="material-icons" style="vertical-align:text-bottom; color:#345290;">phone</i> Phone  585-245-5588<br />
-<%--     <span class="icon">&nbsp;&nbsp;&nbsp;&nbsp;</span><strong> <a href="https://www.geneseo.edu/cit/helpdesk">Website</a></strong>--%>
          <a href="https://www.geneseo.edu/cit/helpdesk"><i class="material-icons" style="vertical-align:text-bottom;">language</i> <strong>Website</a></strong>
 
      <br /><br />
      <strong>CAE (Center for Academic Excellence)</strong><br />
-<%--    <img src="img/phone-17px.png" class="icon"/> Phone  585-245-6041<br />--%>
     <i class="material-icons" style="vertical-align:text-bottom; color:#345290;">phone</i> Phone  585-245-6041<br />
-<%--     <span class="icon">&nbsp;&nbsp;&nbsp;&nbsp;</span><strong> <a href="https://wwwdev2.geneseo.edu/library/center-academic-excellence">Website</a></strong>--%>
-         <a href="https://wwwdev2.geneseo.edu/library/center-academic-excellence"><i class="material-icons" style="vertical-align:text-bottom;">language</i> Website</a></strong>
+         <a href="https://www.geneseo.edu/library/center-academic-excellence"><i class="material-icons" style="vertical-align:text-bottom;">language</i> Website</a></strong>
     <br /><br />
      <strong>TLC (Teaching  Learning Center)</strong><br />
-<%--    <img src="img/phone-17px.png" class="icon"/> Phone  585-245-5336<br />--%>
     <i class="material-icons" style="vertical-align:text-bottom; color:#345290;">phone</i> Phone  585-245-5336<br />
-<%--<span class="icon">&nbsp;&nbsp;&nbsp;&nbsp;</span><strong> <a href="http://www.geneseo.edu/tlc/about">Website</a></strong>--%>
 <a href="http://www.geneseo.edu/tlc/about"><i class="material-icons" style="vertical-align:text-bottom;">language</i> Website</a></strong>
 
 
@@ -92,7 +72,6 @@
                
                 
                 <ItemTemplate>
-<%--                        <span class="staffname"><asp:HyperLink ID="StaffPageLink" runat="server" NavigateUrl='<%# Eval("Url") %>' Text='<%# Eval("StaffFirstName") %>' /> <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# Eval("Url") %>' Text='<%# Eval("StaffLastName") %>' /></span><br />--%>
                         <span class="staffname"><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl='<%# Eval("Url") %>' Text='<%# string.Concat(Eval("StaffFirstName"), " ", Eval("StaffLastName"))%>' /></span><br />
 						<span class="title"><asp:Label ID="Title" runat="server"  Text='<%# Bind("Title") %>'></asp:Label></span><br />     
 
@@ -156,7 +135,6 @@
 
 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DataPortalStaffDirectoryConnectionString %>" SelectCommand="SELECT [StaffFirstName], [StaffLastName], [Title], [LiaisonTo], [Phone], [Email], [URL], [Location], [LibGuides],[LibGuidesURL], [Department], [Twitter], [TwitterURL], [AdditionalContactNoURL], [YouCanBookMe],[YouCanBookMeURL],[AdditionalContact],[AdditionalContactURL]  FROM [StaffDirectory] ORDER BY [StaffLastName] ASC,[Department] ASC"></asp:SqlDataSource>
 
-<%--<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DataPortalStaffDirectoryConnectionString %>" SelectCommand="SELECT (StaffFirstName + ' ' + StaffFirstName) AS StaffName, [Title], [LiaisonTo], [Phone], [Email], [URL], [Location], [LibGuides],[LibGuidesURL], [Department], [Twitter], [TwitterURL], [AdditionalContactNoURL], [YouCanBookMe],[YouCanBookMeURL],[AdditionalContact],[AdditionalContactURL]  FROM [StaffDirectory] ORDER BY [StaffLastName] ASC,[Department] ASC"></asp:SqlDataSource>--%>
 
     <br /> 
  

@@ -227,8 +227,7 @@ head of each document that takes the drupal template -->
 <p><a alt="Milne Library Staff and Contact Information" href="http://intranetlib.geneseo.edu/DataPortal/Requests/StaffDirectory.aspx"><i class="material-icons" style="vertical-align:
 text-bottom;color:#345290;">contacts&nbsp;</i>Staff &amp; Contact Info</a></p>
 
-<p style="padding-bottom:5px !important;"><a alt="Center For Academic Excellence" href="/library/center-academic-excellence"><i class="material-icons" style="vertical-align:middle;color:#345290;">school&nbsp;</i>Center for Academic<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Excellence (CAE)</a></p>
+<p><a alt="Center For Academic Excellence" href="/library/center-academic-excellence" id="Center For Academic Excellence" name="Center For Academic Excellence" title="Center For Academic Excellence"><i class="material-icons" style="vertical-align:text-bottom;color:#345290;">school&nbsp;</i>C A E</a></p>
 
 <p><a alt="Cite My Sources" href="http://libguides.geneseo.edu/citation"><i class="material-icons" style="vertical-align:
 text-bottom;color:#345290;">assignment&nbsp;</i>Cite My Sources</a></p>
@@ -249,6 +248,7 @@ text-bottom;color:#345290;">room&nbsp;</i>Reserve a Room</a></p>
 text-bottom;color:#345290;">favorite&nbsp;</i>Support Milne Library</a></p>
 </div>
 </div>
+
 	<!-- End Bottom Links below Menu Node -->		
   </section>
           </div>

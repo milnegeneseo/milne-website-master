@@ -38,9 +38,9 @@ head of each document that takes the drupal template -->
 <link type="text/css" rel="stylesheet" href="https://www.geneseo.edu/sites/default/files/css/css_8I8tOCPjIVP6mfeMJ_e9IPVH1CnLb6wMloNuja55pnc.css" media="all" />
 <link type="text/css" rel="stylesheet" href="https://www.geneseo.edu/sites/default/files/css/css_nv8qXzNitN8uKzYeKCiD0FbAWjT4aM1rYM5eOMui9Vo.css" media="all" />
 <link type="text/css" rel="stylesheet" href="https://www.geneseo.edu/sites/default/files/css/css_KlTez9E1gAVT0K7g7FdaTFO--WYutwg4vCuQPU9KkFo.css" media="all" />
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write("<script src='/sites/all/modules/contributed/jquery_update/replace/jquery/1.10/jquery.min.js'>\x3C/script>")</script>
-<script src="https://eres.geneseo.edu/milne-styles-js/js/js_3TykeRWpejhD4-J3vdlaNXdULg9xhOZhbsppK0o2bUs.js"></script>
+<link type="text/css" rel="stylesheet" href="https://www.geneseo.edu/sites/default/files/css/css_gMDDuMbPwXBINve9jmbZjCG2pmvXJHhkwVekxGXCjr0.css" media="all" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write("<script src='https://www.geneseo.edu/sites/all/modules/contributed/jquery_update/replace/jquery/1.9/jquery.min.js'>\x3C/script>")</script><script src="https://eres.geneseo.edu/milne-styles-js/js/js_3TykeRWpejhD4-J3vdlaNXdULg9xhOZhbsppK0o2bUs.js"></script>
 <script src="https://eres.geneseo.edu/milne-styles-js/js/js_gPqjYq7fqdMzw8-29XWQIVoDSWTmZCGy9OqaHppNxuQ.js"></script>
 <script>(function (i, s, o, g, r, a, m) { i["GoogleAnalyticsObject"] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m) })(window, document, "script", "//www.google-analytics.com/analytics.js", "ga"); ga("create", "UA-2639594-25", { "cookieDomain": "auto" }); ga("set", "anonymizeIp", true); ga("send", "pageview");</script>
 <script src="https://eres.geneseo.edu/milne-styles-js/js/js_3dSw5Vnr-sT0n6s8DygGm_0HVz27GmB8AQx3jH-gNKk.js"></script>
@@ -144,10 +144,8 @@ head of each document that takes the drupal template -->
  
 <div style="text-align: center; width: 100%;"><a href="http://www.geneseo.edu/library"><img alt="Milne Library" src="https://www.geneseo.edu/sites/default/files/sites/library/milne-library-logo.png" style="width: 75%; padding:5px;" /></a></div>
 
-<div class="library-hours-background">
-<div style="text-align: center !important;">
-<p class="geneseo-icon rtecenter">	<script type="text/javascript" src="https://eres.geneseo.edu/libraryhours/library-hours.js"></script><a href="https://www.geneseo.edu/library/library-hours" style="color: #345290;"><i class="material-icons" style="vertical-align: text-bottom !important; font-size:1.6em;">alarm</i>View All Library Hours</a></p>
-</div>
+<div class="library-hours-background" style="text-align: center !important; padding-top: 15px !important;"><script type="text/javascript" src="https://eres.geneseo.edu/libraryhours/library-hours.js"></script>
+<!--p><a href="https://geneseo.edu/library/library-hours" style="color: #345290;"><i class="material-icons" style="vertical-align: text-bottom !important; font-size:1.6em;">alarm</i>View All Library Hours</a></p-->
 </div>
 <div class="chat" style="width: 100%; text-align: left;">
 <div id="libchat_068ecf51e9aaa8fcb0b3e5a7181b8042">&nbsp;</div>

@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
 <div id="rightSideContent" >
-            <div style="margin-top: 0px;" class="breadcrumb"><a href="https://wwwdev2.geneseo.edu/">Home</a> &raquo; <a href="https://wwwdev2.geneseo.edu/library">Milne Library</a> &raquo; <a href="https://wwwdev2.geneseo.edu/library/about-milne-library">About Milne Library</a> &raquo; <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/StaffDirectory.aspx" style="color:#b85533 !important;">Staff Directory & Contact Information</a></div>
+            <div style="margin-top: 0px;" class="breadcrumb"><a href="https://www.geneseo.edu/">Home</a> &raquo; <a href="https://www.geneseo.edu/library">Milne Library</a> &raquo; <a href="https://www.geneseo.edu/library/about-milne-library">About Milne Library</a> &raquo; <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/StaffDirectory.aspx" style="color:#b85533 !important;">Staff Directory & Contact Information</a></div>
     <h1>Milne Staff Directory</h1>
   
 

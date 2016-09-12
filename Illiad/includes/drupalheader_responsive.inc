@@ -12,7 +12,7 @@ head of each document that takes the drupal template -->
     <link type="text/css" href="https://eres.geneseo.edu/milne-styles-js/js/jquery-ui-1.10.3.custom.css" rel="stylesheet" />
     <link type="text/css" href="https://eres.geneseo.edu/milne-styles-js/js/jquery.ui.timepicker.css" rel="stylesheet" />
     <script type="text/javascript" src="https://eres.geneseo.edu/milne-styles-js/js/jquery-ui-1.10.3.custom.js"></script>
-	    <script type="text/javascript" src="https://eres.geneseo.edu/milne-styles-js/js/jquery-1.11.1.min..js"></script>
+	    <!-- script type="text/javascript" src="https://eres.geneseo.edu/milne-styles-js/js/jquery-1.11.1.min.js"></script -->
     <script type="text/javascript" src="https://eres.geneseo.edu/milne-styles-js/js/jquery.ui.timepicker.js"></script>
    <!--END INTRANET LIB CUSTOM STYLES & JQUERY LIBRARIES -->
 
@@ -22,9 +22,9 @@ head of each document that takes the drupal template -->
 <link type="text/css" rel="stylesheet" href="https://www.geneseo.edu/sites/default/files/css/css_8I8tOCPjIVP6mfeMJ_e9IPVH1CnLb6wMloNuja55pnc.css" media="all" />
 <link type="text/css" rel="stylesheet" href="https://www.geneseo.edu/sites/default/files/css/css_nv8qXzNitN8uKzYeKCiD0FbAWjT4aM1rYM5eOMui9Vo.css" media="all" />
 <link type="text/css" rel="stylesheet" href="https://www.geneseo.edu/sites/default/files/css/css_KlTez9E1gAVT0K7g7FdaTFO--WYutwg4vCuQPU9KkFo.css" media="all" />
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write("<script src='/sites/all/modules/contributed/jquery_update/replace/jquery/1.10/jquery.min.js'>\x3C/script>")</script>
-<script src="https://eres.geneseo.edu/milne-styles-js/js/js_3TykeRWpejhD4-J3vdlaNXdULg9xhOZhbsppK0o2bUs.js"></script>
+<link type="text/css" rel="stylesheet" href="https://www.geneseo.edu/sites/default/files/css/css_gMDDuMbPwXBINve9jmbZjCG2pmvXJHhkwVekxGXCjr0.css" media="all" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write("<script src='https://www.geneseo.edu/sites/all/modules/contributed/jquery_update/replace/jquery/1.9/jquery.min.js'>\x3C/script>")</script><script src="https://eres.geneseo.edu/milne-styles-js/js/js_3TykeRWpejhD4-J3vdlaNXdULg9xhOZhbsppK0o2bUs.js"></script>
 <script src="https://eres.geneseo.edu/milne-styles-js/js/js_gPqjYq7fqdMzw8-29XWQIVoDSWTmZCGy9OqaHppNxuQ.js"></script>
 <script>(function (i, s, o, g, r, a, m) { i["GoogleAnalyticsObject"] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m) })(window, document, "script", "//www.google-analytics.com/analytics.js", "ga"); ga("create", "UA-2639594-25", { "cookieDomain": "auto" }); ga("set", "anonymizeIp", true); ga("send", "pageview");</script>
 <script src="https://eres.geneseo.edu/milne-styles-js/js/js_3dSw5Vnr-sT0n6s8DygGm_0HVz27GmB8AQx3jH-gNKk.js"></script>
@@ -181,10 +181,8 @@ head of each document that takes the drupal template -->
 <!-- Milne Logo Node start-->	
 
 <div style="text-align: center; width: 100%;"><a href="https://www.geneseo.edu/library"><img alt="Milne Library" src="http://www.geneseo.edu/sites/default/files/sites/library/milne-library-logo.png" style="width: 75%; padding:5px;" /></a></div>
-<div class="library-hours-background">
-<div style="text-align: center !important;">
-<p class="geneseo-icon rtecenter"><script type="text/javascript" src="https://eres.geneseo.edu/libraryhours/library-hours.js"></script><a href="https://www.geneseo.edu/library/library-hours" style="color: #345290;"><i class="material-icons" style="vertical-align: text-bottom !important; font-size:1.6em;">alarm</i>View All Library Hours</a></p>
-</div>
+<div class="library-hours-background" style="text-align: center !important; padding-top: 15px !important;"><script type="text/javascript" src="https://eres.geneseo.edu/libraryhours/library-hours.js"></script>
+
 </div>
 
 
@@ -227,7 +225,7 @@ head of each document that takes the drupal template -->
 <p><a alt="Milne Library Staff and Contact Information" href="http://intranetlib.geneseo.edu/DataPortal/Requests/StaffDirectory.aspx"><i class="material-icons" style="vertical-align:
 text-bottom;color:#345290;">contacts&nbsp;</i>Staff &amp; Contact Info</a></p>
 
-<p><a alt="Center For Academic Excellence" href="/library/center-academic-excellence" id="Center For Academic Excellence" name="Center For Academic Excellence" title="Center For Academic Excellence"><i class="material-icons" style="vertical-align:text-bottom;color:#345290;">school&nbsp;</i>C A E</a></p>
+<p><a alt="Center For Academic Excellence" href="https://www.geneseo.edu/library/center-academic-excellence" id="Center For Academic Excellence" name="Center For Academic Excellence" title="Center For Academic Excellence"><i class="material-icons" style="vertical-align:text-bottom;color:#345290;">school&nbsp;</i>C A E</a></p>
 
 <p><a alt="Cite My Sources" href="http://libguides.geneseo.edu/citation"><i class="material-icons" style="vertical-align:
 text-bottom;color:#345290;">assignment&nbsp;</i>Cite My Sources</a></p>
@@ -238,13 +236,13 @@ text-bottom;color:#345290;">live_help&nbsp;</i>Ask A Librarian</a></p>
 <p><a alt="How Do I?" href="http://libguides.geneseo.edu/sb.php?subject_id=17737"><i class="material-icons" style="vertical-align:
 text-bottom;color:#345290;">help&nbsp;</i>How Do I...?</a></p>
 
-<p><a alt="Renew My Books" href="http://www.geneseo.edu/library/mylibraryaccount"><i class="material-icons" style="vertical-align:
+<p><a alt="Renew My Books" href="https://www.geneseo.edu/library/mylibraryaccount"><i class="material-icons" style="vertical-align:
 text-bottom;color:#345290;">check_circle&nbsp;</i>Renew My Books</a></p>
 
 <p><a alt="Reserve a Room" href="http://intranetlib.geneseo.edu/DataPortal/Requests/RoomRequest.aspx"><i class="material-icons" style="vertical-align:
 text-bottom;color:#345290;">room&nbsp;</i>Reserve a Room</a></p>
 
-<p><a alt="Support Milne Library" href="/library/support-milne-library"><i class="material-icons" style="vertical-align:
+<p><a alt="Support Milne Library" href="https://www.geneseo.edu/library/support-milne-library"><i class="material-icons" style="vertical-align:
 text-bottom;color:#345290;">favorite&nbsp;</i>Support Milne Library</a></p>
 </div>
 </div>

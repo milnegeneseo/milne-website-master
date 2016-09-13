@@ -1964,6 +1964,7 @@ border:1px solid #dddddd;
 border-radius: 4px;
 padding: 6px;
 background-color:#f1f8fc;
+margin-bottom: 10px;
 }
 
 
@@ -2926,7 +2927,29 @@ padding:10px 0px 10px 10px;
 box-shadow: 0px 1px 5px 0px #345290;
 }
 
+/*********************************************************/
+/******** Slider on Home Page Style Overrides *********/
+/*********************************************************/
+.slider-title{
+font-size: 1.5em !important;
+}
+.geneseo-slideshow {
+font-weight:bold;
+color: #ffffff !important;
+}
+.geneseo-slideshow span{
+font-weight:bold;
+font-size: 1.2em !important;
+}
 
+.geneseo-slideshow a:link, .geneseo-slideshow a:visited{
+font-weight:bold;
+color:#fa8a3b !important;
+}
+
+.geneseo-slideshow a:hover, .geneseo-slideshow a:active{
+color:#86c1ea !important;
+}
 
 
 /*********************************************************/

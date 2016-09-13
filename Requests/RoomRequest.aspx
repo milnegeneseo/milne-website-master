@@ -42,37 +42,14 @@
 
         <h1>Room Request Form</h1> 
     
-    <span class="link-button-background"><a href="https://www.geneseo.edu/library/classrooms-and-meeting-rooms">Room Descriptions & Policies</a></span>&nbsp; |&nbsp;  <span class="link-button-background"><a href="https://www.geneseo.edu/library/milne-library-floor-plans">Floor Plans/Room Locations</a></span>&nbsp; |&nbsp;  <span class="link-button-background"><a href="http://emsprod.geneseo.edu/VirtualEMSPublic/CustomBrowseEvents.aspx?data=8imT11TVEgjXNgDJOAPMB4OcOxg1lJDzQDCUHCLgyvV%2bp3H99PcbRuP418vvqF%2br">Check Room Availability</a></span> 
+    <span class="link-button-background style="margin-bottom: 10px;"><a href="https://www.geneseo.edu/library/classrooms-and-meeting-rooms">Room Descriptions & Policies</a></span>&nbsp; 
+	&nbsp;  <span class="link-button-background style="margin-bottom: 10px;"><a href="https://www.geneseo.edu/library/milne-library-floor-plans">Floor Plans/Room Locations</a></span>&nbsp;
+	&nbsp;  <span class="link-button-background style="margin-bottom: 10px;"><a href="http://emsprod.geneseo.edu/VirtualEMSPublic/CustomBrowseEvents.aspx?data=8imT11TVEgjXNgDJOAPMB4OcOxg1lJDzQDCUHCLgyvV%2bp3H99PcbRuP418vvqF%2br">Check Room Availability</a></span>
+	&nbsp; <span class="link-button-background  style="margin-bottom: 10px;""><a href="/library/library-computer-labs-technology">Computer Labs</a></span>
 <br /><br />
 
 
-<h3>Room 305 & Lobby Table</h3>
-<fieldset>
-<legend>Self-Reservation Instructions</legend>
-
-   
-
-    <label>Use <a href="http://emsprod.geneseo.edu/VirtualEMSPublic/CustomBrowseEvents.aspx?data=8imT11TVEgjXNgDJOAPMB4OcOxg1lJDzQDCUHCLgyvV%2bp3H99PcbRuP418vvqF%2br"><strong>Virtual EMS</strong></a> to reserve Room 305 or the Lobby Table.
-        <br /><br />
-<a href="https://cloud.ensemblevideo.com/Watch/Reserve"><strong>Instructions for Using Virtual EMS</strong></a><br /><br /></label>
-    
- <label>An email will be sent to you once your reservation has been made.<br />Requests for more than one date can be made using this form if all times are the same. <br /><br /></label>
-
-
-</fieldset>
-
-<h3>Rooms 105, 121, or 213</h3>
-<fieldset>
-<legend>Semester-long Course Room Reservation</legend>
-
-  
-    <label>Contact the <a href="http://www.geneseo.edu/registrar/contact_us"><strong>Office of the Registrar</strong></a>.<br /><br /></label> 
-
-</fieldset> 
-
-
-
-    <h3>Room 104 or 208</h3>
+    <a name="104-208"></a><h3>Room 104 or 208</h3>
     <p>Use the form below to request Room 104 or 208. </p>
 
 <b>Please allow 2 business days to confirm your room reservation.</b> An email will be sent to you once your reservation has been made. Requests for more than one date can be made using this form if all times are the same. <br /><br />
@@ -194,5 +171,51 @@ If you need to cancel a room reservation, please contact <a href="mailto:hoffman
     <asp:Label ID="lblErrorMessage" runat="server" />
 
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h3>Room 305 & Lobby Table</h3>
+<fieldset>
+<legend>Self-Reservation Instructions</legend>
+
+   
+
+    <label>Use <a href="http://emsprod.geneseo.edu/VirtualEMSPublic/CustomBrowseEvents.aspx?data=8imT11TVEgjXNgDJOAPMB4OcOxg1lJDzQDCUHCLgyvV%2bp3H99PcbRuP418vvqF%2br"><strong>Virtual EMS</strong></a> to reserve Room 305 or the Lobby Table.
+        <br /><br />
+<a href="https://cloud.ensemblevideo.com/Watch/Reserve"><strong>Instructions for Using Virtual EMS</strong></a><br /><br /></label>
+    
+ <label>An email will be sent to you once your reservation has been made.<br />Requests for more than one date can be made using this form if all times are the same. <br /><br /></label>
+
+
+</fieldset>
+
+<h3>Rooms 105, 121, or 213</h3>
+<fieldset>
+<legend>Semester-long Course Room Reservation</legend>
+
+  
+    <label>Contact the <a href="http://www.geneseo.edu/registrar/contact_us"><strong>Office of the Registrar</strong></a>.<br /><br /></label> 
+
+</fieldset> 
+
+
+
+
 
 </asp:Content>

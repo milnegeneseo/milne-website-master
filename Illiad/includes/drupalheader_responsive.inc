@@ -187,8 +187,7 @@ head of each document that takes the drupal template -->
 
 
 <div class="chat" style="width: 100%; text-align: left;">
-<div id="libchat_068ecf51e9aaa8fcb0b3e5a7181b8042">&nbsp;</div>
-<script type="text/javascript" src="//v2.libanswers.com/load_chat.php?hash=068ecf51e9aaa8fcb0b3e5a7181b8042"></script>
+<p style="margin-bottom: 0px !important; padding-bottom:0px !important;"><a href="https://eres.geneseo.edu/DIYLibChat/diylibchat.html" onclick="window.open(this.href, 'DIYChat', 'resizable=yes,status=no,location=no,toolbar=no,menubar=no,fullscreen=no,scrollbars=no,dependent=no); return false;"><img src="https://eres.geneseo.edu/milne-styles-js/img/chat-button-widget-online.png" /></a></p>
 
 <p class="reference-link-background" style="padding:5px 0px 5px 5px; text-align:left; margin-bottom:5px !important;"><a href="https://www.geneseo.edu/library/reference-calendar" style="color: #345290;"><i class="material-icons" style="vertical-align: text-bottom !important;">grid_on</i> Reference Calendar</a></p>
 

@@ -19,7 +19,6 @@
 
 
 
-<!-- FOOTER--->
   <footer class="geneseo-footer mdl-mega-footer">
     <div class="mdl-mega-footer__middle-section geneseo-big-container">
       <div class="mdl-mega-footer__left-section">
@@ -51,19 +50,19 @@
           <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
           <h3 class="mdl-mega-footer__heading">Quick Access Links</h3><ul class="mdl-mega-footer__link-list"><li class="menu-1966 first"><a href="http://www.geneseo.edu/registrar/academic-calendar" title="">Academic Calendar</a></li>
 <li class="menu-1968"><a href="http://www.geneseo.edu/health" title="">Health and Counseling</a></li>
-<li class="menu-1967 last"><a href="http://intranetlib.geneseo.edu/DataPortal/Requests/SupportMilneLibrary.aspx" title="">Donate to Geneseo</a></li>
+<li class="menu-1967 last"><a href="https://www.geneseo.edu/library/support-milne-library" title="">Donate to Geneseo</a></li>
 </ul>        </div>
 
         <div class="mdl-mega-footer__drop-down-section">
           <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-          <h3 class="mdl-mega-footer__heading">Website Help</h3><ul class="mdl-mega-footer__link-list"><li class="menu-1971 first"><a href="https://www.geneseo.edu" title="">Site Map</a></li>
-<li class="menu-1969"><a href="https://www.geneseo.edu" title="">Report a Problem</a></li>
-<li class="menu-1970 last"><a href="https://www.geneseo.edu" title="">Media Information</a></li>
+          <h3 class="mdl-mega-footer__heading">Website Help</h3><ul class="mdl-mega-footer__link-list"><li class="menu-1971 first"><a href="https://www.geneseo.edu/drupal-training" title="">Drupal Training</a></li>
+<li class="menu-1969"><a href="https://jira.geneseo.edu/servicedesk/customer/portal/2" title="">Report a Problem</a></li>
+<li class="menu-1970 last"><a href="https://www.geneseo.edu/college_comm" title="">Media Information</a></li>
 </ul>        </div>
       </div>
       </div>
               <div class="geneseo-footer-bottom mdl-mega-footer__bottom-section">
-          <ul class="mdl-mega-footer__link-list"><li class="menu-1996 first"><a href="/" title="">Home</a></li>
+          <ul class="mdl-mega-footer__link-list"><li class="menu-1996 first"><a href="https://www.geneseo.edu" title="">Home</a></li>
 <li class="menu-1998"><a href="http://www.gmail.com/" title="">Webmail</a></li>
 <li class="menu-1999"><a href="https://www.geneseo.edu/emergencies" title="">Emergency Info</a></li>
 <li class="menu-2002 last"><a href="https://www.geneseo.edu/cit/web-privacy-policy" title="">Privacy Policy</a></li>

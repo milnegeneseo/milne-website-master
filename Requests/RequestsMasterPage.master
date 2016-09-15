@@ -145,12 +145,11 @@ head of each document that takes the drupal template -->
 <div style="text-align: center; width: 100%;"><a href="http://www.geneseo.edu/library"><img alt="Milne Library" src="https://www.geneseo.edu/sites/default/files/sites/library/milne-library-logo.png" style="width: 75%; padding:5px;" /></a></div>
 
 <div class="library-hours-background" style="text-align: center !important; padding-top: 15px !important;"><script type="text/javascript" src="https://eres.geneseo.edu/libraryhours/library-hours.js"></script>
-<!--p><a href="https://geneseo.edu/library/library-hours" style="color: #345290;"><i class="material-icons" style="vertical-align: text-bottom !important; font-size:1.6em;">alarm</i>View All Library Hours</a></p-->
+
 </div>
 <div class="chat" style="width: 100%; text-align: left;">
-<div id="libchat_068ecf51e9aaa8fcb0b3e5a7181b8042">&nbsp;</div>
-<script type="text/javascript" src="//v2.libanswers.com/load_chat.php?hash=068ecf51e9aaa8fcb0b3e5a7181b8042"></script>
 
+<p style="margin-bottom: 0px !important; padding-bottom:0px !important;"><a href="https://eres.geneseo.edu/DIYLibChat/diylibchat.html" onclick="window.open(this.href, 'DIYChat', 'resizable=yes,status=no,location=no,toolbar=no,menubar=no,fullscreen=no,scrollbars=no,dependent=no); return false;"><img src="https://eres.geneseo.edu/milne-styles-js/img/chat-button-widget-online.png" /></a></p>
 <p class="reference-link-background" style="padding:5px 0px 5px 5px; text-align:left; margin-bottom:5px !important;"><a href="https://www.geneseo.edu/library/reference-calendar" style="color: #345290;"><i class="material-icons" style="vertical-align: text-bottom !important;">grid_on</i> Reference Calendar</a></p>
 
 <p class="events-link-background" style="padding:5px 0px 5px 5px; text-align:left; margin-bottom:5px !important;"><a href="http://ems.geneseo.edu/VirtualEMSPublic/CustomBrowseEvents.aspx?data=8imT11TVEgjXNgDJOAPMB4OcOxg1lJDzQDCUHCLgyvV%2bp3H99PcbRuP418vvqF%2br" onclick="window.open(this.href, '', 'resizable=yes,status=no,location=no,toolbar=no,menubar=no,fullscreen=no,scrollbars=no,dependent=no'); return false;" style="color: #345290;"><i class="material-icons" style="vertical-align: text-bottom !important;">event</i> Classes &amp; Events</a></p>
@@ -268,19 +267,19 @@ text-bottom;color:#345290;">favorite&nbsp;</i>Support Milne Library</a></p>
           <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
           <h3 class="mdl-mega-footer__heading">Quick Access Links</h3><ul class="mdl-mega-footer__link-list"><li class="menu-1966 first"><a href="http://www.geneseo.edu/registrar/academic-calendar" title="">Academic Calendar</a></li>
 <li class="menu-1968"><a href="http://www.geneseo.edu/health" title="">Health and Counseling</a></li>
-<li class="menu-1967 last"><a href="http://intranetlib.geneseo.edu/DataPortal/Requests/SupportMilneLibrary.aspx" title="">Donate to Geneseo</a></li>
+<li class="menu-1967 last"><a href="https://www.geneseo.edu/library/support-milne-library" title="">Donate to Geneseo</a></li>
 </ul>        </div>
 
         <div class="mdl-mega-footer__drop-down-section">
           <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-          <h3 class="mdl-mega-footer__heading">Website Help</h3><ul class="mdl-mega-footer__link-list"><li class="menu-1971 first"><a href="https://www.geneseo.edu" title="">Site Map</a></li>
-<li class="menu-1969"><a href="https://www.geneseo.edu" title="">Report a Problem</a></li>
-<li class="menu-1970 last"><a href="https://www.geneseo.edu" title="">Media Information</a></li>
+          <h3 class="mdl-mega-footer__heading">Website Help</h3><ul class="mdl-mega-footer__link-list"><li class="menu-1971 first"><a href="https://www.geneseo.edu/drupal-training" title="">Drupal Training</a></li>
+<li class="menu-1969"><a href="https://jira.geneseo.edu/servicedesk/customer/portal/2" title="">Report a Problem</a></li>
+<li class="menu-1970 last"><a href="https://www.geneseo.edu/college_comm" title="">Media Information</a></li>
 </ul>        </div>
       </div>
       </div>
               <div class="geneseo-footer-bottom mdl-mega-footer__bottom-section">
-          <ul class="mdl-mega-footer__link-list"><li class="menu-1996 first"><a href="/" title="">Home</a></li>
+          <ul class="mdl-mega-footer__link-list"><li class="menu-1996 first"><a href="https://www.geneseo.edu" title="">Home</a></li>
 <li class="menu-1998"><a href="http://www.gmail.com/" title="">Webmail</a></li>
 <li class="menu-1999"><a href="https://www.geneseo.edu/emergencies" title="">Emergency Info</a></li>
 <li class="menu-2002 last"><a href="https://www.geneseo.edu/cit/web-privacy-policy" title="">Privacy Policy</a></li>

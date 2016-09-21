@@ -3,144 +3,68 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-<%--    <script type="text/javascript" src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js"></script>--%>
 
-    <script type="text/javascript" src="scripts/jBox-0.3.2/Source/jBox.min.js"></script>
-   <script type="text/javascript">
-
-       //$(document).ready(function () {
-       // $("img[rel]").overlay({ mask: '#000', fixed: false, top: 25 });
-       // $("a[rel]").overlay({ mask: '#000', fixed: false, top: 25 });
-       //});
-
-
-
-       $(document).ready(function () {
-
-           new jBox('Modal', {
-               attach: $('#myModal1'),
-           //    target: $('.newTarget'),
-               title: 'Patron Bar Code on Back of Card',
-               content: '<img src="img/milne-back-front-community-book-borrower-card-anim.gif" />',
-       adjustPosition: true,
-        //   adjustTracker: false,
-               overlay: true,
-              blockScroll: false,
-               draggable: 'title',
-               closeButton: 'title',
-               closeOnClick: 'overlay',
-
-               // Remove Repositoning
-               repositionOnOpen: false,
-               repositionOnContent: false
-          });
-
-           var myModal2 = $('#myModal2').jBox('Modal', {
-                    attach: $('#myModal2'),
-                    title: 'Book Bar Code Number',
-                    target: $('#myModal2Target'),
-                    content: '<img src="img/book-barcode-anim.gif" />',
-                    position: {
-                        x: 'center',
-                        y: 'center'
-                    },
-                    outside: 'y',
-                    adjustPosition: true,
-                   overlay: true,
-                   blockScroll: false,
-                   draggable: 'title',
-                   closeButton: 'title',
-                   closeOnClick: 'overlay',
-                   repositionOnOpen: false,
-                   repositionOnContent: false
-               });
-
-
-           //new jBox('Modal', {
-           //  //  attach: $('#myModal2'),
-           //  //  target: $('#Modal2Target'),
-           //    title: 'Book Bar Code Number',
-           //   // content: '<img src="img/book-barcode-anim.gif" />',
-           //    content: $('#Modal2Target'),
-           ////    position: { x: 'center', y: 'center' },
-           //    adjustPosition: true,
-           //   // adjustTracker: false,
-           //     overlay: true,
-           //  blockScroll: false,
-           //     draggable: 'title',
-           //     closeButton: 'title',
-           //     closeOnClick: 'overlay',
-
-           //    // Remove Repositoning
-           //     repositionOnOpen: false,
-           //     repositionOnContent: false
-           //});
-
-
- });
-    </script>
-
-
-<!-- Styles for jBox modal overlay -->
-<link type="text/css" href="scripts/jBox-0.3.2/Source/jBox.css" rel="stylesheet" />
-
-<style type="text/css">
-#Modal2Target{
+<style>
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
 }
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalDialog > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+}
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+.close:hover {
+    background: #00d9ff;
 </style>
 
-
-
-<!-- Styles for jQuerytools modal overlay -->
-<%--<style type="text/css">
-.simple_overlay {
-	display:none;
-	z-index:10000;
-	background-color:#333333;
-	/*width:540px;*/	
-	min-height:100px;
-	border:1px solid #666;
-	-moz-box-shadow:0 0 20px 5px #000;
-	-webkit-box-shadow: 0 0 20px #000;	
-}
-
-.simple_overlay .close {
-/*background-image:url(http://www.geneseo.edu/webfm_send/6846);*/
-	position:absolute;
-	right:-15px;
-	top:-15px;
-	cursor:pointer;
-	height:35px;
-	width:35px;
-}
-
-
-#triggers {
-/*text-align:left;*/
-}
-	
-#triggers img {
-	cursor:pointer;
-	margin:0 5px;
-	background-color:#fff;
-	border:1px solid #ccc;
-	padding:2px;
-	-moz-border-radius:4px;
-	-webkit-border-radius:4px;
-}
-</style>
- --%>
-
-
-
+ 
     <div id="rightSideContent" >
         <div style="margin-top: 0px;" class="breadcrumb"><a href="https://www.geneseo.edu/">Home</a> &raquo; <a href="https://www.geneseo.edu/library">Milne Library</a> &raquo; <a href="https://www.geneseo.edu/library/requests-services">Requests &amp; Services</a> &raquo; <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/CommunityBorrowerBookRenewal.aspx">Alumni & Community Book Renewal Form</a></div>
 
     <h1>Community Borrower Book Renewals</h1> 
       
     <p>As a teaching institution, our goal to encourage life-long learning habits and we welcome our community members to access and use our collections. Please note that we may be unable to honor renewal requests for a variety of reasons, including overdue status or on hold for another user.</p>
-    <br />
-    <p><strong>For further information, please refer to Milne's </strong> <a href="http://www.geneseo.edu/library/policies"><strong>Loan Policies</strong></a><strong>. </strong> <br /><br />
+    <p><strong>For further information, please refer to Milne's </strong> <a href="https://www.geneseo.edu/library/library-policies"><strong>Loan Policies</strong></a><strong>. </strong></p>
 
 * Please allow 2 business days to receive confirmation by email of your book renewal request. </p> <br />
     
@@ -166,10 +90,17 @@
     <label><span class="required">*</span> Phone Number: </label><asp:TextBox ID="txtPhone" runat="server" size="25" maxlength="25" />&nbsp;<asp:requiredfieldvalidator id="rfPhone" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtPhone" SetFocusOnError="True"></asp:requiredfieldvalidator><br /> 
      
        
-<label><span class="required">*</span> <a href="#" id="myModal1"><b>Patron Barcode Number: </b><img src="img/question-mark-icon-16.png" /></a></label>
+<label><span class="required">*</span> <a href="#openModal"><b>Patron Barcode Number: </b><img src="https://eres.geneseo.edu/milne-styles-js/img/question-mark-icon-16.png" /></a></label>
+<div id="openModal" class="modalDialog">
+    <div>	<a href="#close" title="Close" class="close">X</a>
+
+        	<h2>Patron Barcode Number</h2>
+
+        <p><img src="https://eres.geneseo.edu/milne-styles-js/img/milne-back-front-community-book-borrower-card-anim.gif" /></p>
+    </div>
+</div>
 
 
-<%--<label><span class="required">*</span> <a href="#" rel="#patronbarcode"><b>Patron Barcode Number: </b> <img src="img/question-mark-icon-16.png" /></a></label><div id="patronbarcode" class="simple_overlay"><img src="img/milne-back-front-community-book-borrower-card-anim.gif" /><a class="close"><img src="http://www.geneseo.edu/webfm_send/6846" /></a></div>    --%>
 
     
      <asp:TextBox ID="txtBarcode" runat="server" size="25" maxlength="25" />&nbsp;<asp:requiredfieldvalidator id="rfBarcode" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtBarcode" SetFocusOnError="True"></asp:requiredfieldvalidator><br />      
@@ -183,11 +114,16 @@
 <fieldset>
 <legend>Book Information</legend>
 
-<p id="Modal2Target">Enter <a href="#" id="myModal2"><b>barcode number(s) <img src="img/question-mark-icon-16.png" /></b></a> of books to renew (one per line): </p>
+<p>Enter <a href="#openModal2"><b>barcode number(s) <img src="img/question-mark-icon-16.png" /></b></a> of books to renew (one per line): </p>
+<div id="openModal2" class="modalDialog">
+    <div>	<a href="#close" title="Close" class="close">X</a>
 
+        	<h2>Book Barcode Number</h2>
 
+        <p><img src="https://eres.geneseo.edu/milne-styles-js/img/book-barcode-anim.gif" /></p>
+    </div>
+</div>
 
-<%--<p>Enter <a href="#" rel="#bookbarcode"><b>barcode number(s) <img src="img/question-mark-icon-16.png" /></b></a> of books to renew (one per line): </p><div id="bookbarcode" class="simple_overlay"><img src="img/book-barcode-anim.gif" /><a class="close"><img src="http://www.geneseo.edu/webfm_send/6846" /></a></div>--%>
     <br />
 
     <label>30260</label><asp:TextBox ID="txtBook1" runat="server" size="15" maxlength="15" />&nbsp; <span class="required">*</span><asp:requiredfieldvalidator id="rfBook1" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtBook1" SetFocusOnError="True"></asp:requiredfieldvalidator> <br />

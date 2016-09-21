@@ -31,8 +31,7 @@ head of each document that takes the drupal template -->
 <link type="text/css" rel="stylesheet" href="https://www.geneseo.edu/sites/default/files/css/css_8I8tOCPjIVP6mfeMJ_e9IPVH1CnLb6wMloNuja55pnc.css" media="all" />
 <link type="text/css" rel="stylesheet" href="https://www.geneseo.edu/sites/default/files/css/css_nv8qXzNitN8uKzYeKCiD0FbAWjT4aM1rYM5eOMui9Vo.css" media="all" />
 <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" media="all" />
-<link type="text/css" rel="stylesheet" href="https://www.geneseo.edu/sites/default/files/css/css_gMDDuMbPwXBINve9jmbZjCG2pmvXJHhkwVekxGXCjr0.css" media="all" />
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<link type="text/css" rel="stylesheet" href="https://www.geneseo.edu/sites/default/files/css/css_PySgXcbPG3DJ1nsxcjEOBbJgSYQo0-z-m4MA8ZWDanU.css" media="all" />
 <script>window.jQuery || document.write("<script src='/sites/all/modules/contributed/jquery_update/replace/jquery/1.9/jquery.min.js'>\x3C/script>")</script>
 <script src="https://www.geneseo.edu/sites/default/files/js/js_3TykeRWpejhD4-J3vdlaNXdULg9xhOZhbsppK0o2bUs.js"></script>
 <script src="https://www.geneseo.edu/sites/default/files/js/js_8BOfSIHYqver7PBpgRuszj-9dWb26lk74n7MZsIP5Ls.js"></script>
@@ -128,7 +127,8 @@ head of each document that takes the drupal template -->
   <div class="geneseo-content-wrapper">
 <div class="geneseo-content-wrapper geneseo-big-container">   
           <div class="mdl-grid">
-        <div class="leftSideContent">
+        <!-- div class="leftSideContent" -->
+		        <div class="mdl-cell mdl-cell--12-col-tablet mdl-cell--3-col-desktop leftSideContent">
           <div class="geneseo-left-nav">
               <section class="region region-sidebar-first column sidebar">
 			  
@@ -141,7 +141,7 @@ head of each document that takes the drupal template -->
 </div>
 <div class="chat" style="width: 100%; text-align: left;">
 
-<p style="margin-bottom: 0px !important; padding-bottom:0px !important;"><a href="https://eres.geneseo.edu/DIYLibChat/diylibchat.html" onclick="window.open(this.href, 'DIYChat', 'resizable=yes,status=no,location=no,toolbar=no,menubar=no,fullscreen=no,scrollbars=no,dependent=no); return false;"><img src="https://eres.geneseo.edu/milne-styles-js/img/chat-button-widget-online.png" /></a></p>
+<p class="chat-link-background" style="padding:6px 0px 6px 5px; text-align:left; margin-bottom:5px !important; color: #ffd880 !important;"><a href="https://eres.geneseo.edu/DIYLibChat/diylibchat.html" onclick="window.open('URL,' '_blank',  'DIYChat','resizable=yes,status=no,location=no,toolbar=no,menubar=no,fullscreen=no,scrollbars=no,dependent=no); return false;" style="color: #ffd880 !important;" target="_blank"><i class="material-icons" style="vertical-align: text-bottom !important;color: #ffd880 !important;">chat</i> Chat with a Librarian</a></p>
 <p class="reference-link-background" style="padding:5px 0px 5px 5px; text-align:left; margin-bottom:5px !important;"><a href="https://www.geneseo.edu/library/reference-calendar" style="color: #345290;"><i class="material-icons" style="vertical-align: text-bottom !important;">grid_on</i> Reference Calendar</a></p>
 
 <p class="events-link-background" style="padding:5px 0px 5px 5px; text-align:left; margin-bottom:5px !important;"><a href="http://ems.geneseo.edu/VirtualEMSPublic/CustomBrowseEvents.aspx?data=8imT11TVEgjXNgDJOAPMB4OcOxg1lJDzQDCUHCLgyvV%2bp3H99PcbRuP418vvqF%2br" onclick="window.open(this.href, '', 'resizable=yes,status=no,location=no,toolbar=no,menubar=no,fullscreen=no,scrollbars=no,dependent=no'); return false;" style="color: #345290;"><i class="material-icons" style="vertical-align: text-bottom !important;">event</i> Classes &amp; Events</a></p>
@@ -168,13 +168,14 @@ head of each document that takes the drupal template -->
 	<!-- Bottom Links below Menu Node -->
 
 <link href="//eres.geneseo.edu/milne-styles-js/geneseo_all_milne_library.min.css" rel="stylesheet" type="text/css" />
-<div class="resources-link-background">
-<div style="padding-top:5px;padding-bottom:5px;">
-<p><a alt="Milne Library Staff and Contact Information" href="http://intranetlib.geneseo.edu/DataPortal/Requests/StaffDirectory.aspx"><i class="material-icons" style="vertical-align:
-text-bottom;color:#345290;">contacts&nbsp;</i>Staff &amp; Contact Info</a></p>
+<div class="below-menu-link-background">
+<!--div style="padding-top:5px;padding-bottom:5px;" -->
+<p><a href="https://www.geneseo.edu/library/about-milne-library"><i class="material-icons" style="vertical-align:text-bottom;color:#345290;">info_outline&nbsp;</i>General Information</a></p>
 
-<p style="padding-bottom:5px !important;"><a alt="Center For Academic Excellence" href="https://www.geneseo.edu/library/center-academic-excellence"><i class="material-icons" style="vertical-align:middle;color:#345290;">school&nbsp;</i>Center for Academic<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Excellence (CAE)</a></p>
+<p><a href="http://intranetlib.geneseo.edu/DataPortal/Requests/StaffDirectory.aspx"><i class="material-icons" style="vertical-align:text-bottom;color:#345290;">contact_phone&nbsp;</i>Staff Directory</a></p>
+
+
+<p style="padding-bottom:5px !important;"><a alt="Center For Academic Excellence" href="https://www.geneseo.edu/library/center-academic-excellence"><i class="material-icons" style="vertical-align:middle;color:#345290;">school&nbsp;</i>Center for Academic Excellence (CAE)</a></p>
 
 <p><a alt="Cite My Sources" href="http://libguides.geneseo.edu/citation"><i class="material-icons" style="vertical-align:
 text-bottom;color:#345290;">assignment&nbsp;</i>Cite My Sources</a></p>
@@ -183,7 +184,7 @@ text-bottom;color:#345290;">assignment&nbsp;</i>Cite My Sources</a></p>
 text-bottom;color:#345290;">live_help&nbsp;</i>Ask A Librarian</a></p>
 
 <p><a alt="How Do I?" href="http://libguides.geneseo.edu/sb.php?subject_id=17737"><i class="material-icons" style="vertical-align:
-text-bottom;color:#345290;">help&nbsp;</i>How Do I...?</a></p>
+text-bottom;color:#345290;">help_outline&nbsp;</i>How Do I...?</a></p>
 
 <p><a alt="Renew My Books" href="http://www.geneseo.edu/library/mylibraryaccount"><i class="material-icons" style="vertical-align:
 text-bottom;color:#345290;">check_circle&nbsp;</i>Renew My Books</a></p>
@@ -193,7 +194,7 @@ text-bottom;color:#345290;">room&nbsp;</i>Reserve a Room</a></p>
 
 <p><a alt="Support Milne Library" href="https://www.geneseo.edu/library/support-milne-library"><i class="material-icons" style="vertical-align:
 text-bottom;color:#345290;">favorite&nbsp;</i>Support Milne Library</a></p>
-</div>
+<!-- /div -->
 </div>
 
   </section>

@@ -101,28 +101,19 @@
             <div style="margin-top: 0px;" class="breadcrumb"><a href="https://www.geneseo.edu/">Home</a> &raquo; <a href="https://www.geneseo.edu/library">Milne Library</a> &raquo; <a href="https://www.geneseo.edu/library/requests-services">Requests &amp; Services</a> &raquo; <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/Instruction.aspx" style="color:#b85533 !important;">Library &amp; High School Instruction</a></div>
 
     <h1>Library Instruction Request</h1> 
-
+<div style="float:left; width:75%;">
 
 <p>Milne Library offers the following types of instruction:</p>
-<p><span class="highlight-text-yellow-background"><b><asp:LinkButton ID="ResearchInstruction" runat="server" CausesValidation="False" OnClick="ResearchInstructionInfoPanelLink_Click">Research Instruction <img src="img/question-mark-icon-16.png" /></asp:LinkButton></b>&nbsp; | &nbsp;<b><asp:LinkButton ID="TechnologyInstruction" runat="server" CausesValidation="False" OnClick="TechnologyInstructionInfoPanelLink_Click">Technology Instruction <img src="img/question-mark-icon-16.png" /></asp:LinkButton></b>&nbsp; | &nbsp;<b><asp:LinkButton ID="HSInstruction" runat="server" CausesValidation="False" OnClick="HighSchoolInstructionInfoPanelLink_Click">High School Instruction <img src="img/question-mark-icon-16.png" /></asp:LinkButton></b></span><p>
-<%--        <ul>
-        <li><b><asp:LinkButton ID="ResearchInstruction" runat="server" CausesValidation="False" OnClick="ResearchInstructionInfoPanelLink_Click">Research Instruction<img src="img/question-mark-icon-16.png" /></asp:LinkButton></b> </li> 
-          <br />
-            <li><b><asp:LinkButton ID="TechnologyInstruction" runat="server" CausesValidation="False" OnClick="TechnologyInstructionInfoPanelLink_Click">Technology Instruction<img src="img/question-mark-icon-16.png" /></asp:LinkButton></b> </li>
-         <br />
-            <li><b><asp:LinkButton ID="HSInstruction" runat="server" CausesValidation="False" OnClick="HighSchoolInstructionInfoPanelLink_Click">High School Instruction<img src="img/question-mark-icon-16.png" /></asp:LinkButton></b></li>
-  
-        </ul> --%>
-
-<p>Plan your instruction sessions today! </p>
- 
+    <span class="link-button-background style="margin-bottom: 10px;"><b><asp:LinkButton ID="ResearchInstruction" runat="server" CausesValidation="False" OnClick="ResearchInstructionInfoPanelLink_Click">Research Instruction <img src="img/question-mark-icon-16.png" /></asp:LinkButton></b></span>&nbsp; 
+	&nbsp;  <span class="link-button-background style="margin-bottom: 10px;"><b><asp:LinkButton ID="TechnologyInstruction" runat="server" CausesValidation="False" OnClick="TechnologyInstructionInfoPanelLink_Click">Technology Instruction <img src="img/question-mark-icon-16.png" /></asp:LinkButton></b></span>&nbsp;
+	&nbsp;  <span class="link-button-background style="margin-bottom: 10px;"><b><asp:LinkButton ID="HSInstruction" runat="server" CausesValidation="False" OnClick="HighSchoolInstructionInfoPanelLink_Click">High School Instruction <img src="img/question-mark-icon-16.png" /></asp:LinkButton></b></span>
 
 <asp:Panel ID="ResearchInstructionInfoPanel" runat="server" Visible="False" >  
  
    <fieldset>
 <legend>Research Instruction</legend>           
 
-<%--<p>In courses where strong research skills are essential, professors may wish to work closely with a librarian to create assignments and schedule multiple library skills sessions carefully placed throughout the semester to introduce research tools and skills gradually, as they are needed.</p>--%>
+
        <p>Milne library offers a variety of instructional opportunities, tailoring sessions to fit any level of instructional need or class size. Milne Librarians can provide instruction aligned to a specific assignment requiring the use of library resources.</p>
        <br />
        <p>Milne Librarians can:</p>
@@ -230,7 +221,7 @@ Please direct all questions regarding visits to <a href="mailto:libinstr@geneseo
 
     </asp:Panel>
 
-
+ 
 <asp:Panel ID="TypePanel" runat="server" Visible="True" >  <br />
 <fieldset>
 <legend><span class="required">* </span>Please select the Instruction type:</legend>
@@ -679,5 +670,10 @@ Please direct all questions regarding visits to <a href="mailto:libinstr@geneseo
     </asp:Panel> <!--End of HSInstruction Panel-->
 
     </div>
+	
+	
+</div><!--ALL PANELS FLOAT LEFT -->
+
+
 
 </asp:Content>

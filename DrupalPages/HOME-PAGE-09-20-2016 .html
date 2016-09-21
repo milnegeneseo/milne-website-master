@@ -1,0 +1,165 @@
+<script src="//eres.geneseo.edu/milne-styles-js/js/jquery-ui.min.js"></script><script>
+  jQuery(function() {
+    jQuery( "#tabs" ).tabs();
+  });
+  </script><script>
+   jQuery(window).load(function() {
+        jQuery('#slider').nivoSlider();
+    });
+	  </script>
+<div class="mdl-grid">
+<div class="mdl-cell mdl-cell--8-col">
+<h3>Quick Search</h3>
+
+<div><!--container div -->
+<div class="ui-tabs" id="tabs" style="background-color: ##fff9ec;">
+<ul style="background-color: #fdedcc;">
+	<li><a href="#tabs-1">In Milne</a></li>
+	<li><a href="#tabs-2">Beyond Milne</a></li>
+	<li><a href="#tabs-3">Journals &amp; Media</a></li>
+	<li><a href="#tabs-4">Databases</a></li>
+</ul>
+
+<div id="tabs-1"><!--Search Milne (Glocat+)-->
+<div>
+<p>&nbsp;</p>
+<img class="image-centered" src="//eres.geneseo.edu/milne-styles-js/img/quicksearch-glocat-plus-210px.png" />
+<form action="http://geneseo.summon.serialssolutions.com/search" name="search" style="padding-top: 0px !important;">
+<div style="float:left;"><input class="query" id="watermark" name="q" onblur="if(this.value == '') { this.value = 'Find Books, Media and Articles in Milne'; }" onfocus="if(this.value == 'Find Books, Media and Articles in Milne') { this.value = ''; }" size="50" type="text" value="Find Books, Media and Articles in Milne" />&nbsp;&nbsp;<input title="Search" type="submit" value="Search" /></div>
+
+<div style="float:left;">Limit search to: <span class="orange">&nbsp;<input name="fvf" type="checkbox" value="ContentType,Book / eBook,f" />Books &nbsp;&nbsp;<input name="fvf" type="checkbox" value="ContentType,Journal Article,f" />Articles &nbsp;&nbsp;<input name="fvf" type="checkbox" value="ContentType,Audio Recording,f" />CDs &nbsp;&nbsp;<input name="fvf" type="checkbox" value="ContentType,Video Recording,f" />DVDs</span></div>
+
+<hr style="clear:left;" />
+<div style="float:left;"><a class="ui-state-default" href="http://geneseo.summon.serialssolutions.com/advanced" style="line-height: 18px;" title="Open Advanced Search">Advanced Search</a><span style="line-height: 18px;"> </span><input name="dblist" type="hidden" value="638,215,235,249,263,287" /><span style="line-height: 18px;"> &nbsp;&nbsp; | &nbsp;&nbsp; </span><a class="ui-state-default" href="http://libguides.geneseo.edu/az.php" style="line-height:18px;">All Databases A-Z</a></div>
+</form>
+</div>
+</div>
+
+<div id="tabs-2"><!--Search Beyond Milne (IDS Search)-->
+<div>
+<p>&nbsp;</p>
+<img class="image-centered" src="//eres.geneseo.edu/milne-styles-js/img/quicksearch-ids-search-210px.png" />
+<form action="http://search.idsproject.org/index.php" method="get" style="padding-top: 0px !important;">
+<p><input name="oclc_symbol" type="hidden" value="YGM" /> <input name="view" type="hidden" value="ids" /> <input id="watermark" name="query_value[0]" onblur="if(this.value == '') { this.value = 'Find Books and Media in Libraries Worldwide'; }" onfocus="if(this.value == 'Find Books and Media in Libraries Worldwide') { this.value = '';}" size="50" type="text" value="Find Books and Media in Libraries Worldwide" /> <input name="query_index[0]" type="hidden" value="kw" /> <input name="search_scope" type="hidden" value="consortia" /> <input name="sort_keys" type="hidden" value="Relevance" />&nbsp;<input type="submit" value="Search" /></p>
+
+<hr />
+<p><a class="ui-state-default" href="http://search.idsproject.org/index.php?view=ids&amp;oclc_symbol=YGM&amp;query_value[0]=&amp;query_value[1]=&amp;query_value[2]=&amp;search_form=advanced" style="letter-spacing: 0px; line-height: 24px;">Advanced IDS Search</a><span style="letter-spacing: 0px; line-height: 24px;">&nbsp;&nbsp; | &nbsp;&nbsp;</span><a class="ui-state-default" href="http://geneseo.on.worldcat.org" style="letter-spacing: 0px; line-height: 24px;">WorldCat (Discovery)</a></p>
+</form>
+</div>
+</div>
+
+<div id="tabs-3"><!--Journals, Newspapers, Magazines-->
+<div>
+<p>&nbsp;</p>
+<img class="image-centered" src="//eres.geneseo.edu/milne-styles-js/img/quicksearch-journals-210px.png" />
+<form action="http://fb7hk6nl8u.search.serialssolutions.com/" method="get" name="SS_EJPSearchForm" style="padding: 0px !important;">
+<div style="float:left;margin-right:4px;margin-bottom: 18px;"><select name="S"><option selected="selected" size="11" value="T_W_A">Title has keywords</option><option value="T_B">Title begins with</option><option value="T_M">Title equals</option><option value="I_M">ISSN equals</option></select></div>
+
+<div style="float:left;margin-bottom: 18px;"><input id="SS_CFocusTag" name="C" onfocus="Javascript:this.value=''" size="32" type="text" value="Enter keyword(s)" />&nbsp;&nbsp;<input id="journalSubmit" type="submit" value="Search" /> <input name="V" type="hidden" value="1.0" /> <input name="N" type="hidden" value="100" /><input name="L" type="hidden" value="FB7HK6NL8U" /></div>
+
+<hr style="clear:left;" /></form>
+
+<form action="http://fb7hk6nl8u.search.serialssolutions.com/" method="get" style="padding: 0px !important;">
+<div style="float:left;"><select name="C"><option>-- Please select a subject category --</option><option value="01">Art, Architecture &amp; Applied Arts</option><option value="BU">Business &amp; Economics</option><option value="11">Earth &amp; Environmental Sciences</option><option value="TE">Engineering &amp; Applied Sciences</option><option value="GI">General</option><option value="HE">Health &amp; Biological Sciences</option><option value="06">History &amp; Archaeology</option><option value="07">Journalism &amp; Communications</option><option value="08">Languages &amp; Literatures</option><option value="GO">Law, Politics &amp; Government</option><option value="10">Music, Dance, Drama &amp; Film</option><option value="RE">Philosophy &amp; Religion</option><option value="LS">Physical Sciences &amp; Mathematics</option><option value="SO">Social Sciences</option> </select></div>
+
+<div style="float:left;">&nbsp;&nbsp;<input type="submit" value="Browse" /><input name="V" type="hidden" value="1.0" /><input name="L" type="hidden" value="FB7HK6NL8U" /><input name="S" type="hidden" value="SC" /></div>
+</form>
+</div>
+</div>
+
+<div id="tabs-4"><!--Databases by Title and A-Z-->
+<div>
+<p>&nbsp;</p>
+<img class="image-centered" src="//eres.geneseo.edu/milne-styles-js/img/quicksearch-database-210px.png" />
+<form action="http://libguides.geneseo.edu/az.php" style="padding: 0px !important;">
+<div style="float:left; margin-bottom:18px;"><input alt="Database Title Search" id="q" maxlength="25" name="q" onfocus="Javascript:this.value=''" size="50" type="text" value="Enter a database name to search by title" />&nbsp;&nbsp;<input alt="Search" type="submit" value="Search" /></div>
+
+<hr style="clear:left;" /></form>
+
+<div style="float:left;"><a class="ui-state-default" href="http://libguides.geneseo.edu/az.php">Browse resources in A-Z list</a></div>
+</div>
+</div>
+</div>
+</div>
+<!---- MUST HAVE THIS DIV --->
+
+<p>&nbsp;</p>
+
+<hr />
+<div><!---- MUST HAVE THIS DIV ---><!----- SLIDER ---->
+<h3 class="slider-title"><a class="slider-title" href="http://news.milne-library.org/">Milne Library News &amp; Events Blog</a> &nbsp; &nbsp;&nbsp; <a href="http://feeds.feedburner.com/MilneLibrary" name="Subscribe to Milne Library's News Blog"><img alt="Subscribe to Milne Library's News Blog" id="Subscribe to Milne Library's News Blog" longdesc="Subscribe to Milne Library's News Blog - http://feeds.feedburner.com/MilneLibrary" src="/sites/default/files/sites/library/social-icons/rss-36px-Feed-icon.png" style="width: 24px; height: 24px;vertical-align:text-top;" /></a></h3>
+<!--SLIDER STARTS HERE -->
+
+<div class="geneseo-slideshow" data-autoplay="autoplay">
+<ul><!--SLIDE ONE -->
+	<li><span><a href="http://news.milne-library.org/2016/09/19/library-cryptoparty-922-4-6pm/"><img src="http://news.milne-library.org/wp-content/uploads/2016/09/Crypto_800X600-768x576.jpg" /></a></span>
+
+	<div class="geneseo-slideshow-caption"><span>It's a CryptoParty; Who Could Ask for More? <a href="http://news.milne-library.org/2016/09/19/library-cryptoparty-922-4-6pm/">&nbsp;READ MORE! &nbsp;&gt;&gt;</a></span></div>
+	</li>
+	<!--END SLIDE ONE --><!--SLIDE TWO -->
+	<li><span><a href="http://news.milne-library.org/2016/09/15/becoming-an-uber-efficient-researcher/"><img src="https://www.geneseo.edu/sites/default/files/sites/library/Slider-Milne-Home-Page/zotero_gold-ruby-workshop.png" /></a></span>
+	<div class="geneseo-slideshow-caption"><span>Zotero: A Useful Research Management Tool<a href="http://news.milne-library.org/2016/09/15/becoming-an-uber-efficient-researcher/">&nbsp;READ MORE! &nbsp;&gt;&gt;</a></span></div>
+	</li>
+	<!--END SLIDE TWO --><!--SLIDE THREE -->
+	<li><span><a href="http://news.milne-library.org/2016/09/19/the-global-open-data-index/"><img src="http://news.milne-library.org/wp-content/uploads/2016/09/GlobalOpenData.800X600.Scout_-768x576.jpg" /></a></span>
+	<div class="geneseo-slideshow-caption"><span>[Review]The Global Open Data Index<a href="http://news.milne-library.org/2016/09/19/the-global-open-data-index/">&nbsp;READ MORE! &nbsp;&gt;&gt;</a></span></div>
+	</li>
+	<!--END SLIDE THREE --><!--SLIDE FOUR -->
+	<li><span><a href="http://news.milne-library.org/2016/09/15/looking-for-a-plagiarism-workshop/"><img src="http://news.milne-library.org/wp-content/uploads/2016/09/Plagiarism.800X600.Sept21to30-768x576.jpg" /></a></span>
+	<div class="geneseo-slideshow-caption"><span>Here's the Next Few Plagiarism Workshops<a href="http://news.milne-library.org/2016/09/15/looking-for-a-plagiarism-workshop/">&nbsp;READ MORE! &nbsp;&gt;&gt;</a></span></div>
+	</li>
+	<!--END SLIDE FOUR -->
+</ul>
+</div>
+<!--END SLIDER -->
+
+<p>&nbsp;</p>
+</div>
+<!--END OF CENTER COLUMN --><!--MUST HAVE THIS DIV! --></div>
+<!--START OF RIGHT COLUMN WITH POPULAR RESOURCES AND SUBJECT GUIDES -->
+
+<div class="mdl-cell mdl-cell--4-col geneseo-layout-border-left">
+<h3><a href="http://libguides.geneseo.edu/az.php" style="font-size:28px;"><i class="material-icons" style="font-size:38px; vertical-align:text-top;">storage</i>Popular Resources</a></h3>
+
+<ul style="list-style:none !important; list-style-type: none !important; line-height: 2em !important;">
+	<li><a href="https://proxy.geneseo.edu/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=a9h&amp;direct=true&amp;site=ehost-live">Academic Search Complete</a></li>
+	<li><a href="http://fb7hk6nl8u.search.serialssolutions.com/?SS_Page=refiner&amp;SS_RefinerEditable=yes">Citation Linker</a></li>
+	<li><a href="https://proxy.geneseo.edu/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=eric">ERIC</a></li>
+	<li><a href="http://gen.sunyconnect.suny.edu:4420/F">GLOCAT Classic</a></li>
+	<li><a href="https://proxy.geneseo.edu/login?url=http://www.jstor.org/search">JSTOR</a></li>
+	<li><a href="https://proxy.geneseo.edu/login?url=http://www.lexisnexis.com/hottopics/lnacademic">Lexis-Nexis Academic</a></li>
+	<li><a href="https://proxy.geneseo.edu/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=mzh">MLA</a></li>
+	<li><a href="https://proxy.geneseo.edu/login?url=http://search.proquest.com/index?accountid=11072&amp;selectids=1000001,1007161,1006481,1007106,10000025,1007200">ProQuest</a></li>
+	<li><a href="https://proxy.geneseo.edu/login?url=http://search.proquest.com/psycinfo/advanced?accountid=11072">PsycInfo</a></li>
+	<li><a href="https://proxy.geneseo.edu/login?url=http://www.sciencedirect.com">ScienceDirect</a></li>
+	<li><a href="https://proxy.geneseo.edu/login?url=http://www.scopus.com/">Scopus</a></li>
+</ul>
+
+<div class="resources-link-background">
+<p style="padding:5px 0px 5px 5px; text-align:left;color:#FFFFFF;"><a href="http://libguides.geneseo.edu/az.php"><i class="material-icons" style="vertical-align: text-bottom !important;">storage</i> All Resources A-Z</a></p>
+</div>
+
+<h3><a href="http://libguides.geneseo.edu/" style="font-size:28px;"><i class="material-icons" style="font-size:36px; vertical-align:text-top;">book</i>Subject Guides</a></h3>
+
+<ul style="list-style:none !important; list-style-type: none !important; line-height: 2em !important;">
+	<li><a href="http://libguides.geneseo.edu/c.php?g=67349">Biology</a></li>
+	<li><a href="http://libguides.geneseo.edu/c.php?g=67371">Business &amp; Economics</a></li>
+	<li><a href="http://libguides.geneseo.edu/c.php?g=67347">Chemistry</a></li>
+	<li><a href="http://libguides.geneseo.edu/c.php?g=67342">Country, State &amp; City</a></li>
+	<li><a href="http://libguides.geneseo.edu/lesson_planning">Education</a></li>
+	<li><a href="http://libguides.geneseo.edu/c.php?g=67330">Geosciences</a></li>
+	<li><a href="http://libguides.geneseo.edu/c.php?g=67343">History</a></li>
+	<li><a href="http://libguides.geneseo.edu/c.php?g=67367">Literature, Linguistics, and Grammar</a></li>
+	<li><a href="http://libguides.geneseo.edu/content.php?pid=86410&amp;hs=a">Political Science</a></li>
+	<li><a href="http://libguides.geneseo.edu/content.php?pid=88673&amp;hs=a">Psychology</a></li>
+</ul>
+
+<div class="resources-link-background">
+<p style="padding:5px 0px 5px 5px; text-align:left;color:#FFFFFF;"><a href="http://libguides.geneseo.edu/"><i class="material-icons" style="vertical-align: text-bottom !important;">book</i>All Subject Guides</a></p>
+</div>
+
+<p>&nbsp;</p>
+</div>
+</div>
+
+<p>&nbsp;</p>

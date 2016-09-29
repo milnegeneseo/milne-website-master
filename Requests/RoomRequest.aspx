@@ -50,7 +50,7 @@
 
 
     <a name="104-208"></a><h3>Room 104 or 208</h3>
-    <p>Use the form below to request Room 104 or 208. </p>
+    <p>Use the form below to request <a href="https://www.geneseo.edu/library/classrooms-and-meeting-rooms#section1" target="_blank"><b>Room 104  <img src="https://eres.geneseo.edu/milne-styles-js/img/question-mark-icon-16.png" style="vertical-align:baseline;"></b></a> or <a href="https://www.geneseo.edu/library/classrooms-and-meeting-rooms#section4" target="_blank"><b>Room 208  <img src="https://eres.geneseo.edu/milne-styles-js/img/question-mark-icon-16.png" style="vertical-align:baseline;"></b></a></p>
 
 <b>Please allow 2 business days to confirm your room reservation.</b> An email will be sent to you once your reservation has been made. Requests for more than one date can be made using this form if all times are the same. <br /><br />
 

@@ -68,7 +68,7 @@
 <AlternatingRowStyle VerticalAlign="Top" BorderStyle="None" Font-Size="13px" HorizontalAlign="Left" CssClass="altRow"></AlternatingRowStyle>
         <Columns>
 					
-             <asp:TemplateField HeaderText="Staff  <img src='img/sort-20px.png' class='sort-image'/>"   SortExpression="StaffLastName"   AccessibleHeaderText="Staff Sortable Alphabetically" HeaderStyle-ForeColor="White" HeaderStyle-Font-Bold="True" >
+             <asp:TemplateField HeaderText="Staff <img src='img/sort-20px.png' class='sort-image'/>"   SortExpression="StaffLastName"   AccessibleHeaderText="Staff Sortable Alphabetically" HeaderStyle-ForeColor="White" HeaderStyle-Font-Bold="True" >
                
                 
                 <ItemTemplate>

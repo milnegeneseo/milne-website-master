@@ -1352,7 +1352,7 @@ a:hover {
   width: 100%;
   transform: translateY(-30px);
 }
-
+/*
 .geneseo-button--primary {
   background-color: #345290;
 }
@@ -1381,7 +1381,7 @@ a:hover {
 .geneseo-button:hover {
   color: #000;
 }
-
+*/
 .mdl-selectfield {
   display: block;
 }
@@ -1843,7 +1843,8 @@ text-align:center;
 .reference-link-background{ 
   font-family: "Open Sans",sans-serif;
   font-size: 14px;
-background-color: #b6daf2; 
+ background-color: #e5fcd9; 
+/*background-color: #b6daf2; */
 width: 98%; 
 border-radius: 5px; 
 margin:5px 0px 0px 0px; 
@@ -1854,6 +1855,46 @@ box-shadow: 0px 1px 5px 0px #345290;
 
 .events-link-background{
 background-color: #f1f8fc; 
+  font-family: "Open Sans",sans-serif;
+  font-size: 14px;
+  line-height:0px !important;
+width: 98%; 
+border-radius: 5px; 
+margin:0px 0px 0px 0px !important; 
+-webkit-box-shadow: 0px 1px 5px 0px #345290; 
+-moz-box-shadow: 0px 1px 5px 0px ##345290; 
+box-shadow: 0px 1px 5px 0px #345290;
+}
+
+
+.ids-link-background {
+background-color:#ffffea;
+  font-family: "Open Sans",sans-serif;
+  font-size: 14px;
+  line-height:0px !important;
+width: 98%; 
+border-radius: 5px; 
+margin:0px 0px 0px 0px !important; 
+-webkit-box-shadow: 0px 1px 5px 0px #345290; 
+-moz-box-shadow: 0px 1px 5px 0px ##345290; 
+box-shadow: 0px 1px 5px 0px #345290;
+}
+
+.research-help-link-background {
+background-color: #f7e8dc;
+  font-family: "Open Sans",sans-serif;
+  font-size: 14px;
+  line-height:0px !important;
+width: 98%; 
+border-radius: 5px; 
+margin:0px 0px 0px 0px !important; 
+-webkit-box-shadow: 0px 1px 5px 0px #345290; 
+-moz-box-shadow: 0px 1px 5px 0px ##345290; 
+box-shadow: 0px 1px 5px 0px #345290;
+}
+
+.my-library-account-background {
+background-color: #f5dde5;
   font-family: "Open Sans",sans-serif;
   font-size: 14px;
   line-height:0px !important;

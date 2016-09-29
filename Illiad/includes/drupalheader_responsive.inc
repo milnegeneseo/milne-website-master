@@ -191,10 +191,15 @@ head of each document that takes the drupal template -->
 <div class="chat" style="width: 100%; text-align: left;">
 <p class="chat-link-background" style="padding:6px 0px 6px 5px; text-align:left; margin-bottom:5px !important; color: #ffd880 !important;"><a href="https://eres.geneseo.edu/DIYLibChat/diylibchat.html" onclick="window.open('URL,' '_blank',  'DIYChat','resizable=yes,status=no,location=no,toolbar=no,menubar=no,fullscreen=no,scrollbars=no,dependent=no); return false;" style="color: #ffd880 !important;" target="_blank"><i class="material-icons" style="vertical-align: text-bottom !important;color: #ffd880 !important;">chat</i> Chat with a Librarian</a></p>
 
-<p class="reference-link-background" style="padding:5px 0px 5px 5px; text-align:left; margin-bottom:5px !important;"><a href="https://www.geneseo.edu/library/reference-calendar" style="color: #345290;"><i class="material-icons" style="vertical-align: text-bottom !important;">grid_on</i> Reference Calendar</a></p>
+<p class="reference-link-background" style="padding:5px 0px 5px 5px; text-align:left; margin-bottom:5px !important;"><a href="/library/reference-calendar" style="color: #345290;"><i class="material-icons" style="vertical-align: text-bottom !important;">grid_on</i> Reference Calendar</a></p>
 
 <p class="events-link-background" style="padding:5px 0px 5px 5px; text-align:left; margin-bottom:5px !important;"><a href="http://ems.geneseo.edu/VirtualEMSPublic/CustomBrowseEvents.aspx?data=8imT11TVEgjXNgDJOAPMB4OcOxg1lJDzQDCUHCLgyvV%2bp3H99PcbRuP418vvqF%2br" onclick="window.open(this.href, '', 'resizable=yes,status=no,location=no,toolbar=no,menubar=no,fullscreen=no,scrollbars=no,dependent=no'); return false;" style="color: #345290;"><i class="material-icons" style="vertical-align: text-bottom !important;">event</i> Classes &amp; Events</a></p>
 
+<p class="ids-link-background" style="padding:5px 0px 8px 4px; text-align:left;line-height: 1em !important;  margin-bottom:5px !important;"><a href="https://illiad.geneseo.edu" style="color: #345290; font-size: 0.99em !important;"><i class="material-icons" style="vertical-align: text-bottom !important;">book</i>Information Delivery Services</a></p>
+
+<p class="research-help-link-background" style="padding:5px 0px 5px 5px; text-align:left; margin-bottom:5px !important;"><a href="https://www.geneseo.edu/library/research-help" style="color: #345290;"><i class="material-icons" style="vertical-align: text-bottom !important;">help</i> Research Help</a></p>
+
+<p class="my-library-account-background" style="padding:5px 0px 5px 5px; text-align:left; margin-bottom:5px !important;"><a href="https://www.geneseo.edu/library/mylibraryaccount" style="color: #345290;"><i class="material-icons" style="vertical-align: text-bottom !important;">check_circle</i> My Library Account</a></p>
 
 
 

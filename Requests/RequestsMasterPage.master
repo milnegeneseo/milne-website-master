@@ -27,6 +27,8 @@ head of each document that takes the drupal template -->
     <script type="text/javascript" src="https://eres.geneseo.edu/milne-styles-js/js/jquery.ui.timepicker.js"></script>
    <!--END INTRANET LIB CUSTOM STYLES & JQUERY LIBRARIES -->
 <!-- STYLES & JQUERY LIBRARIES FROM DRUPAL -->
+
+
   <link type="text/css" rel="stylesheet" href="https://www.geneseo.edu/sites/default/files/css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4.css" media="all" />
 <link type="text/css" rel="stylesheet" href="https://www.geneseo.edu/sites/default/files/css/css_8I8tOCPjIVP6mfeMJ_e9IPVH1CnLb6wMloNuja55pnc.css" media="all" />
 <link type="text/css" rel="stylesheet" href="https://www.geneseo.edu/sites/default/files/css/css_nv8qXzNitN8uKzYeKCiD0FbAWjT4aM1rYM5eOMui9Vo.css" media="all" />
@@ -147,11 +149,13 @@ head of each document that takes the drupal template -->
 
 <p class="events-link-background" style="padding:5px 0px 5px 5px; text-align:left; margin-bottom:5px !important;"><a href="http://ems.geneseo.edu/VirtualEMSPublic/CustomBrowseEvents.aspx?data=8imT11TVEgjXNgDJOAPMB4OcOxg1lJDzQDCUHCLgyvV%2bp3H99PcbRuP418vvqF%2br" onclick="window.open(this.href, '', 'resizable=yes,status=no,location=no,toolbar=no,menubar=no,fullscreen=no,scrollbars=no,dependent=no'); return false;" style="color: #345290;"><i class="material-icons" style="vertical-align: text-bottom !important;">event</i> Classes &amp; Events</a></p>
 
-<p class="ids-link-background" style="padding:5px 0px 8px 4px; text-align:left;line-height: 1em !important;  margin-bottom:5px !important;"><a href="https://illiad.geneseo.edu" style="color: #345290; font-size: 0.99em !important;"><i class="material-icons" style="vertical-align: text-bottom !important;">book</i>Information Delivery Services</a></p>
+<p class="ids-link-background" style="padding:6px 0px 6px 5px; text-align:left; margin-bottom:5px !important;line-height:1.1em !important;"><a href="https://illiad.geneseo.edu" style="color: #345290; font-size: 0.99em !important;"><i class="material-icons" style="vertical-align: bottom !important; font-size: 1.1em !important;">book</i>Information Delivery Services</a></p>
 
 <p class="research-help-link-background" style="padding:5px 0px 5px 5px; text-align:left; margin-bottom:5px !important;"><a href="https://www.geneseo.edu/library/research-help" style="color: #345290;"><i class="material-icons" style="vertical-align: text-bottom !important;">help</i> Research Help</a></p>
 
 <p class="my-library-account-background" style="padding:5px 0px 5px 5px; text-align:left; margin-bottom:5px !important;"><a href="https://www.geneseo.edu/library/mylibraryaccount" style="color: #345290;"><i class="material-icons" style="vertical-align: text-bottom !important;">check_circle</i> My Library Account</a></p>
+
+<p class="resources-link-background" style="width: 98% !important; padding:5px 0px 5px 5px; text-align:left; margin-bottom:5px !important;"><a href="https://www.geneseo.edu/library/about-milne-library" style="color: #345290;"><i class="material-icons" style="vertical-align: text-bottom !important;">info</i> General Information</a></p>
 
 <div data-web-developer-element-ancestors-outline="false" style="margin:0;padding:0;"><span style="display: none;">&nbsp;</span></div>
 </div>

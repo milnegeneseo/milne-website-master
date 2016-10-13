@@ -1,9 +1,8 @@
 <!-- This file contains styles, scripts and other information that goes in the 
 head of each document that takes the drupal template -->
-
-
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
+<!DOCTYPE html lang="en">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=EmulateIE9, IE=EDGE" />
+      <meta charset="utf-8" />
 <link rel="shortcut icon" href="https://www.geneseo.edu/sites/all/themes/geneseo_library/favicon.ico"" type="image/x-icon" />
 
 
@@ -12,7 +11,6 @@ head of each document that takes the drupal template -->
     <link type="text/css" href="https://eres.geneseo.edu/milne-styles-js/js/jquery-ui-1.10.3.custom.css" rel="stylesheet" />
     <link type="text/css" href="https://eres.geneseo.edu/milne-styles-js/js/jquery.ui.timepicker.css" rel="stylesheet" />
     <script type="text/javascript" src="https://eres.geneseo.edu/milne-styles-js/js/jquery-ui-1.10.3.custom.js"></script>
-	    <!-- script type="text/javascript" src="https://eres.geneseo.edu/milne-styles-js/js/jquery-1.11.1.min.js"></script -->
     <script type="text/javascript" src="https://eres.geneseo.edu/milne-styles-js/js/jquery.ui.timepicker.js"></script>
    <!--END INTRANET LIB CUSTOM STYLES & JQUERY LIBRARIES -->
 
@@ -32,7 +30,7 @@ head of each document that takes the drupal template -->
 <script src="https://www.geneseo.edu/sites/default/files/js/js_laz4JHHodgEtgkIwA7rn1bTu1lepcVucmceDl7R3G80.js"></script>
 <script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"geneseo","theme_token":"0xEEbV67K29WVPWWD3KYD0O_JJJOWpKUXG6OBiNHsBM","js":{"\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.9.1\/jquery.min.js":1,"0":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/themes\/geneseo\/js\/events-home.js":1,"sites\/all\/themes\/geneseo\/js\/material.min.js":1,"sites\/all\/themes\/geneseo\/js\/responsive-nav.js":1,"sites\/all\/themes\/geneseo\/js\/jquery.flexslider-min.js":1,"sites\/all\/themes\/geneseo\/js\/geneseo.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/contributed\/date\/date_api\/date.css":1,"sites\/all\/modules\/contributed\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contributed\/views\/css\/views.css":1,"sites\/all\/modules\/contributed\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contributed\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contributed\/field_collection\/field_collection.theme.css":1,"https:\/\/fonts.googleapis.com\/icon?family=Material+Icons":1,"sites\/all\/themes\/geneseo\/system.menus.css":1,"sites\/all\/themes\/geneseo\/system.messages.css":1,"sites\/all\/themes\/geneseo\/system.theme.css":1,"sites\/all\/themes\/geneseo\/css\/material.min.css":1,"sites\/all\/themes\/geneseo\/css\/geneseo_all.css":1,"sites\/all\/themes\/geneseo\/css\/socicon\/styles.css":1,"sites\/all\/themes\/geneseo\/css\/flexslider.css":1}}});</script>
       <!--[if lt IE 9]>
-    <script src="/sites/all/themes/zen/js/html5-respond.js"></script>
+    <script src="https://www.geneseo.edu/sites/all/themes/zen/js/html5-respond.js"></script>
     <![endif]-->
 	
 <style>
@@ -69,13 +67,28 @@ head of each document that takes the drupal template -->
        url(fonts/MaterialIcons-Regular.woff) format('woff'),
        url(fonts/MaterialIcons-Regular.ttf) format('truetype');
 }
+
+
+.s-la-widget *, #s-la-widget-761
+{
+background:transparent !important;
+background:none !important;
+border:none !important;
+padding-left: 5px !important;
+}
+
+.s-la-widget h1, .s-la-widget h3,  #s-la-widget-761 h1, #s-la-widget-761 h3
+{
+  color: #b87733 !important;
+  font-weight:bold;
+}
+
+.s-la-widget .s-la-widget-header, #s-la-widget-761 .s-la-widget-header{
+margin-bottom: 5px !important;
+}
 </style>	
 	
-	
 
-</head>
-
-<body>
 
 <body class="html not-front not-logged-in one-sidebar sidebar-first page-node page-node- page-node-7820 node-type-page og-context og-context-node og-context-node-2771 section-library page-panels" >
     

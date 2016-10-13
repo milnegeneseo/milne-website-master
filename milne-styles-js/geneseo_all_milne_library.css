@@ -2063,7 +2063,7 @@ float: left;
 
 .dropdown select option, select option, option {
 	padding-left: 5px;
-	font-size: 0.9em !important;
+	font-size: 1.1em !important;
 }
 
 #rightSideContent button, html input[type="button"], input[type="reset"], input[type="submit"]

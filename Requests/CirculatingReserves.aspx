@@ -3,7 +3,12 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<link href="https://eres.geneseo.edu/milne-styles-js/jquery-ui-datepicker-milne.min.css" rel="stylesheet" />
+<link href="https://eres.geneseo.edu/milne-styles-js/js/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" />
+<script src="https://eres.geneseo.edu/milne-styles-js/js/jquery-ui-datepicker-milne.min.js"></script> 
+<script type="text/javascript" src="https://eres.geneseo.edu/milne-styles-js/js/jquery.ui.timepicker.min.js"></script>
+<script type="text/javascript" src="https://eres.geneseo.edu/milne-styles-js/js/jquery-ui-1.10.3.custom.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $('#<%= txtDate.ClientID %>').attr('readonly', 'readonly').datepicker({ });
@@ -16,7 +21,6 @@
     <h1>Put Materials on Circulating Reserve</h1> 
     
     <p>All circulating reserve materials must be returned to the Service Desk and are NOT renewable. The reserves are arranged by course instructor. </p>
-     <br />
     <p>Please note: </p>
     <ul>
     <li>All circulating reserve materials are NOT renewable. </li>
@@ -24,8 +28,7 @@
    <li> After submitting the form, materials must be turned in to the Service Desk. </li>
    <li> All reserve materials are removed at the end of the Spring semester. Any personal copies will be returned through campus mail.</li>
     </ul>
-    <br />
-        <b>Please allow at least 3 business days for item to be placed on reserve. </b></p> <br />
+        <p><b>Please allow at least 3 business days for item to be placed on reserve. </b></p> <br />
   
     <span class="required">* Indicates required field.</span><br /> <br />
 
@@ -51,7 +54,6 @@
 <legend>Course Information</legend>
 
     <p style="color: #008000; font-size: 12px;">Note: All reserve materials are removed at the end of the Spring semester. Any personal copies will be returned through campus mail. </p>
-
     <label><asp:requiredfieldvalidator id="rfDate" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtDate" SetFocusOnError="True" ></asp:requiredfieldvalidator>&nbsp; <span class="required">*</span> Keep material on reserve until: </label>
         <asp:TextBox CssClass="date" ID="txtDate" runat="server" size="11" maxlength="11" />&nbsp;
         <asp:RegularExpressionValidator ID="reDate" runat="server" CssClass="required" ControlToValidate="txtDate" ErrorMessage="Not a valid date (mm/dd/yyyy)" SetFocusOnError="True" ValidationExpression="((^(10|12|0?[13578])([/])(3[01]|[12][0-9]|0?[1-9])([/])((1[8-9]\d{2})|([2-9]\d{3}))$)|(^(11|0?[469])([/])(30|[12][0-9]|0?[1-9])([/])((1[8-9]\d{2})|([2-9]\d{3}))$)|(^(0?2)([/])(2[0-8]|1[0-9]|0?[1-9])([/])((1[8-9]\d{2})|([2-9]\d{3}))$)|(^(0?2)([/])(29)([/])([2468][048]00)$)|(^(0?2)([/])(29)([/])([3579][26]00)$)|(^(0?2)([/])(29)([/])([1][89][0][48])$)|(^(0?2)([/])(29)([/])([2-9][0-9][0][48])$)|(^(0?2)([/])(29)([/])([1][89][2468][048])$)|(^(0?2)([/])(29)([/])([2-9][0-9][2468][048])$)|(^(0?2)([/])(29)([/])([1][89][13579][26])$)|(^(0?2)([/])(29)([/])([2-9][0-9][13579][26])$))"></asp:RegularExpressionValidator> <br />
@@ -66,9 +68,9 @@
     <label><asp:requiredfieldvalidator id="rfSemester" runat="server" errormessage="Required" CssClass="required" controltovalidate="ddlSemester" SetFocusOnError="True" ></asp:requiredfieldvalidator>&nbsp;<span class="required">*</span> Submitted for: </label>
     <asp:DropDownList ID="ddlSemester" runat="server" >
         <asp:ListItem Value="" Text="--Select One--" />
-        <asp:ListItem Value="Fall 2015" Text="Fall 2015" />
-        <asp:ListItem Value="Spring 2016" Text="Spring 2016" />
-        <asp:ListItem Value="Summer 2016" Text="Summer 2016" />
+        <asp:ListItem Value="Fall 2016" Text="Fall 2016" />
+        <asp:ListItem Value="Spring 2017" Text="Spring 2017" />
+        <asp:ListItem Value="Summer 2017" Text="Summer 2017" />
     </asp:DropDownList> <br />
 </fieldset> <br />
 
@@ -301,12 +303,13 @@
 <fieldset>
 <legend>Additional Remarks</legend>
     <br />
-    <b>Additional comments: </b><asp:TextBox ID="txtRemarks" runat="server" Height="75" Width="600" TextMode="MultiLine"/>
-
-    <br /><br />
-
+<div style="float:left;">
+    <b>Additional comments: </b>
+</div>
+<div style="float:left;clear:left;"><asp:TextBox ID="txtRemarks" runat="server" Height="75" Width="600" TextMode="MultiLine"/></br>
     <asp:Button Text="Submit" ID="btnSubmit" OnClick="btnSubmit_Click" runat="server" class=""/>&nbsp;
     <asp:Button Text="Clear Form" ID="CancelButton" runat="server" CausesValidation="False" CommandName="Reset" OnClick="CancelButton_Click" />
+</div>
     </fieldset>
 
     <asp:Label ID="lblErrorMessage" runat="server" />

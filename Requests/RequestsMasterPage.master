@@ -19,28 +19,23 @@ head of each document that takes the drupal template -->
     <meta name="theme-color" content="#345290">
     <!--[if IEMobile]><meta http-equiv="cleartype" content="on"><![endif]-->
     <!--INTRANET LIB CUSTOM STYLES & JQUERY LIBRARIES -->
-    <link type="text/css" href="https://eres.geneseo.edu/milne-styles-js/geneseo_all_milne_library.min.css" rel="stylesheet" media="all"  />
-    <link type="text/css" href="https://eres.geneseo.edu/milne-styles-js/js/jquery-ui-1.10.3.custom.css" rel="stylesheet" />
-    <link type="text/css" href="https://eres.geneseo.edu/milne-styles-js/js/jquery.ui.timepicker.css" rel="stylesheet" />
-     <script type="text/javascript" src="https://eres.geneseo.edu/milne-styles-js/js/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="https://eres.geneseo.edu/milne-styles-js/js/jquery-ui-1.10.3.custom.js"></script>
-    <script type="text/javascript" src="https://eres.geneseo.edu/milne-styles-js/js/jquery.ui.timepicker.js"></script>
+<link type="text/css" href="https://eres.geneseo.edu/milne-styles-js/geneseo_all_milne_library.min.css" rel="stylesheet" media="all"  />
    <!--END INTRANET LIB CUSTOM STYLES & JQUERY LIBRARIES -->
 <!-- STYLES & JQUERY LIBRARIES FROM DRUPAL -->
-
 
   <link type="text/css" rel="stylesheet" href="https://www.geneseo.edu/sites/default/files/css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4.css" media="all" />
 <link type="text/css" rel="stylesheet" href="https://www.geneseo.edu/sites/default/files/css/css_8I8tOCPjIVP6mfeMJ_e9IPVH1CnLb6wMloNuja55pnc.css" media="all" />
 <link type="text/css" rel="stylesheet" href="https://www.geneseo.edu/sites/default/files/css/css_nv8qXzNitN8uKzYeKCiD0FbAWjT4aM1rYM5eOMui9Vo.css" media="all" />
 <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" media="all" />
 <link type="text/css" rel="stylesheet" href="https://www.geneseo.edu/sites/default/files/css/css_PySgXcbPG3DJ1nsxcjEOBbJgSYQo0-z-m4MA8ZWDanU.css" media="all" />
-<script>window.jQuery || document.write("<script src='/sites/all/modules/contributed/jquery_update/replace/jquery/1.9/jquery.min.js'>\x3C/script>")</script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write("<script src='https://www.geneseo.edu/sites/all/modules/contributed/jquery_update/replace/jquery/1.9/jquery.min.js'>\x3C/script>")</script>
 <script src="https://www.geneseo.edu/sites/default/files/js/js_3TykeRWpejhD4-J3vdlaNXdULg9xhOZhbsppK0o2bUs.js"></script>
 <script src="https://www.geneseo.edu/sites/default/files/js/js_8BOfSIHYqver7PBpgRuszj-9dWb26lk74n7MZsIP5Ls.js"></script>
 <script src="https://www.geneseo.edu/sites/default/files/js/js_laz4JHHodgEtgkIwA7rn1bTu1lepcVucmceDl7R3G80.js"></script>
-<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"geneseo","theme_token":"0xEEbV67K29WVPWWD3KYD0O_JJJOWpKUXG6OBiNHsBM","js":{"\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.9.1\/jquery.min.js":1,"0":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/themes\/geneseo\/js\/events-home.js":1,"sites\/all\/themes\/geneseo\/js\/material.min.js":1,"sites\/all\/themes\/geneseo\/js\/responsive-nav.js":1,"sites\/all\/themes\/geneseo\/js\/jquery.flexslider-min.js":1,"sites\/all\/themes\/geneseo\/js\/geneseo.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/contributed\/date\/date_api\/date.css":1,"sites\/all\/modules\/contributed\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contributed\/views\/css\/views.css":1,"sites\/all\/modules\/contributed\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contributed\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contributed\/field_collection\/field_collection.theme.css":1,"https:\/\/fonts.googleapis.com\/icon?family=Material+Icons":1,"sites\/all\/themes\/geneseo\/system.menus.css":1,"sites\/all\/themes\/geneseo\/system.messages.css":1,"sites\/all\/themes\/geneseo\/system.theme.css":1,"sites\/all\/themes\/geneseo\/css\/material.min.css":1,"sites\/all\/themes\/geneseo\/css\/geneseo_all.css":1,"sites\/all\/themes\/geneseo\/css\/socicon\/styles.css":1,"sites\/all\/themes\/geneseo\/css\/flexslider.css":1}}});</script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"geneseo","theme_token":"P0p7_mPrRuiKBACvl0-5kY909yttbRGYX682Sy20EWA","js":{"\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.9.1\/jquery.min.js":1,"0":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/themes\/geneseo\/js\/events-home.js":1,"sites\/all\/themes\/geneseo\/js\/material.min.js":1,"sites\/all\/themes\/geneseo\/js\/responsive-nav.js":1,"sites\/all\/themes\/geneseo\/js\/jquery.flexslider-min.js":1,"sites\/all\/themes\/geneseo\/js\/geneseo.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/contributed\/date\/date_api\/date.css":1,"sites\/all\/modules\/contributed\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contributed\/views\/css\/views.css":1,"sites\/all\/modules\/contributed\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/contributed\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contributed\/field_collection\/field_collection.theme.css":1,"https:\/\/fonts.googleapis.com\/icon?family=Material+Icons":1,"sites\/all\/themes\/geneseo\/system.menus.css":1,"sites\/all\/themes\/geneseo\/system.messages.css":1,"sites\/all\/themes\/geneseo\/system.theme.css":1,"sites\/all\/themes\/geneseo\/css\/material.min.css":1,"sites\/all\/themes\/geneseo\/css\/geneseo_all.css":1,"sites\/all\/themes\/geneseo\/css\/socicon\/styles.css":1,"sites\/all\/themes\/geneseo\/css\/flexslider.css":1}}});</script>
       <!--[if lt IE 9]>
-    <script src="/sites/all/themes/zen/js/html5-respond.js"></script>
+    <script src="https://www.geneseo.edu/sites/all/themes/zen/js/html5-respond.js"></script>
     <![endif]-->
   </head>
 <body class="html not-front not-logged-in one-sidebar sidebar-first page-node page-node- page-node-7820 node-type-page og-context og-context-node og-context-node-2771 section-library page-panels" >

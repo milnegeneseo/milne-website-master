@@ -147,13 +147,17 @@ head of each document that takes the drupal template -->
 
 <p class="events-link-background" style="padding:5px 0px 5px 5px; text-align:left; margin-bottom:5px !important;"><a href="http://ems.geneseo.edu/VirtualEMSPublic/CustomBrowseEvents.aspx?data=8imT11TVEgjXNgDJOAPMB4OcOxg1lJDzQDCUHCLgyvV%2bp3H99PcbRuP418vvqF%2br" onclick="window.open(this.href, '', 'resizable=yes,status=no,location=no,toolbar=no,menubar=no,fullscreen=no,scrollbars=no,dependent=no'); return false;" style="color: #345290;"><i class="material-icons" style="vertical-align: text-bottom !important;">event</i> Classes &amp; Events</a></p>
 
-<p class="ids-link-background" style="padding:6px 0px 6px 5px; text-align:left; margin-bottom:5px !important;line-height:1.1em !important;"><a href="https://illiad.geneseo.edu" style="color: #345290; font-size: 0.99em !important;"><i class="material-icons" style="vertical-align: bottom !important; font-size: 1.1em !important;">book</i>Information Delivery Services</a></p>
+<p class="resources-link-background" style="width: 98% !important; padding:5px 0px 5px 5px; text-align:left; margin-bottom:5px !important;"><a href="https://www.geneseo.edu/library/about-milne-library" style="color: #345290;"><i class="material-icons" style="vertical-align: text-bottom !important;">info</i> General Information</a></p>
+
+<p class="my-library-account-background" style="padding:5px 0px 5px 5px; text-align:left; margin-bottom:5px !important;"><a href="https://www.geneseo.edu/library/mylibraryaccount" style="color: #ffffea;"><i class="material-icons" style="vertical-align: text-bottom !important;">check_circle</i> My Library Account</a></p>
+
+<p class="ids-link-background" style="padding:6px 0px 6px 5px; text-align:left; margin-bottom:5px !important;line-height:1.1em !important;"><a href="https://illiad.geneseo.edu" style="color: #345290;"><i class="material-icons" style="vertical-align: bottom !important; font-size: 1.1em !important;">book</i>Information Delivery Services</a></p>
+
+<p class="requests-services-link-background" style="padding:5px 0px 5px 5px; text-align:left; margin-bottom:5px !important;"><a href="https://www.geneseo.edu/library/requests-services" style="color: #345290;"><i class="material-icons" style="vertical-align:text-bottom;">build</i> Requests &amp; Services</a></p>
 
 <p class="research-help-link-background" style="padding:5px 0px 5px 5px; text-align:left; margin-bottom:5px !important;"><a href="https://www.geneseo.edu/library/research-help" style="color: #345290;"><i class="material-icons" style="vertical-align: text-bottom !important;">help</i> Research Help</a></p>
 
-<p class="my-library-account-background" style="padding:5px 0px 5px 5px; text-align:left; margin-bottom:5px !important;"><a href="https://www.geneseo.edu/library/mylibraryaccount" style="color: #345290;"><i class="material-icons" style="vertical-align: text-bottom !important;">check_circle</i> My Library Account</a></p>
-
-<p class="resources-link-background" style="width: 98% !important; padding:5px 0px 5px 5px; text-align:left; margin-bottom:5px !important;"><a href="https://www.geneseo.edu/library/about-milne-library" style="color: #345290;"><i class="material-icons" style="vertical-align: text-bottom !important;">info</i> General Information</a></p>
+<p class="reserve-room-background" style="padding:5px 0px 5px 5px; text-align:left; margin-bottom:5px !important;"><a href="http://intranetlib.geneseo.edu/DataPortal/Requests/RoomRequest.aspx" style="color: #345290;"><i class="material-icons" style="vertical-align: text-bottom !important;">room</i> Reserve a Room</a></p>
 
 <div data-web-developer-element-ancestors-outline="false" style="margin:0;padding:0;"><span style="display: none;">&nbsp;</span></div>
 </div>
@@ -170,7 +174,7 @@ head of each document that takes the drupal template -->
 <li class="menu__item is-collapsed collapsed"><a href="https://www.geneseo.edu/library/requests-services" class="menu__link mdl-navigation__link">Requests &amp; Services</a></li>
 <li class="menu__item is-collapsed collapsed"><a href="https://www.geneseo.edu/library/research-help" class="menu__link mdl-navigation__link">Research Help</a></li>
 <li class="menu__item is-collapsed collapsed"><a href="https://www.geneseo.edu/library/about-milne-library" class="menu__link is-active-trail active-trail mdl-navigation__link">About Milne Library</a></li>
-<li class="menu__item is-leaf last leaf"><a href="http://intranetlib.geneseo.edu/DataPortal/Requests/StaffDirectory.aspx" title="Contact Milne Library Staff and Departments" class="menu__link mdl-navigation__link">Contact</a></li>
+<!-- li class="menu__item is-leaf last leaf"><a href="http://intranetlib.geneseo.edu/DataPortal/Requests/StaffDirectory.aspx" title="Contact Milne Library Staff and Departments" class="menu__link mdl-navigation__link">Contact</a></li-->
 </ul>
 </div>
 
@@ -179,30 +183,31 @@ head of each document that takes the drupal template -->
 <link href="//eres.geneseo.edu/milne-styles-js/geneseo_all_milne_library.min.css" rel="stylesheet" type="text/css" />
 <div class="below-menu-link-background">
 <!--div style="padding-top:5px;padding-bottom:5px;" -->
-<p><a href="https://www.geneseo.edu/library/about-milne-library"><i class="material-icons" style="vertical-align:text-bottom;color:#345290;">info_outline&nbsp;</i>General Information</a></p>
+<!-- p><a href="https://www.geneseo.edu/library/about-milne-library"><i class="material-icons" style="vertical-align:text-bottom;color:#345290;">info_outline&nbsp;</i>About Milne Library</a></p -->
+<p><a alt="Ask A Librarian" href="http://libanswers.geneseo.edu/"><i class="material-icons" style="vertical-align:
+text-bottom;color:#345290;">live_help</i> Ask A Librarian</a></p>
 
 <p><a href="http://intranetlib.geneseo.edu/DataPortal/Requests/StaffDirectory.aspx"><i class="material-icons" style="vertical-align:text-bottom;color:#345290;">contact_phone&nbsp;</i>Staff Directory</a></p>
-
-
-<p style="padding-bottom:5px !important;"><a alt="Center For Academic Excellence" href="https://www.geneseo.edu/library/center-academic-excellence"><i class="material-icons" style="vertical-align:middle;color:#345290;">school&nbsp;</i>Center for Academic Excellence (CAE)</a></p>
-
-<p><a alt="Cite My Sources" href="http://libguides.geneseo.edu/citation"><i class="material-icons" style="vertical-align:
-text-bottom;color:#345290;">assignment&nbsp;</i>Cite My Sources</a></p>
-
-<p><a alt="Ask A Librarian" href="http://libanswers.geneseo.edu/"><i class="material-icons" style="vertical-align:
-text-bottom;color:#345290;">live_help&nbsp;</i>Ask A Librarian</a></p>
+<p><a alt="Center For Academic Excellence" href="/library/center-academic-excellence" title="Center For Academic Excellence"><i class="material-icons" style="vertical-align:text-bottom;color:#345290;">school</i> C A E</a></p>
 
 <p><a alt="How Do I?" href="http://libguides.geneseo.edu/sb.php?subject_id=17737"><i class="material-icons" style="vertical-align:
-text-bottom;color:#345290;">help_outline&nbsp;</i>How Do I...?</a></p>
+text-bottom;color:#345290;">help_outline</i> How Do I...?</a></p>
+
+<p><a alt="Cite My Sources" href="http://libguides.geneseo.edu/citation"><i class="material-icons" style="vertical-align:
+text-bottom;color:#345290;">assignment</i> Cite My Sources</a></p>
+
 
 <p><a alt="Renew My Books" href="http://www.geneseo.edu/library/mylibraryaccount"><i class="material-icons" style="vertical-align:
-text-bottom;color:#345290;">check_circle&nbsp;</i>Renew My Books</a></p>
+text-bottom;color:#345290;">check_circle</i> Renew My Books</a></p>
 
-<p><a alt="Reserve a Room" href="http://intranetlib.geneseo.edu/DataPortal/Requests/RoomRequest.aspx"><i class="material-icons" style="vertical-align:
-text-bottom;color:#345290;">room&nbsp;</i>Reserve a Room</a></p>
+<p><a href="http://textbooks.opensuny.org/"><i class="material-icons" style="vertical-align:text-bottom;color:#345290;">panorama_fish_eye</i> OpenSUNY Textbooks</a></p>
 
-<p><a alt="Support Milne Library" href="https://www.geneseo.edu/library/support-milne-library"><i class="material-icons" style="vertical-align:
-text-bottom;color:#345290;">favorite&nbsp;</i>Support Milne Library</a></p>
+<p><a href="https://idsproject.org/"><i class="material-icons" style="vertical-align:text-bottom;color:#345290;">share</i> IDS Project</a></p>
+
+<p><a alt="Support Milne Library" href="/library/support-milne-library"><i class="material-icons" style="vertical-align:
+text-bottom;color:#345290;">favorite</i> Support Milne Library</a></p>
+
+
 <!-- /div -->
 </div>
 

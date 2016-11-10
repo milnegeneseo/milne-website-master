@@ -1819,7 +1819,7 @@ table {
 
 
 /***************************************************************************/
-/*******************   MILNE LIBRARY STYLES *******************************/
+/*******************   MILNE LIBRARY STYLES Leah M Root *******************************/
 /**************************************************************************/
 /**************************************************/
 
@@ -1834,9 +1834,7 @@ width: 99%;
 border-radius: 2px; 
 padding: 15px 1px 1px 1px !important;
 margin-bottom:6px; 
-/*-webkit-box-shadow: 0px 1px 4px 0px #345290; 
--moz-box-shadow: 0px 1px 5px 0px ##345290; 
-box-shadow: 0px 1px 4px 0px #345290;*/
+
   box-shadow: 0 3px 3px -2px rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 1px 8px 0 rgba(0,0,0,.12);
 text-align:center;
 }
@@ -1845,13 +1843,10 @@ text-align:center;
   font-family: "Open Sans",sans-serif;
   font-size: 14px;
  background-color: #e5fcd9; 
-/*background-color: #b6daf2; */
+
 width: 98%; 
 border-radius: 2px; 
 margin:5px 0px 0px 0px; 
-/*-webkit-box-shadow: 0px 1px 4px 0px #345290; 
--moz-box-shadow: 0px 1px 4px 0px ##345290; 
-box-shadow: 0px 1px 4px 0px #345290;*/
   box-shadow: 0 3px 3px -2px rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 1px 8px 0 rgba(0,0,0,.12);
 }
 
@@ -1863,9 +1858,6 @@ background-color: #f1f8fc;
 width: 98%; 
 border-radius: 4px; 
 margin:0px 0px 0px 0px !important; 
-/*-webkit-box-shadow: 0px 1px 4px 0px #345290; 
--moz-box-shadow: 0px 1px 4px 0px ##345290; 
-box-shadow: 0px 1px 4px 0px #345290;*/
   box-shadow: 0 3px 3px -2px rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 1px 8px 0 rgba(0,0,0,.12);
 }
 
@@ -1878,24 +1870,10 @@ background-color:#ffffea;
 width: 98%; 
 border-radius: 2px; 
 margin:0px 0px 0px 0px !important; 
-/*-webkit-box-shadow: 0px 1px 4px 0px #345290; 
--moz-box-shadow: 0px 1px 4px 0px ##345290; 
-box-shadow: 0px 1px 4px 0px #345290;*/
   box-shadow: 0 3px 3px -2px rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 1px 8px 0 rgba(0,0,0,.12);
 }
-/*
-@media (max-width: 1540px) {
-.ids-link-background {
-background-color:#ffffea;
-  font-family: "Open Sans",sans-serif;
-  font-size: 13px !important;
- }
 
-}*/
-
-
-
-.research-help-link-background {
+.requests-services-link-background {
 background-color: #f7e8dc;
   font-family: "Open Sans",sans-serif;
   font-size: 14px;
@@ -1903,24 +1881,47 @@ background-color: #f7e8dc;
 width: 98%; 
 border-radius: 2px; 
 margin:0px 0px 0px 0px !important; 
-/*-webkit-box-shadow: 0px 1px 4px 0px #345290; 
--moz-box-shadow: 0px 1px 4px 0px ##345290; 
-box-shadow: 0px 1px 4px 0px #345290;*/
+
   box-shadow: 0 3px 3px -2px rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 1px 8px 0 rgba(0,0,0,.12);
 }
 
-.my-library-account-background {
-background-color: #f5dde5;
+
+.research-help-link-background {
+background-color: #ffccb9;
   font-family: "Open Sans",sans-serif;
   font-size: 14px;
   line-height:0px !important;
 width: 98%; 
 border-radius: 2px; 
 margin:0px 0px 0px 0px !important; 
-/*-webkit-box-shadow: 0px 1px 4px 0px #345290; 
--moz-box-shadow: 0px 1px 4px 0px ##345290; 
-box-shadow: 0px 1px 4px 0px #345290;*/
+
   box-shadow: 0 3px 3px -2px rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 1px 8px 0 rgba(0,0,0,.12);
+}
+
+.reserve-room-background {
+/*background-color: #f5dde5;*/
+background-color: #ffd4db;
+  font-family: "Open Sans",sans-serif;
+  font-size: 14px;
+  line-height:0px !important;
+width: 98%; 
+border-radius: 2px; 
+margin:0px 0px 0px 0px !important; 
+  box-shadow: 0 3px 3px -2px rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 1px 8px 0 rgba(0,0,0,.12);
+}
+
+
+.my-library-account-background {
+/*background-color: #d15f5f;*/
+background-color: #648ad8;
+  font-family: "Open Sans",sans-serif;
+  font-size: 14px;
+  line-height:0px !important;
+width: 98%; 
+border-radius: 2px; 
+margin:0px 0px 0px 0px !important; 
+  box-shadow: 0 3px 3px -2px rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 1px 8px 0 rgba(0,0,0,.12);
+ color: #ffffea;
 }
 
 
@@ -1930,12 +1931,8 @@ font-family: "Open Sans",sans-serif;
 background-color: #008061; 
 color: #ffd880;
 width:98%;
-/*border: 1px solid #00684f; */
 border-radius: 2px; 
 margin:5px 0px 0px 0px; 
-/*-webkit-box-shadow: 0px 1px 4px 0px #345290; 
--moz-box-shadow: 0px 1px 4px 0px #345290; 
-box-shadow: 0px 1px 4px 0px #345290;*/
   box-shadow: 0 3px 3px -2px rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 1px 8px 0 rgba(0,0,0,.12);
 }
 
@@ -1946,15 +1943,11 @@ color: #ffd880;
 
 .below-menu-link-background{
 background-color: #fbf6ff;
-/*background-color: #fff; */
   font-family: "Open Sans",sans-serif;
 width: 98%;   
 border-radius: 2px; 
 margin:5px 0px 5px 0px;
 padding: 8px 0px 8px 5px !important;
-/*-webkit-box-shadow: 0px 1px 4px 0px #345290;
--moz-box-shadow: 0px 1px 4px 0px ##345290;
-box-shadow: 0px 1px 4px 0px #345290;*/
   box-shadow: 0 3px 3px -2px rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 1px 8px 0 rgba(0,0,0,.12);
 font-size:15px !important;
 }
@@ -1967,15 +1960,10 @@ line-height:15px !important;
 
 
 .resources-link-background{
-/*background-color: #f1f8fc;*/
 background-color: #fff; 
 width: 100%;  
 border-radius: 2px; 
-/*font-size:18px !important;*/
 margin:5px 0px 5px 0px;
-/*-webkit-box-shadow: 0px 1px 4px 0px #345290;
--moz-box-shadow: 0px 1px 4px 0px ##345290;
-box-shadow: 0px 1px 4px 0px #345290;*/
   box-shadow: 0 3px 3px -2px rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 1px 8px 0 rgba(0,0,0,.12);
 
 }
@@ -1991,13 +1979,9 @@ font-size:15px !important;
 
 .resources-link-pale-peach-background{
 background-color: #fff9ec; 
-/*width: 100%; */ 
 border-radius: 2px; 
 margin:5px 0px 5px 0px;
 padding:10px 0px 10px 10px;
-/*-webkit-box-shadow: 0px 1px 4px 0px #345290;
--moz-box-shadow: 0px 1px 4px 0px ##345290;
-box-shadow: 0px 1px 4px 0px #345290;*/
   box-shadow: 0 3px 3px -2px rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 1px 8px 0 rgba(0,0,0,.12);
 }
 
@@ -2020,7 +2004,6 @@ border: 1px solid  #cccccc;
 border-radius: 8px;
 margin:  5px;
 padding: 15px 15px 10px 15px;
-/*background-color:#fff4f4;!important;*/
 		background-color:#ffffea !important;
 }
 
@@ -2028,10 +2011,10 @@ padding: 15px 15px 10px 15px;
 { 
 font-family: "Neutraface Headings";
 font-size:2em;
-/*font-size:16px;*/
+
 
 padding:0px 3px;
-/*color:#768ebf;*/
+
 	color:#b87733;
 	line-height:normal;
 }
@@ -2095,7 +2078,7 @@ border:none !important;
 
 #rightSideContent table, #rightSideContent td{
 border:none !important;
-/*background-color:#fff4f4;!important;*/
+
 background-color:#ffffea !important;
 }
 
@@ -2577,9 +2560,7 @@ margin-top:10px;
 
 div.column.right {
   float: right;
-        /*     width: 230px;*/
         width: 20%;
-/*            margin: 10px 10px 0px 30px;*/
 margin:0px 10px 0px 10px;
         }
         
@@ -2759,7 +2740,7 @@ font-family: 'Neutraface Text',Arial,sans-serif;
   padding-right: 0.625em;
   padding-bottom: 0.75em;
   padding-left: 0.625em;
-/*  font-family: 'Neutraface Text',Arial,sans-serif;*/
+
     font-family: "Open Sans",sans-serif;
 }
 
@@ -2772,7 +2753,6 @@ font-family: 'Neutraface Text',Arial,sans-serif;
   padding-bottom: 0px;
   padding-left: 0px;
   margin-bottom: 20px;
-/*  font-size: 16px;*/
   font-weight: bold;
   line-height: inherit;
   color: #333333;
@@ -2781,15 +2761,13 @@ border:none;
 font-family: 'Neutraface Text',Arial,sans-serif;
 }
 
-/***************** END LIBAPPS Widgets - Policy Page, IDS Project, etc *****************/
+/***************** END LIBAPPS Widgets - Policy Page, Library Workshops, etc *****************/
 
 
 /****** DRUPAL FRONT PAGE STYLES -  Quicksearch Widget and Slider *******/
 
 .ui-widget{
-/*-webkit-box-shadow: 0px 1px 5px 0px #345290;
--moz-box-shadow: 0px 1px 5px 0px ##345290;
-box-shadow: 0px 1px 5px 0px #345290;*/
+
   box-shadow: 0 3px 3px -2px rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 1px 8px 0 rgba(0,0,0,.12);
 }
 
@@ -2797,12 +2775,11 @@ box-shadow: 0px 1px 5px 0px #345290;*/
 .ui-widget ul, .ui-widget li{
 border-radius: 4px;
 background:#fdedcc;
-/*font-family: Neutraface Text;*/
+
 
 }
 
 .ui-widget .ui-widget {
-/*font-family: Neutraface Text;*/
 border-radius: 8px;
 
 
@@ -2824,7 +2801,6 @@ padding:0px;
 .ui-widget input[type="text"],
 .ui-widget textarea{
 padding:4px 5px;
-/*font-family: Neutraface Text;*/
 border: 1px solid #fdedcc;
 	color:#444444;
     display:inline-block;
@@ -2838,7 +2814,6 @@ border: 1px solid #fdedcc;
 .ui-widget textarea{
 width: 60%;
 padding:4px 5px;
-/*font-family: Neutraface Text;*/
 border: 1px solid #fdedcc;
 	color:#444444;
     display:inline-block;
@@ -2851,7 +2826,6 @@ border: 1px solid #fdedcc;
 
 .ui-widget select{
 	padding:3px 5px;
-/*	font-family: Neutraface Text;*/
 border: 1px solid #fdedcc;
 color:#444444;
     display:inline-block;
@@ -2860,7 +2834,6 @@ color:#444444;
 @media(max-width: 1239px) {
 .ui-widget select{
 	padding:3px 5px;
-/*	font-family: Neutraface Text;*/
 	width: 60%;
 border: 1px solid #fdedcc;
 color:#444444;
@@ -2874,8 +2847,6 @@ color:#444444;
 
 .ui-widget input[type="submit"]{
 padding:3px 5px;
-/*font-family: Neutraface Text;
-*/
 background: #345290;
 border: 0px;
 border-radius: 4px;
@@ -2928,7 +2899,6 @@ font-size:1.3em;
 border: 1px solid #fdedcc;
 	background: #fdedcc;
 	font-weight: bold;
-	/* color: #fa8a3b !important; */
 }
 
 
@@ -2986,7 +2956,6 @@ border-radius: 4px;
 .ui-state-active a,
 .ui-state-active a:link,
 .ui-state-active a:visited {
-	/* color: #345290;*/
 	color: #fa8a3b !important;
 	text-decoration: none;
 	background: #fff9ec !important;
@@ -3017,18 +2986,13 @@ padding-bottom:1em;
 .ui-widget textarea{
 width: 70%;
 padding:4px 5px;
-/*font-family: Neutraface Text;*/
 }
 
 .ui-widget select{
 	padding:3px 5px;
-/*	font-family: Neutraface Text;*/
 	width: 70%;
 border: 1px solid #fdedcc;
-
 }
-
-
 }
 
 
@@ -3108,256 +3072,6 @@ color:#fa8a3b !important;
 color:#86c1ea !important;
 }
 
-
-/*********************************************************/
-/*****Nivo Slider****/
-/*********************************************************/
-
-/*
-
-.slider-wrapper { 
-	width: 100%; 
-margin: 30px auto;
-}
-
-
-
- The Nivo Slider styles 
-
-.nivo-title a{
-font-weight: bold;
-font-size: 1em !important;
-}
-
-.nivoSlider {
-	position:relative;
-	width:100%;
-	height:auto;
-	overflow: hidden !important;
-
-font-family: 'Neutraface Text';
- font-size:1.1em;
- line-height:1em;
-        -webkit-box-shadow: 1px 2px 5px 1px #345290;
-    -moz-box-shadow: 1px 2px 5px 1px ##345290;
-    box-shadow: 0px 2px 6px 1px #345290;
-
-
-}
-.nivoSlider img {
-	position:absolute;
-	top:0px;
-	left:0px;
-	max-width: none;
-}
-.nivo-main-image {
-	display: block !important;
-	position: relative !important; 
-	width: 100% !important;
-}
-
- If an image is wrapped in a link 
-.nivoSlider a.nivo-imageLink {
-	position:absolute;
-	top:0px;
-	left:0px;
-	width:100%;
-	height:100%;
-	border:0;
-	padding:0;
-	margin:0;
-	z-index:6;
-	display:none;
-	background:white; 
-	filter:alpha(opacity=0); 
-	opacity:0;
-}
-
- The slices and boxes in the Slider 
-.nivo-slice {
-	display:block;
-	position:absolute;
-	z-index:5;
-	height:100%;
-	top:0;
-}
-.nivo-box {
-	display:block;
-	position:absolute;
-	z-index:5;
-	overflow:hidden;
-}
-.nivo-box img { display:block; }
-
- Caption styles 
-.nivo-caption {
-	position:absolute;
-	left:0px;
-	bottom:0px;
-	background: #171862;
-	color:#fff;
-	width:100%;
-	z-index:8;
-padding:15px 10px 15px 10px;
-	opacity: 0.8;
-	overflow: hidden;
-	display: none;
-	-moz-opacity: 0.8;
-	filter:alpha(opacity=8);
-	-webkit-box-sizing: border-box;  Safari/Chrome, other WebKit 
-	-moz-box-sizing: border-box;     Firefox, other Gecko 
-	box-sizing: border-box;          Opera/IE 8+ 
-font-size: 1.2em;
-}
-.nivo-caption p {
-	padding:5px;
-	margin:0;
-font-size: 1.2em;
-}
-.nivo-caption a {
-	display:inline !important;
-font-size: 1.2em;
-}
-.nivo-html-caption {
-    display:none;
-}
- Direction nav styles (e.g. Next & Prev) 
-.nivo-directionNav a {
-	position:absolute;
-	top:45%;
-	z-index:9;
-	cursor:pointer;
-}
-.nivo-prevNav {
-	left:0px;
-}
-.nivo-nextNav {
-	right:0px;
-}
- Control nav styles (e.g. 1,2,3...) 
-.nivo-controlNav {
-	text-align:center;
-	padding: 15px 0;
-}
-.nivo-controlNav a {
-	cursor:pointer;
-}
-.nivo-controlNav a.active {
-	font-weight:bold;
-}
-
-
-
-.nivoSlider img,
-.theme-default .nivoSlider img {
-
-  overflow-x: hidden;
-  overflow-y: hidden;
-
-	position:absolute;
-	top:0px;
-	left:0px;
-	display:none;
-}
-
-.nivoSlider a,
-.theme-default .nivoSlider a {
-	border:0;
-	display:block;
-}
-
-.nivo-controlNav,
-.theme-default .nivo-controlNav {
-font-family: 'Neutraface Text';
-	text-align: center;
-	padding: 20px 0;
-}
-
-.nivo-controlNav a,
-.theme-default .nivo-controlNav a {
-	display:inline-block;
-	width:22px;
-	height:22px;
-	background:url(bullets.png) no-repeat;
-	text-indent:-9999px;
-	border:0;
-	margin: 0 2px;
-}
-
-.nivo-controlNav a.active,
-.theme-default .nivo-controlNav a.active {
-	background-position:0 -22px;
-}
-
-
-.nivo-directionNav a,
-.theme-default .nivo-directionNav a {
-	display:block;
-	width:30px;
-	height:30px;
-	background:url(arrows.png) no-repeat;
-	text-indent:-9999px;
-	border:0;
-	opacity: 0;
-	-webkit-transition: all 200ms ease-in-out;
-    -moz-transition: all 200ms ease-in-out;
-    -o-transition: all 200ms ease-in-out;
-    transition: all 200ms ease-in-out;
-}
-
-
-.theme-default:hover .nivo-directionNav a { opacity: 1; }
-.theme-default a.nivo-nextNav {
-	background-position:-30px 0;
-	right:15px;
-}
-.theme-default a.nivo-prevNav {
-	left:15px;
-}
-
-
-.nivo-caption,
-.theme-default .nivo-caption {    color:#fff;
-padding:15px 5px 15px 5px;
-font-family: 'Neutraface Text';
-font-weight: bold;
-}
-
-.nivo-caption a,
-.theme-default .nivo-caption a {
-    border-bottom:1px dotted #fff;
-}
-.theme-default .nivo-caption a:hover {
-    color:#fff;
-}
-
-a.read-more{
-font-family: 'Neutraface Text';
- font-weight:bold;
- color:#fa8a3b;	
-margin-left:10px;
-font-size: 1.3em;
-}
-.theme-default .nivo-controlNav.nivo-thumbs-enabled {
-	width: 100%;
-}
-.theme-default .nivo-controlNav.nivo-thumbs-enabled a {
-	width: auto;
-	height: auto;
-	background: none;
-	margin-bottom: 5px;
-}
-.theme-default .nivo-controlNav.nivo-thumbs-enabled img {
-	display: block;
-	width: 120px;
-	height: auto;
-}
-
-.orange{
- color:#fa8a3b;
-}
-
-*/
 
 /*************************   LIBRARY HOURS  *******************/
 
@@ -3486,7 +3200,7 @@ margin-bottom:1em;
 line-height:12px;
 }
 
-/* Serial Solutions Overrides */
+/* SERIALS SOLUTIONS Overrides */
 
 div#footer.ng-scope{
 	display:none !important;

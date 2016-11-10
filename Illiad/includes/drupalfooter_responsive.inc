@@ -1,9 +1,9 @@
-</div><!-- END INTRANETLIB BODY CONTENT PLACEHOLDER -->
+
 
   </div>           
  </div>
       
- <!--/ div --> <!--mdl-grid--><!-- THIS CLOSING DIV IS IN THE GENESEO DRUPAL LAYOUT BUT NOT NEEDED HERE -->
+
 
 
     <div id="navigation">

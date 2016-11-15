@@ -15,4 +15,6 @@
 
 <h4><a href="Instruction.aspx">Submit another Instruction request</a></h4>
 
+<h4><a href="https://www.geneseo.edu/library">Return to Milne Library Home Page</a></h4>
+
 </asp:Content>

@@ -13,5 +13,6 @@
 If you have any questions, please contact Patty Hoffman, Events and Building Coordinator, at <a href="mailto:hoffman@geneseo.edu">hoffman@geneseo.edu</a></p>
 
 <h4><a href="RoomRequest.aspx">Submit another room request</a></h4>
+<h4><a href="https://www.geneseo.edu/library">Return to Milne Library Home Page</a></h4>
 
 </asp:Content>

@@ -14,6 +14,7 @@
 <p>If you have any questions, please contact us at <a href="mailto:libinstr@geneseo.edu">libinstr@geneseo.edu</a></p>
 
 <h4><a href="Consultation.aspx">Submit another Consultation request</a></h4>
+<h4><a href="https://www.geneseo.edu/library">Return to Milne Library Home Page</a></h4>
 
 </asp:Content>
 

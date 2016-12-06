@@ -31,15 +31,15 @@
             return false; // valid
         }
     </script>
-  <div id="rightSideContent" >
-                <div style="margin-top: 0px;" class="breadcrumb"><a href="https://www.geneseo.edu/">Home</a> &raquo; <a href="https://www.geneseo.edu/library">Milne Library</a> &raquo; <a href="https://www.geneseo.edu/library/requests-services">Requests &amp; Services</a> &raquo; <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/RoomRequest.aspx" style="color:#b85533 !important;">Room Request/Reservation</a></div>
-<h1>Room Request Form</h1> 
+  <div id="rightSideContent">
+                <div style="margin:20px 0px 0px 0px;"><a href="https://www.geneseo.edu/">SUNY Geneseo</a> &raquo; <a href="https://www.geneseo.edu/library">Milne Library</a> &raquo; <a href="https://www.geneseo.edu/library/requests-services">Requests &amp; Services</a> &raquo; <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/RoomRequest.aspx" style="color:#b85533 !important;">Room Request/Reservation</a></div>
+<h1>Room Request</h1> 
 <span class="link-button-background style="margin-bottom: 10px;"><a href="https://www.geneseo.edu/library/classrooms-and-meeting-rooms">Room Descriptions & Policies</a></span>&nbsp; 
 	&nbsp;  <span class="link-button-background style="margin-bottom: 10px;"><a href="https://www.geneseo.edu/library/milne-library-floor-plans">Floor Plans/Room Locations</a></span>&nbsp;
 	&nbsp;  <span class="link-button-background style="margin-bottom: 10px;"><a href="http://emsprod.geneseo.edu/VirtualEMSPublic/CustomBrowseEvents.aspx?data=8imT11TVEgjXNgDJOAPMB4OcOxg1lJDzQDCUHCLgyvV%2bp3H99PcbRuP418vvqF%2br">Check Room Availability</a></span>
 	&nbsp; <span class="link-button-background  style="margin-bottom: 10px;""><a href="https://www.geneseo.edu/library/library-computer-labs-technology">Computer Labs</a></span>
 <br /><br />
-<a name="104-208"></a><h3>Room 104 or 208</h3>
+<a name="104-208"></a><h2 style="font-size: 2.2em;">Room 104 or 208</h2>
     <p>Use the form below to request <a href="https://www.geneseo.edu/library/classrooms-and-meeting-rooms#section1" target="_blank"><b>Room 104  <img src="https://eres.geneseo.edu/milne-styles-js/img/question-mark-icon-16.png" style="vertical-align:baseline;"></b></a> or <a href="https://www.geneseo.edu/library/classrooms-and-meeting-rooms#section4" target="_blank"><b>Room 208  <img src="https://eres.geneseo.edu/milne-styles-js/img/question-mark-icon-16.png" style="vertical-align:baseline;"></b></a></p>
 <b>Please allow 2 business days to confirm your room reservation.</b> An email will be sent to you once your reservation has been made. Requests for more than one date can be made using this form if all times are the same. <br /><br />
 If you need to cancel a room reservation, please contact <a href="mailto:hoffman@geneseo.edu">Patty Hoffman</a>, Events and Building Coordinator, at <a href="mailto:hoffman@geneseo.edu">hoffman@geneseo.edu</a> or call 585-245-5523. </p>
@@ -135,14 +135,14 @@ If you need to cancel a room reservation, please contact <a href="mailto:hoffman
 </fieldset>
 <asp:Label ID="lblErrorMessage" runat="server" />
 </div>
-<h3>Room 305 & Lobby Table</h3>
+<h2 style="font-size: 2.2em;">Room 305 & Lobby Table</h2>
 <fieldset>
 <legend>Self-Reservation Instructions</legend>
 <label>Use <a href="http://emsprod.geneseo.edu/VirtualEMSPublic/CustomBrowseEvents.aspx?data=8imT11TVEgjXNgDJOAPMB4OcOxg1lJDzQDCUHCLgyvV%2bp3H99PcbRuP418vvqF%2br"><strong>Virtual EMS</strong></a> to reserve Room 305 or the Lobby Table.<br /><br />
 <a href="https://cloud.ensemblevideo.com/Watch/Reserve"><strong>Instructions for Using Virtual EMS</strong></a><br /><br /></label>  
-<label>An email will be sent to you once your reservation has been made.<br />Requests for more than one date can be made using this form if all times are the same. <br /><br /></label>
+<label>An email will be sent to you once your reservation has been made.<br /><br /></label>
 </fieldset>
-<h3>Rooms 105, 121, or 213</h3>
+<h2 style="font-size: 2.2em;">Rooms 105, 121, or 213</h2>
 <fieldset>
 <legend>Semester-long Course Room Reservation</legend> 
  <label>Contact the <a href="http://www.geneseo.edu/registrar/contact_us"><strong>Office of the Registrar</strong></a>.<br /><br /></label>

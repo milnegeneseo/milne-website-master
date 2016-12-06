@@ -4,8 +4,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-<div id="rightSideContent" >
-            <div style="margin-top: 0px;" class="breadcrumb"><a href="https://www.geneseo.edu/">Home</a> &raquo; <a href="https://www.geneseo.edu/library">Milne Library</a> &raquo; <a href="https://www.geneseo.edu/library/about-milne-library">About Milne Library</a> &raquo; <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/StaffDirectory.aspx" style="color:#b85533 !important;">Staff Directory & Contact Information</a></div>
+<div id="rightSideContent">
+            <div style="margin:20px 0px 0px 0px;"><a href="https://www.geneseo.edu/">SUNY Geneseo</a> &raquo; <a href="https://www.geneseo.edu/library">Milne Library</a> &raquo; <a href="https://www.geneseo.edu/library/about-milne-library">About Milne Library</a> &raquo; <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/StaffDirectory.aspx" style="color:#b85533 !important;">Staff Directory & Contact Information</a></div>
     <h1>Milne Staff Directory</h1>
   
 
@@ -26,6 +26,10 @@
    <a href="http://www.geneseo.edu/library/webform/make-suggestion"><i class="material-icons" style="vertical-align:text-bottom;">create</i> <strong>Make a suggestion</strong></a> Suggestions &amp; Feedback
 
 
+        <br />
+        <br />
+
+
 </fieldset>
     </div>
 
@@ -34,21 +38,22 @@
 
 <fieldset>
 <legend>Related Services</legend>
-    <strong>CIT HelpDesk</strong><br />
-    <i class="material-icons" style="vertical-align:text-bottom; color:#345290;">phone</i> Phone  585-245-5588<br />
-         <a href="https://www.geneseo.edu/cit/helpdesk"><i class="material-icons" style="vertical-align:text-bottom;">language</i> <strong>Website</a></strong>
+    <strong><i class="material-icons" style="vertical-align:text-bottom; color:#345290;">computer</i> CIT HelpDesk<br />
+    <i class="material-icons" style="vertical-align:text-bottom; color:#345290;">phone</i> Phone</strong>  585-245-5588&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://www.geneseo.edu/cit/helpdesk"><i class="material-icons" style="vertical-align:text-bottom;">language</i> CIT Website</a>
 
      <br /><br />
-     <strong>CAE (Center for Academic Excellence)</strong><br />
-    <i class="material-icons" style="vertical-align:text-bottom; color:#345290;">phone</i> Phone  585-245-6041<br />
-         <a href="https://www.geneseo.edu/library/center-academic-excellence"><i class="material-icons" style="vertical-align:text-bottom;">language</i> Website</a></strong>
+     <strong><i class="material-icons" style="vertical-align:text-bottom; color:#345290;">school</i> CAE (Center for Academic Excellence)<br />
+    <i class="material-icons" style="vertical-align:text-bottom; color:#345290;">phone</i> Phone</strong>  585-245-6041&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://www.geneseo.edu/library/center-academic-excellence"><i class="material-icons" style="vertical-align:text-bottom;">language</i> CAE Website</a>
     <br /><br />
-     <strong>TLC (Teaching  Learning Center)</strong><br />
-    <i class="material-icons" style="vertical-align:text-bottom; color:#345290;">phone</i> Phone  585-245-5336<br />
-<a href="http://www.geneseo.edu/tlc/about"><i class="material-icons" style="vertical-align:text-bottom;">language</i> Website</a></strong>
+     <strong><i class="material-icons" style="vertical-align:text-bottom; color:#345290;">star</i> TLC (Teaching  Learning Center)<br />
+    <i class="material-icons" style="vertical-align:text-bottom; color:#345290;">phone</i> Phone</strong>  585-245-5336&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.geneseo.edu/tlc/about"><i class="material-icons" style="vertical-align:text-bottom;">language</i> TLC Website</a>
 
 
 
+
+
+        <br />
+        <br />
 
 </fieldset>
 
@@ -82,7 +87,7 @@
 
 				</asp:TemplateField>
 
-           <asp:TemplateField HeaderText="Contact" ItemStyle-Width="30%" HeaderStyle-Font-Bold="True">
+           <asp:TemplateField HeaderText="Contact" ItemStyle-Width="30%" HeaderStyle-ForeColor="White" HeaderStyle-Font-Bold="True">
 
 					<ItemTemplate>
                        <span class="phone"><asp:Label ID="Phone" runat="server"  Text='<%# Bind("Phone") %>'></asp:Label></span><br />

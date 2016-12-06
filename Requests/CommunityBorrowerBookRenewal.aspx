@@ -61,7 +61,7 @@
     background: #00d9ff;
 </style>
 <div id="rightSideContent" >
-<div style="margin-top: 0px;" class="breadcrumb"><a href="https://www.geneseo.edu/">Home</a> &raquo; <a href="https://www.geneseo.edu/library">Milne Library</a> &raquo; <a href="https://www.geneseo.edu/library/requests-services">Requests &amp; Services</a> &raquo; <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/CommunityBorrowerBookRenewal.aspx">Alumni & Community Book Renewal Form</a></div>
+<div style="margin:20px 0px 0px 0px;"><a href="https://www.geneseo.edu/">SUNY Geneseo</a> &raquo; <a href="https://www.geneseo.edu/library">Milne Library</a> &raquo; <a href="https://www.geneseo.edu/library/requests-services">Requests &amp; Services</a> &raquo; <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/CommunityBorrowerBookRenewal.aspx" style="color:#b85533 !important;">Alumni & Community Book Renewals</a></div>
     <h1>Community Borrower Book Renewals</h1>       
     <p>As a teaching institution, our goal to encourage life-long learning habits and we welcome our community members to access and use our collections. Please note that we may be unable to honor renewal requests for a variety of reasons, including overdue status or on hold for another user.</p>
     <p><strong>For further information, please refer to Milne's </strong> <a href="https://www.geneseo.edu/library/library-policies"><strong>Loan Policies</strong></a><strong>. </strong></p>

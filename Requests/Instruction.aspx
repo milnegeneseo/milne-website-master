@@ -64,7 +64,7 @@
             return false; // valid
         }
     </script>
-<div id="rightSideContent" >
+<div id="rightSideContent">
 <div class="column right">
     <div class="more-info">
     <div class="more-info-header">
@@ -99,7 +99,7 @@
     </div>
     </div>
 </div>
-<div style="margin-top: 0px;" class="breadcrumb"><a href="https://www.geneseo.edu/">Home</a> &raquo; <a href="https://www.geneseo.edu/library">Milne Library</a> &raquo; <a href="https://www.geneseo.edu/library/requests-services">Requests &amp; Services</a> &raquo; <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/Instruction.aspx" style="color:#b85533 !important;">Library &amp; High School Instruction</a></div>
+<div style="margin:20px 0px 0px 0px;"><a href="https://www.geneseo.edu/">SUNY Geneseo</a> &raquo; <a href="https://www.geneseo.edu/library">Milne Library</a> &raquo; <a href="https://www.geneseo.edu/library/requests-services">Requests &amp; Services</a> &raquo; <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/Instruction.aspx" style="color:#b85533 !important;">Library &amp; High School Instruction</a></div>
 <h1>Library Instruction Request</h1> 
 <div style="float:left; width:75%;">
 <p>Milne Library offers the following types of instruction:</p>

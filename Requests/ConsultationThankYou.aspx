@@ -3,18 +3,22 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+ <div id="rightSideContent">
+<div style="margin:20px 0px 0px 0px;"><a href="https://www.geneseo.edu/">SUNY Geneseo</a> &raquo; <a href="https://www.geneseo.edu/library">Milne Library</a> &raquo; <a href="https://www.geneseo.edu/library/research-help">Research Help</a> &raquo; <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/Consultation.aspx" style="color:#b85533 !important;">Research &amp; Technology Consultations</a></div>
 
-<h1>Consultation Request Form</h1>
+<h1>Research &amp; Technology Consultations</h1>
 
-<h3>Thank you for your request</h3>
+<h2>Thank you for your request</h2>
     <br />
 
 <p>A librarian or technology specialist will contact you via email to schedule your consultation in 2 or 3 weekdays.  If your project is due before this, you should go directly to the reference desk in Milne Library.</p> <br />
 
 <p>If you have any questions, please contact us at <a href="mailto:libinstr@geneseo.edu">libinstr@geneseo.edu</a></p>
 
-<h4><a href="Consultation.aspx">Submit another Consultation request</a></h4>
-<h4><a href="https://www.geneseo.edu/library">Return to Milne Library Home Page</a></h4>
+<h3><a href="Consultation.aspx">Submit another Consultation request</a></h3>
+<h3><a href="https://www.geneseo.edu/library">Return to Milne Library Home Page</a></h3>
+
+</div>
 
 </asp:Content>
 

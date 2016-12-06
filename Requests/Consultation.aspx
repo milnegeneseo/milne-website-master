@@ -16,8 +16,8 @@
             });
         });
     </script>
-<div id="rightSideContent" >
-<div style="margin-top: 0px;" class="breadcrumb"><a href="https://www.geneseo.edu/">Home</a> &raquo; <a href="https://www.geneseo.edu/library">Milne Library</a> &raquo; <a href="https://www.geneseo.edu/library/research-help">Research Help</a> &raquo; <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/Consultation.aspx" style="color:#b85533 !important;">Research &amp; Technology Consultations</a></div>
+<div id="rightSideContent">
+<div style="margin:20px 0px 0px 0px;"><a href="https://www.geneseo.edu/">SUNY Geneseo</a> &raquo; <a href="https://www.geneseo.edu/library">Milne Library</a> &raquo; <a href="https://www.geneseo.edu/library/research-help">Research Help</a> &raquo; <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/Consultation.aspx" style="color:#b85533 !important;">Research &amp; Technology Consultations</a></div>
 <h1>Research & Technology Consultations</h1>
 <p>Appointments are arranged for most weekday hours when the appropriate specialist is on duty. Please:</p>
 <ul>

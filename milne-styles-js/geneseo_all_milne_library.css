@@ -153,45 +153,7 @@ h2, .events-section .mdl-card__title-text{
   font-family: 'Neutraface Text', serif !important;
 }
 
-/*.events-section {
-  background: transparent;
-}
 
-.events-section .mdl-card__title-text {
-  font-weight: bold;
-  color: #345290;
-  font-size: 45px;
-  line-height: 48px;
-}
-
-.events-section .mdl-card__title {
-  padding-bottom: 0;
-}
-
-.news-section .mdl-card__title {
-  padding-bottom: 0;
-}
-
-.news-section .mdl-card__title-text {
-  font-weight: bold;
-  color: #768EBF;
-  font-size: 45px;
-  line-height: 48px;
-}
-
-.news-section h4 {
-  color: #000;
-  margin-top: 0;
-}
-
-.news-section img {
-  width: 100% !important;
-  height: auto !important;
-}
-
-.news-section-teaser {
-  margin-bottom: 16px;
-}*/
 
 h3 {
   font-weight: bold;
@@ -377,33 +339,7 @@ a img{
   background-size: cover;
 }
 
-/*.logo-font {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
-  line-height: 1;
-  color: #fff;
-  font-weight: 500;
-}
 
-.android-slogan {
-  font-size: 60px;
-  padding-top: 100px;
-}
-
-.android-sub-slogan {
-  font-size: 21px;
-  padding-top: 24px;
-}
-
-.android-create-character {
-  font-size: 21px;
-  padding-top: 400px;
-}
-
-  .android-create-character a {
-    text-decoration: none;
-    color: #767777;
-    font-weight: 300;
-  }*/
 
 .android-screen-section {
   position: relative;
@@ -785,9 +721,6 @@ max-width: 231px;
 }
 
 
-/*.geneseo-left-nav::-webkit-scrollbar-track-piece {
-    background: #888
-}*/
 
 .geneseo-left-nav a {
   color: rgba(0,0,0,.87);
@@ -870,23 +803,7 @@ max-width: 231px;
   margin-top: 0;
 }
 
-/*.geneseo-home-img h1 {
-  color: #fff;
-  z-index: 1;
-}
 
-.geneseo-home-img img {
-  min-width: 100%;
-  max-width: 0;
-  height: auto;
-  width: auto;
-}
-
-.geneseo-home-text-wrapper {
-  width: 100%;
-  position: absolute;
-  text-align: center;
-}*/
 
 .geneseo-more-button {
   z-index: 1;
@@ -915,57 +832,7 @@ max-width: 231px;
   }
 }
 
-/*.geneseo-home-card {
-  position: absolute;
-  top: 350px;;
-  left: 15%;
-  background-color: rgba(52,82,144, 0.9);
-  color: #fff;
-  padding: 10px 20px;
-  padding-bottom: 30px;
-  width: 370px;
-  min-height: 0;
-}
 
-.geneseo-home-card .mdl-card__title-text {
-  color: #fff;
-}
-
-.geneseo-home-card .mdl-card__supporting-text {
-  color: #fff;
-}
-
-.geneseo-home-slider-buttons {
-  float: right;
-}
-
-.geneseo-home-slider-buttons .mdl-button {
-  background-color: #345290;
-}
-
-.geneseo-home-slider-buttons .mdl-button:hover {
-  background-color: #3E5B98;
-}
-
-.geneseo-home-slider-buttons .material-icons {
-  font-size: 36px;
-  left: 37.5%;
-}
-
-.geneseo-home-slider-link-text {
-  padding-left: 0;
-  float: left;
-  color: #fff;
-  font-size: 18px;
-  top: 10px;
-  width:100%;
-  text-align: initial;
-}
-
-.geneseo-home-card .mdl-card__actions {
-  position: absolute;
-  bottom: 0;
-}*/
 
 @media (min-width: 840px) {
   .mdl-layout__header-row {
@@ -1013,78 +880,7 @@ max-width: 231px;
   color: #fff;
 }
 
-/*.geneseo-main-event-wrapper {
-  font-size: 1.75rem;
-  line-height: 2rem;
-  text-align: center;
-}
 
-.geneseo-main-event-date-number {
-  font-size: 3rem;
-  line-height: 3rem;
-}
-
-.geneseo-main-event-date {
-  padding: 5px;
-  width: 100%;
-  margin-top: 20px;
-  background-color: #fff;
-}
-
-.geneseo-main-event-desc {
-  padding-left: 15px;
-}
-
-.geneseo-main-slider-text h3 {
-  color: #fff;
-}
-
-time.calendar-icon {
-  font-size: 1rem;
-  display: block;
-  position: relative;
-  width: 7em;
-  height: 7em;
-  background-color: #fff;
-  border-radius: 0.6em;
-  box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
-  overflow: hidden;
-  margin: 0 auto;
-  margin-top: 24px;
-}
-
-time.calendar-icon * {
-  display: block;
-  width: 100%;
-  font-size: 1em;
-  font-weight: bold;
-  font-style: normal;
-  text-align: center;
-}
-
-time.calendar-icon em {
-  position: absolute;
-  bottom: 0.3em;
-  color: #345290;
-}
-
-time.calendar-icon strong {
-  position: absolute;
-  top: 0;
-  padding: 0.4em 0;
-  color: #fff;
-  background-color: #345290;
-  border-bottom: 1px dashed #86c1ea ;
-  box-shadow: 0 2px 2 #345290;
-}
-
-time.calendar-icon span {
-  font-size: 2.8em;
-  letter-spacing: -0.05em;
-  padding-top: 1.05em;
-  color: #345290;
-}
-*/
 
 .geneseo-footer-bottom {
   text-align: center;
@@ -1272,46 +1068,6 @@ font-family: "Open Sans",sans-serif !important;
   }
 }
 
-p {	
-}
-/*, .mdl-card__supporting-text {
-  font-size: 18px;
-}
-
-.geneseo-faculty-tabs {
-  font-size: 18px;
-}
-
-.geneseo-faculty-tabs ul {
-  font-size: 18px;
-}
-
-.geneseo-faculty-tabs .mdl-card__supporting-text, .geneseo-faculty-tabs p {
-  font-size: 18px;
-}
-
-.geneseo-faculty-tabs .mdl-layout__tab-bar {
-  background: none;
-}
-
-.geneseo-faculty-tabs .mdl-layout__header {
-  background: none;
-  min-height: 0;
-  z-index: 0;
-}
-
-.geneseo-faculty-tabs.mdl-layout.is-upgraded .mdl-layout__tab {
-  color: rgba(0,0,0,.54);
-}
-.geneseo-faculty-tabs.mdl-layout.is-upgraded .mdl-layout__tab.is-active {
-  color: #000;
-}
-
-.geneseo-faculty-tabs.mdl-layout.is-upgraded .mdl-layout__tab.is-active::after {
-  background-color: #345290;
-}
-*/
-
 
 a {
   color: #345290;
@@ -1324,14 +1080,6 @@ a:hover {
   color: #86C1EA;
 }
 
-/*.faculty-card .mdl-card__title{
-  padding-bottom: 0;
-}
-
-.faculty-card-title {
-  padding-top: 8px;
-}
-*/
 .geneseo-img-nav {
   position: absolute;
   top: 64px;
@@ -1352,36 +1100,7 @@ a:hover {
   width: 100%;
   transform: translateY(-30px);
 }
-/*
-.geneseo-button--primary {
-  background-color: #345290;
-}
 
-.geneseo-button--success {
-  background-color: #008061;
-}
-
-.geneseo-button--warning {
-  background-color: #CC9900;
-}
-
-.geneseo-button--info {
-  background-color: #86c1ea;
-}
-
-.geneseo-button--danger {
-  background-color: #ff4081;
-}
-
-.geneseo-button {
-  color: #fff;
-  margin-right: 15px;
-}
-
-.geneseo-button:hover {
-  color: #000;
-}
-*/
 .mdl-selectfield {
   display: block;
 }
@@ -1459,34 +1178,6 @@ a:hover {
   margin-top: 32px;
 }
 
-/*.faculty-card img {
-  width: 100%;
-}
-
-.faculty-card .mdl-card__title-text {
-  font-size: 18px;
-}
-
-.field-collection-container .field-items .field-item {
-  margin-bottom: 0;
-}
-
-.geneseo-main-slider-text .unslider-wrap li {
-  margin-bottom: 16px !important;
-}
-
-.geneseo-home-card-nav-buttons {
-  transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 3px;
-}
-
-.geneseo-home-card-nav-buttons:hover {
-  background-color: rgba(170,170,170,0.4);
-}
-
-.geneseo-home-card-nav-buttons:active {
-  background-color: rgba(170,170,170,0.6);
-}*/
 
 @media(min-width: 840px) {
   .geneseo-footer .mdl-mega-footer__middle-section {
@@ -1505,56 +1196,7 @@ a:hover {
     padding: 0;
   }
 }
-/*
-.news-section .android-link {
-  padding-left: 0;
-}
 
-.news-events-section {
-  padding: 24px 8px;
-}
-
-.featured-photo h2 {
-  color: #345290;
-  margin-bottom: 0;
-  margin-top: 16px;
-}
-
-@media(max-width: 1024px) {
-  .mdl-card {
-    width: 100%;
-  }
-  .faculty-card-wrapper {
-    width: calc(50% - 16px) !important;
-  }
-}
-
-@media(max-width: 550px) {
-  .faculty-card-wrapper {
-    width: calc(100% - 16px) !important;
-  }
-}
-
-@media(max-width: 1170px) and (min-width: 1024px) {
-  .geneseo-main-event-desc {
-    padding-left: 30px;
-  }
-}
-
-.faculty-card-wrapper {
-  padding: 8px;
-}
-
-.mdl-card__media {
-  background-color: #C4CCDF;
-}
-
-@media(max-width: 1024px) {
-  .breadcrumb {
-    padding-top: 0px;
-  }
-}
-*/
 .element-invisible {
   padding: 0;
   margin: 0;
@@ -2604,7 +2246,7 @@ padding: 2px 8px 2px 12px !important;
         }
 
         .noDisc li{
-           font-size:1.2em;
+/*           font-size:1.2em;*/
         	margin-bottom: 10px;
         }
         

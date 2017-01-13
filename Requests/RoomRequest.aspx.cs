@@ -39,7 +39,7 @@ public partial class Requests_RoomRequest : System.Web.UI.Page
                 mailMessage.From = new MailAddress(txtEmail.Text);
                 mailMessage.To.Add("libinstr@geneseo.edu");
                 //mailMessage.To.Add("ha@geneseo.edu");
-                mailMessage.Bcc.Add("ha@geneseo.edu");
+                mailMessage.Bcc.Add("ha@geneseo.edu,rootl@geneseo.edu");
                 mailMessage.Subject = "Room Request: " + txtFirstName.Text + " " + txtLastName.Text + " (" + ddlRoom.SelectedValue + ")";
 
                 mailMessage.Priority = MailPriority.Normal;

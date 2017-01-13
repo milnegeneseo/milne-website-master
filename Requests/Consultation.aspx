@@ -99,7 +99,7 @@
 </div> &nbsp;<asp:requiredfieldvalidator id="rfResearchCollege" runat="server" errormessage="Required" CssClass="required" controltovalidate="rblResearchCollege" SetFocusOnError="True" > </asp:requiredfieldvalidator> <br />
 <%-- College Yes Visibility --%>
 <asp:Panel ID="collegeResearchYesPanel" runat="server" Visible="False" >
-<label>Course Number (ABCD 123 Format): </label><asp:TextBox ID="txtCourseNumber" runat="server" size="8" maxlength="8"  />&nbsp;<asp:RegularExpressionValidator ID="reCourseNumber" SetFocusOnError="true" CssClass="required" ValidationExpression="^[a-zA-Z]{4} [0-9]{3}$" ErrorMessage="Course Number should be in 'ABCD 123' format" ControlToValidate="txtCourseNumber" runat="server" /><br />
+<label>Course Number (ABCD 123 Format): </label><asp:TextBox ID="txtCourseNumber" runat="server" size="8" maxlength="8"  />&nbsp;<asp:RegularExpressionValidator ID="reCourseNumber" SetFocusOnError="true" CssClass="required" ValidationExpression="^[A-Z]{4} [0-9]{3}$" ErrorMessage="Course Number should be in 'ABCD 123' format, Uppercase letters" ControlToValidate="txtCourseNumber" runat="server" /><br />
 <label>Course Title: </label><asp:TextBox ID="txtCourseTitle" runat="server" size="45" maxlength="75" /><br />
 <label>Department:</label>
 <asp:DropDownList runat="server" ID="ddlDepartmentActive" /><br />
@@ -161,7 +161,7 @@ Please include the number of pages required, and type of material you must use <
 &nbsp;<asp:requiredfieldvalidator id="rfTechnologyCollege" runat="server" errormessage="Required" CssClass="required" controltovalidate="rblTechnologyCollege" SetFocusOnError="True" > </asp:requiredfieldvalidator> <br />
 <%-- College Yes Visibility --%>
 <asp:Panel ID="collegeTechnologyYesPanel" runat="server" Visible="False" >
-<label>Course Number (ABCD 123 Format): </label><asp:TextBox ID="txtTechnologyCourseNumber" runat="server" size="8" maxlength="8"  />&nbsp;<asp:RegularExpressionValidator ID="reTechnologyCourseNumber" SetFocusOnError="true" CssClass="required" ValidationExpression="^[a-zA-Z]{4} [0-9]{3}$" ErrorMessage="Course Number should be in 'ABCD 123' format" ControlToValidate="txtTechnologyCourseNumber" runat="server" /><br />
+<label>Course Number (ABCD 123 Format): </label><asp:TextBox ID="txtTechnologyCourseNumber" runat="server" size="8" maxlength="8"  />&nbsp;<asp:RegularExpressionValidator ID="reTechnologyCourseNumber" SetFocusOnError="true" CssClass="required" ValidationExpression="^[A-Z]{4} [0-9]{3}$" ErrorMessage="Course Number should be in 'ABCD 123' format, uppercase letters" ControlToValidate="txtTechnologyCourseNumber" runat="server" /><br />
 <label>Course Title: </label><asp:TextBox ID="txtTechnologyCourseTitle" runat="server" size="45" maxlength="75" /><br />
 <label>Department:</label>
 <asp:DropDownList runat="server" ID="ddlTechnologyDepartmentActive" /><br />

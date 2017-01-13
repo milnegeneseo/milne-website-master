@@ -31,7 +31,7 @@ public partial class Requests_CirculatingReserves : System.Web.UI.Page
                 mailMessage.From = new MailAddress(txtEmail.Text);
                 mailMessage.To.Add("hanna@geneseo.edu");
                 //mailMessage.To.Add("ha@geneseo.edu"); 
-                mailMessage.Bcc.Add("ha@geneseo.edu");
+                mailMessage.Bcc.Add("ha@geneseo.edu,rootl@geneseo.edu");
                 mailMessage.Subject = "Circulating Reserve Request: " + txtFirstName.Text + " " + txtLastName.Text;
 
                 mailMessage.Priority = MailPriority.Normal;

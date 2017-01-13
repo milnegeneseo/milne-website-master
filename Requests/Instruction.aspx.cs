@@ -178,7 +178,7 @@ public partial class Requests_Instruction : System.Web.UI.Page
             mailMessage.From = new MailAddress(txtEmail.Text);
             mailMessage.To.Add("libinstr@geneseo.edu");
             //mailMessage.To.Add("ha@geneseo.edu");
-            mailMessage.Bcc.Add("ha@geneseo.edu");
+            mailMessage.Bcc.Add("ha@geneseo.edu,rootl@geneseo.edu");
 
             if (rblType.SelectedValue == "Research")
             {
@@ -319,7 +319,7 @@ public partial class Requests_Instruction : System.Web.UI.Page
         mailMessage.From = new MailAddress(txtMediaEmail.Text);
         mailMessage.To.Add("libinstr@geneseo.edu");
         //mailMessage.To.Add("ha@geneseo.edu");
-        mailMessage.Bcc.Add("ha@geneseo.edu");
+        mailMessage.Bcc.Add("ha@geneseo.edu,rootl@geneseo.edu");
         mailMessage.Subject = "High School Instruction Request: " + txtSchoolName.Text;
 
         mailMessage.Priority = MailPriority.Normal;

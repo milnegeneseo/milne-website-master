@@ -27,7 +27,7 @@ public partial class Requests_BookRenewal : System.Web.UI.Page
         mailMessage.From = new MailAddress(txtEmail.Text);
         mailMessage.To.Add("circ@geneseo.edu");
         //mailMessage.To.Add("ha@geneseo.edu");
-        mailMessage.Bcc.Add("ha@geneseo.edu");
+        mailMessage.Bcc.Add("ha@geneseo.edu,rootl@geneseo.edu");
         mailMessage.Subject = "Community Borrower Book Renewal Request: " + txtFirstName.Text + " " + txtLastName.Text;
 
         mailMessage.Priority = MailPriority.Normal;

@@ -137,7 +137,7 @@
 <asp:Panel ID="HighSchoolInstructionInfoPanel" runat="server" Visible="False" ><br />  
 <fieldset>
 <legend>High School Instruction Policies</legend>           
-<h3>Requests</h3>
+<h3 style="font-size: 2.2em; font-weight: normal !important;">Requests</h3>
        <p>Requests for high school class visits should be made by either the high school library media specialist or the teacher of the class visiting the library. </p>
        <p>To make a request, please select <strong>"High School" Instruction Type below</strong> and complete the High School Instruction Request form.</p>
        <p>In order to integrate your students’ needs with those of our college students, it is necessary that we receive your request&nbsp;form <b>3 weeks in advance</b> of the date requested for the visit. Confirmation for library instruction will be made via e-mail within 7 days of receipt of this form.</p> 
@@ -147,7 +147,7 @@
        <p>Students will be given a one-day username and password that will provide them use of the Library’s computers and free computer printing for the day of their visit.</p>
 	   <p>Please forward a list of student topics to the Library Instruction Coordinator at least 5 days before your visit.</p>
 <p>Please direct all questions regarding visits to <a href="mailto:libinstr@geneseo.edu"><strong>libinstr@geneseo.edu</strong></a></strong>.</p>
-<h3>Borrowing</h3>
+<h3 style="font-size: 2.2em; font-weight: normal !important;">Borrowing</h1>
        <p>High school class visits are intended to provide students with on-site use of library resources.</p>
        <p>Unfortunately we are unable to lend materials to groups during their visit. Students who are 18 years old may return to the library on their own to obtain a Guest Borrower’s card if they need materials at Geneseo which are not available through the high school’s library media center and interlibrary loan.</p>
        <p>Students younger than 18 will need to bring someone older with them in order to borrow materials.</p>
@@ -173,11 +173,11 @@
 <asp:Panel ID="ResearchTechInstructionPanel" runat="server" Visible="False" >
 <%-- Research Title Panel --%>
     <asp:Panel ID="ResearchTitlePanel" runat="server" Visible="False" >   
-<h3>Research Instruction</h3> 
+<h3 style="font-size: 2.2em;">Research Instruction</h3> 
 </asp:Panel> <!--Research Instruction Title Panel-->
 <%-- Tech  Title Panel--%>
     <asp:Panel ID="InstructionTitlePanel" runat="server" Visible="False" >
-<h3>Technology Instruction</h3>
+<h3 style="font-size: 2.2em;">Technology Instruction</h3>
 </asp:Panel> <!--Tech Instruction Title Panel-->
 <fieldset>
 <legend>Faculty Information</legend>
@@ -202,7 +202,7 @@
 <asp:requiredfieldvalidator id="rfCollege" runat="server" errormessage="Required" CssClass="required" controltovalidate="rblCollege" SetFocusOnError="True" > </asp:requiredfieldvalidator> &nbsp;<br />
 <%-- College Yes Visibility --%>
 <asp:Panel ID="collegeYesPanel" runat="server" Visible="True" >    
-<label>Course Number (ABCD 123 Format): </label><asp:TextBox ID="txtCourseNumber" runat="server" size="8" maxlength="8"  />&nbsp;<asp:RegularExpressionValidator ID="reCourseNumber" SetFocusOnError="true" CssClass="required" ValidationExpression="^[a-zA-Z]{4} [0-9]{3}$" ErrorMessage="Course Number should be in 'ABCD 123' format" ControlToValidate="txtCourseNumber" runat="server" /><br />
+<label>Course Number (ABCD 123 Format): </label><asp:TextBox ID="txtCourseNumber" runat="server" size="8" maxlength="8"  />&nbsp;<asp:RegularExpressionValidator ID="reCourseNumber" SetFocusOnError="true" CssClass="required" ValidationExpression="^[zA-Z]{4} [0-9]{3}$" ErrorMessage="Course Number should be in 'ABCD 123' format" ControlToValidate="txtCourseNumber" runat="server" /><br />
 <label>Course Title: </label><asp:TextBox ID="txtCourseTitle" runat="server" size="45" maxlength="75"  /><br />
 <label>Department:</label>
 <asp:DropDownList runat="server" Width="150px" ID="ddlDepartmentActive" /><br /><br />
@@ -384,7 +384,7 @@ Given the opportunity and the structure of the library skills instruction (i.e.,
 </asp:Panel> <!--End of Research Tech Instruction Panel-->
 <!--Begin HSInstruction Panel -->
 <asp:Panel ID="HSInstructionPanel" runat="server" Visible="False" >
-<h3>High School Instruction</h3> 
+<h3 style="font-size: 2.2em;">High School Instruction</h3> 
 <fieldset>
 <legend>School Information</legend>
 <label><asp:requiredfieldvalidator id="rfSchoolName" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtSchoolName" SetFocusOnError="True"></asp:requiredfieldvalidator>&nbsp; <span class="required">*</span> School Name: </label><asp:TextBox ID="txtSchoolName" runat="server" size="25" maxlength="75" /> <br /> 

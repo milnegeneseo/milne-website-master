@@ -28,7 +28,7 @@ display:none !important;}
 </style>
 <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" media="all" />
   </head>
-<style>
+</style>
 @font-face {
     font-family: "Neutraface Text";
     src: url('fonts/NeutrafaceText-Book.eot');

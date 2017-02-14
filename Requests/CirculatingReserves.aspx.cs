@@ -29,7 +29,7 @@ public partial class Requests_CirculatingReserves : System.Web.UI.Page
                 SmtpClient smtpClient = new SmtpClient();
 
                 mailMessage.From = new MailAddress(txtEmail.Text);
-                mailMessage.To.Add("hanna@geneseo.edu");
+                mailMessage.To.Add("salluzzo@geneseo.edu");
                 //mailMessage.To.Add("ha@geneseo.edu"); 
                 mailMessage.Bcc.Add("ha@geneseo.edu,rootl@geneseo.edu");
                 mailMessage.Subject = "Circulating Reserve Request: " + txtFirstName.Text + " " + txtLastName.Text;
@@ -56,6 +56,7 @@ public partial class Requests_CirculatingReserves : System.Web.UI.Page
                 sb.AppendFormat("Material Information" + Environment.NewLine + "    ");
                 sb.AppendFormat("Author: {0}" + Environment.NewLine + "    ", txtAuthor.Text.Trim());
                 sb.AppendFormat("Title: {0}" + Environment.NewLine + "    ", txtTitle.Text.Trim());
+                sb.AppendFormat("ISBN: {0}" + Environment.NewLine + "    ", txtISBN.Text.Trim());
                 sb.AppendFormat("Reserve Type: {0}" + Environment.NewLine + "    ", ddlReserve.SelectedValue);
                 sb.AppendFormat("# of Copies: {0}" + Environment.NewLine + "    ", txtCopies.Text.Trim());
                 sb.AppendFormat("Material Type: {0}" + Environment.NewLine + Environment.NewLine + "    ", ddlMaterial.SelectedValue);
@@ -64,6 +65,7 @@ public partial class Requests_CirculatingReserves : System.Web.UI.Page
                 {
                 sb.AppendFormat("Author: {0}" + Environment.NewLine + "    ", txtAuthor2.Text.Trim());
                 sb.AppendFormat("Title: {0}" + Environment.NewLine + "    ", txtTitle2.Text.Trim());
+                sb.AppendFormat("ISBN: {0}" + Environment.NewLine + "    ", txtISBN2.Text.Trim());
                 sb.AppendFormat("Reserve Type: {0}" + Environment.NewLine + "    ", ddlReserve2.SelectedValue);
                 sb.AppendFormat("# of Copies: {0}" + Environment.NewLine + "    ", txtCopies2.Text.Trim());
                 sb.AppendFormat("Material Type: {0}" + Environment.NewLine + Environment.NewLine + "    ", ddlMaterial2.SelectedValue);
@@ -73,6 +75,7 @@ public partial class Requests_CirculatingReserves : System.Web.UI.Page
                 {
                     sb.AppendFormat("Author: {0}" + Environment.NewLine + "    ", txtAuthor3.Text.Trim());
                     sb.AppendFormat("Title: {0}" + Environment.NewLine + "    ", txtTitle3.Text.Trim());
+                    sb.AppendFormat("ISBN: {0}" + Environment.NewLine + "    ", txtISBN3.Text.Trim());
                     sb.AppendFormat("Reserve Type: {0}" + Environment.NewLine + "    ", ddlReserve3.SelectedValue);
                     sb.AppendFormat("# of Copies: {0}" + Environment.NewLine + "    ", txtCopies3.Text.Trim());
                     sb.AppendFormat("Material Type: {0}" + Environment.NewLine + Environment.NewLine + "    ", ddlMaterial3.SelectedValue);
@@ -82,6 +85,7 @@ public partial class Requests_CirculatingReserves : System.Web.UI.Page
                 {
                     sb.AppendFormat("Author: {0}" + Environment.NewLine + "    ", txtAuthor4.Text.Trim());
                     sb.AppendFormat("Title: {0}" + Environment.NewLine + "    ", txtTitle4.Text.Trim());
+                    sb.AppendFormat("ISBN: {0}" + Environment.NewLine + "    ", txtISBN4.Text.Trim());
                     sb.AppendFormat("Reserve Type: {0}" + Environment.NewLine + "    ", ddlReserve4.SelectedValue);
                     sb.AppendFormat("# of Copies: {0}" + Environment.NewLine + "    ", txtCopies4.Text.Trim());
                     sb.AppendFormat("Material Type: {0}" + Environment.NewLine + Environment.NewLine + "    ", ddlMaterial4.SelectedValue);
@@ -91,6 +95,7 @@ public partial class Requests_CirculatingReserves : System.Web.UI.Page
                 {
                     sb.AppendFormat("Author: {0}" + Environment.NewLine + "    ", txtAuthor5.Text.Trim());
                     sb.AppendFormat("Title: {0}" + Environment.NewLine + "    ", txtTitle5.Text.Trim());
+                    sb.AppendFormat("ISBN: {0}" + Environment.NewLine + "    ", txtISBN5.Text.Trim());
                     sb.AppendFormat("Reserve Type: {0}" + Environment.NewLine + "    ", ddlReserve5.SelectedValue);
                     sb.AppendFormat("# of Copies: {0}" + Environment.NewLine + "    ", txtCopies5.Text.Trim());
                     sb.AppendFormat("Material Type: {0}" + Environment.NewLine + Environment.NewLine + "    ", ddlMaterial5.SelectedValue);
@@ -100,6 +105,7 @@ public partial class Requests_CirculatingReserves : System.Web.UI.Page
                 {
                     sb.AppendFormat("Author: {0}" + Environment.NewLine + "    ", txtAuthor6.Text.Trim());
                     sb.AppendFormat("Title: {0}" + Environment.NewLine + "    ", txtTitle6.Text.Trim());
+                    sb.AppendFormat("ISBN: {0}" + Environment.NewLine + "    ", txtISBN6.Text.Trim());
                     sb.AppendFormat("Reserve Type: {0}" + Environment.NewLine + "    ", ddlReserve6.SelectedValue);
                     sb.AppendFormat("# of Copies: {0}" + Environment.NewLine + "    ", txtCopies6.Text.Trim());
                     sb.AppendFormat("Material Type: {0}" + Environment.NewLine + Environment.NewLine + "    ", ddlMaterial6.SelectedValue);
@@ -109,6 +115,7 @@ public partial class Requests_CirculatingReserves : System.Web.UI.Page
                 {
                     sb.AppendFormat("Author: {0}" + Environment.NewLine + "    ", txtAuthor7.Text.Trim());
                     sb.AppendFormat("Title: {0}" + Environment.NewLine + "    ", txtTitle7.Text.Trim());
+                    sb.AppendFormat("ISBN: {0}" + Environment.NewLine + "    ", txtISBN7.Text.Trim());
                     sb.AppendFormat("Reserve Type: {0}" + Environment.NewLine + "    ", ddlReserve7.SelectedValue);
                     sb.AppendFormat("# of Copies: {0}" + Environment.NewLine + "    ", txtCopies7.Text.Trim());
                     sb.AppendFormat("Material Type: {0}" + Environment.NewLine + Environment.NewLine + "    ", ddlMaterial7.SelectedValue);
@@ -118,6 +125,7 @@ public partial class Requests_CirculatingReserves : System.Web.UI.Page
                 {
                     sb.AppendFormat("Author: {0}" + Environment.NewLine + "    ", txtAuthor8.Text.Trim());
                     sb.AppendFormat("Title: {0}" + Environment.NewLine + "    ", txtTitle8.Text.Trim());
+                    sb.AppendFormat("ISBN: {0}" + Environment.NewLine + "    ", txtISBN8.Text.Trim());
                     sb.AppendFormat("Reserve Type: {0}" + Environment.NewLine + "    ", ddlReserve8.SelectedValue);
                     sb.AppendFormat("# of Copies: {0}" + Environment.NewLine + "    ", txtCopies8.Text.Trim());
                     sb.AppendFormat("Material Type: {0}" + Environment.NewLine + Environment.NewLine + "    ", ddlMaterial8.SelectedValue);
@@ -127,6 +135,7 @@ public partial class Requests_CirculatingReserves : System.Web.UI.Page
                 {
                     sb.AppendFormat("Author: {0}" + Environment.NewLine + "    ", txtAuthor9.Text.Trim());
                     sb.AppendFormat("Title: {0}" + Environment.NewLine + "    ", txtTitle9.Text.Trim());
+                    sb.AppendFormat("ISBN: {0}" + Environment.NewLine + "    ", txtISBN9.Text.Trim());
                     sb.AppendFormat("Reserve Type: {0}" + Environment.NewLine + "    ", ddlReserve9.SelectedValue);
                     sb.AppendFormat("# of Copies: {0}" + Environment.NewLine + "    ", txtCopies9.Text.Trim());
                     sb.AppendFormat("Material Type: {0}" + Environment.NewLine + Environment.NewLine + "    ", ddlMaterial9.SelectedValue);
@@ -136,6 +145,7 @@ public partial class Requests_CirculatingReserves : System.Web.UI.Page
                 {
                     sb.AppendFormat("Author: {0}" + Environment.NewLine + "    ", txtAuthor10.Text.Trim());
                     sb.AppendFormat("Title: {0}" + Environment.NewLine + "    ", txtTitle10.Text.Trim());
+                    sb.AppendFormat("ISBN: {0}" + Environment.NewLine + "    ", txtISBN10.Text.Trim());
                     sb.AppendFormat("Reserve Type: {0}" + Environment.NewLine + "    ", ddlReserve10.SelectedValue);
                     sb.AppendFormat("# of Copies: {0}" + Environment.NewLine + "    ", txtCopies10.Text.Trim());
                     sb.AppendFormat("Material Type: {0}" + Environment.NewLine + Environment.NewLine + "    ", ddlMaterial10.SelectedValue);
@@ -189,18 +199,19 @@ public partial class Requests_CirculatingReserves : System.Web.UI.Page
                 sb.AppendFormat("Material Information" + Environment.NewLine + "    ");
                 sb.AppendFormat("Author: {0}" + Environment.NewLine + "    ", txtAuthor.Text.Trim());
                 sb.AppendFormat("Title: {0}" + Environment.NewLine + "    ", txtTitle.Text.Trim());
+                sb.AppendFormat("ISBN: {0}" + Environment.NewLine + "    ", txtISBN.Text.Trim());
                 sb.AppendFormat("Reserve Type: {0}" + Environment.NewLine + "    ", ddlReserve.SelectedValue);
                 sb.AppendFormat("# of Copies: {0}" + Environment.NewLine + "    ", txtCopies.Text.Trim());
                 sb.AppendFormat("Material Type: {0}" + Environment.NewLine + Environment.NewLine, ddlMaterial.SelectedValue);
 
                 sb.AppendFormat("Author: {0}" + Environment.NewLine + "    ", txtAuthor2.Text.Trim());
-                sb.AppendFormat("Title: {0}" + Environment.NewLine + "    ", txtTitle2.Text.Trim());
+                sb.AppendFormat("Title: {0}" + Environment.NewLine + "    ", txtISBN2.Text.Trim());
                 sb.AppendFormat("Reserve Type: {0}" + Environment.NewLine + "    ", ddlReserve2.SelectedValue);
                 sb.AppendFormat("# of Copies: {0}" + Environment.NewLine + "    ", txtCopies2.Text.Trim());
                 sb.AppendFormat("Material Type: {0}" + Environment.NewLine + Environment.NewLine, ddlMaterial2.SelectedValue);
 
                 sb.AppendFormat("Author: {0}" + Environment.NewLine + "    ", txtAuthor3.Text.Trim());
-                sb.AppendFormat("Title: {0}" + Environment.NewLine + "    ", txtTitle3.Text.Trim());
+                sb.AppendFormat("Title: {0}" + Environment.NewLine + "    ", txtISBN3.Text.Trim());
                 sb.AppendFormat("Reserve Type: {0}" + Environment.NewLine + "    ", ddlReserve3.SelectedValue);
                 sb.AppendFormat("# of Copies: {0}" + Environment.NewLine + "    ", txtCopies3.Text.Trim());
                 sb.AppendFormat("Material Type: {0}" + Environment.NewLine + Environment.NewLine, ddlMaterial3.SelectedValue);

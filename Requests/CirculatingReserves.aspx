@@ -60,7 +60,7 @@
 
     <label><asp:requiredfieldvalidator id="rfCourseTitle" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtCourseTitle" SetFocusOnError="True" ></asp:requiredfieldvalidator>&nbsp; <span class="required">*</span> Course Name: </label><asp:TextBox ID="txtCourseTitle" runat="server" size="25" maxlength="75"  /><br />
 
-    <label><asp:requiredfieldvalidator id="rfCourseNumber" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtCoursenumber" SetFocusOnError="True" ></asp:requiredfieldvalidator>&nbsp; <span class="required">*</span> Course Number (ABCD 123 Format): </label><asp:TextBox ID="txtCourseNumber" runat="server" size="8" maxlength="8"  />&nbsp;<asp:RegularExpressionValidator ID="reCourseNumber" SetFocusOnError="true" CssClass="required" ValidationExpression="^[a-zA-Z]{4} [0-9]{3}$" ErrorMessage="Course Number should be in 'ABCD 123' format" ControlToValidate="txtCourseNumber" runat="server" /><br />
+    <label><asp:requiredfieldvalidator id="rfCourseNumber" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtCoursenumber" SetFocusOnError="True" ></asp:requiredfieldvalidator>&nbsp; <span class="required">*</span> Course Number (ABCD 123 Format): </label><asp:TextBox ID="txtCourseNumber" runat="server" size="8" maxlength="8"  />&nbsp;<asp:RegularExpressionValidator ID="reCourseNumber" SetFocusOnError="true" CssClass="required" ValidationExpression="^[A-Z]{4} [0-9]{3}$" ErrorMessage="Course Number should be in 'ABCD 123' format" ControlToValidate="txtCourseNumber" runat="server" /><br />
 
     <label><asp:requiredfieldvalidator id="rfSection" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtSection" SetFocusOnError="True" ></asp:requiredfieldvalidator>&nbsp; <span class="required">*</span>Section: </label><asp:TextBox ID="txtSection" runat="server" size="8" maxlength="8"  />&nbsp;
                     <asp:RegularExpressionValidator ID="reSection" runat="server" CssClass="required" ControlToValidate="txtSection" ErrorMessage="Numbers only" SetFocusOnError="True" ValidationExpression="((^[0-9]+$))"></asp:RegularExpressionValidator><br />
@@ -80,22 +80,24 @@
     <table style="width: 100%;">
     <tbody>
         <tr>
-            <th><asp:requiredfieldvalidator id="rfAuthor" runat="server" errormessage="" CssClass="required" controltovalidate="txtAuthor" SetFocusOnError="True" ></asp:requiredfieldvalidator>&nbsp;<span class="required">*</span> Author</th>
-            <th><asp:requiredfieldvalidator id="rfTitle" runat="server" errormessage="" CssClass="required" controltovalidate="txtTitle" SetFocusOnError="True" ></asp:requiredfieldvalidator>&nbsp;<span class="required">*</span> Title</th>
-            <th><asp:requiredfieldvalidator id="rfReserve" runat="server" errormessage="" CssClass="required" controltovalidate="ddlReserve" SetFocusOnError="True" ></asp:requiredfieldvalidator>&nbsp;<span class="required">*</span> Reserve Type</th>
-            <th><asp:requiredfieldvalidator id="rfCopies" runat="server" errormessage="" CssClass="required" controltovalidate="txtCopies" SetFocusOnError="True" ></asp:requiredfieldvalidator>&nbsp;<span class="required">*</span> Number of Copies</th>
-            <th><asp:requiredfieldvalidator id="rfMaterial" runat="server" errormessage="" CssClass="required" controltovalidate="ddlMaterial" SetFocusOnError="True" ></asp:requiredfieldvalidator>&nbsp;<span class="required">*</span> Material Type</th>
+            <th style="height: 23px; text-align: justify; width: 176px;"><asp:requiredfieldvalidator id="rfAuthor" runat="server" errormessage="" CssClass="required" controltovalidate="txtAuthor" SetFocusOnError="True" ></asp:requiredfieldvalidator>&nbsp;<span class="required">*</span> Author</th>
+            <th style="width: 235px; height: 23px; text-align: justify;"><asp:requiredfieldvalidator id="rfTitle" runat="server" errormessage="" CssClass="required" controltovalidate="txtTitle" SetFocusOnError="True" ></asp:requiredfieldvalidator>&nbsp;<span class="required">*</span> Title</th>
+            <th style="width: 187px; height: 23px; text-align: justify;">ISBN</th>
+            <th style="height: 23px; width: 150px; text-align: justify;"><asp:requiredfieldvalidator id="rfReserve" runat="server" errormessage="" CssClass="required" controltovalidate="ddlReserve" SetFocusOnError="True" ></asp:requiredfieldvalidator>&nbsp;<span class="required">*</span> Reserve Type</th>
+            <th style="height: 23px; width: 148px; text-align: center;"><asp:requiredfieldvalidator id="rfCopies" runat="server" errormessage="" CssClass="required" controltovalidate="txtCopies" SetFocusOnError="True" ></asp:requiredfieldvalidator>&nbsp;<span class="required">*</span> Number of Copies</th>
+            <th style="height: 23px; text-align: justify;"><asp:requiredfieldvalidator id="rfMaterial" runat="server" errormessage="" CssClass="required" controltovalidate="ddlMaterial" SetFocusOnError="True" ></asp:requiredfieldvalidator>&nbsp;<span class="required">*</span> Material Type</th>
         </tr>
         <tr>
-            <td><asp:TextBox ID="txtAuthor" runat="server" size="20" maxlength="75"></asp:TextBox></td>
-            <td><asp:TextBox ID="txtTitle" runat="server" size="30" maxlength="75"></asp:TextBox></td>
-            <td><asp:DropDownList ID="ddlReserve" runat="server">
+            <td style="width: 176px"><asp:TextBox ID="txtAuthor" runat="server" size="20" maxlength="75"></asp:TextBox></td>
+            <td style="width: 235px"><asp:TextBox ID="txtTitle" runat="server" size="30" maxlength="75"></asp:TextBox></td>
+            <td style="width: 187px"><asp:TextBox ID="txtISBN" runat="server" size="20" maxlength="75"></asp:TextBox></td>
+            <td style="width: 150px"><asp:DropDownList ID="ddlReserve" runat="server">
                     <asp:ListItem Value="">--Select One--</asp:ListItem>
                     <asp:ListItem Value="4-hour">4-hour reserve</asp:ListItem>
                     <asp:ListItem Value="1-day">1-day reserve</asp:ListItem>
                 </asp:DropDownList>
             </td>
-            <td align="center"><asp:TextBox ID="txtCopies" runat="server" size="2" maxlength="2"></asp:TextBox></td>
+            <td align="center" style="width: 148px"><asp:TextBox ID="txtCopies" runat="server" size="2" maxlength="2"></asp:TextBox></td>
             <td><asp:DropDownList ID="ddlMaterial" runat="server">
                     <asp:ListItem Value="">--Select One--</asp:ListItem>
                     <asp:ListItem Value="Book">Book</asp:ListItem>
@@ -108,15 +110,16 @@
         </tr>
 
         <tr>
-            <td><asp:TextBox ID="txtAuthor2" runat="server" size="20" maxlength="75"></asp:TextBox></td>
-            <td><asp:TextBox ID="txtTitle2" runat="server" size="30" maxlength="75"></asp:TextBox></td>
-            <td><asp:DropDownList ID="ddlReserve2" runat="server">
+            <td style="width: 176px"><asp:TextBox ID="txtAuthor2" runat="server" size="20" maxlength="75"></asp:TextBox></td>
+            <td style="width: 235px"><asp:TextBox ID="txtTitle2" runat="server" size="30" maxlength="75"></asp:TextBox></td>
+            <td style="width: 187px"><asp:TextBox ID="txtISBN2" runat="server" size="20" maxlength="75"></asp:TextBox></td>
+            <td style="width: 150px"><asp:DropDownList ID="ddlReserve2" runat="server">
                     <asp:ListItem Value="">--Select One--</asp:ListItem>
                     <asp:ListItem Value="4-hour">4-hour reserve</asp:ListItem>
                     <asp:ListItem Value="1-day">1-day reserve</asp:ListItem>
                 </asp:DropDownList>
             </td>
-            <td align="center"><asp:TextBox ID="txtCopies2" runat="server" size="2" maxlength="2"></asp:TextBox></td>
+            <td align="center" style="width: 148px"><asp:TextBox ID="txtCopies2" runat="server" size="2" maxlength="2"></asp:TextBox></td>
             <td><asp:DropDownList ID="ddlMaterial2" runat="server">
                     <asp:ListItem Value="">--Select One--</asp:ListItem>
                     <asp:ListItem Value="Book">Book</asp:ListItem>
@@ -129,15 +132,16 @@
         </tr>
 
         <tr>
-            <td><asp:TextBox ID="txtAuthor3" runat="server" size="20" maxlength="75"></asp:TextBox></td>
-            <td><asp:TextBox ID="txtTitle3" runat="server" size="30" maxlength="75"></asp:TextBox></td>
-            <td><asp:DropDownList ID="ddlReserve3" runat="server">
+            <td style="width: 176px"><asp:TextBox ID="txtAuthor3" runat="server" size="20" maxlength="75"></asp:TextBox></td>
+            <td style="width: 235px"><asp:TextBox ID="txtTitle3" runat="server" size="30" maxlength="75"></asp:TextBox></td>
+            <td style="width: 187px"><asp:TextBox ID="txtISBN3" runat="server" size="20" maxlength="75"></asp:TextBox></td>
+            <td style="width: 150px"><asp:DropDownList ID="ddlReserve3" runat="server">
                     <asp:ListItem Value="">--Select One--</asp:ListItem>
                     <asp:ListItem Value="4-hour">4-hour reserve</asp:ListItem>
                     <asp:ListItem Value="1-day">1-day reserve</asp:ListItem>
                 </asp:DropDownList>
             </td>
-            <td align="center"><asp:TextBox ID="txtCopies3" runat="server" size="2" maxlength="2"></asp:TextBox></td>
+            <td align="center" style="width: 148px"><asp:TextBox ID="txtCopies3" runat="server" size="2" maxlength="2"></asp:TextBox></td>
             <td><asp:DropDownList ID="ddlMaterial3" runat="server">
                     <asp:ListItem Value="">--Select One--</asp:ListItem>
                     <asp:ListItem Value="Book">Book</asp:ListItem>
@@ -150,15 +154,16 @@
         </tr>
 
         <tr>
-            <td><asp:TextBox ID="txtAuthor4" runat="server" size="20" maxlength="75"></asp:TextBox></td>
-            <td><asp:TextBox ID="txtTitle4" runat="server" size="30" maxlength="75"></asp:TextBox></td>
-            <td><asp:DropDownList ID="ddlReserve4" runat="server">
+            <td style="width: 176px"><asp:TextBox ID="txtAuthor4" runat="server" size="20" maxlength="75"></asp:TextBox></td>
+            <td style="width: 235px"><asp:TextBox ID="txtTitle4" runat="server" size="30" maxlength="75"></asp:TextBox></td>
+            <td style="width: 187px"><asp:TextBox ID="txtISBN4" runat="server" size="20" maxlength="75"></asp:TextBox></td>
+            <td style="width: 150px"><asp:DropDownList ID="ddlReserve4" runat="server">
                     <asp:ListItem Value="">--Select One--</asp:ListItem>
                     <asp:ListItem Value="4-hour">4-hour reserve</asp:ListItem>
                     <asp:ListItem Value="1-day">1-day reserve</asp:ListItem>
                 </asp:DropDownList>
             </td>
-            <td align="center"><asp:TextBox ID="txtCopies4" runat="server" size="2" maxlength="2"></asp:TextBox></td>
+            <td align="center" style="width: 148px"><asp:TextBox ID="txtCopies4" runat="server" size="2" maxlength="2"></asp:TextBox></td>
             <td><asp:DropDownList ID="ddlMaterial4" runat="server">
                     <asp:ListItem Value="">--Select One--</asp:ListItem>
                     <asp:ListItem Value="Book">Book</asp:ListItem>
@@ -171,15 +176,16 @@
         </tr>
 
         <tr>
-            <td><asp:TextBox ID="txtAuthor5" runat="server" size="20" maxlength="75"></asp:TextBox></td>
-            <td><asp:TextBox ID="txtTitle5" runat="server" size="30" maxlength="75"></asp:TextBox></td>
-            <td><asp:DropDownList ID="ddlReserve5" runat="server">
+            <td style="width: 176px"><asp:TextBox ID="txtAuthor5" runat="server" size="20" maxlength="75"></asp:TextBox></td>
+            <td style="width: 235px"><asp:TextBox ID="txtTitle5" runat="server" size="30" maxlength="75"></asp:TextBox></td>
+            <td style="width: 187px"><asp:TextBox ID="txtISBN5" runat="server" size="20" maxlength="75"></asp:TextBox></td>
+            <td style="width: 150px"><asp:DropDownList ID="ddlReserve5" runat="server">
                     <asp:ListItem Value="">--Select One--</asp:ListItem>
                     <asp:ListItem Value="4-hour">4-hour reserve</asp:ListItem>
                     <asp:ListItem Value="1-day">1-day reserve</asp:ListItem>
                 </asp:DropDownList>
             </td>
-            <td align="center"><asp:TextBox ID="txtCopies5" runat="server" size="2" maxlength="2"></asp:TextBox></td>
+            <td align="center" style="width: 148px"><asp:TextBox ID="txtCopies5" runat="server" size="2" maxlength="2"></asp:TextBox></td>
             <td><asp:DropDownList ID="ddlMaterial5" runat="server">
                     <asp:ListItem Value="">--Select One--</asp:ListItem>
                     <asp:ListItem Value="Book">Book</asp:ListItem>
@@ -192,16 +198,17 @@
         </tr>
 
         <tr>
-            <td><asp:TextBox ID="txtAuthor6" runat="server" size="20" maxlength="75"></asp:TextBox></td>
-            <td><asp:TextBox ID="txtTitle6" runat="server" size="30" maxlength="75"></asp:TextBox></td>
-            <td><asp:DropDownList ID="ddlReserve6" runat="server">
+            <td style="height: 46px; width: 176px;"><asp:TextBox ID="txtAuthor6" runat="server" size="20" maxlength="75"></asp:TextBox></td>
+            <td style="width: 235px; height: 46px"><asp:TextBox ID="txtTitle6" runat="server" size="30" maxlength="75"></asp:TextBox></td>
+            <td style="width: 187px; height: 46px"><asp:TextBox ID="txtISBN6" runat="server" size="20" maxlength="75"></asp:TextBox></td>
+            <td style="width: 150px; height: 46px"><asp:DropDownList ID="ddlReserve6" runat="server">
                     <asp:ListItem Value="">--Select One--</asp:ListItem>
                     <asp:ListItem Value="4-hour">4-hour reserve</asp:ListItem>
                     <asp:ListItem Value="1-day">1-day reserve</asp:ListItem>
                 </asp:DropDownList>
             </td>
-            <td align="center"><asp:TextBox ID="txtCopies6" runat="server" size="2" maxlength="2"></asp:TextBox></td>
-            <td><asp:DropDownList ID="ddlMaterial6" runat="server">
+            <td align="center" style="width: 148px; height: 46px"><asp:TextBox ID="txtCopies6" runat="server" size="2" maxlength="2"></asp:TextBox></td>
+            <td style="height: 46px"><asp:DropDownList ID="ddlMaterial6" runat="server">
                     <asp:ListItem Value="">--Select One--</asp:ListItem>
                     <asp:ListItem Value="Book">Book</asp:ListItem>
                     <asp:ListItem Value="DVD">DVD</asp:ListItem>
@@ -213,15 +220,16 @@
         </tr>
 
         <tr>
-            <td><asp:TextBox ID="txtAuthor7" runat="server" size="20" maxlength="75"></asp:TextBox></td>
-            <td><asp:TextBox ID="txtTitle7" runat="server" size="30" maxlength="75"></asp:TextBox></td>
-            <td><asp:DropDownList ID="ddlReserve7" runat="server">
+            <td style="width: 176px"><asp:TextBox ID="txtAuthor7" runat="server" size="20" maxlength="75"></asp:TextBox></td>
+            <td style="width: 235px"><asp:TextBox ID="txtTitle7" runat="server" size="30" maxlength="75"></asp:TextBox></td>
+            <td style="width: 187px"><asp:TextBox ID="txtISBN7" runat="server" size="20" maxlength="75"></asp:TextBox></td>
+            <td style="width: 150px"><asp:DropDownList ID="ddlReserve7" runat="server">
                     <asp:ListItem Value="">--Select One--</asp:ListItem>
                     <asp:ListItem Value="4-hour">4-hour reserve</asp:ListItem>
                     <asp:ListItem Value="1-day">1-day reserve</asp:ListItem>
                 </asp:DropDownList>
             </td>
-            <td align="center"><asp:TextBox ID="txtCopies7" runat="server" size="2" maxlength="2"></asp:TextBox></td>
+            <td align="center" style="width: 148px"><asp:TextBox ID="txtCopies7" runat="server" size="2" maxlength="2"></asp:TextBox></td>
             <td><asp:DropDownList ID="ddlMaterial7" runat="server">
                     <asp:ListItem Value="">--Select One--</asp:ListItem>
                     <asp:ListItem Value="Book">Book</asp:ListItem>
@@ -234,15 +242,16 @@
         </tr>
 
         <tr>
-            <td><asp:TextBox ID="txtAuthor8" runat="server" size="20" maxlength="75"></asp:TextBox></td>
-            <td><asp:TextBox ID="txtTitle8" runat="server" size="30" maxlength="75"></asp:TextBox></td>
-            <td><asp:DropDownList ID="ddlReserve8" runat="server">
+            <td style="width: 176px"><asp:TextBox ID="txtAuthor8" runat="server" size="20" maxlength="75"></asp:TextBox></td>
+            <td style="width: 235px"><asp:TextBox ID="txtTitle8" runat="server" size="30" maxlength="75"></asp:TextBox></td>
+            <td style="width: 187px"><asp:TextBox ID="txtISBN8" runat="server" size="20" maxlength="75"></asp:TextBox></td>
+            <td style="width: 150px"><asp:DropDownList ID="ddlReserve8" runat="server">
                     <asp:ListItem Value="">--Select One--</asp:ListItem>
                     <asp:ListItem Value="4-hour">4-hour reserve</asp:ListItem>
                     <asp:ListItem Value="1-day">1-day reserve</asp:ListItem>
                 </asp:DropDownList>
             </td>
-            <td align="center"><asp:TextBox ID="txtCopies8" runat="server" size="2" maxlength="2"></asp:TextBox></td>
+            <td align="center" style="width: 148px"><asp:TextBox ID="txtCopies8" runat="server" size="2" maxlength="2"></asp:TextBox></td>
             <td><asp:DropDownList ID="ddlMaterial8" runat="server">
                     <asp:ListItem Value="">--Select One--</asp:ListItem>
                     <asp:ListItem Value="Book">Book</asp:ListItem>
@@ -255,15 +264,16 @@
         </tr>
 
         <tr>
-            <td><asp:TextBox ID="txtAuthor9" runat="server" size="20" maxlength="75"></asp:TextBox></td>
-            <td><asp:TextBox ID="txtTitle9" runat="server" size="30" maxlength="75"></asp:TextBox></td>
-            <td><asp:DropDownList ID="ddlReserve9" runat="server">
+            <td style="width: 176px"><asp:TextBox ID="txtAuthor9" runat="server" size="20" maxlength="75"></asp:TextBox></td>
+            <td style="width: 235px"><asp:TextBox ID="txtTitle9" runat="server" size="30" maxlength="75"></asp:TextBox></td>
+            <td style="width: 187px"><asp:TextBox ID="txtISBN9" runat="server" size="20" maxlength="75"></asp:TextBox></td>
+            <td style="width: 150px"><asp:DropDownList ID="ddlReserve9" runat="server">
                     <asp:ListItem Value="">--Select One--</asp:ListItem>
                     <asp:ListItem Value="4-hour">4-hour reserve</asp:ListItem>
                     <asp:ListItem Value="1-day">1-day reserve</asp:ListItem>
                 </asp:DropDownList>
             </td>
-            <td align="center"><asp:TextBox ID="txtCopies9" runat="server" size="2" maxlength="2"></asp:TextBox></td>
+            <td align="center" style="width: 148px"><asp:TextBox ID="txtCopies9" runat="server" size="2" maxlength="2"></asp:TextBox></td>
             <td><asp:DropDownList ID="ddlMaterial9" runat="server">
                     <asp:ListItem Value="">--Select One--</asp:ListItem>
                     <asp:ListItem Value="Book">Book</asp:ListItem>
@@ -276,15 +286,16 @@
         </tr>
 
         <tr>
-            <td><asp:TextBox ID="txtAuthor10" runat="server" size="20" maxlength="75"></asp:TextBox></td>
-            <td><asp:TextBox ID="txtTitle10" runat="server" size="30" maxlength="75"></asp:TextBox></td>
-            <td><asp:DropDownList ID="ddlReserve10" runat="server">
+            <td style="width: 176px"><asp:TextBox ID="txtAuthor10" runat="server" size="20" maxlength="75"></asp:TextBox></td>
+            <td style="width: 235px"><asp:TextBox ID="txtTitle10" runat="server" size="30" maxlength="75"></asp:TextBox></td>
+            <td style="width: 187px"><asp:TextBox ID="txtISBN10" runat="server" size="20" maxlength="75"></asp:TextBox></td>
+            <td style="width: 150px"><asp:DropDownList ID="ddlReserve10" runat="server">
                     <asp:ListItem Value="">--Select One--</asp:ListItem>
                     <asp:ListItem Value="4-hour">4-hour reserve</asp:ListItem>
                     <asp:ListItem Value="1-day">1-day reserve</asp:ListItem>
                 </asp:DropDownList>
             </td>
-            <td align="center"><asp:TextBox ID="txtCopies10" runat="server" size="2" maxlength="2"></asp:TextBox></td>
+            <td align="center" style="width: 148px"><asp:TextBox ID="txtCopies10" runat="server" size="2" maxlength="2"></asp:TextBox></td>
             <td><asp:DropDownList ID="ddlMaterial10" runat="server">
                     <asp:ListItem Value="">--Select One--</asp:ListItem>
                     <asp:ListItem Value="Book">Book</asp:ListItem>

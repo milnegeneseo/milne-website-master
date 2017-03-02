@@ -8,7 +8,7 @@ geneseo_all_milne_library.min.css  = minified compressed css; this is the file t
 
 jquery-ui.min.js & jquery-ui.min.css = used by Milne Front page Quicksearch, Milne pages and web applications
 jquery.ui.timepicker.js = used by Internetlib, Illiad, and Milne Web apps that require a nicer date and timepicker than the standard
-jquery.nivo.slider.js = Milne Front page slider
+
 jquery.1.11.1.min.js = used by Internetlib, Illiad, and web applications
 jquery-ui-1.10.3.custom.js & jquery-ui-1.10.3.custom.css = custom JQuery for sliders, popups, modals
 

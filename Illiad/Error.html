@@ -7,8 +7,7 @@
 <body>
 
 <!-- <h1>Information Delivery Services (IDS)</h1> -->
-<h1>Undelete Electronic Delivery</h1>
-<div style="margin-bottom:30px;">
+<h2 style="color: red;">Error</h2>
 <!--div>
 	<h3>You are signed in as <#PARAM name="Username"></h3> 
 	<ul>
@@ -17,14 +16,10 @@
 		<li><a href="<#ACTION action="99">">Logout</a></li>
 	</ul>
 </div-->
-<#INCLUDE filename="includes/include_menu_you_are_logged_in_as.html">
-</div>
-<div style="clear:both;"</div>
-		<p>In the event that you accidentally deleted an article and it no longer appears here, e-mail us at <a href="mailto:ids@geneseo.edu">ids@geneseo.edu</a>.</p>
-	
-		<div class="default-table">
-			<#TABLE name="ElectronicDeliveryUndelete" headerText="Deleted Electronically Received Articles"><br />
-		</div>
+<#INCLUDE filename="include_menu_you_are_logged_in_as.html">
+		<div id="status" style="color: red;"><#STATUS></div>
+	</div>
+
 								
 
 <#INCLUDE filename="includes/drupalfooter_responsive.inc">

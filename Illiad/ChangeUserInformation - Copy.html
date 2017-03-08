@@ -10,27 +10,21 @@
 <!-- <h1>Information Delivery Services (IDS)</h1> -->
 <h1>Account Settings</h1>
 <!-- <div style="margin-bottom:30px;"> -->
-
+<div>
 
 <#INCLUDE filename="includes/include_menu_you_are_logged_in_as.html">
-
-<div><p>Please note that the information below is used solely for contacting you about your requests.</p>
-<p>* denotes a required field.</p></div>
+</div>
+<div>Please note that the information below is used solely for contacting you about your requests.</div>
+<div>* denotes a required field.</div>
 		<form action="illiad.dll" method="post" name="ChangeUserInformation">
 			<input type="hidden" name="ILLiadForm" value="ChangeUserInformation">
 			<input type="hidden" id="NotifyGroup" name="NotifyGroup" value="E-Mail">
 			<input type="hidden" id="DeliveryGroup" name="DeliveryGroup" value="<#PARAM name="DeliveryGroup">">
 			<input type="hidden" id="WebDeliveryGroup" name="WebDeliveryGroup" value="<#PARAM name="WebDeliveryGroup">">
 			<input type="hidden" id="LoanDeliveryGroup" name="LoanDeliveryGroup" value="<#PARAM name="LoanDeliveryGroup">">
-			
 			<input type="hidden" id="NVTGC" name="NVTGC" size="1" value="ILL">
-			
-			
-			
-<div class="no-height-30-percent">
-<fieldset id="Personal-Information">
-<legend>Personal Information</legend>			
-				
+
+					<h2>Personal Information</h2>					
 					<div class="field_label">* First Name</div>
 					<div class="field"><input id="FirstName" name="FirstName" type="text" size="40" class="f-name" tabindex="2" value="<#PARAM name="FirstName">"></div>
 						
@@ -86,32 +80,15 @@
 
 					<div class="field_label">People authorized to pick up materials on your behalf (full name).</div>
 					<div class="field"><textarea id="AuthorizedUsers" name="AuthorizedUsers" rows="2" cols="40" class="f-name" tabindex="15"><#PARAM name="AuthorizedUsers"></textarea></div>							
-</fieldset>
-</div>
-
-
-
-
-<div class="no-height-60-percent">
-<fieldset id="Notification-Preferences">
-<legend>Notification Preferences</legend>					
-<div style="margin-bottom: 20px;">				       
+					
+<div>					       
 					<#include filename="includes/include_notification_preferences.html">
-</div>
-<div style="float:left;margin-top:20px;">
-<input type="submit" name="SubmitButton" value="Submit Information" class="f-submit" tabindex="60" />
-						
-<input type="submit" name="SubmitButton" value="Cancel - Exit to Main Menu" class="f-submit" tabindex="62" />
-</div>				
-				
-</fieldset>	
-</div>
-
-	</form>
-	
-	
-	
-	
+					</div>
+                    <div>
+						<input type="submit" name="SubmitButton" value="Submit Information" class="f-submit" tabindex="60" />
+						<input type="submit" name="SubmitButton" value="Cancel - Exit to Main Menu" class="f-submit" tabindex="62" />
+					</div>
+		</form>		
 <#INCLUDE filename="includes/drupalfooter_responsive.inc">
 
 </body>

@@ -7,8 +7,9 @@
 <body>
 
 <!-- <h1>Information Delivery Services (IDS)</h1> -->
-<h1>Undelete Electronic Delivery</h1>
-<div style="margin-bottom:30px;">
+<h1>Detailed Information</h1>
+<!-- <div style="margin-bottom:30px;"> -->
+
 <!--div>
 	<h3>You are signed in as <#PARAM name="Username"></h3> 
 	<ul>
@@ -18,15 +19,23 @@
 	</ul>
 </div-->
 <#INCLUDE filename="includes/include_menu_you_are_logged_in_as.html">
-</div>
-<div style="clear:both;"</div>
-		<p>In the event that you accidentally deleted an article and it no longer appears here, e-mail us at <a href="mailto:ids@geneseo.edu">ids@geneseo.edu</a>.</p>
-	
-		<div class="default-table">
-			<#TABLE name="ElectronicDeliveryUndelete" headerText="Deleted Electronically Received Articles"><br />
-		</div>
-								
 
+<!-- <h3><#STATUS></h3> -->
+
+<#MENU name="transaction" separator="|">
+		
+		<h2>Transaction Information</h2>
+		<div class="default-table">
+			<#TABLE name="DetailedInformation" hideColumnHeaders="true"><br />					
+		</div>
+		
+		<h2>Request History</h2>
+		<div class="default-table">
+			<#TABLE name="HistoryInformation" noDataAction="ShowMessageRow" noDataMessage="No Tracking" 
+			 column="DateTime:DateTime" column="Entry:Status" ><br />
+		</div>
+				
+		</div>
 <#INCLUDE filename="includes/drupalfooter_responsive.inc">
 
 </body>

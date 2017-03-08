@@ -2,7 +2,7 @@
 <#INCLUDE filename="includes/drupalheader_responsive.inc">
 <head>
 <title>Information Delivery Services | Milne Library</title>
-<!--link rel="stylesheet" type="text/css" href="styles/GIST4Web.css" -->	
+<link rel="stylesheet" type="text/css" href="styles/GIST4Web.css">	
 </head>
 <body>
 
@@ -134,12 +134,12 @@
 						</div>
 						
 						<!--Load the calendar date picker-->
-						<script type="text/javascript" language="javascript" src="scripts/datepicker.js"></script>
+						<script type="text/javascript" language="javascript" src="js/datepicker.js"></script>
 						
 						<div class="widget_box" id="ill_request_row">
 							<div class="widget_title"><h3>From IDS</h3></div>
 							<div class="widget_field_name">* By when do you need this?</div>
-							<div class="widget_field"><!--<#ERROR name="ERRORNotWantedAfter">--><input readonly="readonly" id="NotWantedAfter" name="NotWantedAfter" type="text" size="15" class="f-name" tabindex="9" value=""> <image style="cursor:pointer;" src="images/cal_icon.gif" alt="Select Date" onclick="displayDatePicker('NotWantedAfter', this);" /></div>
+							<div class="widget_field"><!--<#ERROR name="ERRORNotWantedAfter">--><input style="width: 200px !important;" readonly="readonly" id="NotWantedAfter" name="NotWantedAfter" type="text" size="10" class="f-name" tabindex="9" value="<#PARAM name="NotWantedAfter">"> <image style="cursor:pointer;" src="images/calendar-20px.png" alt="Select Date" onclick="displayDatePicker('NotWantedAfter', this);" /></div>
 							
 							<div class="widget_field_name">Should Milne purchase or borrow this?</div>
 							<div class="widget_field">

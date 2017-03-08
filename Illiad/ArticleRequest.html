@@ -2,7 +2,7 @@
 <#INCLUDE filename="includes/drupalheader_responsive.inc">
 <head>
 <title>Information Delivery Services | Milne Library</title>
-<!--link rel="stylesheet" type="text/css" href="styles/GIST4Web.css" -->	
+<link rel="stylesheet" type="text/css" href="styles/GIST4Web.css">	
 </head>
 <body>
 
@@ -72,14 +72,14 @@
 <legend>Get It</legend>
 <div class="gist_form_contents">
 	<!--Load the calendar date picker-->
-	<script type="text/javascript" language="javascript" src="scripts/datepicker.js"></script -->
+	<script type="text/javascript" language="javascript" src="js/datepicker.js"></script -->
 	
 	<div class="widget_box" id="ill_request_row">
 		<h3 class="widget_title">From IDS</h3>
 		<div class="widget_field_name">* By when do you need this?</div>
-		<div class="widget_field"><!--<#ERROR name="ERRORNotWantedAfter">--><input readonly="readonly" id="NotWantedAfter" name="NotWantedAfter" type="text" size="15" class="f-name" value="<#PARAM name="NotWantedAfter">"> <image style="cursor:pointer;" src="Images/cal_icon.gif" alt="Select Date" onclick="displayDatePicker('NotWantedAfter', this);" /></div>
+		<div class="widget_field"><!--<#ERROR name="ERRORNotWantedAfter">--><input style="width: 200px !important;" readonly="readonly" id="NotWantedAfter" name="NotWantedAfter" type="text" size="10" class="f-name" tabindex="9" value="<#PARAM name="NotWantedAfter">"> <image style="cursor:pointer;" src="images/calendar-20px.png" alt="Select Date" onclick="displayDatePicker('NotWantedAfter', this);" /></div>
 							
-		<div style="font-size: 0.9em; font-weight:bold; margin-top:10px; margin-bottom:10px;">Will you accept...</div>
+		<div style="font-weight:bold; margin-top:10px; margin-bottom:10px;"><b>Will you accept...</b></div>
 		<div class="widget_list_item">Non-English versions?</div>
 		<div class="field">
 			<!--<#ERROR name="ERRORAcceptNonEnglish">--><select id="AcceptNonEnglish" name="AcceptNonEnglish" size="1" class="f-name" >

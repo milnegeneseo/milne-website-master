@@ -1,18 +1,14 @@
 <!DOCTYPE html lang="en">
 <head>
 <title>ILLiad - Transaction <#PARAM name="TransactionNumber"></title>
-<link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
-<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
-<!--[if lte IE 6]>
-<link rel="stylesheet" type="text/css" href="css/ie6_or_less.css" />
-<![endif]-->
+<#INCLUDE filename="include_header.html">   
 </head>
-<body id="type-b">
-<div id="wrap">
-  <#INCLUDE filename="include_header.html">
-  <div id="content-wrap">
-  	<#INCLUDE filename="include_menu.html">
-    <div id="content">
+
+
+<div id="main_menu_table" style="margin-bottom:20px;">
+
+<div class="no-height-right-60-percent">
+<h2>Transaction <#PARAM name="TransactionNumber"></h2>
 		<#MENU name="transaction" separator="|">
 		
 		<div class="default-table">
@@ -28,9 +24,11 @@
 			 column="DateTime:Date/Time" column="ChangedTo:Status" column="ChangedBy:Changed By"><br />
 		</div>
 		
-		<#INCLUDE filename="include_footer.html">
-    </div>    
-  </div>
-</div>
+</div>	
+<div class="no-height-25-percent">
+        <#INCLUDE filename="include_menu.html">
+</div>			
+<div style="clear:both; margin:10px !important; padding:0px !important;">&nbsp;</div>
+	<#INCLUDE filename="include_footer.html">
 </body>
 </html>

@@ -1,6 +1,6 @@
-<!DOCTYPE html lang="en">
+<html>
 <head>
-<title>ILLiad - Book Request</title> 
+<title>ILLiad - Edit Book Request</title>
 
   <#INCLUDE filename="include_header_request.html">
 </head>  
@@ -8,20 +8,18 @@
 <!-- <h2 style="margin:0px !important;">Photocopy Request</h2> -->
 <div id="main_menu_table" style="margin-bottom:20px;">
 
-
-<div class="no-height-right-60-percent">
-            <form action="illiadlending.dll" method="post" name="LendingGenericRequestLoan" class="f-wrap-request">
-                <input type="hidden" name="ILLiadForm" value="LendingGenericRequestLoan">
-				<input type="hidden" name="RequestType" value="Loan">
+<div class="no-height-right-60-percent">										
+            <form action="illiadlending.dll" method="post" name="EditLendingGenericRequestLoan" class="f-wrap-request">
+                <input type="hidden" name="ILLiadForm" value="EditLendingGenericRequestLoan">
+				<input type="hidden" name="TransactionNumber" value="<#PARAM name="TransactionNumber">">
                 <input type="hidden" name="Username" value="<#PARAM name="Username">">
                 <input type="hidden" name="SessionID" value="<#PARAM name="SessionID">">
-				
-			<fieldset>			
-					<legend>Book Request</legend>
-					<div class="req"><b>*</b> Indicates required field</div>
+                <fieldset>
+					<legend>Edit Book Request</legend>
+                <div class="req"><b>*</b> Indicates required field</div>
+					
 					<#STATUS>
-                	<h3 style="margin-bottom:0px;">Describe the item you want</h3>
-                	<label for="LoanAuthor" style="float:left;">
+                	<h3 style="margin-bottom:0px;">Describe the item you want</h3>                	<label for="LoanAuthor">
 						<span class="field">
                 			<span class="req">*</span>
 							<span class="<#ERROR name="ERRORLoanAuthor">"><b>Author/Editors</b></span>
@@ -66,8 +64,7 @@
 						</span>
                 		<input id="LoanDate" name="LoanDate" type="text" size="40" class="f-name" tabindex="6" value="<#PARAM name="LoanDate">"><br />
                 	</label>
-                
-				
+
 					
                 	<label for="ISSN" style="float:left; clear:left;">
 					 	<span class="field">
@@ -99,7 +96,6 @@
 						</span>
 <!--                 		<input id="NotWantedAfter" name="NotWantedAfter" type="text" size="40" class="f-name" tabindex="10" value="<#PARAM name="NotWantedAfter">"><br /> -->
 							<input style="width: 100px !important;" readonly="readonly" id="NotWantedAfter" name="NotWantedAfter" type="text" size="10" class="f-name" tabindex="9" value="<#PARAM name="NotWantedAfter">"> <image style="cursor:pointer;" src="https://illiad.geneseo.edu/images/calendar-20px.png" alt="Select Date" onclick="displayDatePicker('NotWantedAfter', this);" /></br>
-
                 	</label>
 					
                 	<label for="AcceptNonEnglish" style="float:left; clear:left; margin-right: 40px;">
@@ -163,6 +159,7 @@
 </div>
 					
 					</div>
+													 
 				</fieldset>
 				
 				
@@ -170,8 +167,11 @@
 
 </div>
 <div class="no-height-25-percent">
+			   											 
+						   
         <#INCLUDE filename="include_menu.html">
 </div>
+
 <div style="clear:both; margin:10px !important; padding:0px !important;">&nbsp;</div>
 	<#INCLUDE filename="include_footer.html">
 </body>

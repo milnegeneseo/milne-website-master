@@ -7,7 +7,7 @@
 <body>
 
 	<h1>Information Delivery Services (IDS)</h1>
-	<p><b>Need a book, media item, or journal article? Request it through IDS and we'll deliver it to you.</b></p>
+	<p class="subheading"><b>Need a book, media item, or journal article? Request it through IDS and we'll deliver it to you.</b></p>
 	<!--<#STATUS>-->
 	<div id="main_menu_table" style="margin-bottom:20px;">
 	

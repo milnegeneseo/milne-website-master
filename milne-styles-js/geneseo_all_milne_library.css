@@ -251,6 +251,22 @@ a:hover {
 /**************************************************/
 
 
+/*breadcrumb*/
+
+
+@media(max-width: 660px) {
+.breadcrumb,#rightSideContent h1, #rightSideContent p.subheading, ul.subheading {
+float:left;
+clear:both;
+width:100%;
+margin:20px 20px 10px 0px;
+}
+
+ul.subheading li{
+	margin-right: 40px;
+}
+}
+
 /*** Left side menu and Right side Resources Button styles ***/
 
 .library-hours-background{
@@ -495,11 +511,11 @@ border:none !important;
 }
 
 .radiobutton{
-	width: 40%;
+	width: 100%;
 }
 
 .radiobutton2{
-	width: 80%;
+	width: 100%;
 }
 
 #rightSideContent table, #rightSideContent td{
@@ -592,6 +608,21 @@ clear:both;
 
 
 /************ STAFF DIRECTORY AND REQUEST FORM -Specific FIELDSET styles ***********/
+
+
+@media(max-width: 951px) {
+
+#rightSideContent fieldset, fieldset{ 
+margin-right:20px;
+}
+
+#rightSideContent input[type="text"], input[type="password"],input, input[type="select"],.dropdown select, select, textarea {
+width: 70%;
+}
+
+}
+
+
 
 
 /**Left 50% **/
@@ -1439,6 +1470,7 @@ margin:0px 10px 0px 10px;
 div.column.right {
 display:none;
 visibility:hidden;
+width:0px;
   }
 }    
         
@@ -1457,6 +1489,7 @@ visibility:hidden;
 div.more-info {
 display:none;
 visibility:hidden;
+width:0px;
   }
 }            
         

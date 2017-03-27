@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <link href="https://eres.geneseo.edu/milne-styles-js/jquery-ui-datepicker-milne.min.css" rel="stylesheet" />
-<link href="https://eres.geneseo.edu/milne-styles-js/js/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" />
+<link href="https://eres.geneseo.edu/milne-styles-js/jquery-ui-1.10.3.custom-milne.min.css" rel="stylesheet" />
 <script src="https://eres.geneseo.edu/milne-styles-js/js/jquery-ui-datepicker-milne.min.js"></script> 
 <script type="text/javascript" src="https://eres.geneseo.edu/milne-styles-js/js/jquery.ui.timepicker.min.js"></script>
 <script type="text/javascript" src="https://eres.geneseo.edu/milne-styles-js/js/jquery-ui-1.10.3.custom.min.js"></script>
@@ -65,8 +65,8 @@
         }
     </script>
 <div id="rightSideContent">
-<div class="column right">
-    <div class="more-info">
+<div class="column right" >
+    <div class="more-info" style="width: 80%;">
     <div class="more-info-header">
 		Standard Programs
     </div>
@@ -99,14 +99,18 @@
     </div>
     </div>
 </div>
-<div style="margin:20px 0px 0px 0px;"><a href="https://www.geneseo.edu/">SUNY Geneseo</a> &raquo; <a href="https://www.geneseo.edu/library">Milne Library</a> &raquo; <a href="https://www.geneseo.edu/library/requests-services">Requests &amp; Services</a> &raquo; <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/Instruction.aspx" style="color:#b85533 !important;">Library &amp; High School Instruction</a></div>
+<div class="breadcrumb" style="margin:20px 0px 0px 0px;"><a href="https://www.geneseo.edu/">SUNY Geneseo</a> &raquo; <a href="https://www.geneseo.edu/library">Milne Library</a> &raquo; <a href="https://www.geneseo.edu/library/requests-services">Requests &amp; Services</a> &raquo; <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/Instruction.aspx" style="color:#b85533 !important;">Library &amp; High School Instruction</a></div>
 <h1>Library Instruction Request</h1> 
-<div style="float:left; width:75%;">
+<div style="float:left; width:55%;">
 <p>Milne Library offers the following types of instruction:</p>
+<div style="float:left;width:100%;">
 <span class="link-button-background style="margin-bottom: 10px;"><b><asp:LinkButton ID="ResearchInstruction" runat="server" CausesValidation="False" OnClick="ResearchInstructionInfoPanelLink_Click">Research Instruction <img src="img/question-mark-icon-16.png" /></asp:LinkButton></b></span>&nbsp; 
 	&nbsp;  <span class="link-button-background style="margin-bottom: 10px;"><b><asp:LinkButton ID="TechnologyInstruction" runat="server" CausesValidation="False" OnClick="TechnologyInstructionInfoPanelLink_Click">Technology Instruction <img src="img/question-mark-icon-16.png" /></asp:LinkButton></b></span>&nbsp;
 	&nbsp;  <span class="link-button-background style="margin-bottom: 10px;"><b><asp:LinkButton ID="HSInstruction" runat="server" CausesValidation="False" OnClick="HighSchoolInstructionInfoPanelLink_Click">High School Instruction <img src="img/question-mark-icon-16.png" /></asp:LinkButton></b></span>
-<asp:Panel ID="ResearchInstructionInfoPanel" runat="server" Visible="False" >  
+</div>
+	<div style="clear:both;">
+	</div>
+	<asp:Panel ID="ResearchInstructionInfoPanel" runat="server" Visible="False" >  
 <fieldset>
 <legend>Research Instruction</legend>           
        <p>Milne library offers a variety of instructional opportunities, tailoring sessions to fit any level of instructional need or class size. Milne Librarians can provide instruction aligned to a specific assignment requiring the use of library resources.</p>
@@ -159,7 +163,7 @@
 <fieldset>
 <legend><span class="required">* </span>Please select the Instruction type:</legend>
 <div class="radiobutton2">
-    <asp:RadioButtonList ID="rblType" runat="server" RepeatDirection="Horizontal" CssClass="radio" AutoPostBack="True" OnSelectedIndexChanged="rblType_SelectedIndexChanged" CellSpacing="5" Width="358px" >
+    <asp:RadioButtonList ID="rblType" runat="server" RepeatDirection="Horizontal" CssClass="radio" AutoPostBack="True" OnSelectedIndexChanged="rblType_SelectedIndexChanged" CellSpacing="5" style="width:80%;" >
         <asp:ListItem Text="Research" Value="Research" />
         <asp:ListItem Text="Technology" Value="Technology" />
         <asp:ListItem Text="High School" Value="Other" />
@@ -280,7 +284,7 @@
                         <asp:ListItem Text="Using appropriate search tools" Value="Using appropriate search tools" />
                         <asp:ListItem Text="Other" Value="Other" />
 </asp:DropDownList><br /> <br />
-<b>What additional skills or concepts would you like included in this instruction session? </b><asp:TextBox ID="txtGoalsDetails" runat="server" Height="75" Width="600" TextMode="MultiLine" TabIndex="24" />
+<b>What additional skills or concepts would you like included in this instruction session? </b><asp:TextBox ID="txtGoalsDetails" runat="server" Height="75"  TextMode="MultiLine" TabIndex="24" />
 </fieldset><br />
 <fieldset>
 <legend>Date of Instruction</legend>
@@ -342,7 +346,7 @@
         <asp:ListItem Text="No" Value="No" /> 
 </asp:RadioButtonList>&nbsp;<asp:requiredfieldvalidator id="rfTopics" runat="server" errormessage="Required" CssClass="required" controltovalidate="rblTopics" SetFocusOnError="True" ></asp:requiredfieldvalidator>&nbsp;<br />
 Further details on the assignment:<br />
-<asp:TextBox ID="txtAssignmentDetails" runat="server" Height="75" TextMode="MultiLine" Width="600" TabIndex="36" /><br /><br />
+<asp:TextBox ID="txtAssignmentDetails" runat="server" Height="75" TextMode="MultiLine" TabIndex="36" /><br /><br />
 Given the opportunity and the structure of the library skills instruction (i.e., seamlessly embedded throughout a semester or progressive multiple sessions vs. a one-time lesson), we can work with teaching faculty to develop the formal assessment strategies.<br /><br />
 <label><span class="required">*</span> Formal Assessment Strategy #1: </label>
 <%--        <asp:DropDownList ID="ddlAssessment1" runat="server" TabIndex="38" />--%>
@@ -376,7 +380,7 @@ Given the opportunity and the structure of the library skills instruction (i.e.,
 </fieldset><br />
 <fieldset>
 <legend>Additional information/comments/remarks</legend>
-<asp:TextBox ID="txtComments" runat="server" Height="75" Width="600" TextMode="MultiLine" TabIndex="43"/><br /><br />
+<asp:TextBox ID="txtComments" runat="server" Height="75"  TextMode="MultiLine" TabIndex="43"/><br /><br />
 <asp:Button Text="Submit" ID="btnSubmit" OnClick="btnSubmit_Click" runat="server" class="" TabIndex="45"/>&nbsp;
 <asp:Button Text="Clear Form" ID="CancelButton" runat="server" CausesValidation="False" CommandName="Reset" OnClick="CancelButton_Click" />
 </fieldset>	
@@ -387,11 +391,11 @@ Given the opportunity and the structure of the library skills instruction (i.e.,
 <h3 style="font-size: 2.2em;">High School Instruction</h3> 
 <fieldset>
 <legend>School Information</legend>
-<label><asp:requiredfieldvalidator id="rfSchoolName" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtSchoolName" SetFocusOnError="True"></asp:requiredfieldvalidator>&nbsp; <span class="required">*</span> School Name: </label><asp:TextBox ID="txtSchoolName" runat="server" size="25" maxlength="75" /> <br /> 
-<label><asp:requiredfieldvalidator id="rfSchoolPhone" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtSchoolPhone" SetFocusOnError="True"></asp:requiredfieldvalidator>&nbsp; <span class="required">*</span> School Phone: </label><asp:TextBox ID="txtSchoolPhone" runat="server" size="25" maxlength="25" /> <br /> 
-<label><asp:requiredfieldvalidator id="rfMediaFirstName" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtMediaFirstName" SetFocusOnError="True"></asp:requiredfieldvalidator>&nbsp; <span class="required">*</span> Media Specialist or HS Teacher&#39;s First Name: </label> <asp:TextBox runat="server" size="25" maxlength="25" ID="txtMediaFirstName" /> <br />
-<label><asp:requiredfieldvalidator id="rfMediaLastName" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtMediaLastName" SetFocusOnError="True"></asp:requiredfieldvalidator>&nbsp; <span class="required">*</span> Media Specialist or HS Teacher&#39;s Last Name: </label><asp:TextBox runat="server" size="25" maxlength="50" ID="txtMediaLastName" /> <br />
-<label><asp:requiredfieldvalidator id="rfMediaEmail" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtMediaEmail" SetFocusOnError="True"></asp:requiredfieldvalidator>&nbsp; <span class="required">*</span> Email Address: </label><asp:TextBox runat="server" size="25" maxlength="50" ID="txtMediaEmail" />
+<label><span class="required">*</span> School Name: </label><asp:TextBox ID="txtSchoolName" runat="server" size="25" maxlength="75" />&nbsp;<asp:requiredfieldvalidator id="rfSchoolName" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtSchoolName" SetFocusOnError="True"></asp:requiredfieldvalidator> <br /> 
+<label><span class="required">*</span> School Phone: </label><asp:TextBox ID="txtSchoolPhone" runat="server" size="25" maxlength="25" />&nbsp;<asp:requiredfieldvalidator id="rfSchoolPhone" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtSchoolPhone" SetFocusOnError="True"></asp:requiredfieldvalidator><br /> 
+<label><span class="required">*</span> Media Specialist or HS Teacher&#39;s First Name: </label> <asp:TextBox runat="server" size="25" maxlength="25" ID="txtMediaFirstName" />&nbsp;<asp:requiredfieldvalidator id="rfMediaFirstName" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtMediaFirstName" SetFocusOnError="True"></asp:requiredfieldvalidator><br />
+<label><span class="required">*</span> Media Specialist or HS Teacher&#39;s Last Name: </label><asp:TextBox runat="server" size="25" maxlength="50" ID="txtMediaLastName" />&nbsp;<asp:requiredfieldvalidator id="rfMediaLastName" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtMediaLastName" SetFocusOnError="True"></asp:requiredfieldvalidator> <br />
+<label><span class="required">*</span> Email Address: </label><asp:TextBox runat="server" size="25" maxlength="50" ID="txtMediaEmail" />&nbsp;<asp:requiredfieldvalidator id="rfMediaEmail" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtMediaEmail" SetFocusOnError="True"></asp:requiredfieldvalidator>
 <asp:RegularExpressionValidator ID="reMediaEmail" ErrorMessage="Invalid Email Address" CssClass="required" ControlToValidate="txtMediaEmail" runat="server" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" /><br />
 </fieldset><br />
 <fieldset>
@@ -405,7 +409,7 @@ Given the opportunity and the structure of the library skills instruction (i.e.,
 <asp:requiredfieldvalidator id="rfSchoolStudentNumber" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtSchoolStudentNumber" SetFocusOnError="True" ></asp:requiredfieldvalidator><br />
 <label><span class="required">&nbsp;</span> Number of Accompanying Adults: </label><asp:TextBox ID="txtAdultsNumber" runat="server" size="3"  MaxLength="3" />&nbsp;
 <asp:RegularExpressionValidator ID="reAdultsNumber" runat="server" CssClass="required" ControlToValidate="txtAdultsNumber" ErrorMessage="Numbers only" SetFocusOnError="True" ValidationExpression="((^[0-9]+$))"></asp:RegularExpressionValidator><br /> <br />
-<b><span class="required">*</span> Please describe the assignment requiring library use, and any specific resources in which you would like students to receive instruction.</b>&nbsp;<asp:requiredfieldvalidator id="rfSchoolAssignment" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtSchoolAssignment" SetFocusOnError="True" ></asp:requiredfieldvalidator><br /> <asp:TextBox ID="txtSchoolAssignment" runat="server"  TextMode="MultiLine" Height="75" Width="600" /><br />
+<b><span class="required">*</span> Please describe the assignment requiring library use, and any specific resources in which you would like students to receive instruction.</b>&nbsp;<asp:requiredfieldvalidator id="rfSchoolAssignment" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtSchoolAssignment" SetFocusOnError="True" ></asp:requiredfieldvalidator><br /> <asp:TextBox ID="txtSchoolAssignment" runat="server"  TextMode="MultiLine" Height="75" /><br />
 </fieldset><br />
 <fieldset>
 <legend>Visit Date and Time Preference</legend>
@@ -425,11 +429,11 @@ Given the opportunity and the structure of the library skills instruction (i.e.,
 <fieldset>
 <legend>Previous Library Instruction</legend>
 Which databases will students receive instruction in prior to the visit to Milne Library? <br />
-<asp:TextBox ID="txtPreviousInstruction" runat="server" Height="75" Width="600" TextMode="MultiLine"/>
+<asp:TextBox ID="txtPreviousInstruction" runat="server" Height="75"  TextMode="MultiLine"/>
 </fieldset><br />
 <fieldset>
 <legend>Instruction Needs</legend>
-Which resources (databases, subject specific resources, collections, etc.) would you like your students to be introduced to at Milne Library?&nbsp;<br /><asp:TextBox ID="txtInstructionNeeds" runat="server" Height="75" TextMode="MultiLine" Width="600" /><br /><br />
+Which resources (databases, subject specific resources, collections, etc.) would you like your students to be introduced to at Milne Library?&nbsp;<br /><asp:TextBox ID="txtInstructionNeeds" runat="server" Height="75" TextMode="MultiLine"  /><br /><br />
 <asp:Button ID="HSbtnSubmit" runat="server" class="" OnClick="HSbtnSubmit_Click" Text="Submit" />&nbsp;
 <asp:Button Text="Clear Form" ID="HSCancelButton" runat="server" CausesValidation="False" CommandName="Reset" OnClick="CancelButton_Click" />
 </fieldset>

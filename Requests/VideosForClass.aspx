@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <link href="https://eres.geneseo.edu/milne-styles-js/jquery-ui-datepicker-milne.min.css" rel="stylesheet" />
-<link href="https://eres.geneseo.edu/milne-styles-js/js/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" />
+<link href="https://eres.geneseo.edu/milne-styles-js/jquery-ui-1.10.3.custom-milne.min.css" rel="stylesheet" />
 <script src="https://eres.geneseo.edu/milne-styles-js/js/jquery-ui-datepicker-milne.min.js"></script> 
 <script type="text/javascript" src="https://eres.geneseo.edu/milne-styles-js/js/jquery.ui.timepicker.min.js"></script>
 <script type="text/javascript" src="https://eres.geneseo.edu/milne-styles-js/js/jquery-ui-1.10.3.custom.min.js"></script>
@@ -13,9 +13,11 @@
             $('#<%= txtDate.ClientID %>').attr('readonly', 'readonly').datepicker({});
         });
     </script>
-<div id="" >
+<div id="rightSideContent">
+<div class="breadcrumb" style="margin:20px 0px 0px 0px;"><a href="https://www.geneseo.edu/">SUNY Geneseo</a> &raquo; <a href="https://www.geneseo.edu/library">Milne Library</a> &raquo; <a href="https://www.geneseo.edu/library/requests-services">Requests and Services</a> &raquo; <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/VideosForClass.aspx" style="color:#b85533 !important;">Request a Video or DVD for Class</a></div>
+
     <h1>Request a DVD or Video for Class Viewing</h1>   
-<p>We recommend that requests be submitted as far ahead of time as possible (a week or more advance notice is recommended). The pick-up point for DVDs and videos is located at Milne Service Desk.<br /><br />* If you need a DVD or video more than once during the semester, you may want to consider placing the DVD or video on reserve to guarantee its availability when needed. </p>
+<p class="subheading">We recommend that requests be submitted as far ahead of time as possible (a week or more advance notice is recommended). The pick-up point for DVDs and videos is located at Milne Service Desk.<br /><br />* If you need a DVD or video more than once during the semester, you may want to consider placing the DVD or video on reserve to guarantee its availability when needed. </p>
 <br /> <span class="required">* indicates required field.</span><br /> <br />
 <fieldset>
     <legend>Media Type</legend>

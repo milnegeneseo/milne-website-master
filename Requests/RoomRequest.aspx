@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <link href="https://eres.geneseo.edu/milne-styles-js/jquery-ui-datepicker-milne.min.css" rel="stylesheet" />
-<link href="https://eres.geneseo.edu/milne-styles-js/js/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" />
+<link href="https://eres.geneseo.edu/milne-styles-js/jquery-ui-1.10.3.custom-milne.min.css" rel="stylesheet" />
 <script src="https://eres.geneseo.edu/milne-styles-js/js/jquery-ui-datepicker-milne.min.js"></script> 
 <script type="text/javascript" src="https://eres.geneseo.edu/milne-styles-js/js/jquery.ui.timepicker.min.js"></script>
 <script type="text/javascript" src="https://eres.geneseo.edu/milne-styles-js/js/jquery-ui-1.10.3.custom.min.js"></script>
@@ -32,13 +32,16 @@
         }
     </script>
   <div id="rightSideContent">
-                <div style="margin:20px 0px 0px 0px;"><a href="https://www.geneseo.edu/">SUNY Geneseo</a> &raquo; <a href="https://www.geneseo.edu/library">Milne Library</a> &raquo; <a href="https://www.geneseo.edu/library/requests-services">Requests &amp; Services</a> &raquo; <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/RoomRequest.aspx" style="color:#b85533 !important;">Room Request/Reservation</a></div>
+                <div class="breadcrumb" style="margin:20px 0px 0px 0px;"><a href="https://www.geneseo.edu/">SUNY Geneseo</a> &raquo; <a href="https://www.geneseo.edu/library">Milne Library</a> &raquo; <a href="https://www.geneseo.edu/library/requests-services">Requests &amp; Services</a> &raquo; <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/RoomRequest.aspx" style="color:#b85533 !important;">Room Request/Reservation</a></div>
 <h1>Room Request</h1> 
+<div style="float:left;">
 <span class="link-button-background style="margin-bottom: 10px;"><a href="https://www.geneseo.edu/library/classrooms-and-meeting-rooms">Room Descriptions & Policies</a></span>&nbsp; 
 	&nbsp;  <span class="link-button-background style="margin-bottom: 10px;"><a href="https://www.geneseo.edu/library/milne-library-floor-plans">Floor Plans/Room Locations</a></span>&nbsp;
 	&nbsp;  <span class="link-button-background style="margin-bottom: 10px;"><a href="http://emsprod.geneseo.edu/VirtualEMSPublic/CustomBrowseEvents.aspx?data=8imT11TVEgjXNgDJOAPMB4OcOxg1lJDzQDCUHCLgyvV%2bp3H99PcbRuP418vvqF%2br">Check Room Availability</a></span>
 	&nbsp; <span class="link-button-background  style="margin-bottom: 10px;""><a href="https://www.geneseo.edu/library/library-computer-labs-technology">Computer Labs</a></span>
-<br /><br />
+</div>
+	<div style="clear:both;">
+	</div>
 <a name="104-208"></a><h2 style="font-size: 2.2em;">Room 104 or 208</h2>
     <p>Use the form below to request <a href="https://www.geneseo.edu/library/classrooms-and-meeting-rooms#section1" target="_blank"><b>Room 104  <img src="https://eres.geneseo.edu/milne-styles-js/img/question-mark-icon-16.png" style="vertical-align:baseline;"></b></a> or <a href="https://www.geneseo.edu/library/classrooms-and-meeting-rooms#section4" target="_blank"><b>Room 208  <img src="https://eres.geneseo.edu/milne-styles-js/img/question-mark-icon-16.png" style="vertical-align:baseline;"></b></a></p>
 <b>Please allow 2 business days to confirm your room reservation.</b> An email will be sent to you once your reservation has been made. Requests for more than one date can be made using this form if all times are the same. <br /><br />
@@ -97,9 +100,9 @@ If you need to cancel a room reservation, please contact <a href="mailto:hoffman
     <asp:TextBox ID="txtGroupName" runat="server" size="25" maxlength="75"  />&nbsp; <asp:requiredfieldvalidator id="rfGroupName" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtGroupName" SetFocusOnError="True" ></asp:requiredfieldvalidator></label>
 </div>
 <div style="float:left; clear:left;">
-    <label><span class="required">&nbsp;</span> Course Number (ABCD 123 Format): 
-    <asp:TextBox ID="txtCourseNumber" runat="server" size="8" maxlength="8"  />&nbsp;
-    Section: <asp:TextBox ID="txtSection" runat="server" size="8" maxlength="8"  /></label>
+    <label>Course Number (ABCD 123 Format): 
+    <asp:TextBox ID="txtCourseNumber" runat="server" size="8" maxlength="8" /></label>&nbsp;
+     <label>Section: <asp:TextBox ID="txtSection" runat="server" size="8" maxlength="8" /></label>
 </div>
 <div style="float:left;">	
     <asp:RegularExpressionValidator ID="reCourseNumber" SetFocusOnError="true" CssClass="required" ValidationExpression="^[a-zA-Z]{4} [0-9]{3}$" ErrorMessage="Course Number should be in 'ABCD 123' format" ControlToValidate="txtCourseNumber" runat="server" />

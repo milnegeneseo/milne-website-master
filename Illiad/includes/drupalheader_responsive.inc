@@ -10,7 +10,7 @@ head of each document that takes Milne Library styles and javascripts, Geneseo s
 <meta name="apple-mobile-web-app-status-bar-style" content="default" />
 <link rel="apple-touch-icon" href="iphone-icon.png" />
       <meta charset="utf-8" />
-<link rel="shortcut icon" href="https://www.geneseo.edu/sites/all/themes/geneseo_library/favicon.ico"" type="image/x-icon" />
+<link rel="shortcut icon" href="https://www.geneseo.edu/sites/all/themes/geneseo_library/favicon.ico" type="image/x-icon" />
 
 
   <!--INTRANET LIB CUSTOM STYLES & JQUERY LIBRARIES -->

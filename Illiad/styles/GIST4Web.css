@@ -63,6 +63,22 @@
        url(https://illiad.geneseo.edu/fonts/MaterialIcons-Regular.ttf) format('truetype');
 }
 
+/*breadcrumb*/
+
+
+@media(max-width: 660px) {
+.breadcrumb,#rightSideContent h1, #rightSideContent p.subheading, ul.subheading {
+float:left;
+clear:both;
+width:100%;
+margin:20px 20px 10px 0px;
+}
+
+ul.subheading li{
+	margin-right: 40px;
+}
+}
+
 .s-la-widget *, #s-la-widget-761
 { /*styles for the Frequently Asked Questions widget */
 background:transparent !important;

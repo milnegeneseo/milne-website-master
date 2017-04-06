@@ -1,0 +1,125 @@
+<html  lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#"><!--[if IEMobile 7]><html class="iem7"  lang="en" dir="ltr"><![endif]-->
+<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7"  lang="en" dir="ltr"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8"  lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9"  lang="en" dir="ltr"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><!--<![endif]-->
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=EmulateIE9, IE=EDGE" />
+<!-- This script is based on WP-Post-Getter by  Nathan Graham https://github.com/nathanegraham/wp-rest-api-post-getter. Major credits and kudos. -->
+ <style>
+  
+@import 'https://fonts.googleapis.com/css?family=Open+Sans'; 
+
+
+@font-face {
+    font-family: "Neutraface Text";
+    src: url('https://eres.geneseo.edu/libraryhours/fonts/NeutrafaceText-Book.eot');
+    src: url("https://eres.geneseo.edu/libraryhours/fonts/NeutrafaceText-Book.eot?#iefix") format("embedded-opentype"),
+         url("https://eres.geneseo.edu/libraryhours/fonts/NeutrafaceText-Book.woff2") format("woff2"),
+         url("https://eres.geneseo.edu/libraryhours/fonts/NeutrafaceText-Book.woff") format("woff");
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+}
+
+@font-face {
+    font-family: "Neutraface Headings";
+    src: url('https://eres.geneseo.edu/libraryhours/fonts/NeutrafaceText-Bold.eot');
+    src: url("https://eres.geneseo.edu/libraryhours/fonts/NeutrafaceText-Bold.eot?#iefix") format("embedded-opentype"),
+         url("https://eres.geneseo.edu/libraryhours/fonts/NeutrafaceText-Bold.woff2") format("woff2"),
+         url("https://eres.geneseo.edu/libraryhours/fonts/NeutrafaceText-Bold.woff") format("woff");
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('https://eres.geneseo.edu/libraryhours/fonts/Material Icons'),
+       local('https://eres.geneseo.edu/libraryhours/fonts/MaterialIcons-Regular'),
+       url(https://eres.geneseo.edu/libraryhours/fonts/MaterialIcons-Regular.woff2) format('woff2'),
+       url(https://eres.geneseo.edu/libraryhours/fonts/MaterialIcons-Regular.woff) format('woff'),
+       url(https://eres.geneseo.edu/libraryhours/fonts/MaterialIcons-Regular.ttf) format('truetype');
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ .item {
+	margin-top:5px;
+	margin-right: 20px;
+	margin-left: 10px;
+	padding-bottom:5px;
+clear:both;
+ }
+	
+	   .item .medium{
+background-size: cover;
+      width: 160px;
+      height: 160px;
+float: left;
+margin-top:5px;
+margin-right: 10px;
+margin-bottom: 0px;
+padding-bottom: 0px;
+border: 1px solid #345290;
+
+    }
+	
+.info {
+	margin-top:0px;
+	padding-top:0px;
+	margin-bottom:0px;
+	}
+	
+
+    .more{margin-top:0px;}
+	
+	h3, .item h3, .item h3 a
+	{
+	font-family: "Open Sans",sans-serif;
+	color:#345290;
+	 font-size: 20px;
+	 margin-top:0px;
+	margin-bottom: 0px;
+	line-height:24px;
+	padding-top:0px;
+	padding-bottom:0px;}	
+	
+#post_feed p, .item p, .desc p, .info p{
+font-family: "Open Sans",sans-serif;
+font-size: 14px !important;
+margin-top:0px;
+padding-top:0px;
+margin-bottom: 0px;
+padding-bottom:0px;
+}	
+
+a, a:link, a:visited, a:active, a:hover{
+text-decoration:none;
+}
+	
+  </style>
+</head>
+<body>
+
+<div id="post_feed">
+<div class="item" v-for="item in items | more showed">
+<a href="{{item.link}}" target="_blank" class="title">
+<h3><a href="{{item.link}}" target="_blank" class="title">{{item.title.rendered}}</a></h3>
+<div class="medium" v-medium="item.featured_media" v-show="item.featured_media"></div></a>
+<div class="info">
+
+<div class="desc">{{{item.excerpt.rendered}}}</div>
+</div><!--info-->
+</div><!--item-->
+</div><!--post_feed-->
+<script src="vue.min.js"></script>
+<script src="vue-resource.min.js"></script>
+<script src="entrance-milne-news-feed.js"></script>
+</body>
+</html>

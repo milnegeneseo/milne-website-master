@@ -1,1 +1,49 @@
+Scripts  consuming the WP-API from Milne Library News & Events WordPress site http://news.milne-library.org
 
+For: MILNE LIBRARY WEBSITE 
+Practical application:  Milne Library blog feed to be displayed on Milne Library Drupal home page https://www.geneseo.edu/library
+Benefits:  
+1) Eliminates staff time being wasted entering content and uploading media in two different locations
+2) Automatic updates of news and events
+3) Staff do not have to resize and edit images to display properly within the Drupal page slider
+4) Eliminates potential for  mistakes and 'page borking' due to html and styling within the Drupal WYSIWIG editor
+5) Eliminates using the Drupal WYSIWIG editor altogether ;)
+
+DEMO FILE:
+drupal-milne-feed-test.html
+
+MAIN SCRIPT:
+drupal-milne-news-feed.js
+
+DEPENDENCIES:
+vue.min.js
+vue-resource.min.js
+
+CSS:
+drupal-milne-news-feed.css
+
+DEMO URL:
+http://eres.geneseo.edu/libraryhours/drupal-milne-feed-test.html
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------
+
+For: MILNE LIBRARY VIDEO DISPLAY 
+Practical application:  Displayed on Milne Library Main Entrance video display outside Library and elsewhere
+
+DEMO FILE:
+entrance-milne-news-feed.html
+
+MAIN SCRIPT:
+entrance-milne-news-feed.js
+
+DEPENDENCIES:
+vue.min.js
+vue-resource.min.js
+
+CSS styles are inline
+
+DEMO URL:
+http://eres.geneseo.edu/libraryhours/entrance-milne-news-feed.html

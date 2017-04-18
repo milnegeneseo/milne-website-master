@@ -1,6 +1,6 @@
 //This script is based on WP-Post-Getter by  Nathan Graham https://github.com/nathanegraham/wp-rest-api-post-getter. Major credits and kudos.
 (function(){
-  var endpoint = "http://news.milne-library.org/wp-json/wp/v2",
+  var endpoint = "https://news.milne-library.org/wp-json/wp/v2",
       itemsPerPage = 4,
       vm;
 

@@ -1,6 +1,7 @@
+<!DOCTYPE html>
+<html lang="en">
 <!-- This file contains styles, scripts and other information that goes in the 
 head of each document that takes Milne Library styles and javascripts, Geneseo styles and icons, GIST4Web styles -->
-<!DOCTYPE html lang="en">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
 <meta http-equiv="Pragma" content="no-cache" />
 <meta http-equiv="Expires" content="0" />
@@ -24,14 +25,22 @@ head of each document that takes Milne Library styles and javascripts, Geneseo s
     
 
 <div><!---  main  --->
-<div style="height: 20px;width: 100%; margin: 0px ! important;
-background-color: #345290;"></div>
+<div style="height: 20px;width: 100%; margin: 0px ! important;background-color: #345290;"></div>
+
 <div style="margin:0px 20px 20px 20px;">
     <div style="width: 100%;">   
         
-<div style="float:left; margin-top:-20px;"><a href="https://www.geneseo.edu/library"><img src="https://eres.geneseo.edu/milne-logo/milne-library-logo.png" style="margin-top:0px; width:85%;"</a> </div>   	
-		</div>
+<div style="float:left; margin-top:-20px;">
+<a href="https://www.geneseo.edu/library"><img alt="Milne Library SUNY Geneseo" title="Milne Library SUNY Geneseo" src="https://eres.geneseo.edu/milne-logo/milne-library-logo.png" style="width:85%;" /></a> 
+</div>   	
+</div>
 		
-<div class="breadcrumb" style="margin-top:20px;"><a href="https://www.geneseo.edu/">SUNY Geneseo</a> &raquo; <a href="https://www.geneseo.edu/library">Milne Library</a> &raquo; <a href="https://illiad.geneseo.edu" style="color:#b85533 !important;">Information Delivery Services</a></div>
+<div class="breadcrumb" style="margin-top:20px;">
+<div>
+<a href="https://www.geneseo.edu/">SUNY Geneseo</a>
+&raquo; <a href="https://www.geneseo.edu/library">Milne Library</a>
+&raquo; <a href="https://illiad.geneseo.edu" style="color:#b85533 !important;">Information Delivery Services</a>
+</div>
+</div>
 <div id="rightSideContent" >
 <!--- BODY CONTENT RIGHT SIDE  BEGINS --->

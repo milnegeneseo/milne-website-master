@@ -3,11 +3,10 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<link href="https://eres.geneseo.edu/milne-styles-js/jquery-ui-datepicker-milne.min.css" rel="stylesheet" />
-<link href="https://eres.geneseo.edu/milne-styles-js/jquery-ui-1.10.3.custom-milne.min.css" rel="stylesheet" />
-<script src="https://eres.geneseo.edu/milne-styles-js/js/jquery-ui-datepicker-milne.min.js"></script> 
-<script type="text/javascript" src="https://eres.geneseo.edu/milne-styles-js/js/jquery.ui.timepicker.min.js"></script>
-<script type="text/javascript" src="https://eres.geneseo.edu/milne-styles-js/js/jquery-ui-1.10.3.custom.min.js"></script>
+<link href="https://eres.geneseo.edu/milne-styles-js/js/jquery-ui-1.10.3.custom-milne.min.css" rel="stylesheet" />
+<link href="https://intranetlib.geneseo.edu/Dataportal/Scripts/jquery-ui-milne.css" rel="stylesheet" />
+<script src="https://intranetlib.geneseo.edu/Dataportal/Scripts/jquery-ui.js"></script> 
+<script type="text/javascript" src="https://intranetlib.geneseo.edu/Dataportal/Scripts/jquery.ui.timepicker.js"></script>
  <script type="text/javascript">
      $(document).ready(function () {
          $('#<%= txtDate.ClientID %>').attr('readonly', 'readonly').datepicker({});
@@ -32,7 +31,8 @@
         }
     </script>
   <div id="rightSideContent">
-                <div class="breadcrumb" style="margin:20px 0px 0px 0px;"><a href="https://www.geneseo.edu/">SUNY Geneseo</a> &raquo; <a href="https://www.geneseo.edu/library">Milne Library</a> &raquo; <a href="https://www.geneseo.edu/library/requests-services">Requests &amp; Services</a> &raquo; <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/RoomRequest.aspx" style="color:#b85533 !important;">Room Request/Reservation</a></div>
+                <div class="breadcrumb" style="margin:20px 0px 0px 0px;">
+                    <a href="https://www.geneseo.edu/">SUNY Geneseo</a> &raquo; <a href="https://www.geneseo.edu/library">Milne Library</a> &raquo; <a href="https://www.geneseo.edu/library/requests-services">Requests &amp; Services</a> &raquo; <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/RoomRequest.aspx" style="color:#b85533 !important;">Room Request/Reservation</a></div>
 <h1>Room Request</h1> 
 <div style="float:left;">
 <span class="link-button-background style="margin-bottom: 10px;"><a href="https://www.geneseo.edu/library/classrooms-and-meeting-rooms">Room Descriptions & Policies</a></span>&nbsp; 
@@ -43,20 +43,20 @@
 	<div style="clear:both;">
 	</div>
 <a name="104-208"></a><h2 style="font-size: 2.2em;">Room 104 or 208</h2>
-    <p>Use the form below to request <a href="https://www.geneseo.edu/library/classrooms-and-meeting-rooms#section1" target="_blank"><b>Room 104  <img src="https://eres.geneseo.edu/milne-styles-js/img/question-mark-icon-16.png" style="vertical-align:baseline;"></b></a> or <a href="https://www.geneseo.edu/library/classrooms-and-meeting-rooms#section4" target="_blank"><b>Room 208  <img src="https://eres.geneseo.edu/milne-styles-js/img/question-mark-icon-16.png" style="vertical-align:baseline;"></b></a></p>
+    <p>Use the form below to request <a href="https://www.geneseo.edu/library/classrooms-and-meeting-rooms#section1" target="_blank"><b>Room 104  <img alt="Description of Room 104" src="https://eres.geneseo.edu/milne-styles-js/img/question-mark-icon-16.png" style="vertical-align:baseline;"></b></a> or <a href="https://www.geneseo.edu/library/classrooms-and-meeting-rooms#section4" target="_blank"><b>Room 208  <img alt="Description of Room 208" src="https://eres.geneseo.edu/milne-styles-js/img/question-mark-icon-16.png" style="vertical-align:baseline;"></b></a></p>
 <b>Please allow 2 business days to confirm your room reservation.</b> An email will be sent to you once your reservation has been made. Requests for more than one date can be made using this form if all times are the same. <br /><br />
 If you need to cancel a room reservation, please contact <a href="mailto:hoffman@geneseo.edu">Patty Hoffman</a>, Events and Building Coordinator, at <a href="mailto:hoffman@geneseo.edu">hoffman@geneseo.edu</a> or call 585-245-5523. </p>
     <span class="required">* Indicates required field.</span><br /><br />
 <fieldset>
 <legend>Personal Information</legend>
     <asp:HiddenField ID="hfText" runat="server" /> <asp:TextBox ID="txtHF" runat="server" Visible = "false"></asp:TextBox>
-    <label><span class="required">*</span> First Name:  </label><asp:TextBox runat="server" size="25" maxlength="25" ID="txtFirstName" />&nbsp; <asp:requiredfieldvalidator id="rfFirstName" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtFirstName" SetFocusOnError="True"></asp:requiredfieldvalidator> <br />     
-    <label><span class="required">*</span> Last Name: </label><asp:TextBox runat="server" size="25" maxlength="25" ID="txtLastName" />&nbsp; <asp:requiredfieldvalidator id="rfLastName" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtLastName" SetFocusOnError="True"></asp:requiredfieldvalidator><br /> 
-    <label><span class="required">*</span> Email Address: </label><asp:TextBox runat="server" size="25" maxlength="25" ID="txtEmail" />&nbsp; 
+    <label><span class="required">*</span> First Name:  </label><asp:TextBox runat="server" size="25" maxlength="25" ID="txtFirstName" title="First Name" />&nbsp; <asp:requiredfieldvalidator id="rfFirstName" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtFirstName" SetFocusOnError="True"></asp:requiredfieldvalidator> <br />     
+    <label><span class="required">*</span> Last Name: </label><asp:TextBox runat="server" size="25" maxlength="25" ID="txtLastName"  title="Last Name" />&nbsp; <asp:requiredfieldvalidator id="rfLastName" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtLastName" SetFocusOnError="True"></asp:requiredfieldvalidator><br /> 
+    <label><span class="required">*</span> Email Address: </label><asp:TextBox runat="server" size="25" maxlength="25" ID="txtEmail" title="Email" />&nbsp; 
    <asp:requiredfieldvalidator id="rfEmail" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtEmail" SetFocusOnError="True"></asp:requiredfieldvalidator>&nbsp;
    <asp:RegularExpressionValidator ID="reEmail" ErrorMessage="Invalid Email Address" CssClass="required" ControlToValidate="txtEmail" runat="server" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" /><br />
-<label><span class="required">*</span> Department: </label><asp:TextBox ID="txtDepartment" runat="server" size="25" maxlength="25" />&nbsp; <asp:requiredfieldvalidator id="rfDepartment" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtDepartment" SetFocusOnError="True"></asp:requiredfieldvalidator> <br /> 
-<label><span class="required">*</span> Office Phone Number: </label><asp:TextBox ID="txtPhone" runat="server" size="25" maxlength="25" />&nbsp; <asp:requiredfieldvalidator id="rfPhone" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtPhone" SetFocusOnError="True"></asp:requiredfieldvalidator> <br /> 
+<label><span class="required">*</span> Department: </label><asp:TextBox ID="txtDepartment" runat="server" size="25" maxlength="25" title="Department"/>&nbsp; <asp:requiredfieldvalidator id="rfDepartment" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtDepartment" SetFocusOnError="True"></asp:requiredfieldvalidator> <br /> 
+<label><span class="required">*</span> Office Phone Number: </label><asp:TextBox ID="txtPhone" runat="server" size="25" maxlength="25" title="Phone Number" />&nbsp; <asp:requiredfieldvalidator id="rfPhone" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtPhone" SetFocusOnError="True"></asp:requiredfieldvalidator> <br /> 
 <label> <span class="required">*</span> Status/Class Standing: <asp:DropDownList ID="ddlStatus" runat="server" AppendDataBoundItems="True" >
             <asp:ListItem Text="--Select One--" Value="" />             
             <asp:ListItem Text="Faculty/Staff" Value="Faculty/Staff" />            
@@ -123,12 +123,12 @@ If you need to cancel a room reservation, please contact <a href="mailto:hoffman
 <fieldset>
 <legend>Additional Remarks</legend>
 <div style="float:left;">
-    Additional comments, concerns, or technology questions: <asp:TextBox ID="txtRemarks" runat="server" Height="75" style="width: 80%;" TextMode="MultiLine"/>
+    Additional comments, concerns, or technology questions: <asp:TextBox ID="txtRemarks" runat="server" Height="75" style="width: 80%;" TextMode="MultiLine" title="Comments"/>
 </div>
 <div style="float:left; clear:left;">
  <span class="required">*</span>
-    <label><asp:CheckBox ID="cbxAgree" runat="server" /></label>
-    <b>By checking this box, you agree to return the room in good condition and are responsible for reimbursing the library for any damages, stolen property, or extensive cleaning as a result of your event.</b>
+    <label for="Agreement"><asp:CheckBox ID="cbxAgree" runat="server" title="Agreement" />
+    <b>By checking this box, you agree to return the room in good condition and are responsible for reimbursing the library for any damages, stolen property, or extensive cleaning as a result of your event.</b></label>
     <asp:CustomValidator runat="server" ID="CheckBoxRequired" EnableClientScript="true" OnServerValidate="CheckBoxRequired_ServerValidate"
     ClientValidationFunction="CheckBoxRequired_ClientValidate" errormessage="Required" CssClass="required"></asp:CustomValidator>
     <br /><br />

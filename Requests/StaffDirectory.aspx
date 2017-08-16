@@ -21,7 +21,7 @@
     
    <i class="material-icons" style="vertical-align:text-bottom;  color:#345290;">print</i> <strong>Fax</strong> 585-245-5769<br /><br />
 
-        <a href="http://libanswers.geneseo.edu/"><i class="material-icons" style="vertical-align:text-bottom;">help</i> <strong>Ask A Librarian</strong></a> Reference librarians are available to answer your questions <br /><br />
+        <a href="https://www.geneseo.edu/library/ask-us"><i class="material-icons" style="vertical-align:text-bottom;">help</i> <strong>Ask Us</strong></a> Reference librarians are available to answer your questions <br /><br />
 
    <a href="http://www.geneseo.edu/library/webform/make-suggestion"><i class="material-icons" style="vertical-align:text-bottom;">create</i> <strong>Make a suggestion</strong></a> Suggestions &amp; Feedback
 
@@ -42,8 +42,8 @@
     <i class="material-icons" style="vertical-align:text-bottom; color:#345290;">phone</i> Phone</strong>  585-245-5588&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://www.geneseo.edu/cit/helpdesk"><i class="material-icons" style="vertical-align:text-bottom;">language</i> CIT Website</a>
 
      <br /><br />
-     <strong><i class="material-icons" style="vertical-align:text-bottom; color:#345290;">school</i> CAE (Center for Academic Excellence)<br />
-    <i class="material-icons" style="vertical-align:text-bottom; color:#345290;">phone</i> Phone</strong>  585-245-6041&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://www.geneseo.edu/library/center-academic-excellence"><i class="material-icons" style="vertical-align:text-bottom;">language</i> CAE Website</a>
+     <strong><i class="material-icons" style="vertical-align:text-bottom; color:#345290;">create</i> Writing Learning Center<br />
+    <a href="https://www.geneseo.edu/english/writing_center"><i class="material-icons" style="vertical-align:text-bottom; color:#345290;">assignment_ind</i> Schedule an Appointment</strong></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://www.geneseo.edu/english/writing_center"><i class="material-icons" style="vertical-align:text-bottom;">language</i> WLC Website</a>
     <br /><br />
      <strong><i class="material-icons" style="vertical-align:text-bottom; color:#345290;">star</i> TLC (Teaching  Learning Center)<br />
     <i class="material-icons" style="vertical-align:text-bottom; color:#345290;">phone</i> Phone</strong>  585-245-5336&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.geneseo.edu/tlc/about"><i class="material-icons" style="vertical-align:text-bottom;">language</i> TLC Website</a>
@@ -73,7 +73,7 @@
 <AlternatingRowStyle VerticalAlign="Top" BorderStyle="None" Font-Size="13px" HorizontalAlign="Left" CssClass="altRow"></AlternatingRowStyle>
         <Columns>
 					
-             <asp:TemplateField HeaderText="Staff <img src='img/sort-20px.png' class='sort-image'/>"   SortExpression="StaffLastName"   AccessibleHeaderText="Staff Sortable Alphabetically" HeaderStyle-ForeColor="White" HeaderStyle-Font-Bold="True" >
+             <asp:TemplateField HeaderText="Staff <img alt='sort alphabetically' src='img/sort-20px.png' class='sort-image'/>"   SortExpression="StaffLastName"   AccessibleHeaderText="Staff Sortable Alphabetically" HeaderStyle-ForeColor="White" HeaderStyle-Font-Bold="True" >
                
                 
                 <ItemTemplate>
@@ -124,7 +124,7 @@
                     </ItemTemplate>
 				</asp:TemplateField>
 
-            <asp:TemplateField HeaderText="Department <img src='img/sort-20px.png' class='sort-image' />" SortExpression="Department"  AccessibleHeaderText="Department Sortable" ItemStyle-Width="30%" HeaderStyle-ForeColor="White" HeaderStyle-Font-Bold="True" >
+            <asp:TemplateField HeaderText="Department <img alt='sort by Department' src='img/sort-20px.png' class='sort-image' />" SortExpression="Department"  AccessibleHeaderText="Department Sortable" ItemStyle-Width="30%" HeaderStyle-ForeColor="White" HeaderStyle-Font-Bold="True" >
 					<ItemTemplate>
                     <span class="department"><b><asp:Label ID="Department" runat="server"  Text='<%# Bind("Department") %>'></asp:Label></b></span><br />
 					<asp:Label ID="Location" runat="server"  Text='<%# Bind("Location") %>'></asp:Label>

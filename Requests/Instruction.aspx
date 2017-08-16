@@ -4,11 +4,10 @@
     </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<link href="https://eres.geneseo.edu/milne-styles-js/jquery-ui-datepicker-milne.min.css" rel="stylesheet" />
-<link href="https://eres.geneseo.edu/milne-styles-js/jquery-ui-1.10.3.custom-milne.min.css" rel="stylesheet" />
-<script src="https://eres.geneseo.edu/milne-styles-js/js/jquery-ui-datepicker-milne.min.js"></script> 
-<script type="text/javascript" src="https://eres.geneseo.edu/milne-styles-js/js/jquery.ui.timepicker.min.js"></script>
-<script type="text/javascript" src="https://eres.geneseo.edu/milne-styles-js/js/jquery-ui-1.10.3.custom.min.js"></script>
+<link href="https://eres.geneseo.edu/milne-styles-js/js/jquery-ui-1.10.3.custom-milne.min.css" rel="stylesheet" />
+<link href="https://intranetlib.geneseo.edu/Dataportal/Scripts/jquery-ui-milne.css" rel="stylesheet" />
+<script src="https://intranetlib.geneseo.edu/Dataportal/Scripts/jquery-ui.js"></script> 
+<script type="text/javascript" src="https://intranetlib.geneseo.edu/Dataportal/Scripts/jquery.ui.timepicker.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $('#<%= txtDueDate.ClientID %>').attr('readonly', 'readonly').datepicker({ });
@@ -104,9 +103,10 @@
 <div style="float:left; width:55%;">
 <p>Milne Library offers the following types of instruction:</p>
 <div style="float:left;width:100%;">
-<span class="link-button-background style="margin-bottom: 10px;"><b><asp:LinkButton ID="ResearchInstruction" runat="server" CausesValidation="False" OnClick="ResearchInstructionInfoPanelLink_Click">Research Instruction <img src="img/question-mark-icon-16.png" /></asp:LinkButton></b></span>&nbsp; 
-	&nbsp;  <span class="link-button-background style="margin-bottom: 10px;"><b><asp:LinkButton ID="TechnologyInstruction" runat="server" CausesValidation="False" OnClick="TechnologyInstructionInfoPanelLink_Click">Technology Instruction <img src="img/question-mark-icon-16.png" /></asp:LinkButton></b></span>&nbsp;
-	&nbsp;  <span class="link-button-background style="margin-bottom: 10px;"><b><asp:LinkButton ID="HSInstruction" runat="server" CausesValidation="False" OnClick="HighSchoolInstructionInfoPanelLink_Click">High School Instruction <img src="img/question-mark-icon-16.png" /></asp:LinkButton></b></span>
+<span class="link-button-background style="margin-bottom: 10px;"><b><asp:LinkButton ID="ResearchInstruction" runat="server" CausesValidation="False" OnClick="ResearchInstructionInfoPanelLink_Click">Research Instruction <img alt="Click for more information on Research Instruction" src="img/question-mark-icon-16.png" /></asp:LinkButton></b></span>&nbsp; 
+	&nbsp;  <span class="link-button-background style="margin-bottom: 10px;"><b><asp:LinkButton ID="TechnologyInstruction" runat="server" CausesValidation="False" OnClick="TechnologyInstructionInfoPanelLink_Click">Technology Instruction <img alt="Click for more information on Technology Instruction" src="img/question-mark-icon-16.png" /></asp:LinkButton></b></span>&nbsp;
+	&nbsp;  <span class="link-button-background style="margin-bottom: 10px;"><b><asp:LinkButton ID="HSInstruction" runat="server" CausesValidation="False" OnClick="HighSchoolInstructionInfoPanelLink_Click">High School Instruction <img alt="Click for more information on High School Instruction" src="img/question-mark-icon-16.png" /></asp:LinkButton></b>
+        </span>
 </div>
 	<div style="clear:both;">
 	</div>
@@ -163,10 +163,10 @@
 <fieldset>
 <legend><span class="required">* </span>Please select the Instruction type:</legend>
 <div class="radiobutton2">
-    <asp:RadioButtonList ID="rblType" runat="server" RepeatDirection="Horizontal" CssClass="radio" AutoPostBack="True" OnSelectedIndexChanged="rblType_SelectedIndexChanged" CellSpacing="5" style="width:80%;" >
-        <asp:ListItem Text="Research" Value="Research" />
-        <asp:ListItem Text="Technology" Value="Technology" />
-        <asp:ListItem Text="High School" Value="Other" />
+    <asp:RadioButtonList ID="rblType" runat="server" RepeatDirection="Horizontal" CssClass="radio" AutoPostBack="True" OnSelectedIndexChanged="rblType_SelectedIndexChanged" CellSpacing="5" style="width:80%;" title="Please Select the Instruction Type" >
+        <asp:ListItem Text="Research" Value="Research" title="Research" />
+        <asp:ListItem Text="Technology" Value="Technology" title="Technology" />
+        <asp:ListItem Text="High School" Value="Other" title="High School" />
     </asp:RadioButtonList>    
 </div>
 <asp:requiredfieldvalidator id="rfType" runat="server" errormessage="Required" controltovalidate="rblType" SetFocusOnError="True" ForeColor="Red"></asp:requiredfieldvalidator>                
@@ -185,37 +185,37 @@
 </asp:Panel> <!--Tech Instruction Title Panel-->
 <fieldset>
 <legend>Faculty Information</legend>
-    <label><span class="required">*</span> First Name:</label>  <asp:TextBox runat="server" size="25" maxlength="25" ID="txtFirstName" TabIndex="2" />&nbsp;<asp:requiredfieldvalidator id="rfFirstName" runat="server" errormessage="Required" CssClass="required"  controltovalidate="txtFirstName" SetFocusOnError="True"></asp:requiredfieldvalidator>  <br />
-    <label><span class="required">*</span> Last Name: </label><asp:TextBox runat="server" size="25" maxlength="50" ID="txtLastName" TabIndex="3" />&nbsp;<asp:requiredfieldvalidator id="rfLastName" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtLastName" SetFocusOnError="True"></asp:requiredfieldvalidator><br />
-    <label><span class="required">*</span> Email Address: </label><asp:TextBox runat="server" size="25" maxlength="50" ID="txtEmail" TabIndex="4"  />&nbsp;
+    <label><span class="required">*</span> First Name:</label>  <asp:TextBox runat="server" size="25" maxlength="25" ID="txtFirstName" TabIndex="2" title="First Name" />&nbsp;<asp:requiredfieldvalidator id="rfFirstName" runat="server" errormessage="Required" CssClass="required"  controltovalidate="txtFirstName" SetFocusOnError="True"></asp:requiredfieldvalidator>  <br />
+    <label><span class="required">*</span> Last Name: </label><asp:TextBox runat="server" size="25" maxlength="50" ID="txtLastName" TabIndex="3" title="Last Name" />&nbsp;<asp:requiredfieldvalidator id="rfLastName" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtLastName" SetFocusOnError="True"></asp:requiredfieldvalidator><br />
+    <label><span class="required">*</span> Email Address: </label><asp:TextBox runat="server" size="25" maxlength="50" ID="txtEmail" TabIndex="4"  title="Email" />&nbsp;
     <asp:requiredfieldvalidator id="rfEmail" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtEmail" SetFocusOnError="True"></asp:requiredfieldvalidator> 
     <asp:RegularExpressionValidator ID="reEmail1" ErrorMessage="Invalid Email Address" CssClass="required" ControlToValidate="txtEmail" runat="server" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" /><br />
-    <label><span class="required">*</span> Office Phone Number: </label><asp:TextBox ID="txtPhone" runat="server" size="25" maxlength="25" TabIndex="5" />&nbsp;<asp:requiredfieldvalidator id="rfPhone" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtPhone" SetFocusOnError="True"></asp:requiredfieldvalidator><br /> 
+    <label><span class="required">*</span> Office Phone Number: </label><asp:TextBox ID="txtPhone" runat="server" size="25" maxlength="25" TabIndex="5" title="Office Phone Number" />&nbsp;<asp:requiredfieldvalidator id="rfPhone" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtPhone" SetFocusOnError="True"></asp:requiredfieldvalidator><br /> 
 </fieldset><br />
 <fieldset>
 <legend>Course Information</legend>
-<label><span class="required">*</span> Planned Number of Students: </label><asp:TextBox ID="txtStudentNumber" runat="server" size="3"  MaxLength="3" TabIndex="6" />&nbsp;<asp:requiredfieldvalidator id="rfStudentNumber" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtStudentNumber" SetFocusOnError="True" ></asp:requiredfieldvalidator>&nbsp; 
+<label><span class="required">*</span> Planned Number of Students: </label><asp:TextBox ID="txtStudentNumber" runat="server" size="3"  MaxLength="3" TabIndex="6" title="Planned Number of Students" />&nbsp;<asp:requiredfieldvalidator id="rfStudentNumber" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtStudentNumber" SetFocusOnError="True" ></asp:requiredfieldvalidator>&nbsp; 
 <asp:RegularExpressionValidator ID="reStudentNumber" runat="server" CssClass="required" ControlToValidate="txtStudentNumber" ErrorMessage="Numbers only" SetFocusOnError="True" ValidationExpression="((^[0-9]+$))"></asp:RegularExpressionValidator><br />
 <label><span class="required">*</span> Is this for a College Course? </label>
 <div class="radiobutton">
-<asp:RadioButtonList ID="rblCollege" runat="server" RepeatDirection="Horizontal" CssClass="rbl" AutoPostBack="True" OnSelectedIndexChanged="rblCollege_SelectedIndexChanged" TabIndex="7">
-        <asp:ListItem Selected="True" Text="Yes" Value="Yes" />
-        <asp:ListItem Text="No" Value="No" /> 
+<asp:RadioButtonList ID="rblCollege" runat="server" RepeatDirection="Horizontal" CssClass="rbl" AutoPostBack="True" OnSelectedIndexChanged="rblCollege_SelectedIndexChanged" TabIndex="7" title="Is This for A College Course?">
+        <asp:ListItem Selected="True" Text="Yes" Value="Yes" title="Yes" />
+        <asp:ListItem Text="No" Value="No" title="No" /> 
 </asp:RadioButtonList>
 </div>
 <asp:requiredfieldvalidator id="rfCollege" runat="server" errormessage="Required" CssClass="required" controltovalidate="rblCollege" SetFocusOnError="True" > </asp:requiredfieldvalidator> &nbsp;<br />
 <%-- College Yes Visibility --%>
 <asp:Panel ID="collegeYesPanel" runat="server" Visible="True" >    
-<label>Course Number (ABCD 123 Format): </label><asp:TextBox ID="txtCourseNumber" runat="server" size="8" maxlength="8"  />&nbsp;<asp:RegularExpressionValidator ID="reCourseNumber" SetFocusOnError="true" CssClass="required" ValidationExpression="^[zA-Z]{4} [0-9]{3}$" ErrorMessage="Course Number should be in 'ABCD 123' format" ControlToValidate="txtCourseNumber" runat="server" /><br />
-<label>Course Title: </label><asp:TextBox ID="txtCourseTitle" runat="server" size="45" maxlength="75"  /><br />
+<label>Course Number (ABCD 123 Format): </label><asp:TextBox ID="txtCourseNumber" runat="server" size="8" maxlength="8" title="Course Number" />&nbsp;<asp:RegularExpressionValidator ID="reCourseNumber" SetFocusOnError="true" CssClass="required" ValidationExpression="^[zA-Z]{4} [0-9]{3}$" ErrorMessage="Course Number should be in 'ABCD 123' format" ControlToValidate="txtCourseNumber" runat="server" /><br />
+<label>Course Title: </label><asp:TextBox ID="txtCourseTitle" runat="server" size="45" maxlength="75" title="Course Title" /><br />
 <label>Department:</label>
-<asp:DropDownList runat="server" Width="150px" ID="ddlDepartmentActive" /><br /><br />
+<asp:DropDownList runat="server" Width="150px" ID="ddlDepartmentActive" title="Select Department" /><br /><br />
 </asp:Panel> <!--End of College Yes Panel-->
-<label>Regular Semester Classroom Location: </label><asp:TextBox ID="txtLocation" runat="server" size="45" maxlength="75"  /><br />
+<label>Regular Semester Classroom Location: </label><asp:TextBox ID="txtLocation" runat="server" size="45" maxlength="75" title="Regular Semester Classroom Location" /><br />
 <%-- College No Visibility --%>
 <asp:Panel ID="collegeNoPanel" runat="server" Visible="False" >
-<label>Enter Associated Group or Program: </label><asp:TextBox ID="txtAssociatedGroup" runat="server" size="45" maxlength="75"  /><br />
-<label>Workshop (non college) Title: </label><asp:TextBox ID="txtWorkshop" runat="server" size="45" maxlength="75"  /><br />
+<label>Enter Associated Group or Program: </label><asp:TextBox ID="txtAssociatedGroup" runat="server" size="45" maxlength="75" title="Enter Associated Group or Program" /><br />
+<label>Workshop (non college) Title: </label><asp:TextBox ID="txtWorkshop" runat="server" size="45" maxlength="75" title="Workshop" /><br />
 </asp:Panel> <!--End of College No Panel-->
 </fieldset><br />
 <fieldset><br />INTD 105 instructors should note changes in the course description were approved by faculty senate in 2015.&nbsp;<b><br /><br /><a href="https://wiki.geneseo.edu/display/intd105/Course+Guidelines">See the updated guidelines.</a></b><br /><br />
@@ -224,67 +224,68 @@
 <span class="required">* </span>Skill/Concept #1:
 </label>
 <%--    <asp:DropDownList ID="ddlSkill1" runat="server" />--%>
-<asp:DropDownList Width="320px" ID="ddlSkill1" CssClass="dropdown" runat="server" TabIndex="20">
-                        <asp:ListItem Text="--Select One--" Value="None" Selected="True" />                        
-                        <asp:ListItem Text="Accessing materials" Value="Accessing materials" />
-                        <asp:ListItem Text="Citation tracking" Value="Citation tracking" />
-                        <asp:ListItem Text="Date-sensitive" Value="Date-sensitive" />
-                        <asp:ListItem Text="Evaluating materials" Value="Evaluating materials" />
-                        <asp:ListItem Text="In a foreign language" Value="In a foreign language" />
-                        <asp:ListItem Text="INTD 105 introduction" Value="INTD 105 introduction" />
-                        <asp:ListItem Text="Keyword vs Subject" Value="Keyword vs Subject" />
-                        <asp:ListItem Text="Navigating the library" Value="Navigating the library" />
-                        <asp:ListItem Text="Plagiarism/Citation style" Value="Plagiarism/Citation style" />
-                        <asp:ListItem Text="Presenting information" Value="Presenting information" />
-                        <asp:ListItem Text="Primary vs Secondary sources" Value="Primary vs Secondary sources" />
-                        <asp:ListItem Text="Technology proficiency" Value="Technology proficiency" />
-                        <asp:ListItem Text="Topic formation" Value="Topic formation" />
-                        <asp:ListItem Text="Using appropriate search tools" Value="Using appropriate search tools" />
-                        <asp:ListItem Text="Other" Value="Other" />
+<asp:DropDownList Width="320px" ID="ddlSkill1" CssClass="dropdown" runat="server" TabIndex="20" title="Select Goals of Instruction Skills or Concepts">
+                        <asp:ListItem Text="--Select One--" Value="None" Selected="True"  />                        
+                        <asp:ListItem Text="Accessing materials" Value="Accessing materials" title="Accessing materials" />
+                        <asp:ListItem Text="Citation tracking" Value="Citation tracking" title="Citation tracking" />
+                        <asp:ListItem Text="Date-sensitive" Value="Date-sensitive" title="Date-sensitive" />
+                        <asp:ListItem Text="Evaluating materials" Value="Evaluating materials" title="Evaluating materials" />
+                        <asp:ListItem Text="In a foreign language" Value="In a foreign language" title="In a foreign language" />
+                        <asp:ListItem Text="INTD 105 introduction" Value="INTD 105 introduction" title="INTD 105 introduction" />
+                        <asp:ListItem Text="Keyword vs Subject" Value="Keyword vs Subject"  title="Keyword vs Subject" />
+                        <asp:ListItem Text="Navigating the library" Value="Navigating the library" title="Navigating the library" />
+                        <asp:ListItem Text="Plagiarism/Citation style" Value="Plagiarism/Citation style" title="Plagiarism/Citation style" />
+                        <asp:ListItem Text="Presenting information" Value="Presenting information" title="Presenting information" />
+                        <asp:ListItem Text="Primary vs Secondary sources" Value="Primary vs Secondary sources" title="Primary vs Secondary sources" />
+                        <asp:ListItem Text="Technology proficiency" Value="Technology proficiency" title="Technology proficiency" />
+                        <asp:ListItem Text="Topic formation" Value="Topic formation" title="Topic formation" />
+                        <asp:ListItem Text="Using appropriate search tools" Value="Using appropriate search tools" title="Using appropriate search tools" />
+                        <asp:ListItem Text="Other" Value="Other" title="Other" />
 </asp:DropDownList>
     &nbsp;<asp:requiredfieldvalidator id="rfSkill1" runat="server" errormessage="Required" CssClass="required" controltovalidate="ddlSkill1" SetFocusOnError="True" ></asp:requiredfieldvalidator>
     <br />
 <label><span class="required">&nbsp; </span>Skill/Concept #2: </label>
 <%--    <asp:DropDownList ID="ddlSkill2" runat="server" />--%>
-<asp:DropDownList Width="320px" ID="ddlSkill2" CssClass="dropdown" runat="server" TabIndex="22">
-                        <asp:ListItem Text="--Select One--" Value="None" Selected="True" />                        
-                        <asp:ListItem Text="Accessing materials" Value="Accessing materials" />
-                        <asp:ListItem Text="Citation tracking" Value="Citation tracking" />
-                        <asp:ListItem Text="Date-sensitive" Value="Date-sensitive" />
-                        <asp:ListItem Text="Evaluating materials" Value="Evaluating materials" />
-                        <asp:ListItem Text="In a foreign language" Value="In a foreign language" />
-                        <asp:ListItem Text="INTD 105 introduction" Value="INTD 105 introduction" />
-                        <asp:ListItem Text="Keyword vs Subject" Value="Keyword vs Subject" />
-                        <asp:ListItem Text="Navigating the library" Value="Navigating the library" />
-                        <asp:ListItem Text="Plagiarism/Citation style" Value="Plagiarism/Citation style" />
-                        <asp:ListItem Text="Presenting information" Value="Presenting information" />
-                        <asp:ListItem Text="Primary vs Secondary sources" Value="Primary vs Secondary sources" />
-                        <asp:ListItem Text="Technology proficiency" Value="Technology proficiency" />
-                        <asp:ListItem Text="Topic formation" Value="Topic formation" />
-                        <asp:ListItem Text="Using appropriate search tools" Value="Using appropriate search tools" />
-                        <asp:ListItem Text="Other" Value="Other" />
+<asp:DropDownList Width="320px" ID="ddlSkill2" CssClass="dropdown" runat="server" TabIndex="22" title="Select Secondary Goals of Instruction Skills or Concepts">
+                        <asp:ListItem Text="--Select One--" Value="None" Selected="True"  />                        
+                        <asp:ListItem Text="Accessing materials" Value="Accessing materials" title="Accessing materials" />
+                        <asp:ListItem Text="Citation tracking" Value="Citation tracking" title="Citation tracking" />
+                        <asp:ListItem Text="Date-sensitive" Value="Date-sensitive" title="Date-sensitive" />
+                        <asp:ListItem Text="Evaluating materials" Value="Evaluating materials" title="Evaluating materials" />
+                        <asp:ListItem Text="In a foreign language" Value="In a foreign language" title="In a foreign language" />
+                        <asp:ListItem Text="INTD 105 introduction" Value="INTD 105 introduction" title="INTD 105 introduction" />
+                        <asp:ListItem Text="Keyword vs Subject" Value="Keyword vs Subject"  title="Keyword vs Subject" />
+                        <asp:ListItem Text="Navigating the library" Value="Navigating the library" title="Navigating the library" />
+                        <asp:ListItem Text="Plagiarism/Citation style" Value="Plagiarism/Citation style" title="Plagiarism/Citation style" />
+                        <asp:ListItem Text="Presenting information" Value="Presenting information" title="Presenting information" />
+                        <asp:ListItem Text="Primary vs Secondary sources" Value="Primary vs Secondary sources" title="Primary vs Secondary sources" />
+                        <asp:ListItem Text="Technology proficiency" Value="Technology proficiency" title="Technology proficiency" />
+                        <asp:ListItem Text="Topic formation" Value="Topic formation" title="Topic formation" />
+                        <asp:ListItem Text="Using appropriate search tools" Value="Using appropriate search tools" title="Using appropriate search tools" />
+                        <asp:ListItem Text="Other" Value="Other" title="Other" />
 </asp:DropDownList><br />
 <label><span class="required">&nbsp; </span>Skill/Concept #3: </label>
 <%--    <asp:DropDownList ID="ddlSkill3" runat="server" />--%>
-                 <asp:DropDownList Width="320px" ID="ddlSkill3" CssClass="dropdown" runat="server" TabIndex="23">
-                        <asp:ListItem Text="--Select One--" Value="None" Selected="True" />                        
-                        <asp:ListItem Text="Accessing materials" Value="Accessing materials" />
-                        <asp:ListItem Text="Citation tracking" Value="Citation tracking" />
-                        <asp:ListItem Text="Date-sensitive" Value="Date-sensitive" />
-                        <asp:ListItem Text="Evaluating materials" Value="Evaluating materials" />
-                        <asp:ListItem Text="In a foreign language" Value="In a foreign language" />
-                        <asp:ListItem Text="INTD 105 introduction" Value="INTD 105 introduction" />
-                        <asp:ListItem Text="Keyword vs Subject" Value="Keyword vs Subject" />
-                        <asp:ListItem Text="Navigating the library" Value="Navigating the library" />
-                        <asp:ListItem Text="Plagiarism/Citation style" Value="Plagiarism/Citation style" />
-                        <asp:ListItem Text="Presenting information" Value="Presenting information" />
-                        <asp:ListItem Text="Primary vs Secondary sources" Value="Primary vs Secondary sources" />
-                        <asp:ListItem Text="Technology proficiency" Value="Technology proficiency" />
-                        <asp:ListItem Text="Topic formation" Value="Topic formation" />
-                        <asp:ListItem Text="Using appropriate search tools" Value="Using appropriate search tools" />
-                        <asp:ListItem Text="Other" Value="Other" />
-</asp:DropDownList><br /> <br />
-<b>What additional skills or concepts would you like included in this instruction session? </b><asp:TextBox ID="txtGoalsDetails" runat="server" Height="75"  TextMode="MultiLine" TabIndex="24" />
+                 <asp:DropDownList Width="320px" ID="ddlSkill3" CssClass="dropdown" runat="server" TabIndex="23" title="Select Third Goals of Instruction Skills or Concepts">
+                        <asp:ListItem Text="--Select One--" Value="None" Selected="True"  />                        
+                        <asp:ListItem Text="Accessing materials" Value="Accessing materials" title="Accessing materials" />
+                        <asp:ListItem Text="Citation tracking" Value="Citation tracking" title="Citation tracking" />
+                        <asp:ListItem Text="Date-sensitive" Value="Date-sensitive" title="Date-sensitive" />
+                        <asp:ListItem Text="Evaluating materials" Value="Evaluating materials" title="Evaluating materials" />
+                        <asp:ListItem Text="In a foreign language" Value="In a foreign language" title="In a foreign language" />
+                        <asp:ListItem Text="INTD 105 introduction" Value="INTD 105 introduction" title="INTD 105 introduction" />
+                        <asp:ListItem Text="Keyword vs Subject" Value="Keyword vs Subject"  title="Keyword vs Subject" />
+                        <asp:ListItem Text="Navigating the library" Value="Navigating the library" title="Navigating the library" />
+                        <asp:ListItem Text="Plagiarism/Citation style" Value="Plagiarism/Citation style" title="Plagiarism/Citation style" />
+                        <asp:ListItem Text="Presenting information" Value="Presenting information" title="Presenting information" />
+                        <asp:ListItem Text="Primary vs Secondary sources" Value="Primary vs Secondary sources" title="Primary vs Secondary sources" />
+                        <asp:ListItem Text="Technology proficiency" Value="Technology proficiency" title="Technology proficiency" />
+                        <asp:ListItem Text="Topic formation" Value="Topic formation" title="Topic formation" />
+                        <asp:ListItem Text="Using appropriate search tools" Value="Using appropriate search tools" title="Using appropriate search tools" />
+                        <asp:ListItem Text="Other" Value="Other" title="Other" />
+        </asp:DropDownList><br />
+<b>What additional skills or concepts would you like included in this instruction session?</b>
+<asp:TextBox ID="txtGoalsDetails" runat="server" Height="75"  TextMode="MultiLine" TabIndex="24" title="Additional Skills, Goals, concepts" />
 </fieldset><br />
 <fieldset>
 <legend>Date of Instruction</legend>

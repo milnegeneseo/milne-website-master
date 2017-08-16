@@ -25,10 +25,7 @@ head of each document that takes the drupal template -->
 <style>
 div.mdl-grid, .mdl-grid{
 display:none !important;}
-</style>
-<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" media="all" />
-  </head>
-</style>
+
 @font-face {
     font-family: "Neutraface Text";
     src: url('fonts/NeutrafaceText-Book.eot');
@@ -62,27 +59,18 @@ display:none !important;}
        url(fonts/MaterialIcons-Regular.woff) format('woff'),
        url(fonts/MaterialIcons-Regular.ttf) format('truetype');
 }
-
-
-.s-la-widget *, #s-la-widget-761
-{
-background:transparent !important;
-background:none !important;
-border:none !important;
-padding-left: 5px !important;
-}
-
-.s-la-widget h1, .s-la-widget h3,  #s-la-widget-761 h1, #s-la-widget-761 h3
-{
-  color: #b87733 !important;
-  font-weight:bold;
-}
-
-.s-la-widget .s-la-widget-header, #s-la-widget-761 .s-la-widget-header{
-margin-bottom: 5px !important;
-}
-</style>	
-	  
+</style>
+<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" media="all" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </head>
   
   
   
@@ -101,7 +89,7 @@ background-color: #345290;"></div>
 <!-- END Left Sidebar -->
     <div style="width: 100%;">   
         
-        <div style="float:left;"><a href="https://www.geneseo.edu/library"><img src="https://eres.geneseo.edu/milne-logo/milne-library-logo.png" style="margin-top:-20px; width:85%;"</a> </div>     
+        <div style="float:left;"><a href="https://www.geneseo.edu/library"><img alt="Milne Library SUNY Geneseo" title="Milne Library SUNY Geneseo" src="https://eres.geneseo.edu/milne-logo/milne-library-logo.png" style="margin-top:-20px; width:85%;" /></a></div>     
         
         <form id="form1" runat="server">
 

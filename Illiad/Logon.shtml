@@ -1,5 +1,6 @@
-<html>
+<!DOCTYPE html lang="en">
 <!--#INCLUDE filename="includes/drupalheader_responsive.inc"-->
+<html>
 <head>
 <title>Information Delivery Services | Milne Library</title>
 <link rel="stylesheet" type="text/css" href="styles/GIST4Web.css">		
@@ -20,8 +21,8 @@
 			<form action="illiad.dll" method="post" name="Logon" style="padding:0px; margin:0px;">
 						<input type="hidden" name="ILLiadForm" value="Logon">
 						
-				<p>Username <input id="username" name="Username" size="45" type="text" tabindex="1" style="margin:0px 0px 0px 5px;" /></p>
-				<p>Password <input id="password" name="Password" size="45" type="password" tabindex="2" style="margin: 0px 0px 10px 12px;"/></p>
+				<p>Username <input id="username" name="Username" size="45" type="text" style="margin:0px 0px 0px 5px;" title="Username" /></p>
+				<p>Password <input id="password" name="Password" size="45" type="password"  style="margin: 0px 0px 10px 12px;" title="Password" /></p>
 				<input type="submit" name="SubmitButton" value="Logon" tabindex="3" />&nbsp; | &nbsp;
 				Or use <a href="https://my.geneseo.edu/UniversitySSO/index.jsp?ssoToService=ILLiad">Geneseo Single Sign On.</a>
 				<input type="hidden" name="ILLiadForm" value="Logon" style="padding:0px; margin:0px;">

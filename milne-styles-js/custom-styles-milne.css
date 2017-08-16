@@ -1,0 +1,1974 @@
+/**
+ * @file
+ * Geneseo styles and materialize overrides
+ */
+
+/** 
+ * Custom fonts
+ *
+ * Import Neutraface font 
+ */
+@font-face {
+  font-family: "Neutraface Text";
+  src: url('../fonts/neutraface/NeutrafaceText-Book.eot');
+  src: url("../fonts/neutraface/NeutrafaceText-Book.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/neutraface/NeutrafaceText-Book.woff2") format("woff2"),
+       url("../fonts/neutraface/NeutrafaceText-Book.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}
+@font-face {
+  /*font-family: "Neutraface Headings";*/
+  src: url('../fonts/neutraface/NeutrafaceText-Bold.eot');
+  src: url("../fonts/neutraface/NeutrafaceText-Bold.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/neutraface/NeutrafaceText-Bold.woff2") format("woff2"),
+       url("../fonts/neutraface/NeutrafaceText-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}
+
+/** Set Neutraface as headings font */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+/*  font-family: "Neutraface Text";*/
+}
+
+/* Not entirely sure why this is necessary here */
+strong {
+  font-weight: 700;
+}
+
+/**
+ * Primary navigation
+ *
+ * Adjustments for main (top) navbar
+ */
+.navbar-fixed {
+  z-index: 999;
+}
+@media screen and (min-width: 993px) {
+  .navbar-fixed {
+    margin-bottom: 42px;
+  }
+}
+nav.primary-navigation {
+  padding: 0px 15px;
+  z-index: 1;
+}
+nav.primary-navigation .brand-logo img {
+  max-height: 40px;
+  margin: 12px 15px;
+}
+nav.primary-navigation.search-active {
+  padding: 0;
+}
+nav.primary-navigation .input-field label:not(.label-icon).active {
+  transform: translateY(0);
+}
+nav.primary-navigation .nav-links li a > img {
+  height: 54px;
+  margin-top: 5px;
+}
+nav.primary-navigation .nav-links li div.vertical-bar {
+  width: 3px;
+  background-color: #fff;
+  height: 34px;
+  margin-top: 15px;
+}
+
+/**
+ * Primary navigation mobile
+ *
+ * Adjusts main (top) navbar on phone-sized devices
+ */
+@media screen and (max-width: 600px) {
+  nav.primary-navigation .brand-logo img {
+    max-height: 32px;
+  }
+}
+.logo {
+  height: 64px;
+}
+nav.primary-navigation .brand-logo {
+  width: 289px;
+  height: 64px;
+}
+@media screen and (max-width: 600px) {
+  nav.primary-navigation .brand-logo {
+    max-height: 32px;
+  }
+}
+.logo-mobile {
+  height: 42px;
+  margin-top: 10px;
+}
+
+/**
+ * Secondary Navigation
+ *
+ * Below primary navigation
+ */
+nav.secondary-navigation {
+  height: 42px;
+  top: 64px;
+  padding: 0px 15px;
+}
+nav.secondary-navigation ul a {
+  line-height: 42px;
+}
+
+/**
+ * Status messages
+ */
+nav.status-message {
+  padding: 0 16px;
+  margin: 8px 0;
+}
+nav.status-message a {
+  color: #039be5;
+}
+
+/**
+ * Bottom footer navigation
+ *
+ * Adjust footer navbar height and links
+ */
+footer.page-footer {
+  margin-top: 0;
+  padding-top: 40px;
+}
+footer.page-footer img {
+  max-width: 100%;
+  margin-right: 25px;
+}
+.page-footer ul li {
+  margin-bottom: 0.5rem;
+}
+footer.page-footer .footer-copyright {
+  padding: 0;
+}
+.footer-copyright nav {
+  height: 50px;
+}
+.footer-copyright nav ul {
+  display: inline-block;
+}
+.footer-copyright nav ul a {
+  line-height: 50px;
+}
+
+/**
+ * Sticky footer
+ *
+ * Footer is on bottom of page even on smaller pages
+ */
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
+
+/**
+ * Slider
+ *
+ * Add styling for left/right arrows and captions
+ */
+.slider .slides li .caption {
+  top: 0;
+  left: 0;
+  width: 35%;
+  background-color: rgba(52,82,144,0.50);
+  height: 100%;
+  padding: 0px 25px 25px 75px;
+}
+@media screen and (max-width: 992px) {
+  .slider .slides li .caption {
+    bottom: 0;
+    top: initial;
+    height: auto;
+    width: 100%;
+    padding: 0 25px;
+  }
+}
+.slider .slider-control {
+  -webkit-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+  opacity: 0.7;
+  height: 100%;
+  height: calc(100% - 40px);
+  position: absolute;
+  width: 100px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+}
+.slider .slider-control:hover {
+  opacity: 1;
+}
+.slider .slider-control.slider-control-left {
+  left: 0;
+  transition: opacity 0.2s ease-out;
+  background: -webkit-linear-gradient(right, rgba(0,0,0,0.65), rgba(0,0,0,0));
+  background: -o-linear-gradient(right, rgba(0,0,0,0.65), rgba(0,0,0,0));
+  background: -moz-linear-gradient(right, rgba(0,0,0,0.65), rgba(0,0,0,0));
+  background: linear-gradient(to right, rgba(0,0,0,0.65), rgba(0,0,0,0));
+}
+.slider .slider-control.slider-control-right {
+  right: 0;
+  transition: opacity 0.2s ease-out;
+  background: -webkit-linear-gradient(left, rgba(0,0,0,0.65), rgba(0,0,0,0));
+  background: -o-linear-gradient(left, rgba(0,0,0,0.65), rgba(0,0,0,0));
+  background: -moz-linear-gradient(left, rgba(0,0,0,0.65), rgba(0,0,0,0));
+  background: linear-gradient(to left, rgba(0,0,0,0.65), rgba(0,0,0,0));
+}
+.slider .slider-control .material-icons {
+  margin: auto;
+  font-size: 2rem;
+  color: #fff;
+}
+.geneseo-slideshow-caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 16px 48px;
+  background: rgba(52,82,144,0.58);
+  color: #fff;
+}
+.slider .indicators .indicator-item.active {
+  background-color: #6e9fc1;
+}
+
+/**
+ * Calendar icon
+ *
+ * Calendar icon styling for home page and calendar page
+ */
+time.calendar-icon {
+  font-size: 0.75rem;
+  display: block;
+  position: relative;
+  width: 7em;
+  height: 7em;
+  background-color: #fff;
+  border-radius: 0.6em;
+  box-shadow: 0 1px 0 #bdbdbd,0 2px 0 #fff,0 3px 0 #bdbdbd,0 4px 0 #fff,0 5px 0 #bdbdbd,0 0 0 1px #bdbdbd;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+time.calendar-icon * {
+  display: block;
+  width: 100%;
+  font-size: 1em;
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+}
+time.calendar-icon em {
+  position: absolute;
+  bottom: 0.3em;
+  color: #345290;
+}
+time.calendar-icon strong {
+  position: absolute;
+  top: 0;
+  color: #fff;
+  background-color: #345290;
+  border-bottom: 1px dashed #46619a;
+  box-shadow: 0 2px 2px #9c9c9c;
+  padding: 0.3rem 0;
+}
+time.calendar-icon span {
+  font-size: 2.8em;
+  letter-spacing: -0.05em;
+  padding-top: 0.60em;
+  color: #345290;
+}
+
+.event.card .card-image {
+  padding: 20px;
+}
+
+/**
+ * Parallax styling
+ *
+ * Parallax image and heading styles
+ */
+.parallax-container {
+  height: 350px;
+}
+.parallax-heading {
+  z-index: 1;
+  margin: 0 auto;
+  font-weight: bold;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1), 0px 4px 30px rgba(0,0,0,0.6);
+}
+.parallax-heading.underline::after {
+  content: '';
+  margin: 0 auto;
+  width: 66.666%;
+  height: 3px;
+  background: #fff;
+  display: block;
+  box-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+/**
+ * Breadcrumb styling
+ *
+ * Get rid of the default white colors
+ */
+.breadcrumb-wrapper {
+  line-height: 32px;
+  margin-top: 8px;
+}
+.breadcrumb {
+  font-size: 16px;
+  color: #9e9e9e;
+}
+.breadcrumb:last-child {
+  color: #424242;
+}
+.breadcrumb::before {
+  color: #9e9e9e;
+}
+@media screen and (max-width: 992px) {
+  .breadcrumb-wrapper {
+    margin-top: 0;
+  }
+}
+
+/**
+ * Quick Links styling
+ *
+ * No border, changed padding
+ */
+.quick-links {
+  border: none;
+}
+.quick-links a.collection-item {
+  padding: 10px 5px;
+}
+.quick-links-btn {
+  margin: 10px 0;
+  overflow: visible;
+  height: auto;
+  line-height: 1.5rem;
+  padding: 0.5rem 2rem;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.quick-links-btn:hover {
+  background-color: #6e9fc1!important;
+}
+.quick-links-btn i {
+  float: left;
+  margin-right: 15px;
+}
+.full-width {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+/**
+ * Icon blocks
+ *
+ * Setup blocks of icons with text
+ */
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+.icon-block .icon-block-header {
+  margin-top: 0;
+}
+.icon-block .icon-block-icon {
+  margin-bottom: 0;
+}
+
+/**
+ * Tabledrag
+ *
+ * Fix tabledrag icons
+ */
+a.tabledrag-handle .handle {
+  height: auto;
+  width: auto;
+  margin: 0 0.5em 0;
+  padding: 0.5em 0.55em;
+}
+.field-multiple-drag .warning {
+  color: #e57373;
+}
+
+/**
+ * Collapsible forms
+ */
+.collapsible-header .input-field {
+  margin-top: 0;
+}
+.collapsible-header .input-field .select-wrapper input.select-dropdown {
+  line-height: 2.5rem;
+  height: 2.5rem;
+  margin: 0;
+  width: 3rem;
+}
+.collapsible-body {
+  overflow: auto;
+}
+
+/**
+ * Article content type customizations
+ */
+.article-date {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 5px;
+  margin-bottom: 0.75rem;
+  font-weight: bold;
+}
+.article-image-card {
+  width: 350px;
+  float: left;
+  margin-right: 1rem;
+}
+.article-image-card .card-image img {
+  width: 100% !important;
+  height: auto !important;
+}
+@media screen and (max-width: 600px) {
+  .article-image-card {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+/**
+ * Social media links (footer) styling
+ */
+.platforms a {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.3);
+  background:#9e9e9e;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.platforms a:hover {
+  box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.3);
+  background-color: #bdbdbd;
+}
+.platforms a .fa {
+  font-size: 1.5em;
+}
+
+/**
+ * Masonry style for cards
+ */
+.masonry .views-infinite-scroll-content-wrapper {
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  column-break-inside: avoid;
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  column-count: 1;
+}
+
+.masonry .views-infinite-scroll-content-wrapper .card {
+  margin: .5rem .5rem 1rem .5rem;
+  display: inline-block;
+  overflow: visible;
+}
+
+@media screen and (min-width: 601px) {
+  .masonry .views-infinite-scroll-content-wrapper {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .masonry .views-infinite-scroll-content-wrapper {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }
+}
+
+/**
+ * Menu indentation and styling
+ */
+.collection.is-menu .collection-header {
+  padding-left: 15px;
+}
+.collection.is-menu .collection-item.is-active {
+  background: rgba(0,0,0,0.05);
+}
+.collection.is-menu .menu_level_0, .side-nav .menu_level_0 {
+  padding-left: 15px;
+}
+.collection.is-menu .menu_level_1, .side-nav .menu_level_1 {
+  padding-left: 30px;
+}
+.collection.is-menu .menu_level_2, .side-nav .menu_level_2 {
+  padding-left: 45px;
+}
+.collection.is-menu .menu_level_3, .side-nav .menu_level_3 {
+  padding-left: 60px;
+}
+
+/**
+ * Container size modification
+ */
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 85%;
+  }
+}
+
+
+
+
+/***************************************************************************/
+/*******************   MILNE LIBRARY STYLES Leah M Root *******************************/
+/**************************************************************************
+
+IMPORTANT!!!!!:  
+
+The following Milne related 'things' have their own separate stylesheets:
+
+
+*** Milne Library News & Events Blog on Milne Front Page: *** 
+This no longer uses a slider that needs to be 'hand updated'. 
+The feed display is now controlled by scripts parsing 
+the WordPress API from the Milne Library News & Events Blog. 
+In other words, directly pulling in and displaying posts, 
+so Librarians and Staff no longer have to manually edit the Drupal page 
+and work around janky html and comments.
+CSS: https://eres.geneseo.edu/milne-library-wp-api-drupal8/drupal-milne-news-feed.css
+
+*** Library Hours *PAGE* that displays all hours and exceptions (https://www.geneseo.edu/library/library-hours) ***
+CSS: https://eres.geneseo.edu/libraryhours/library_hours-milne.css
+
+***  IDS pages and ILLiad Lending Pages - use a custom stylesheet IN ADDITION to this one ***
+CSS: https://illiad.geneseo.edu/styles/GIST4Web.css
+
+/**************************************************/
+
+
+/*********** breadcrumb* ********/
+
+
+@media(max-width: 660px) {
+.breadcrumb,#rightSideContent h1, #rightSideContent p.subheading, ul.subheading {
+float:left;
+clear:both;
+width:100%;
+margin:20px 20px 10px 0px;
+}
+
+ul.subheading li{
+	margin-right: 40px;
+}
+}
+
+/*** Left side menu and Right side Resources Button styles ***/
+
+.library-hours-background{
+  font-family: "Open Sans",sans-serif;
+ /* font-size: 14px;*/
+background-color: #ffd880; 
+width: 99%; 
+border-radius: 2px; 
+padding: 15px 1px 1px 1px !important;
+margin-bottom:6px; 
+
+  box-shadow: 0 3px 3px -2px rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 1px 8px 0 rgba(0,0,0,.12);
+text-align:center;
+}
+
+
+/* Used by Ask Us link on the left side */
+.chat-link-background{
+font-family: "Open Sans",sans-serif;
+  font-size: 14px;
+/*background-color: #008061; */
+background-color: #345290; 
+color: #ffffff;
+width:98%;
+border-radius: 2px; 
+margin:5px 0px 0px 0px; 
+  box-shadow: 0 3px 3px -2px rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 1px 8px 0 rgba(0,0,0,.12);
+}
+
+.chat-link-background p, .chat-link-background a:link {
+color: #ffffff;
+}
+
+.chat-link-background a:visited{
+color: #fff9ec !important;	
+}
+
+/* Used by boxes on the left side */
+.below-menu-link-background{
+background-color: #fbf6ff;
+  font-family: "Open Sans",sans-serif;
+width: 98%;   
+border-radius: 2px; 
+margin:5px 0px 5px 0px;
+padding: 8px 0px 8px 5px !important;
+  box-shadow: 0 3px 3px -2px rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 1px 8px 0 rgba(0,0,0,.12);
+font-size:15px !important;
+}
+
+.below-menu-link-background p, .below-menu-link-background a{
+font-size:15px !important;
+margin-bottom: 3px !important;
+line-height:15px !important;
+}
+
+
+.resources-link-background{
+background-color: #fff; 
+font-family: "Open Sans",sans-serif;
+width: 98%;  
+border-radius: 2px; 
+margin:5px 0px 5px 0px;
+  box-shadow: 0 3px 3px -2px rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 1px 8px 0 rgba(0,0,0,.12);
+
+}
+
+
+.resources-link-background p{
+padding: 0px 0px 0px 5px;
+margin:5px 0px 5px 0px !important;
+font-size:15px !important;
+}
+
+
+/*Used on About Milne/General Info page */
+.resources-link-pale-peach-background{
+background-color: #fff9ec; 
+border-radius: 2px; 
+margin:5px 0px 5px 0px;
+padding:10px 0px 10px 10px;
+box-shadow: 0 3px 3px -2px rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 1px 8px 0 rgba(0,0,0,.12);
+}
+
+/******* Right Side Column  (Resources A-Z, Subject Guides) ************/
+
+div.mdl-cell mdl-cell--4-col geneseo-layout-border-left{
+margin-top:-30px !important;
+padding-top:-30px !important;	
+}
+
+
+@media only screen and (max-width: 870px) {
+div.mdl-cell mdl-cell--4-col geneseo-layout-border-left{
+margin-top:30px !important; 
+padding-top:30px !important; 	
+}
+
+}
+
+
+
+/**************** Internetlib Forms, Staff Directory, ILLIAD  ****************/
+
+/**************************************************/
+
+/**************** FORM AND FIELDSET STYLING  ****************/
+
+
+#rightSideContent fieldset, fieldset
+
+{ 
+border: 1px solid  #cccccc;
+border-radius: 8px;
+margin:  5px;
+padding: 15px 15px 10px 15px;
+		background-color:#ffffea !important;
+}
+
+#rightSideContent fieldset legend, fieldset legend
+{ 
+/*font-family: "Neutraface Headings";*/
+font-size:2em;
+
+
+padding:0px 3px;
+
+	color:#b87733;
+	line-height:normal;
+}
+
+
+
+#rightSideContent label, label
+{
+
+float: left;
+  text-align: left;
+   margin:5px 10px 0px 0px;
+}
+
+
+#rightSideContent input[type="text"], input[type="password"], button, input, select, textarea
+{
+
+  border-radius: 4px;
+  padding: 4px; 
+  border: 1px solid #dddddd;
+  margin-bottom: 15px;
+}
+
+.dropdown select, select {
+	padding-left: 5px;
+	font-size: 0.9em !important;
+}
+
+.dropdown select option, select option, option {
+	padding-left: 5px;
+	font-size: 1.1em !important;
+}
+
+#rightSideContent button, html input[type="button"], input[type="reset"], input[type="submit"]
+{
+
+line-height: inherit;
+  cursor: pointer;
+  color: #0f51d9;
+}
+
+#rightSideContent input[type="radio"], rightSideContent .radio input[type="radio"] label,
+.radio input[type="radio"] label
+{
+margin: 7px 5px 0 15px;
+padding:0px;
+float:left;
+text-align: left;
+border:none !important;
+
+}
+
+.radiobutton{
+	width: 100%;
+}
+
+.radiobutton2{
+	width: 100%;
+}
+
+#rightSideContent table, #rightSideContent td{
+border:none !important;
+/*background-color:#ffffea !important;*/
+}
+
+
+
+#rightSideContent .radio .icon label > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+label > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+
+}
+label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+ 
+}
+
+#rightSideContent .required{ 
+color: #f00;
+}
+
+
+.close-window-reset {
+
+border:1px solid #dddddd;
+border-radius: 4px;
+padding: 4px;
+background-color:#f1f8fc;
+}
+
+
+.link-button-background {
+
+border:1px solid #dddddd;
+border-radius: 4px;
+padding: 6px;
+background-color:#f1f8fc;
+margin-bottom: 10px;
+}
+
+
+@media(max-width: 1099px) {
+.link-button-background  {
+margin:10px;
+float:left;
+clear:both;
+  }
+}
+
+
+.highlight-text-background {
+border:1px solid #dddddd;
+border-radius: 4px;
+padding: 6px;
+background-color:#f1f8fc;
+width: 50%;
+}
+
+
+@media(max-width: 940px) {
+.highlight-text-background {
+margin:10px;
+float:left;
+clear:both;
+  }
+}
+
+.highlight-text-yellow-background {
+border:1px solid #dddddd;
+border-radius: 4px;
+padding: 6px;
+background-color:#ffffea;
+/*width: 50%;*/
+}
+
+
+@media(max-width: 940px) {
+.highlight-text-yellow-background {
+margin:10px;
+float:left;
+clear:both;
+  }
+}
+
+
+
+
+/************ STAFF DIRECTORY AND REQUEST FORM -Specific FIELDSET styles ***********/
+
+
+@media(max-width: 951px) {
+
+#rightSideContent fieldset, fieldset{ 
+margin-right:20px;
+}
+
+#rightSideContent input[type="text"], input[type="password"],input, input[type="select"],.dropdown select, select, textarea {
+width: 70%;
+}
+
+}
+
+
+/********************* Left 50% ***************/
+
+.left-50-percent {
+float:left;
+width: 50%;	
+}
+
+.left-50-percent fieldset{
+ 	height:290px;
+ 	padding-bottom:1em;
+ } 
+ 
+ 
+/****** Left 50% Mobile styles ******/
+
+@media(max-width: 999px) {
+
+.left-50-percent {
+float:left;
+width:100%;
+  }
+.left-50-percent fieldset{
+ 	min-height:320px;
+ 	padding-bottom:1em;
+ } 
+}
+
+@media(max-width: 479px) {
+
+.left-50-percent {
+float:left;
+width:100%;
+  }
+.left-50-percent fieldset{
+ 	min-height:450px;
+ 	padding-bottom:1em;
+ } 
+}
+/****** End Left 50% Mobile styles ******/
+
+
+/******************* Right 50% ********************/
+
+.right-50-percent {
+float:left;
+width: 50%;	
+
+}
+
+.right-50-percent fieldset{
+ 	height:290px;
+ 	 	padding-bottom:1em;
+ } 
+
+/****** Right 50% Mobile styles ******/ 
+ 
+@media(max-width: 999px) {
+
+.right-50-percent {
+margin:10px;
+float:left;
+width:100%;
+clear:left;
+  }
+.right-50-percent fieldset{
+ 	min-height:320px;
+ 	padding-bottom:1em;
+ } 
+   
+}
+
+@media(max-width: 479px) {
+
+.right-50-percent {
+margin:10px;
+float:left;
+width:100%;
+clear:left;
+  }
+.right-50-percent fieldset{
+ 	min-height:450px;
+ 	padding-bottom:1em;
+ } 
+   
+}
+
+/****** End Right 50% Mobile styles ******/ 
+
+
+/******************** Left 60% ************************/
+
+.left-60-percent {
+float:left;
+width: 60%;	
+}
+
+.left-60-percent fieldset{
+ 	height:240px;
+ 	padding-bottom:0.8em;
+ } 
+ 
+/****** Left 60% Mobile styles ******/ 
+
+@media(max-width: 1099px) {
+
+.left-60-percent {
+float:left;
+width:100%;
+  }
+.left-60-percent fieldset{
+  	min-height:340px;
+  	padding-bottom:1em;
+ } 
+}
+
+/****** End Left 60% Mobile styles ******/ 
+
+/************** Right 40% ****************/
+
+
+.right-40-percent {
+float:left;
+width: 40%;	
+ 	padding-bottom:0.8em;
+}
+
+
+.right-40-percent fieldset{
+ 	height:240px;
+ 	 	padding-bottom:1em;
+ } 
+
+ /****** Left 40% Mobile styles ******/ 
+ 
+@media(max-width: 1099px) {
+
+.left-60-percent fieldset{
+  	min-height:340px;
+  	 	padding-bottom:0.9em;
+ } 
+
+
+.right-40-percent {
+margin:10px 0px 0px 0px;
+float:left;
+width:100%;
+clear:left;
+  }
+.right-40-percent fieldset{
+  	min-height:340px;
+  	 	padding-bottom:0.9em;
+ } 
+   
+}
+ /****** End Left 40% Mobile styles ******/ 
+ 
+ 
+/***********************************************/ 
+
+/********** ILLIAD SPECIFIC FIELDSET STYLES ****/
+
+/*****************************************************************************************************/
+
+/** 25% no height limit; USED BY ILLIAD MENU**/
+.no-height-25-percent {
+float:left;
+width: 20%;
+margin:0px 5px 0px 0px;	
+}
+
+
+/*@media(max-width: 1151px) {
+.no-height-25-percent{
+float:left;
+width:25%;
+margin:0px 5px 10px 0px;
+}
+}*/
+
+@media(max-width: 951px) {
+.no-height-25-percent{
+float:left;
+width:20%;
+margin:0px 5px 10px 0px;
+}
+}
+
+@media(max-width: 660px) {
+.no-height-25-percent{
+float:left;
+width:100%;
+margin:0px 20px 10px 0px;
+}
+}
+
+/****** END 25% no height limit******/
+
+
+/**** 30% NO HEIGHT limit; USED BY ILLIAD LOGIN AND FRONT PAGE****/
+
+.no-height-30-percent {
+float:left;
+width: 30%;
+margin:0px 10px 0px 0px;	
+}
+
+.no-height-30-percent fieldset{
+ 	padding-bottom:1em;
+}
+
+.no-height-30-percent input[type="select"],.no-height-30-percent .dropdown select, .no-height-30-percent select {
+ 	width:80%;	
+}
+
+ /***30% NO HEIGHT limit Mobile styles ***/ 
+
+@media(max-width: 951px) {
+.no-height-30-percent{
+float:left;
+width:30%;
+margin:0px 10px 10px 0px;
+}
+.no-height-30-percent fieldset{
+ 	padding-bottom:1em;
+ 	}
+
+#rightSideContent input[type="text"], input[type="password"],input[type="select"],.dropdown select, select, textarea, 
+ #item_info [type="text"], input[type="password"],input[type="select"],select,.dropdown select, select, textarea
+ {
+ 	width:70%;
+ }	
+ 
+}
+/*************/
+
+@media(max-width: 660px) {
+.no-height-30-percent{
+float:left;
+width:100%;
+margin:0px 20px 10px 0px;
+}
+.no-height-30-percent fieldset{
+ 	min-height:300px;
+ 	padding-bottom:1em;
+ 	}
+ 	
+#rightSideContent input[type="text"], input[type="password"],select, textarea,
+#item_info input[type="text"], input[type="password"],select, textarea 
+ {
+ 	width:80%;
+ }		
+ 	
+}
+
+ /****** END 30% no height limit Mobile styles ******/ 
+
+
+
+
+/** 40% NO HEIGHT limit; USED BY ILLIAD LOGIN AND FRONT PAGE**/
+
+.no-height-40-percent {
+float:left;
+width: 40%;
+margin:0px 20px 0px 0px;	
+}
+
+.no-height-40-percent fieldset{
+ 	padding-bottom:1em;
+}
+ 
+
+ /****** 40% no height limit Mobile styles ******/ 
+
+@media(max-width: 951px) {
+.no-height-40-percent{
+float:left;
+width:40%;
+margin:0px 20px 10px 0px;
+}
+.no-height-40-percent fieldset{
+ 	padding-bottom:1em;
+ 	}
+
+#rightSideContent input[type="text"], input[type="password"],select, textarea, 
+ #item_info [type="text"], input[type="password"],select, textarea
+ {
+ 	width:70%;
+ }	
+ 
+}
+
+/*****/
+
+@media(max-width: 660px) {
+.no-height-40-percent{
+float:left;
+width:100%;
+margin:0px 20px 10px 0px;
+}
+.no-height-40-percent fieldset{
+ 	min-height:300px;
+ 	padding-bottom:1em;
+ 	}
+ 	
+#rightSideContent input[type="text"], input[type="password"],select, textarea,
+#item_info input[type="text"], input[type="password"],select, textarea 
+ {
+ 	width:80%;
+ }		
+ 	
+ 
+}
+
+ /****** END 40% no height limit Mobile styles ******/ 
+
+
+
+/***** 50% NO height limit; USED BY ILLIAD Main Menu page ****/
+
+.no-height-50-percent {
+float:left;
+width: 50%;
+margin:0px 0px 10px 0px;	
+}
+
+.no-height-50-percent fieldset{
+ 	padding-bottom:1em;
+ }
+ 
+ 
+.no-height-right-50-percent {
+float:right;
+width: 50%;
+margin:0px 0px 10px 0px;
+}
+
+.no-height-right-50-percent fieldset{
+ 	padding-bottom:1em;
+ }
+
+ 
+ /****** 50% no height limit Mobile styles ******/ 
+ 
+@media(max-width: 951px) {
+.no-height-50-percent{
+float:left;
+width:50%;
+margin:0px 0px 10px 0px;
+}
+
+.no-height-50-percent fieldset{
+	padding-bottom:1em;
+
+ } 
+ 
+ 
+ .no-height-right-50-percent {
+float:right;
+width: 50%;
+margin:0px 0px 10px 0px;
+}
+
+.no-height-right-50-percent fieldset{
+ 	padding-bottom:1em;
+ }
+ 
+ 
+}
+
+/*****************/
+@media(max-width: 660px) 
+{
+.no-height-50-percent{
+float:left;
+width:50%;
+margin:0px 0px 10px 0px;
+}
+
+.no-height-50-percent fieldset{
+	padding-bottom:1em;
+
+ } 
+ 
+ 
+ .no-height-right-50-percent {
+float:right;
+width: 50%;
+margin:0px 0px 10px 0px;
+}
+
+.no-height-right-50-percent fieldset{
+ 	padding-bottom:1em;
+ }
+ 
+ 
+}
+
+
+/********************/
+
+@media(max-width: 479px) 
+{
+.no-height-50-percent{
+float:left;
+width:100%;
+margin:0px 0px 10px 0px;
+}
+
+.no-height-50-percent fieldset{
+ 	min-height:450px;
+ 	padding-bottom:1em;
+ }
+ 
+  .no-height-right-50-percent {
+float:left;
+width:100%;
+margin:0px 0px 10px 0px;
+}
+
+.no-height-right-50-percent fieldset{
+ 	min-height:450px;
+ 	padding-bottom:1em;
+ }
+ 
+  
+}
+
+
+ /****** END 50% no height limit Mobile styles ******/ 
+
+
+/**** 60% NO height limit;  USED BY ILLIAD  ****/
+/*used by Lending/LendingFirstTime  and  IDS ChangeUserInformation (Account Settings) */
+.no-height-60-percent {
+float:left;
+width: 60%;	
+margin:0px 0px 10px 0px;
+}
+
+.no-height-60-percent fieldset{
+ 	padding-bottom:1em;
+ } 
+ 
+ /****** 60% no height limit Mobile styles ******/  
+
+@media(max-width: 951px) {
+
+.no-height-60-percent {
+float:left;
+width:60%;
+margin:0px;
+}
+
+.no-height-60-percent fieldset{
+padding-bottom:1em;
+ } 
+
+}
+ 
+/*****/ 
+ @media(max-width: 660px) {
+
+.no-height-60-percent {
+float:left;
+width:100%;
+margin:0px 10px 10px 0px;
+}
+
+.no-height-60-percent fieldset{
+padding-bottom:1em;
+ } 
+}
+
+/******/
+
+@media(max-width: 479px) {
+
+.no-height-60-percent {
+float:left;
+width:100%;
+margin:0px 0px 10px 0px;
+ }
+ 
+.no-height-60-percent fieldset{
+padding-bottom:1em;
+ } 
+ 
+}
+ 
+ /****** END 60% no height limit Mobile styles ******/  
+
+
+
+
+
+ 
+ /******************************************/
+ 
+ 
+
+ /** FAQs float right - embedded LibApps FAQs Widget on IDS home page and ILLiad Lending home page **/ 
+ 
+ .faqs-right-35-percent {
+float:right;
+width: 35%;
+margin:0px 20px 0px 0px;	
+}
+
+.faqs-right-35-percent fieldset{
+ 	padding-bottom:1em;
+}
+
+ /****** faqs-right-35-percent limit Mobile styles ******/  
+
+@media(max-width: 951px) {
+.faqs-right-35-percent{
+float:right;
+width:35%;
+margin:0px 10px 10px 0px;
+}
+.faqs-right-35-percent fieldset{
+ 	padding-bottom:1em;
+ 	}
+ 
+}
+/*********/
+
+@media(max-width: 660px) {
+.faqs-right-35-percent{
+float:left;
+width:100%;
+margin:0px 10px 10px 0px;
+}
+.faqs-right-35-percent fieldset{
+ 	min-height:300px;
+ 	padding-bottom:1em;
+ 	}
+ 
+}
+ /****** END faqs-right-35-percent limit Mobile styles ******/   
+ 
+ 
+ /**********************************************/
+
+/*no-height-right-60% used by IDS Notifications and Notifaction History, and ILLiad/Lending tables and forms */
+
+.no-height-right-60-percent {
+float:right;
+width:78%;
+margin:0px 5px 10px 0px;
+}
+
+.no-height-right-60-percent fieldset{
+ 	padding-bottom:1em;
+ }
+ 
+ #rightSideContent input[type="text"], input[type="password"], textarea, 
+ #item_info [type="text"], input[type="password"],textarea
+ {
+ 	width:80%;
+ }
+
+  .dropdown select {
+ 	width:30%;
+ }
+
+
+ /****** no-height-right-60-percent limit Mobile styles ******/  
+
+@media(max-width: 1151px) {
+
+.no-height-right-60-percent {
+float:right;
+width: 75%;
+margin:0px 5px 0px 10px;
+}
+
+.no-height-right-60-percent fieldset{
+ 	padding-bottom:1em;
+ }
+ 
+ #rightSideContent input[type="text"], input[type="password"], textarea, 
+ #item_info [type="text"], input[type="password"],textarea
+ {
+ 	width:80%;
+ }
+
+  .dropdown select {
+ 	width:40%;
+ }
+
+}
+
+
+/******************/
+
+@media(max-width: 951px) {
+
+.no-height-right-60-percent {
+float:right;
+width: 70%;
+margin:0px 5px 0px 20px;
+}
+
+.no-height-right-60-percent fieldset{
+ 	padding-bottom:1em;
+ }
+ 
+ #rightSideContent input[type="text"], input[type="password"], textarea, 
+ #item_info [type="text"], input[type="password"],textarea
+ {
+ 	width:80%;
+ }
+
+  .dropdown select {
+ 	width:40%;
+ }
+
+}
+
+
+/******************/
+
+
+@media(max-width: 660px) {
+
+.no-height-right-60-percent {
+float:left;
+width:100%;
+margin:0px 10px 10px 0px;
+}
+.no-height-right-60-percent fieldset{
+padding-bottom:1em;
+ } 
+
+ #rightSideContent input[type="text"], input[type="password"], textarea, 
+ #item_info [type="text"], input[type="password"],textarea
+ {
+ 	width:80%;
+ }
+
+  .dropdown select {
+ 	width:40%;
+ }
+ 
+}
+
+/*********/
+
+@media(max-width: 479px) {
+
+.no-height-right-60-percent {
+float:left;
+width:100%;
+margin:0px 10px 10px 0px;
+}
+.no-height-right-60-percent fieldset{
+padding-bottom:1em;
+ } 
+ 
+ #rightSideContent input[type="text"], input[type="password"], textarea, 
+ #item_info [type="text"], input[type="password"],textarea
+ {
+ 	width:80%;
+ }
+
+  .dropdown select {
+ 	width:50%;
+ }
+}
+
+
+
+
+.100-percent
+	input[type="text"], input[type="password"], textarea, 
+ #item_info [type="text"], input[type="password"],textarea
+{
+float:right;
+width: 60% !important;
+
+}
+
+ /****** END no-height-right-60-percent limit Mobile styles ******/  
+ 
+ 
+ 
+
+/**************** END FORM AND FIELDSET STYLING  ****************/
+
+/******  Staff Directory Specific Styles  ******/
+
+#rightSideContent .custom-grd-style {
+font-size:1.1em;
+	background-color: #fff !important;
+	margin: 5px 0 10px 0;
+border:1px solid #ffffff !important;
+border-radius:4px !important;
+		
+
+}
+#rightSideContent .custom-grd-style table{
+font-size:1.1em;
+padding:0px 3px;
+border:1px solid #ffffff !important;
+border-radius:4px !important;
+}
+
+.custom-grd-style th{
+font-size:1.3em;
+font-weight:bold !important;
+padding: 7px 50px 7px 8px !important;
+background-color:#b87733 !important;
+border:1px solid #ffffff;
+border-radius:8px !important;
+
+}
+
+.custom-grd-style td {
+font-size:1.1em;
+border:none;
+	padding: 7px 10px 7px 8px !important;
+
+	margin: 4px 0px 0px 4px;
+color:#666666;
+border:1px solid #ffffff !important;
+border-radius:4px !important;
+}
+
+.custom-grd-style p, .custom-grd-style span{
+
+}
+
+.staffname,.staffname a{
+
+font-size:1.1em;
+font-weight:bold;	
+}
+
+.title{
+font-size:1.2em;
+	color: #333333;		
+}
+.department{
+font-size:1.1em;
+	color: #333333;	
+}
+
+.custom-grd-style .Row {
+font-size:1em;
+	border:none;
+	padding: 7px 10px 7px 8px !important;
+	margin: 4px 0px 0px 4px;
+	background-color: #f1f8fc !important;
+border:1px solid #ffffff !important;
+border-radius:8px !important;
+
+}
+
+.custom-grd-style .altRow {
+font-size:1em;
+	background: #fff9ec !important;
+	border:none;
+	padding: 7px 10px 7px 8px !important;
+	margin: 4px 0px 0px 4px;
+border:1px solid #ffffff !important;
+border-radius:8px !important;
+}
+
+.icon{
+
+vertical-align:middle;
+font-size:1.3em;
+
+}
+
+.visible{
+
+font-size:1.3em;
+}
+
+.icon fieldset {
+padding: 0px !important;
+}
+
+.icon img {
+padding-top:8px;
+margin:0px 3px 0px 0px;
+margin:0px 0px 20px 0px;
+}
+
+.twitter {
+
+padding: 10px 2px 0px 15px;
+background:url(img/twitter-17px100w.png) bottom left no-repeat;
+
+}
+
+.youcanbookme {
+
+padding: 10px 2px 0px 18px;
+background:url(img/cal_icon.gif) bottom  left no-repeat;
+
+font-weight:bold;
+}
+
+.phone {
+
+font-size:1.2em;
+padding: 10px 2px 0px 20px;
+background:url(img/phone-17px100w.png) bottom  left no-repeat;
+
+font-weight:bold;
+color:#333333;
+}
+
+
+.email {
+
+font-size:1.1em;
+padding: 10px 2px 0px 20px;
+background:url(img/email-17px100w.png) bottom  left no-repeat;
+
+font-weight:bold;
+}
+
+.home-url {
+
+padding: 10px 2px 0px 18px;
+background:url(img/home-17px100w.png) bottom  left no-repeat;
+
+	color: #555555;
+}
+
+
+
+.sort-image{
+vertical-align:middle;
+}
+.sort-image img{
+margin-top:10px;	
+}
+
+
+/******************* END Staff Directory styles ******************/
+
+/******************* BOX ON Right side of INSTRUCTION REQUEST FORM styles ******************/
+
+div.column.right {
+  float: right;
+        width: 20%;
+margin:0px 10px 0px 10px;
+        }
+        
+ @media(max-width: 999px) {
+div.column.right {
+display:none;
+visibility:hidden;
+width:0px;
+  }
+}    
+        
+           
+        
+        div.more-info {
+            border: 1px solid #e9c88d;
+            width: 220px;
+            float: left;
+            border-radius: 8px;
+            font-size:1.2em;
+           
+        }
+        
+@media(max-width: 999px) {
+div.more-info {
+display:none;
+visibility:hidden;
+width:0px;
+  }
+}            
+        
+        
+        
+        div.more-info-header {
+            background: #e9c88d;	
+            padding: 3px 0px 3px 10px;
+            font-weight: bold;
+        }
+          
+        .noDisc {
+            list-style: none; 
+padding: 2px 8px 2px 12px !important;
+           
+        }
+
+        .noDisc li{
+/*           font-size:1.2em;*/
+        	margin-bottom: 10px;
+        }
+        
+        .noDisc a{
+        	font-size: 0.9em!important;
+line-height: 0.9em !important;
+        }
+
+/*********************   END Box on Instruction Request form styles ****************/
+
+
+/********** LIBAPPS Widgets that are embedded in Drupal Pages - Policy Page, IDS Project, etc *****************/
+
+.s-la-widget {border-width: 0px;
+padding: 0px !important;
+margin: 0px !important;
+box-sizing: border-box;
+/*font-size:1.3em;*/
+background:none;
+background-color:transparent;
+font-family: "Open Sans",sans-serif !important;
+}
+.s-la-widget * {
+font-family: "Open Sans" !important;
+}
+
+.s-la-widget .s-la-widget-header {
+  display: block;
+  width: 100%;
+  padding: 0 0 5px 0;
+  margin-bottom: 15px;
+  font-size: inherit !important;
+  color: #333333;
+  border-bottom: 0px !important;
+  border-bottom: none !important;
+}
+
+.s-la-widget  hr {display: none !important;}
+
+.s-la-widget span, .s-la-widget p{
+font-family: "Open Sans",sans-serif !important;
+background:none;
+background-color:transparent;
+font-size: inherit !important;
+}
+
+.s-la-widget b, .s-la-widget strong
+{
+font-weight:bold;
+color:#2357af;
+}
+
+.s-la-widget h1 { 
+font-family: "Open Sans",sans-serif !important;
+font-size: 1.5em !important;
+text-transform: none;
+border:none !important;
+border-bottom: none !important;
+}
+
+.s-la-box-title h2
+{
+font-family: "Open Sans",sans-serif !important;
+/*font-size: 1.6em !important;*/
+font-size: inherit !important;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  line-height: normal;
+  border:none !important;
+border-bottom: none !important;
+  }
+
+.s-la-widget h3 {
+/*font-size: 1.2em !important;*/
+font-size: inherit !important;
+font-family: "Open Sans",sans-serif !important;/
+margin-bottom:2px;
+border:none !important;
+border-bottom: none !important;
+}
+
+
+
+.s-la-widget table {
+font-family: "Open Sans",sans-serif;
+width:100%;
+/*width:100%; border-collapse: collapse; border-spacing: 0px; border: 0px;*/
+}
+
+.s-la-widget  th {
+border: 0px; border-bottom:1px solid #ccc; text-align:left;}
+
+.s-la-widget td {border: 0px;}
+
+
+.s-la-widget td, .s-la-widget th
+{
+  padding: 5px !important;
+}
+
+.s-la-faq-listing-meta {display: none;}
+
+.s-la-faq-listing-q {padding:0px !important;}
+
+.s-la-faq-links {display: none;}
+
+.metalabel {padding:6px 6px 6px 0px;
+
+font-family: "Open Sans",sans-serif !important;
+}
+
+.metavalue {
+font-family: "Open Sans",sans-serif !important;}
+
+.s-la-widget .form-group
+{
+  margin-bottom: 15px;
+}
+.s-la-widget label{
+
+font-family: "Open Sans",sans-serif !important;
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.s-la-widget form{
+	padding-top:0px !important;
+}
+
+.s-la-widget fieldset
+{
+
+font-family: "Open Sans",sans-serif !important;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: #c0c0c0;
+  border-right-color: #c0c0c0;
+  border-bottom-color: #c0c0c0;
+  border-left-color: #c0c0c0;
+  border-image-source: none;
+  border-image-slice: 100% 100% 100% 100%;
+  border-image-width: 1 1 1 1;
+  border-image-outset: 0 0 0 0;
+  border-image-repeat: stretch stretch;
+  margin-top: 0px;
+  margin-right: 2px;
+  margin-bottom: 0px;
+  margin-left: 2px;
+  padding-top: 0.35em;
+  padding-right: 0.625em;
+  padding-bottom: 0.75em;
+  padding-left: 0.625em;
+
+}
+
+.s-la-widget legend
+{
+
+font-family: "Open Sans",sans-serif !important;
+  display: inline-block;
+  width: 20%;
+  padding-top: 20px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  line-height: inherit;
+  color: #333333;
+  border-bottom-width: 0px;
+border:none !important;
+
+}
+
+/***************** END LIBAPPS Widgets - Policy Page, Library Workshops, etc *****************/
+
+
+/* SERIALS SOLUTIONS Overrides */
+
+div#footer.ng-scope{
+	display:none !important;
+	background: transparent !important;
+	visibility:hidden;
+}

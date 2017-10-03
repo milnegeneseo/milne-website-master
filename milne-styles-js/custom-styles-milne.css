@@ -671,21 +671,40 @@ padding:10px 0px 10px 10px;
 box-shadow: 0 3px 3px -2px rgba(0,0,0,.2),0 3px 4px 0 rgba(0,0,0,.14),0 1px 8px 0 rgba(0,0,0,.12);
 }
 
-/******* Right Side Column  (Resources A-Z, Subject Guides) ************/
+/** Research Guides - center right column on home page */
 
-div.mdl-cell mdl-cell--4-col geneseo-layout-border-left{
-margin-top:-30px !important;
-padding-top:-30px !important;	
+.research-guides{
+	float:right;
+}
+
+@media only screen and (max-width: 1310px) {
+.research-guides {
+width: 40%;
+}
+}
+
+@media only screen and (max-width: 1024px) {
+.research-guides {
+clear:left !important;
+float:left !important;
+width: 100%;
+}
 }
 
 
-@media only screen and (max-width: 870px) {
-div.mdl-cell mdl-cell--4-col geneseo-layout-border-left{
-margin-top:30px !important; 
-padding-top:30px !important; 	
+/******* Right Side Column  (News & Events Feed) ************/
+
+
+@media only screen and (max-width: 1310px) {
+.row .col.m4 {
+clear:left !important;
+float:left !important;	
+width: 100%;	
 }
 
 }
+
+
 
 
 

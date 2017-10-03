@@ -35,10 +35,13 @@
                     <a href="https://www.geneseo.edu/">SUNY Geneseo</a> &raquo; <a href="https://www.geneseo.edu/library">Milne Library</a> &raquo; <a href="https://www.geneseo.edu/library/requests-services">Requests &amp; Services</a> &raquo; <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/RoomRequest.aspx" style="color:#b85533 !important;">Room Request/Reservation</a></div>
 <h1>Room Request</h1> 
 <div style="float:left;">
-<span class="link-button-background style="margin-bottom: 10px;"><a href="https://www.geneseo.edu/library/classrooms-and-meeting-rooms">Room Descriptions & Policies</a></span>&nbsp; 
+<!-- span class="link-button-background style="margin-bottom: 10px;"><a href="https://www.geneseo.edu/library/classrooms-and-meeting-rooms">Room Descriptions & Policies</a></span>&nbsp; 
 	&nbsp;  <span class="link-button-background style="margin-bottom: 10px;"><a href="https://www.geneseo.edu/library/milne-library-floor-plans">Floor Plans/Room Locations</a></span>&nbsp;
 	&nbsp;  <span class="link-button-background style="margin-bottom: 10px;"><a href="http://emsprod.geneseo.edu/VirtualEMSPublic/CustomBrowseEvents.aspx?data=8imT11TVEgjXNgDJOAPMB4OcOxg1lJDzQDCUHCLgyvV%2bp3H99PcbRuP418vvqF%2br">Check Room Availability</a></span>
-	&nbsp; <span class="link-button-background  style="margin-bottom: 10px;""><a href="https://www.geneseo.edu/library/library-computer-labs-technology">Computer Labs</a></span>
+	&nbsp; <span class="link-button-background  style="margin-bottom: 10px;""><a href="https://www.geneseo.edu/library/library-computer-labs-technology">Computer Labs</a></span -->
+	
+<p><a href="https://www.geneseo.edu/library/classrooms-and-meeting-rooms"><i class="material-icons" style="vertical-align:text-bottom;">store_mall_directory</i>Classroom Descriptions &amp; Policies</a> &nbsp; |&nbsp;&nbsp;&nbsp;<a href="https://www.geneseo.edu/library/milne-library-floor-plans"><i class="material-icons" style="vertical-align:text-bottom;">map</i>Floor Plans</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="http://emsprod.geneseo.edu/VirtualEMSPublic/CustomBrowseEvents.aspx?data=8imT11TVEgjXNgDJOAPMB4OcOxg1lJDzQDCUHCLgyvV%2bp3H99PcbRuP418vvqF%2br"><i class="material-icons" style="vertical-align:text-bottom;">date_range</i>Check Room Availability</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="https://www.geneseo.edu/library/library-computer-labs-technology"><i class="material-icons" style="vertical-align:text-bottom;">desktop_windows</i> Computer Labs</a></p>	
+	
 </div>
 	<div style="clear:both;">
 	</div>

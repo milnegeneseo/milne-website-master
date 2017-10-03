@@ -16,7 +16,7 @@
     <fieldset>
 <legend>General Information</legend>
     <i class="material-icons" style="vertical-align:text-bottom; color:#345290;">phone</i> <strong>Phone</strong>  585-245-5594 <br /><br />
-   <i class="material-icons" style="vertical-align:text-bottom;  color:#345290;">mail</i> <strong>Email <a href="mailto:libref@geneseo.libanswers.com">libref@geneseo.libanswers.com</a></strong><br /><br />
+   <i class="material-icons" style="vertical-align:text-bottom;  color:#345290;">mail</i> <strong>Email <a href="mailto:askus@geneseo.libanswers.com">askus@geneseo.libanswers.com</a></strong><br /><br />
 
     
    <i class="material-icons" style="vertical-align:text-bottom;  color:#345290;">print</i> <strong>Fax</strong> 585-245-5769<br /><br />

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Requests/RequestsMasterPage.master" AutoEventWireup="true" CodeFile="Instruction.aspx.cs" Inherits="Requests_Instruction" validateRequest="false"  MaintainScrollPositionOnPostback="true"  %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Requests/RequestsMasterPage.master" AutoEventWireup="true" CodeFile="HighSchoolInstruction.aspx.cs" Inherits="Requests_HighSchoolInstruction" validateRequest="false"  MaintainScrollPositionOnPostback="true"  %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     </asp:Content>
@@ -10,30 +10,30 @@
 <script type="text/javascript" src="https://intranetlib.geneseo.edu/Dataportal/Scripts/jquery.ui.timepicker.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            $('#<%= txtDueDate.ClientID %>').attr('readonly', 'readonly').datepicker({ });
-            $('#<%= txtDueDate1.ClientID %>').datepicker({});
-            //$('#< %= txtDueDate2.ClientID %>').datepicker({});
-            //$('#< %= txtDueDate3.ClientID %>').datepicker({});
-            //$('#< %= txtDueDate4.ClientID %>').datepicker({});
-            //$('#< %= txtDueDate5.ClientID %>').datepicker({});
-            //$('#< %= txtDueDate6.ClientID %>').datepicker({});
-            //$('#< %= txtDueDate7.ClientID %>').datepicker({});
-            //$('#< %= txtDueDate8.ClientID %>').datepicker({});
-            $('#<%= txtSchoolDueDate.ClientID %>').attr('readonly', 'readonly').datepicker({});
-            $('#<%= txtSchoolDueDate2.ClientID %>').datepicker({});
-            $('#<%= txtSchoolDueDate3.ClientID %>').datepicker({});
-            $('#<%= txtStartTime.ClientID %>').attr('readonly', 'readonly').timepicker({
-                showPeriod: true,
-                showLeadingZero: false,
-                onHourShow: OnHourShowCallback
+          //  $('#< %= txtDueDate.ClientID %>').attr('readonly', 'readonly').datepicker({ });
+         //   $('#< %= txtDueDate1.ClientID %>').datepicker({});
+         //   $('#< %= txtDueDate2.ClientID %>').datepicker({});
+        //    $('#< %= txtDueDate3.ClientID %>').datepicker({});
+         //   $('#< %= txtDueDate4.ClientID %>').datepicker({});
+        //    $('#< %= txtDueDate5.ClientID %>').datepicker({});
+         //   $('#< %= txtDueDate6.ClientID %>').datepicker({});
+        //    $('#< %= txtDueDate7.ClientID %>').datepicker({});
+        //    $('#< %= txtDueDate8.ClientID %>').datepicker({});
+         $('#<%= txtSchoolDueDate.ClientID %>').attr('readonly', 'readonly').datepicker({});
+        $('#<%= txtSchoolDueDate2.ClientID %>').datepicker({});
+         $('#<%= txtSchoolDueDate3.ClientID %>').datepicker({});
+           // $('#< %= txtStartTime.ClientID %>').attr('readonly', 'readonly').timepicker({
+           //     showPeriod: true,
+            //    showLeadingZero: false,
+            //    onHourShow: OnHourShowCallback
                 //onMinuteShow: OnMinuteShowCallback
-            });
-            $('#<%= txtEndTime.ClientID %>').attr('readonly', 'readonly').timepicker({
-                showPeriod: true,
-                showLeadingZero: false,
-                onHourShow: OnHourShowCallback
+           // });
+          //  $('#< %= txtEndTime.ClientID %>').attr('readonly', 'readonly').timepicker({
+           //     showPeriod: true,
+            //    showLeadingZero: false,
+             //   onHourShow: OnHourShowCallback
                 //onMinuteShow: OnMinuteShowCallback
-            });
+         //   });
             $('#<%= txtArrivalTime.ClientID %>').attr('readonly', 'readonly').timepicker({
                 showPeriod: true,
                 showLeadingZero: false,
@@ -63,16 +63,16 @@
             return false; // valid
         }
     </script>
-<div id="rightSideContent">
-<div class="breadcrumb" style="margin:20px 0px 0px 0px;"><a href="https://www.geneseo.edu/">SUNY Geneseo</a> &raquo; <a href="https://www.geneseo.edu/library">Milne Library</a> &raquo; <a href="https://www.geneseo.edu/library/requests-services">Requests &amp; Services</a> &raquo; <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/Instruction.aspx" style="color:#b85533 !important;">Library Research Instruction</a></div>
-<h1>Instruction Request Form</h1>
-<p></p>
-    <p>Please schedule your Instruction Session <strong>at least ONE WEEK</strong> ahead of time.</p>
-    <ul>
-    <li>For High School Instruction, please use the <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/HighSchoolInstruction.aspx">High School Instruction</a> form</li>
-    <li>For Technology and Software Package Instruction, contact the <a href="https://www.geneseo.edu/library/steve-dresbach">Milne Library Technology Instructor.</a></li> 
-</ul>
 
+<div class="breadcrumb" style="margin:20px 0px 0px 0px;"><a href="https://www.geneseo.edu/">SUNY Geneseo</a> &raquo; <a href="https://www.geneseo.edu/library">Milne Library</a> &raquo; <a href="https://www.geneseo.edu/library/requests-services">Requests &amp; Services</a> &raquo; <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/HighSchoolInstruction.aspx" style="color:#b85533 !important;">High School Instruction</a></div>
+<h1>High School Instruction Request Form</h1> 
+    <p></p>
+    <p>Requests for high school class visits should be made by either the <strong>high school library media specialist</strong> or the <strong>teacher</strong> of the class visiting the library. </p>
+<ul>
+    <li><b><asp:LinkButton ID="HSInstruction" runat="server" CausesValidation="False" OnClick="HighSchoolInstructionInfoPanelLink_Click">High School Instruction Policies & Scheduling Information <img alt="Click for more information on High School Instruction" src="img/question-mark-icon-16.png" /></asp:LinkButton></b>
+<%--    <li>For College Student Research Instruction, please use the <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/Instruction.aspx">Research Instruction</a> form</li>--%>
+
+</ul>
 <%--<div style="float:left; width:55%;">
 <p>Milne Library offers the following types of instruction:</p>
 <div style="float:left;width:100%;">
@@ -82,7 +82,8 @@
         </span>
 </div>
 	<div style="clear:both;">
-	</div><asp:Panel ID="ResearchInstructionInfoPanel" runat="server" Visible="False" >  
+	</div>
+	<asp:Panel ID="ResearchInstructionInfoPanel" runat="server" Visible="False" >  
 <fieldset>
 <legend>Research Instruction</legend>           
        <p>Milne library offers a variety of instructional opportunities, tailoring sessions to fit any level of instructional need or class size. Milne Librarians can provide instruction aligned to a specific assignment requiring the use of library resources.</p>
@@ -101,24 +102,23 @@
      <br />
 <p style="text-align:right; margin-right:50px;"><b><asp:LinkButton ID="CloseResearchPanel" runat="server" CausesValidation="False" OnClick="ResearchConsultClosePanel_Click" CssClass="close-window-reset">Close X</asp:LinkButton></b></p>
 </fieldset> 
-</asp:Panel><asp:Panel ID="TechnologyInstructionInfoPanel" runat="server" Visible="False" ><br />  
+</asp:Panel>
+<asp:Panel ID="TechnologyInstructionInfoPanel" runat="server" Visible="False" ><br />  
 <fieldset>
 <legend>Technology Instruction</legend>            
 <p>Schedule a class with a technology specialist to help guide you through software package basics, and learn to harness new technology to boost student engagement, interest, and success.</p>
 <p></p>
 <p style="text-align:right; margin-right:50px;"><b><asp:LinkButton ID="CloseTechPanel" runat="server" CausesValidation="False" OnClick="TechnologyConsultClosePanel_Click" CssClass="close-window-reset">Close X</asp:LinkButton></b></p>
 </fieldset> 
-</asp:Panel>
+</asp:Panel>--%>
 <asp:Panel ID="HighSchoolInstructionInfoPanel" runat="server" Visible="False" ><br />  
 <fieldset>
 <legend>High School Instruction Policies</legend>           
 <h3 style="font-size: 2.2em; font-weight: normal !important;">Requests</h3>
-       <p>Requests for high school class visits should be made by either the high school library media specialist or the teacher of the class visiting the library. </p>
-       <p>To make a request, please select <strong>"High School" Instruction Type below</strong> and complete the High School Instruction Request form.</p>
        <p>In order to integrate your students’ needs with those of our college students, it is necessary that we receive your request&nbsp;form <b>3 weeks in advance</b> of the date requested for the visit. Confirmation for library instruction will be made via e-mail within 7 days of receipt of this form.</p> 
        <p>Unfortunately, due to the lack of classroom space, we will not be able to honor requests for visits during times of peak college use. It is preferable to schedule class visits during breaks when SUNY Geneseo is not in session. If this is not possible, please <a href="mailto:libinstr@geneseo.edu"><strong>email us</strong></a> to discuss a mutually available date. If possible, the high school library media specialist should accompany classes on visits.</p>
 	   <p>For groups of 15 or more students, please bring at least one additional high school staff member.</p>
-       <p>Because our <a href="https://photosynth.net/preview/view/db800991-760d-4fdd-8ec0-93f9ad2df87c" target="_blank"><strong>computer lab <img src="img/question-mark-icon-16.png" /></strong></a> has 40 computers, the <strong>maximum number of students per visit is 40</strong>.</p>
+       <p>Because our <strong>computer lab <img src="img/question-mark-icon-16.png" /></strong> has 40 computers, the <strong>maximum number of students per visit is 40</strong>.</p>
        <p>Students will be given a one-day username and password that will provide them use of the Library’s computers and free computer printing for the day of their visit.</p>
 	   <p>Please forward a list of student topics to the Library Instruction Coordinator at least 5 days before your visit.</p>
 <p>Please direct all questions regarding visits to <a href="mailto:libinstr@geneseo.edu"><strong>libinstr@geneseo.edu</strong></a></strong>.</p>
@@ -129,73 +129,73 @@
        <p>All students should be advised of our return policies and overdue fees of 25 cents per day.</p>
 <p style="text-align:right; margin-right:50px;"><b><asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" OnClick="HighSchoolConsultClosePanel_Click" CssClass="close-window-reset">Close X</asp:LinkButton></b></p>
 </fieldset> 
-</asp:Panel>--%>
-<asp:Panel ID="TypePanel" runat="server" Visible="False" Width="80%" ><br />
+</asp:Panel>
+<%--<asp:Panel ID="TypePanel" runat="server" Visible="False" ><br />
 <fieldset>
 <legend><span class="required">* </span>Please select the Instruction type:</legend>
 <div class="radiobutton2">
     <asp:RadioButtonList ID="rblType" runat="server" RepeatDirection="Horizontal" CssClass="radio" AutoPostBack="True" OnSelectedIndexChanged="rblType_SelectedIndexChanged" CellSpacing="5" style="width:80%;" title="Please Select the Instruction Type" >
-        <asp:ListItem Text="Research" Value="Research" title="Research" Selected="True" />
+        <asp:ListItem Text="Research" Value="Research" title="Research" />
         <asp:ListItem Text="Technology" Value="Technology" title="Technology" />
         <asp:ListItem Text="High School" Value="Other" title="High School" />
     </asp:RadioButtonList>    
 </div>
 <asp:requiredfieldvalidator id="rfType" runat="server" errormessage="Required" controltovalidate="rblType" SetFocusOnError="True" ForeColor="Red"></asp:requiredfieldvalidator>                
-<%--<p style="text-align:right; margin-right:50px;"><b><asp:LinkButton ID="ResetType" runat="server" CausesValidation="False" OnClick="btnReset_Click" CssClass="close-window-reset">Reset</asp:LinkButton></b></p>
-<p class="required">* Indicates required field.</p>--%>
+<p style="text-align:right; margin-right:50px;"><b><asp:LinkButton ID="ResetType" runat="server" CausesValidation="False" OnClick="btnReset_Click" CssClass="close-window-reset">Reset</asp:LinkButton></b></p>
+<p class="required">* Indicates required field.</p>
 </fieldset> 
 </asp:Panel><br />
-<asp:Panel ID="ResearchTechInstructionPanel" runat="server" Visible="True" Width="80%" >
+<asp:Panel ID="ResearchTechInstructionPanel" runat="server" Visible="False" >
+<%-- Research Title Panel --%>
+<%--    <asp:Panel ID="ResearchTitlePanel" runat="server" Visible="False" >   
+<h3 style="font-size: 2.2em;">Research Instruction</h3> 
+</asp:Panel>--%> <!--Research Instruction Title Panel-->
+<%-- Tech  Title Panel--%>
+ <%--   <asp:Panel ID="InstructionTitlePanel" runat="server" Visible="False" >
+<h3 style="font-size: 2.2em;">Technology Instruction</h3>
+</asp:Panel> <!--Tech Instruction Title Panel-->
 <fieldset>
 <legend>Faculty Information</legend>
-    <label><span class="required">*</span> First Name:</label>  <asp:TextBox runat="server" size="25" maxlength="25" ID="txtFirstName" title="First Name" Width="60%" />&nbsp;<asp:requiredfieldvalidator id="rfFirstName" runat="server" errormessage="Required" CssClass="required"  controltovalidate="txtFirstName" SetFocusOnError="True"></asp:requiredfieldvalidator>  <br />
-    <label><span class="required">*</span> Last Name: </label><asp:TextBox runat="server" size="25" maxlength="50" ID="txtLastName"  title="Last Name" Width="60%" />&nbsp;<asp:requiredfieldvalidator id="rfLastName" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtLastName" SetFocusOnError="True"></asp:requiredfieldvalidator><br />
-    <label><span class="required">*</span> Email Address: </label><asp:TextBox runat="server" size="25" maxlength="50" ID="txtEmail"   title="Email" Width="50%" />&nbsp;
+    <label><span class="required">*</span> First Name:</label>  <asp:TextBox runat="server" size="25" maxlength="25" ID="txtFirstName" TabIndex="2" title="First Name" />&nbsp;<asp:requiredfieldvalidator id="rfFirstName" runat="server" errormessage="Required" CssClass="required"  controltovalidate="txtFirstName" SetFocusOnError="True"></asp:requiredfieldvalidator>  <br />
+    <label><span class="required">*</span> Last Name: </label><asp:TextBox runat="server" size="25" maxlength="50" ID="txtLastName" TabIndex="3" title="Last Name" />&nbsp;<asp:requiredfieldvalidator id="rfLastName" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtLastName" SetFocusOnError="True"></asp:requiredfieldvalidator><br />
+    <label><span class="required">*</span> Email Address: </label><asp:TextBox runat="server" size="25" maxlength="50" ID="txtEmail" TabIndex="4"  title="Email" />&nbsp;
     <asp:requiredfieldvalidator id="rfEmail" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtEmail" SetFocusOnError="True"></asp:requiredfieldvalidator> 
     <asp:RegularExpressionValidator ID="reEmail1" ErrorMessage="Invalid Email Address" CssClass="required" ControlToValidate="txtEmail" runat="server" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" /><br />
-    <label><span class="required">*</span> Office Phone Number: </label><asp:TextBox ID="txtPhone" runat="server" size="25" maxlength="25"  title="Office Phone Number" Width="50%" />&nbsp;<asp:requiredfieldvalidator id="rfPhone" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtPhone" SetFocusOnError="True"></asp:requiredfieldvalidator><br /> 
+    <label><span class="required">*</span> Office Phone Number: </label><asp:TextBox ID="txtPhone" runat="server" size="25" maxlength="25" TabIndex="5" title="Office Phone Number" />&nbsp;<asp:requiredfieldvalidator id="rfPhone" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtPhone" SetFocusOnError="True"></asp:requiredfieldvalidator><br /> 
 </fieldset><br />
 <fieldset>
 <legend>Course Information</legend>
-
-<label>
-    <span class="required">*</span> Is this for a Faculty Workshop?</label>
-    <asp:RadioButtonList ID="rblisFacultyWorkshop" runat="server" CssClass="rbl" RepeatDirection="Horizontal" OnSelectedIndexChanged="rblisFacultyWorkshop_SelectedIndexChanged">
-        <asp:ListItem Text="Yes" Value="Yes" />
-        <asp:ListItem Text="No" Value="No" Selected="True" />
-    </asp:RadioButtonList>  
-        <asp:requiredfieldvalidator id="rfisFacultyWorkshop" runat="server" errormessage="Required" CssClass="required" controltovalidate="rblisFacultyWorkshop" SetFocusOnError="True" > </asp:requiredfieldvalidator>
-  
-   <br /> 
-
-<label><span class="required">*</span> Planned Number of Students: </label><asp:TextBox ID="txtStudentNumber" runat="server" size="3"  MaxLength="3" title="Planned Number of Students" Width="10%" />&nbsp;<asp:requiredfieldvalidator id="rfStudentNumber" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtStudentNumber" SetFocusOnError="True" ></asp:requiredfieldvalidator>&nbsp; 
-<asp:RegularExpressionValidator ID="reStudentNumber" runat="server" CssClass="required" ControlToValidate="txtStudentNumber" ErrorMessage="Numbers only" SetFocusOnError="True" ValidationExpression="((^[0-9]+$))"></asp:RegularExpressionValidator>
-<%--<label><span class="required">*</span> Is this for a College Course? </label>--%>
-<div class="radiobutton" style="display:none;visibility:hidden;">
-<asp:RadioButtonList ID="rblCollege" runat="server" RepeatDirection="Horizontal" CssClass="rbl" AutoPostBack="True" OnSelectedIndexChanged="rblCollege_SelectedIndexChanged" title="Is This for A College Course?">
+<label><span class="required">*</span> Planned Number of Students: </label><asp:TextBox ID="txtStudentNumber" runat="server" size="3"  MaxLength="3" TabIndex="6" title="Planned Number of Students" />&nbsp;<asp:requiredfieldvalidator id="rfStudentNumber" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtStudentNumber" SetFocusOnError="True" ></asp:requiredfieldvalidator>&nbsp; 
+<asp:RegularExpressionValidator ID="reStudentNumber" runat="server" CssClass="required" ControlToValidate="txtStudentNumber" ErrorMessage="Numbers only" SetFocusOnError="True" ValidationExpression="((^[0-9]+$))"></asp:RegularExpressionValidator><br />
+<label><span class="required">*</span> Is this for a College Course? </label>
+<div class="radiobutton">
+<asp:RadioButtonList ID="rblCollege" runat="server" RepeatDirection="Horizontal" CssClass="rbl" AutoPostBack="True" OnSelectedIndexChanged="rblCollege_SelectedIndexChanged" TabIndex="7" title="Is This for A College Course?">
         <asp:ListItem Selected="True" Text="Yes" Value="Yes" title="Yes" />
         <asp:ListItem Text="No" Value="No" title="No" /> 
 </asp:RadioButtonList>
-    <asp:requiredfieldvalidator id="rfCollege" runat="server" errormessage="Required" CssClass="required" controltovalidate="rblCollege" SetFocusOnError="True" > </asp:requiredfieldvalidator>
 </div>
+<asp:requiredfieldvalidator id="rfCollege" runat="server" errormessage="Required" CssClass="required" controltovalidate="rblCollege" SetFocusOnError="True" > </asp:requiredfieldvalidator> &nbsp;<br />--%>
 <%-- College Yes Visibility --%>
-<asp:Panel ID="collegeYesPanel" runat="server" Visible="True" >   
-      
-     
-<label>Course Number (ABCD 123 Format): </label><asp:TextBox ID="txtCourseNumber" runat="server" size="8" maxlength="8" title="Course Number" Width="40%" />&nbsp;<asp:RegularExpressionValidator ID="reCourseNumber" SetFocusOnError="true" CssClass="required" ValidationExpression="^[zA-Z]{4} [0-9]{3}$" ErrorMessage="Course Number should be in 'ABCD 123' format" ControlToValidate="txtCourseNumber" runat="server" /><br />
-<label>Course or Workshop Title: </label><asp:TextBox ID="txtCourseTitle" runat="server" size="45" maxlength="75" title="Course Title" Width="60%" /><br />
-<label>Department:</label><asp:DropDownList runat="server" Width="150px" ID="ddlDepartmentActive" title="Select Department" /><br />
+<%--<asp:Panel ID="collegeYesPanel" runat="server" Visible="True" >    
+<label>Course Number (ABCD 123 Format): </label><asp:TextBox ID="txtCourseNumber" runat="server" size="8" maxlength="8" title="Course Number" />&nbsp;<asp:RegularExpressionValidator ID="reCourseNumber" SetFocusOnError="true" CssClass="required" ValidationExpression="^[zA-Z]{4} [0-9]{3}$" ErrorMessage="Course Number should be in 'ABCD 123' format" ControlToValidate="txtCourseNumber" runat="server" /><br />
+<label>Course Title: </label><asp:TextBox ID="txtCourseTitle" runat="server" size="45" maxlength="75" title="Course Title" /><br />
+<label>Department:</label>
+<asp:DropDownList runat="server" Width="150px" ID="ddlDepartmentActive" title="Select Department" /><br /><br />
 </asp:Panel> <!--End of College Yes Panel-->
-<label>Regular Semester Classroom Location: </label><asp:TextBox ID="txtLocation" runat="server" size="45" maxlength="75" title="Regular Semester Classroom Location" Width="30%" /><br />
+<label>Regular Semester Classroom Location: </label><asp:TextBox ID="txtLocation" runat="server" size="45" maxlength="75" title="Regular Semester Classroom Location" /><br />--%>
 <%-- College No Visibility --%>
-<asp:Panel ID="collegeNoPanel" runat="server" Visible="False" >
-<label>Enter Associated Group or Program: </label><asp:TextBox ID="txtAssociatedGroup" runat="server" size="45" maxlength="75" title="Enter Associated Group or Program" Width="60%" /><br />
-<label>Workshop (non college) Title: </label><asp:TextBox ID="txtWorkshop" runat="server" size="45" maxlength="75" title="Workshop" Width="60%" /><br />
+<%--<asp:Panel ID="collegeNoPanel" runat="server" Visible="False" >
+<label>Enter Associated Group or Program: </label><asp:TextBox ID="txtAssociatedGroup" runat="server" size="45" maxlength="75" title="Enter Associated Group or Program" /><br />
+<label>Workshop (non college) Title: </label><asp:TextBox ID="txtWorkshop" runat="server" size="45" maxlength="75" title="Workshop" /><br />
 </asp:Panel> <!--End of College No Panel-->
 </fieldset><br />
-<fieldset><legend>Goals of Instruction</legend>
+<fieldset>--%><!-- br />INTD 105 instructors should note changes in the course description were approved by faculty senate in 2015.&nbsp;<b><br /><br /><a href="https://wiki.geneseo.edu/display/intd105/Course+Guidelines">See the updated guidelines.</a></b><br /><br / -->
+<%--<legend>Goals of Instruction</legend>
 <label>
-<span class="required">* </span>Skill/Concept: </label><%--    <asp:DropDownList ID="ddlSkill1" runat="server" />--%><asp:DropDownList Width="320px" ID="ddlSkill1" CssClass="dropdown" runat="server"  title="Select Goals of Instruction Skills or Concepts">
+<span class="required">* </span>Skill/Concept #1:
+</label>--%>
+<%--    <asp:DropDownList ID="ddlSkill1" runat="server" />--%>
+<%--<asp:DropDownList Width="320px" ID="ddlSkill1" CssClass="dropdown" runat="server" TabIndex="20" title="Select Goals of Instruction Skills or Concepts">
                         <asp:ListItem Text="--Select One--" Value="None" Selected="True"  />                        
                         <asp:ListItem Text="Accessing materials" Value="Accessing materials" title="Accessing materials" />
                         <asp:ListItem Text="Citation tracking" Value="Citation tracking" title="Citation tracking" />
@@ -215,9 +215,9 @@
 </asp:DropDownList>
     &nbsp;<asp:requiredfieldvalidator id="rfSkill1" runat="server" errormessage="Required" CssClass="required" controltovalidate="ddlSkill1" SetFocusOnError="True" ></asp:requiredfieldvalidator>
     <br />
-<label><span class="required">&nbsp; </span>Additional Skill/Concept: </label>
+<label><span class="required">&nbsp; </span>Skill/Concept #2: </label>--%>
 <%--    <asp:DropDownList ID="ddlSkill2" runat="server" />--%>
-<asp:DropDownList Width="320px" ID="ddlSkill2" CssClass="dropdown" runat="server" title="Select Secondary Goals of Instruction Skills or Concepts">
+<%--<asp:DropDownList Width="320px" ID="ddlSkill2" CssClass="dropdown" runat="server" TabIndex="22" title="Select Secondary Goals of Instruction Skills or Concepts">
                         <asp:ListItem Text="--Select One--" Value="None" Selected="True"  />                        
                         <asp:ListItem Text="Accessing materials" Value="Accessing materials" title="Accessing materials" />
                         <asp:ListItem Text="Citation tracking" Value="Citation tracking" title="Citation tracking" />
@@ -235,9 +235,9 @@
                         <asp:ListItem Text="Using appropriate search tools" Value="Using appropriate search tools" title="Using appropriate search tools" />
                         <asp:ListItem Text="Other" Value="Other" title="Other" />
 </asp:DropDownList><br />
-<%--<label><span class="required">&nbsp; </span>Skill/Concept #3: </label>--%>
+<label><span class="required">&nbsp; </span>Skill/Concept #3: </label>--%>
 <%--    <asp:DropDownList ID="ddlSkill3" runat="server" />--%>
-<%--                 <asp:DropDownList Width="320px" ID="ddlSkill3" CssClass="dropdown" runat="server"  title="Select Third Goals of Instruction Skills or Concepts">
+<%--                 <asp:DropDownList Width="320px" ID="ddlSkill3" CssClass="dropdown" runat="server" TabIndex="23" title="Select Third Goals of Instruction Skills or Concepts">
                         <asp:ListItem Text="--Select One--" Value="None" Selected="True"  />                        
                         <asp:ListItem Text="Accessing materials" Value="Accessing materials" title="Accessing materials" />
                         <asp:ListItem Text="Citation tracking" Value="Citation tracking" title="Citation tracking" />
@@ -255,25 +255,20 @@
                         <asp:ListItem Text="Using appropriate search tools" Value="Using appropriate search tools" title="Using appropriate search tools" />
                         <asp:ListItem Text="Other" Value="Other" title="Other" />
         </asp:DropDownList><br />--%>
-<%--<asp:TextBox ID="txtGoalsDetails" runat="server" Height="75"  TextMode="MultiLine"  title="Additional Skills, Goals, concepts" />--%>
-</fieldset><br />
-<fieldset>
-<legend>Preferred Date of Instruction</legend>
-
-<div style="float:left;">
-<label><span class="required">*</span> 1st Choice Date (mm/dd/yyyy): 
-        <asp:TextBox CssClass="date" ID="txtDueDate" runat="server" size="11" maxlength="11"  />&nbsp;</label>
+<!--b>What additional skills or concepts would you like included in this instruction session?</b -->
+<%--<asp:TextBox ID="txtGoalsDetails" runat="server" Height="75"  TextMode="MultiLine" TabIndex="24" title="Additional Skills, Goals, concepts" />--%>
+<%--</fieldset><br />--%>
+<%--<fieldset>
+<legend>Date of Instruction</legend>
+<label><span class="required">*</span> 1st Choice Date (mm/dd/yyyy): </label>
+        <asp:TextBox CssClass="date" ID="txtDueDate" runat="server" size="11" maxlength="11"  TabIndex="25" />&nbsp;
         <asp:RegularExpressionValidator ID="reDueDate" runat="server" CssClass="required" ControlToValidate="txtDueDate" ErrorMessage="Not a valid date (mm/dd/yyyy)" SetFocusOnError="True" ValidationExpression="((^(10|12|0?[13578])([/])(3[01]|[12][0-9]|0?[1-9])([/])((1[8-9]\d{2})|([2-9]\d{3}))$)|(^(11|0?[469])([/])(30|[12][0-9]|0?[1-9])([/])((1[8-9]\d{2})|([2-9]\d{3}))$)|(^(0?2)([/])(2[0-8]|1[0-9]|0?[1-9])([/])((1[8-9]\d{2})|([2-9]\d{3}))$)|(^(0?2)([/])(29)([/])([2468][048]00)$)|(^(0?2)([/])(29)([/])([3579][26]00)$)|(^(0?2)([/])(29)([/])([1][89][0][48])$)|(^(0?2)([/])(29)([/])([2-9][0-9][0][48])$)|(^(0?2)([/])(29)([/])([1][89][2468][048])$)|(^(0?2)([/])(29)([/])([2-9][0-9][2468][048])$)|(^(0?2)([/])(29)([/])([1][89][13579][26])$)|(^(0?2)([/])(29)([/])([2-9][0-9][13579][26])$))"></asp:RegularExpressionValidator> 
-    &nbsp; <asp:requiredfieldvalidator id="rfDueDate" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtDueDate" SetFocusOnError="True" ></asp:requiredfieldvalidator>
-
-
-<label>2nd Choice Date (mm/dd/yyyy): 
-        <asp:TextBox CssClass="date" ID="txtDueDate1" runat="server" size="11" maxlength="11" />&nbsp;</label>
+    &nbsp; <asp:requiredfieldvalidator id="rfDueDate" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtDueDate" SetFocusOnError="True" ></asp:requiredfieldvalidator><br />
+<label>2nd Choice Date (mm/dd/yyyy): </label>
+        <asp:TextBox CssClass="date" ID="txtDueDate1" runat="server" size="11" maxlength="11"   TabIndex="26"/>&nbsp;
         <asp:RegularExpressionValidator ID="reDueDate1" runat="server" CssClass="required" ControlToValidate="txtDueDate1" ErrorMessage="Not a valid date (mm/dd/yyyy)" SetFocusOnError="True" ValidationExpression="((^(10|12|0?[13578])([/])(3[01]|[12][0-9]|0?[1-9])([/])((1[8-9]\d{2})|([2-9]\d{3}))$)|(^(11|0?[469])([/])(30|[12][0-9]|0?[1-9])([/])((1[8-9]\d{2})|([2-9]\d{3}))$)|(^(0?2)([/])(2[0-8]|1[0-9]|0?[1-9])([/])((1[8-9]\d{2})|([2-9]\d{3}))$)|(^(0?2)([/])(29)([/])([2468][048]00)$)|(^(0?2)([/])(29)([/])([3579][26]00)$)|(^(0?2)([/])(29)([/])([1][89][0][48])$)|(^(0?2)([/])(29)([/])([2-9][0-9][0][48])$)|(^(0?2)([/])(29)([/])([1][89][2468][048])$)|(^(0?2)([/])(29)([/])([2-9][0-9][2468][048])$)|(^(0?2)([/])(29)([/])([1][89][13579][26])$)|(^(0?2)([/])(29)([/])([2-9][0-9][13579][26])$))"></asp:RegularExpressionValidator> <br />   
-</div>
-
-<%--<label>Additional or Alternative Date if needed (mm/dd/yyyy): </label>
-        <asp:TextBox CssClass="date" ID="txtDueDate2" runat="server" size="11" maxlength="11"   OnTextChanged="txtDueDate2_TextChanged" AutoPostBack="True"/>&nbsp;
+<label>Additional or Alternative Date if needed (mm/dd/yyyy): </label>
+        <asp:TextBox CssClass="date" ID="txtDueDate2" runat="server" size="11" maxlength="11"  TabIndex="27" OnTextChanged="txtDueDate2_TextChanged" AutoPostBack="True"/>&nbsp;
         <asp:RegularExpressionValidator ID="reDueDate2" runat="server" CssClass="required" ControlToValidate="txtDueDate2" ErrorMessage="Not a valid date (mm/dd/yyyy)" SetFocusOnError="True" ValidationExpression="((^(10|12|0?[13578])([/])(3[01]|[12][0-9]|0?[1-9])([/])((1[8-9]\d{2})|([2-9]\d{3}))$)|(^(11|0?[469])([/])(30|[12][0-9]|0?[1-9])([/])((1[8-9]\d{2})|([2-9]\d{3}))$)|(^(0?2)([/])(2[0-8]|1[0-9]|0?[1-9])([/])((1[8-9]\d{2})|([2-9]\d{3}))$)|(^(0?2)([/])(29)([/])([2468][048]00)$)|(^(0?2)([/])(29)([/])([3579][26]00)$)|(^(0?2)([/])(29)([/])([1][89][0][48])$)|(^(0?2)([/])(29)([/])([2-9][0-9][0][48])$)|(^(0?2)([/])(29)([/])([1][89][2468][048])$)|(^(0?2)([/])(29)([/])([2-9][0-9][2468][048])$)|(^(0?2)([/])(29)([/])([1][89][13579][26])$)|(^(0?2)([/])(29)([/])([2-9][0-9][13579][26])$))"></asp:RegularExpressionValidator> <br />
 <asp:Panel runat="server" ID="plhDueDate3" Visible="false">      
     <label>Additional or Alternative Date if needed (mm/dd/yyyy): </label>
@@ -304,89 +299,38 @@
 <label>Additional or Alternative Date if needed (mm/dd/yyyy): </label>
         <asp:TextBox CssClass="date" ID="txtDueDate8" runat="server" size="11" maxlength="11" AutoPostBack="True" />&nbsp;
         <asp:RegularExpressionValidator ID="reDueDate8" runat="server" CssClass="required" ControlToValidate="txtDueDate8" ErrorMessage="Not a valid date (mm/dd/yyyy)" SetFocusOnError="True" ValidationExpression="((^(10|12|0?[13578])([/])(3[01]|[12][0-9]|0?[1-9])([/])((1[8-9]\d{2})|([2-9]\d{3}))$)|(^(11|0?[469])([/])(30|[12][0-9]|0?[1-9])([/])((1[8-9]\d{2})|([2-9]\d{3}))$)|(^(0?2)([/])(2[0-8]|1[0-9]|0?[1-9])([/])((1[8-9]\d{2})|([2-9]\d{3}))$)|(^(0?2)([/])(29)([/])([2468][048]00)$)|(^(0?2)([/])(29)([/])([3579][26]00)$)|(^(0?2)([/])(29)([/])([1][89][0][48])$)|(^(0?2)([/])(29)([/])([2-9][0-9][0][48])$)|(^(0?2)([/])(29)([/])([1][89][2468][048])$)|(^(0?2)([/])(29)([/])([2-9][0-9][2468][048])$)|(^(0?2)([/])(29)([/])([1][89][13579][26])$)|(^(0?2)([/])(29)([/])([2-9][0-9][13579][26])$))"></asp:RegularExpressionValidator> <br /><br />
-</asp:Panel>--%>
- 
-<div style="clear:both; float:left;" >  
-       
-<label><span class="required">*</span> Class Start Time: <asp:TextBox CssClass="time" ID="txtStartTime" runat="server" size="11" maxlength="11"   /></label> 
-    &nbsp;<asp:requiredfieldvalidator id="rfStartTime" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtStartTime" SetFocusOnError="True" ></asp:requiredfieldvalidator>
-<label><span class="required">*</span> Class End Time:  <asp:TextBox CssClass="time" ID="txtEndTime" runat="server" size="11" maxlength="11"  /></label>
+</asp:Panel>
+<label><span class="required">*</span> Class Start Time: </label> <asp:TextBox CssClass="time" ID="txtStartTime" runat="server" size="11" maxlength="11" TabIndex="30" />
+    &nbsp;<asp:requiredfieldvalidator id="rfStartTime" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtStartTime" SetFocusOnError="True" ></asp:requiredfieldvalidator><br />
+<label><span class="required">*</span> Class End Time: </label> <asp:TextBox CssClass="time" ID="txtEndTime" runat="server" size="11" maxlength="11" TabIndex="31" />
     &nbsp;<asp:requiredfieldvalidator id="rfEndTime" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtEndTime" SetFocusOnError="True" ></asp:requiredfieldvalidator> 
-</div>
-
-
-
-
-
-</fieldset>
-<fieldset>
-<legend>Instruction Request Details</legend>
-<label><span class="required">*</span> Instruction geared towards specific assignment?</label>  
-<asp:RadioButtonList ID="rblAssignment" runat="server" RepeatDirection="Horizontal" CssClass="rbl">
-        <asp:ListItem Text="Yes" Value="Yes" />
-        <asp:ListItem Text="No" Value="No" /> 
-</asp:RadioButtonList>&nbsp;<asp:requiredfieldvalidator id="rfAssignment" runat="server" errormessage="Required" CssClass="required" controltovalidate="rblAssignment" SetFocusOnError="True" ></asp:requiredfieldvalidator> 
-<br />
-    
- 
-Further details on the assignment: <br />
-    <asp:TextBox ID="txtAssignmentDetails" runat="server" Height="75" TextMode="MultiLine"  Width="60%" />
-    <br />
-
-    <label>
-    <span class="required">*</span> Will students already have topics?</label>
-    <asp:RadioButtonList ID="rblTopics" runat="server" CssClass="rbl" RepeatDirection="Horizontal">
-        <asp:ListItem Text="Yes" Value="Yes" />
-        <asp:ListItem Text="No" Value="No" />
-    </asp:RadioButtonList>
-    &nbsp;<asp:RequiredFieldValidator ID="rfTopics" runat="server" controltovalidate="rblTopics" CssClass="required" errormessage="Required" SetFocusOnError="True"></asp:RequiredFieldValidator>
-
-<%--    <br /><br />--%>
-<%--<label><span class="required">*</span> Formal Assessment Strategy #1: </label>--%>
-<%--        <asp:DropDownList ID="ddlAssessment1" runat="server"  />--%>
-<%--<asp:DropDownList Width="320px" ID="ddlAssessment1" CssClass="dropdown" runat="server">
-                        <asp:ListItem Text="--Select One--" Value="None" Selected="True" />                        
-                        <asp:ListItem Text="Analysis of bibliographies" Value="Analysis of bibliographies" />
-                        <asp:ListItem Text="In-Class Assignment" Value="In-Class Assignment" />
-                        <asp:ListItem Text="Journal reflection" Value="Journal reflection" />
-                        <asp:ListItem Text="No formal assessment" Value="No formal assessment" />
-                        <asp:ListItem Text="Observation and evaluation" Value="Observation and evaluation" />
-                        <asp:ListItem Text="Pre-test/Post-test" Value="Pre-test/Post-test" />
-                        <asp:ListItem Text="Short homework assignment" Value="Short homework assignment" />
-                        <asp:ListItem Text="Technology-related assignment" Value="Technology-related assignment" />
-                        <asp:ListItem Text="Other" Value="Other" />
-</asp:DropDownList>--%>
-<%--&nbsp;<asp:requiredfieldvalidator id="rfAssessment1" runat="server" errormessage="Required" CssClass="required" controltovalidate="ddlAssessment1" SetFocusOnError="True" ></asp:requiredfieldvalidator><br />
-<label>Formal Assessment Strategy #2: </label>--%>
-<%--        <asp:DropDownList ID="ddlAssessment2" runat="server" />--%>
-<%--<asp:DropDownList Width="320px" ID="ddlAssessment2" CssClass="dropdown" runat="server" >
-                        <asp:ListItem Text="--Select One--" Value="None" Selected="True" />                        
-                        <asp:ListItem Text="Analysis of bibliographies" Value="Analysis of bibliographies" />
-                        <asp:ListItem Text="In-Class Assignment" Value="In-Class Assignment" />
-                        <asp:ListItem Text="Journal reflection" Value="Journal reflection" />
-                        <asp:ListItem Text="No formal assessment" Value="No formal assessment" />
-                        <asp:ListItem Text="Observation and evaluation" Value="Observation and evaluation" />
-                        <asp:ListItem Text="Pre-test/Post-test" Value="Pre-test/Post-test" />
-                        <asp:ListItem Text="Short homework assignment" Value="Short homework assignment" />
-                        <asp:ListItem Text="Technology-related assignment" Value="Technology-related assignment" />
-                        <asp:ListItem Text="Other" Value="Other" />
-</asp:DropDownList>--%>
- <br /> 
-        <span class="required"> </span> Additional Information/Comments:</label> <br />  
-   <asp:TextBox ID="txtComments" runat="server" Height="75"  TextMode="MultiLine"  Width="60%"/>
 </fieldset><br />
 <fieldset>
-<%--<legend>Additional information/comments/remarks</legend>--%>
-<legend></legend>
-<%--<asp:TextBox ID="txtComments" runat="server" Height="75"  TextMode="MultiLine"  Width="60%"/><br /><br />--%>
-<asp:Button Text="Submit" ID="btnSubmit" OnClick="btnSubmit_Click" runat="server" class="" />&nbsp;
+<legend>Instruction Request Details</legend>
+<label><span class="required">*</span> Instruction geared towards specific assignment?  </label>
+<asp:RadioButtonList ID="rblAssignment" runat="server" RepeatDirection="Horizontal" CssClass="rbl" TabIndex="32">
+        <asp:ListItem Text="Yes" Value="Yes" />
+        <asp:ListItem Text="No" Value="No" /> 
+</asp:RadioButtonList>&nbsp;<asp:requiredfieldvalidator id="rfAssignment" runat="server" errormessage="Required" CssClass="required" controltovalidate="rblAssignment" SetFocusOnError="True" ></asp:requiredfieldvalidator> <br />
+<label><span class="required">*</span> Will students already have topics?</label>
+<asp:RadioButtonList ID="rblTopics" runat="server" RepeatDirection="Horizontal" CssClass="rbl" TabIndex="34">
+        <asp:ListItem Text="Yes" Value="Yes" />
+        <asp:ListItem Text="No" Value="No" /> 
+</asp:RadioButtonList>&nbsp;<asp:requiredfieldvalidator id="rfTopics" runat="server" errormessage="Required" CssClass="required" controltovalidate="rblTopics" SetFocusOnError="True" ></asp:requiredfieldvalidator>&nbsp;<br />
+Further details on the assignment:<br />
+<asp:TextBox ID="txtAssignmentDetails" runat="server" Height="75" TextMode="MultiLine" TabIndex="36" /><br /><br />
+</fieldset><br />
+<fieldset>
+<legend>Additional information/comments/remarks</legend>
+<asp:TextBox ID="txtComments" runat="server" Height="75"  TextMode="MultiLine" TabIndex="43"/><br /><br />
+<asp:Button Text="Submit" ID="btnSubmit" OnClick="btnSubmit_Click" runat="server" class="" TabIndex="45"/>&nbsp;
 <asp:Button Text="Clear Form" ID="CancelButton" runat="server" CausesValidation="False" CommandName="Reset" OnClick="CancelButton_Click" />
 </fieldset>	
 <asp:Label ID="lblErrorMessage" runat="server" />
-</asp:Panel> <!--End of Research Tech Instruction Panel-->
+</asp:Panel> --%><!--End of Research Tech Instruction Panel-->
 <!--Begin HSInstruction Panel -->
-<asp:Panel ID="HSInstructionPanel" runat="server" Visible="False" Width="80%" >
-<h3 style="font-size: 2.2em;">High School Instruction</h3> 
+<asp:Panel ID="HSInstructionPanel" runat="server" Visible="True" >
+<%--<h3 style="font-size: 2.2em;">High School Instruction</h3> --%>
 <fieldset>
 <legend>School Information</legend>
 <label><span class="required">*</span> School Name: </label><asp:TextBox ID="txtSchoolName" runat="server" size="25" maxlength="75" />&nbsp;<asp:requiredfieldvalidator id="rfSchoolName" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtSchoolName" SetFocusOnError="True"></asp:requiredfieldvalidator> <br /> 

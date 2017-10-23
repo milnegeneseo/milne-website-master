@@ -3,6 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 <link href="https://eres.geneseo.edu/milne-styles-js/js/jquery-ui-1.10.3.custom-milne.min.css" rel="stylesheet" />
 <link href="https://intranetlib.geneseo.edu/Dataportal/Scripts/jquery-ui-milne.css" rel="stylesheet" />
 <script src="https://intranetlib.geneseo.edu/Dataportal/Scripts/jquery-ui.js"></script> 
@@ -25,7 +26,6 @@
         <br />
         contact the <a href="https://www.geneseo.edu/library/steve-dresbach">Milne ITS Technology Instructor</a>.</li>
 </ul><br />
-<!-- p class="subheading">Need help with an audio or video project? <a href="http://www.geneseo.edu/cit/dml/dml-consultation-form"><strong>Request a DM consultation.</strong></a></p -->
 <asp:Panel ID="ResearchConsultationInfoPanel" runat="server" Visible="False" >  
 <fieldset>
 <legend>Research Consultation</legend>           
@@ -64,10 +64,11 @@
 <%--<h3 style="font-size: 2.2em;">Research Consultation</h3> --%>
 <fieldset>
 <legend>Personal Information</legend>
-<label><span class="required">*</span> First Name: </label> <asp:TextBox runat="server" size="25" maxlength="25" ID="txtFirstName" title="First Name" />&nbsp;<asp:requiredfieldvalidator id="rfFirstName" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtFirstName" SetFocusOnError="True"></asp:requiredfieldvalidator>  <br />
-<label><span class="required">*</span> Last Name: </label><asp:TextBox runat="server" size="25" maxlength="25" ID="txtLastName" title="Last Name" />&nbsp;<asp:requiredfieldvalidator id="rfLastName" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtLastName" SetFocusOnError="True"></asp:requiredfieldvalidator>  <br />
-<label><span class="required">*</span> Email Address: </label><asp:TextBox runat="server" size="25" maxlength="25" ID="txtEmail" title="Email" />&nbsp;<asp:requiredfieldvalidator id="rfEmail" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtEmail" SetFocusOnError="True"></asp:requiredfieldvalidator>&nbsp; 
-<asp:RegularExpressionValidator ID="reEmail" ErrorMessage="*Invalid Email Address" CssClass="required" ControlToValidate="txtEmail" runat="server" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" />
+<label><span class="required">*</span> First Name: </label> <asp:TextBox runat="server" size="15" maxlength="20" ID="txtFirstName" title="First Name" />&nbsp;<asp:requiredfieldvalidator id="rfFirstName" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtFirstName" SetFocusOnError="True"></asp:requiredfieldvalidator>  <br />
+<label><span class="required">*</span> Last Name: </label><asp:TextBox runat="server" size="15" maxlength="20" ID="txtLastName" title="Last Name" />&nbsp;<asp:requiredfieldvalidator id="rfLastName" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtLastName" SetFocusOnError="True"></asp:requiredfieldvalidator>  <br />
+<label><span class="required">*</span> Email Address: </label><asp:TextBox runat="server" size="12" maxlength="25" ID="txtEmail" title="Email" />&nbsp;<asp:RegularExpressionValidator ID="reEmail" ErrorMessage="*Must be a Geneseo edu address" CssClass="required" ControlToValidate="txtEmail" runat="server" ValidationExpression="[\w0-9\.-]*@geneseo\.edu" />
+<asp:requiredfieldvalidator id="rfEmail" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtEmail" SetFocusOnError="True"></asp:requiredfieldvalidator>
+<%--<asp:RegularExpressionValidator ID="reEmail" ErrorMessage="*Invalid Email Address" CssClass="required" ControlToValidate="txtEmail" runat="server" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" />--%>
 <label>Additional email addresses, separated by commas: </label>    <asp:TextBox ID="txtAdditionalEmails" runat="server" Height="75" TextMode="MultiLine" title="Additional Email Addresses, separated by commas" />
     <br />    <br />
 <!-- label><span class="required">&nbsp;</span>Phone Number: </label><asp:TextBox ID="txtPhone" runat="server" size="25" maxlength="25" title="Phone Number" /> <br / --> 
@@ -80,7 +81,7 @@
 <fieldset>
 <legend>Assignment Information</legend>
 <label><span class="required">*</span> Assignment Due Date (mm/dd/yyyy): </label>
-<asp:TextBox CssClass="date" ID="txtDueDate" runat="server" size="11" maxlength="11" style="width:40% !important;" title="Select Assignment Due Date" />&nbsp;<asp:requiredfieldvalidator id="rfDueDate" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtDueDate" SetFocusOnError="True" ></asp:requiredfieldvalidator>&nbsp; 
+<asp:TextBox CssClass="date" ID="txtDueDate" runat="server" size="11" maxlength="25" style="width:40% !important;" title="Select Assignment Due Date" />&nbsp;<asp:requiredfieldvalidator id="rfDueDate" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtDueDate" SetFocusOnError="True" ></asp:requiredfieldvalidator>&nbsp; 
 <asp:RegularExpressionValidator ID="reDate" runat="server" ControlToValidate="txtDueDate" ErrorMessage="* Not a valid date (mm/dd/yyyy)" SetFocusOnError="True" ValidationExpression="((^(10|12|0?[13578])([/])(3[01]|[12][0-9]|0?[1-9])([/])((1[8-9]\d{2})|([2-9]\d{3}))$)|(^(11|0?[469])([/])(30|[12][0-9]|0?[1-9])([/])((1[8-9]\d{2})|([2-9]\d{3}))$)|(^(0?2)([/])(2[0-8]|1[0-9]|0?[1-9])([/])((1[8-9]\d{2})|([2-9]\d{3}))$)|(^(0?2)([/])(29)([/])([2468][048]00)$)|(^(0?2)([/])(29)([/])([3579][26]00)$)|(^(0?2)([/])(29)([/])([1][89][0][48])$)|(^(0?2)([/])(29)([/])([2-9][0-9][0][48])$)|(^(0?2)([/])(29)([/])([1][89][2468][048])$)|(^(0?2)([/])(29)([/])([2-9][0-9][2468][048])$)|(^(0?2)([/])(29)([/])([1][89][13579][26])$)|(^(0?2)([/])(29)([/])([2-9][0-9][13579][26])$))"></asp:RegularExpressionValidator> <br />
 <%--<label><span class="required">*</span> Is this for a College Course? </label>--%>
 <%--<div class="radiobutton">
@@ -91,25 +92,25 @@
 </div> &nbsp;<asp:requiredfieldvalidator id="rfResearchCollege" runat="server" errormessage="Required" CssClass="required" controltovalidate="rblResearchCollege" SetFocusOnError="True" > </asp:requiredfieldvalidator> <br />--%>
 <%-- College Yes Visibility --%>
 <%--<asp:Panel ID="collegeResearchYesPanel" runat="server" Visible="False" >--%>
-<label>Course or Workshop Title: </label><asp:TextBox ID="txtCourseTitle" runat="server" size="45" maxlength="75" title="Enter Course Title" /><br />
+<label>Course or Workshop Title: </label><asp:TextBox ID="txtCourseTitle" runat="server" size="15" maxlength="30" title="Enter Course Title" /><br />
 <label>Course Number (ABCD 123 Format): </label><asp:TextBox ID="txtCourseNumber" runat="server" size="8" maxlength="8" title="Enter Course number" />&nbsp;<asp:RegularExpressionValidator ID="reCourseNumber" SetFocusOnError="true" CssClass="required" ValidationExpression="^[A-Z]{4} [0-9]{3}$" ErrorMessage="Course Number should be in 'ABCD 123' format, Uppercase letters" ControlToValidate="txtCourseNumber" runat="server" /><br />
 <label>Department:</label>
 <asp:DropDownList runat="server" ID="ddlDepartmentActive" title="Select Department" /><br />
-<label>Course Professor First Name: </label><asp:TextBox ID="txtProfFirstName" runat="server" size="25" maxlength="25" title="Professor First Name" /><br />
-<label>Course Professor Last Name: </label><asp:TextBox ID="txtProfLastName" runat="server" size="25" maxlength="25"  title="Professor Last Name" /><br />
+<label>Course Professor First Name: </label><asp:TextBox ID="txtProfFirstName" runat="server" size="15" maxlength="20" title="Professor First Name" /><br />
+<label>Course Professor Last Name: </label><asp:TextBox ID="txtProfLastName" runat="server" size="15" maxlength="20"  title="Professor Last Name" /><br />
 
     <label>
     <span class="required">*</span> Topic of your assignment:
     </label>
-    <asp:TextBox ID="txtDescription" runat="server" title="Topic of your paper" />&nbsp;<asp:RequiredFieldValidator ID="rfDescription" runat="server" controltovalidate="txtDescription" CssClass="required" errormessage="Required" SetFocusOnError="True"></asp:RequiredFieldValidator>
+    <asp:TextBox ID="txtDescription" runat="server"  size="15" maxlength="30"  title="Topic of your paper" />&nbsp;<asp:RequiredFieldValidator ID="rfDescription" runat="server" controltovalidate="txtDescription" CssClass="required" errormessage="Required" SetFocusOnError="True"></asp:RequiredFieldValidator>
 
     <br />
     <label>
-    Number of pages for your assignment: </label><asp:TextBox ID="txtNumberPages" runat="server" maxlength="3" size="45" title="Number of pages foryour assignment" Width="50px" />
+    Number of pages for your assignment: </label><asp:TextBox ID="txtNumberPages" runat="server" maxlength="3" size="15" title="Number of pages foryour assignment" Width="50px" />&nbsp;<asp:RegularExpressionValidator ID="reNumberPages" SetFocusOnError="true" CssClass="required" ValidationExpression="^[0-9]+$" ErrorMessage="Numbers Only" ControlToValidate="txtNumberPages" runat="server" />
         <br />
 
     <label>
-    Number of sources you need:    </label><asp:TextBox ID="txtNumberSources" runat="server" maxlength="3" size="45" title="Number of Sources you need" Width="50px" />
+    Number of sources you need:    </label><asp:TextBox ID="txtNumberSources" runat="server" maxlength="3" size="15" title="Number of Sources you need" Width="50px" />&nbsp;<asp:RegularExpressionValidator ID="reNumberSources" SetFocusOnError="true" CssClass="required" ValidationExpression="^[0-9]+$" ErrorMessage="Numbers Only" ControlToValidate="txtNumberSources" runat="server" />
 <br />
      <label><strong>Do you need:</strong></label><br /><br />
 <%--    <input name="cboxDoYouNeed" id="cboxDoYouNeed1" type="checkbox" value="Primary Sources" />
@@ -130,6 +131,8 @@
     <br />
     <asp:TextBox ID="txtDates" runat="server" Height="75" TextMode="MultiLine" title="List 2 or 3 days and times to schedule a meeting" />
     <br />
+    <br />
+    <div class="g-recaptcha" data-sitekey="6Lc4dDUUAAAAAEu7JWvuQAdsCz3k2D_73M4w68kf"></div>
     <br />
     <asp:Button ID="btnSubmit" runat="server" class="" OnClick="btnResearchConsultSubmit_Click" Text="Submit" />
 &nbsp;<asp:Button Text="Clear Form" ID="CancelButton" runat="server" CausesValidation="False" CommandName="Reset" OnClick="ResearchConsultCancelButton_Click" />

@@ -444,7 +444,7 @@ public partial class Requests_Consultation : System.Web.UI.Page
     {
         ResearchConsultationInfoPanel.Visible = true;
         //TechnologyConsultationInfoPanel.Visible = false;
-        ResearchConsultationPanel.Visible = false ;
+        ResearchConsultationPanel.Visible = true;
         //TechnologyConsultationPanel.Visible = false;
         //rblType.SelectedIndex = -1;
     
@@ -463,7 +463,7 @@ public partial class Requests_Consultation : System.Web.UI.Page
     {
         ResearchConsultationInfoPanel.Visible = false;
         //TechnologyConsultationInfoPanel.Visible = false;
-      // ResearchConsultationPanel.Visible = false;        
+      ResearchConsultationPanel.Visible = true;        
       //  TechnologyConsultationPanel.Visible = false;
         //rblType.SelectedIndex = -1;
         //ClearFields(Page);
@@ -501,4 +501,5 @@ public partial class Requests_Consultation : System.Web.UI.Page
     {
 
     }
+
 }

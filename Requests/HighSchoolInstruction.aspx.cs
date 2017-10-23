@@ -333,9 +333,9 @@ public partial class Requests_HighSchoolInstruction : System.Web.UI.Page
         sb.AppendFormat("Media Specialist's Name: {0}" + Environment.NewLine + "    ", txtMediaFirstName.Text.Trim() + " " + txtMediaLastName.Text.Trim());
         sb.AppendFormat("Email: {0}" + Environment.NewLine + Environment.NewLine, txtMediaEmail.Text.Trim());
 
-        sb.AppendFormat("Course Information" + Environment.NewLine + "    ");
-        sb.AppendFormat("Topic: {0}" + Environment.NewLine + "    ", txtSchoolTopic.Text.Trim());
-        sb.AppendFormat("Course: {0}" + Environment.NewLine + "    ", txtSchoolCourse.Text.Trim());
+        sb.AppendFormat("Class Information" + Environment.NewLine + "    ");
+      //  sb.AppendFormat("Topic: {0}" + Environment.NewLine + "    ", txtSchoolTopic.Text.Trim());
+        sb.AppendFormat("Class: {0}" + Environment.NewLine + "    ", txtSchoolCourse.Text.Trim());
         sb.AppendFormat("Teacher's Name: {0}" + Environment.NewLine + "    ", txtTeacherFirstName.Text.Trim() + " " + txtTeacherLastName.Text.Trim());
         sb.AppendFormat("Planned Number of Students: {0}" + Environment.NewLine + "    ", txtSchoolStudentNumber.Text.Trim());
         sb.AppendFormat("Number of Accompanying Adults: {0}" + Environment.NewLine + "    ", txtAdultsNumber.Text.Trim());
@@ -344,13 +344,12 @@ public partial class Requests_HighSchoolInstruction : System.Web.UI.Page
         sb.AppendFormat("Visit Date and Time Preferences" + Environment.NewLine + "    ");
         sb.AppendFormat("1st Choice Date: {0}" + Environment.NewLine + "    ", txtSchoolDueDate.Text.Trim());
         sb.AppendFormat("2nd Choice Date: {0}" + Environment.NewLine + "    ", txtSchoolDueDate2.Text.Trim());
-        sb.AppendFormat("Additional or Alternative Date: {0}" + Environment.NewLine + "    ", txtSchoolDueDate3.Text.Trim());
+    //    sb.AppendFormat("Additional or Alternative Date: {0}" + Environment.NewLine + "    ", txtSchoolDueDate3.Text.Trim());
         sb.AppendFormat("Arrival Time: {0}" + Environment.NewLine + "    ", txtArrivalTime.Text.Trim());
         sb.AppendFormat("Departure Time: {0}" + Environment.NewLine + Environment.NewLine, txtDepartureTime.Text.Trim());
-
-        sb.AppendFormat("Previous Library Instruction: {0}" + Environment.NewLine + Environment.NewLine, txtPreviousInstruction.Text.Trim());
-
         sb.AppendFormat("Instruction Needs: {0}" + Environment.NewLine + Environment.NewLine, txtInstructionNeeds.Text.Trim());
+        sb.AppendFormat("Additional Information: {0}" + Environment.NewLine + Environment.NewLine, txtPreviousInstruction.Text.Trim());
+
 
         mailMessage.Body = sb.ToString();
 

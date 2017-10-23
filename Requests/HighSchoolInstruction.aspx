@@ -21,7 +21,7 @@
         //    $('#< %= txtDueDate8.ClientID %>').datepicker({});
          $('#<%= txtSchoolDueDate.ClientID %>').attr('readonly', 'readonly').datepicker({});
         $('#<%= txtSchoolDueDate2.ClientID %>').datepicker({});
-         $('#<%= txtSchoolDueDate3.ClientID %>').datepicker({});
+        // $('#< %= txtSchoolDueDate3.ClientID %>').datepicker({});
            // $('#< %= txtStartTime.ClientID %>').attr('readonly', 'readonly').timepicker({
            //     showPeriod: true,
             //    showLeadingZero: false,
@@ -118,7 +118,9 @@
        <p>In order to integrate your students’ needs with those of our college students, it is necessary that we receive your request&nbsp;form <b>3 weeks in advance</b> of the date requested for the visit. Confirmation for library instruction will be made via e-mail within 7 days of receipt of this form.</p> 
        <p>Unfortunately, due to the lack of classroom space, we will not be able to honor requests for visits during times of peak college use. It is preferable to schedule class visits during breaks when SUNY Geneseo is not in session. If this is not possible, please <a href="mailto:libinstr@geneseo.edu"><strong>email us</strong></a> to discuss a mutually available date. If possible, the high school library media specialist should accompany classes on visits.</p>
 	   <p>For groups of 15 or more students, please bring at least one additional high school staff member.</p>
-       <p>Because our <strong>computer lab <img src="img/question-mark-icon-16.png" /></strong> has 40 computers, the <strong>maximum number of students per visit is 40</strong>.</p>
+       <p>Because our <strong><a href="https://www.geneseo.edu/library/library-computer-labs-technology">computer lab
+           <img src="img/question-mark-icon-16.png" />
+           </a></strong> has 40 computers, the <strong>maximum number of students per visit is 40</strong>.</p>
        <p>Students will be given a one-day username and password that will provide them use of the Library’s computers and free computer printing for the day of their visit.</p>
 	   <p>Please forward a list of student topics to the Library Instruction Coordinator at least 5 days before your visit.</p>
 <p>Please direct all questions regarding visits to <a href="mailto:libinstr@geneseo.edu"><strong>libinstr@geneseo.edu</strong></a></strong>.</p>
@@ -341,9 +343,9 @@ Further details on the assignment:<br />
 <asp:RegularExpressionValidator ID="reMediaEmail" ErrorMessage="Invalid Email Address" CssClass="required" ControlToValidate="txtMediaEmail" runat="server" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" /><br />
 </fieldset><br />
 <fieldset>
-<legend>Course Information</legend>
-<label><span class="required">&nbsp;</span> Topic: </label><asp:TextBox ID="txtSchoolTopic" runat="server" size="25" maxlength="75"  /> <br />
-<label><span class="required">&nbsp;</span> Course: </label><asp:TextBox ID="txtSchoolCourse" runat="server" size="25" maxlength="75"  /><br />
+<legend>Class Information</legend>
+<%--<label><span class="required">&nbsp;</span> Topic: </label><asp:TextBox ID="txtSchoolTopic" runat="server" size="25" maxlength="75"  /> <br />--%>
+<label><span class="required">&nbsp;</span> Class: </label><asp:TextBox ID="txtSchoolCourse" runat="server" size="25" maxlength="75"  /><br />
 <label><span class="required">*</span> Teacher's First Name: </label> <asp:TextBox runat="server" size="25" maxlength="25" ID="txtTeacherFirstName" />&nbsp; <asp:requiredfieldvalidator id="rfTeacherFirstName" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtTeacherFirstName" SetFocusOnError="True"></asp:requiredfieldvalidator><br />
 <label><span class="required">*</span> Teacher's Last Name: </label><asp:TextBox runat="server" size="25" maxlength="50" ID="txtTeacherLastName" />&nbsp; <asp:requiredfieldvalidator id="rfTeacherLastName" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtTeacherLastName" SetFocusOnError="True"></asp:requiredfieldvalidator><br />
 <label><span class="required">*</span> Planned Number of Students: </label><asp:TextBox ID="txtSchoolStudentNumber" runat="server" size="3"  MaxLength="3" />
@@ -351,7 +353,7 @@ Further details on the assignment:<br />
 <asp:requiredfieldvalidator id="rfSchoolStudentNumber" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtSchoolStudentNumber" SetFocusOnError="True" ></asp:requiredfieldvalidator><br />
 <label><span class="required">&nbsp;</span> Number of Accompanying Adults: </label><asp:TextBox ID="txtAdultsNumber" runat="server" size="3"  MaxLength="3" />&nbsp;
 <asp:RegularExpressionValidator ID="reAdultsNumber" runat="server" CssClass="required" ControlToValidate="txtAdultsNumber" ErrorMessage="Numbers only" SetFocusOnError="True" ValidationExpression="((^[0-9]+$))"></asp:RegularExpressionValidator><br /> <br />
-<b><span class="required">*</span> Please describe the assignment requiring library use, and any specific resources in which you would like students to receive instruction.</b>&nbsp;<asp:requiredfieldvalidator id="rfSchoolAssignment" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtSchoolAssignment" SetFocusOnError="True" ></asp:requiredfieldvalidator><br /> <asp:TextBox ID="txtSchoolAssignment" runat="server"  TextMode="MultiLine" Height="75" /><br />
+<b><span class="required">*</span> Please describe the assignment requiring research instruction.</b>&nbsp;<asp:requiredfieldvalidator id="rfSchoolAssignment" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtSchoolAssignment" SetFocusOnError="True" ></asp:requiredfieldvalidator><br /> <asp:TextBox ID="txtSchoolAssignment" runat="server"  TextMode="MultiLine" Height="75" /><br />
 </fieldset><br />
 <fieldset>
 <legend>Visit Date and Time Preference</legend>
@@ -362,23 +364,31 @@ Further details on the assignment:<br />
 <label><span class="required">&nbsp;</span> 2nd Choice Date (mm/dd/yyyy): </label>
         <asp:TextBox CssClass="date" ID="txtSchoolDueDate2" runat="server" size="11" maxlength="11" />&nbsp;
         <asp:RegularExpressionValidator ID="reSchoolDueDate2" runat="server" CssClass="required" ControlToValidate="txtSchoolDueDate2" ErrorMessage="Not a valid date (mm/dd/yyyy)" SetFocusOnError="True" ValidationExpression="((^(10|12|0?[13578])([/])(3[01]|[12][0-9]|0?[1-9])([/])((1[8-9]\d{2})|([2-9]\d{3}))$)|(^(11|0?[469])([/])(30|[12][0-9]|0?[1-9])([/])((1[8-9]\d{2})|([2-9]\d{3}))$)|(^(0?2)([/])(2[0-8]|1[0-9]|0?[1-9])([/])((1[8-9]\d{2})|([2-9]\d{3}))$)|(^(0?2)([/])(29)([/])([2468][048]00)$)|(^(0?2)([/])(29)([/])([3579][26]00)$)|(^(0?2)([/])(29)([/])([1][89][0][48])$)|(^(0?2)([/])(29)([/])([2-9][0-9][0][48])$)|(^(0?2)([/])(29)([/])([1][89][2468][048])$)|(^(0?2)([/])(29)([/])([2-9][0-9][2468][048])$)|(^(0?2)([/])(29)([/])([1][89][13579][26])$)|(^(0?2)([/])(29)([/])([2-9][0-9][13579][26])$))"></asp:RegularExpressionValidator> <br /><br />   
-<label>Additional or Alternative Date if needed (mm/dd/yyyy): </label>
+<%--<label>Additional or Alternative Date if needed (mm/dd/yyyy): </label>
         <asp:TextBox CssClass="date" ID="txtSchoolDueDate3" runat="server" size="11" maxlength="11"  />&nbsp;
-        <asp:RegularExpressionValidator ID="reSchoolDueDate3" runat="server" CssClass="required" ControlToValidate="txtSchoolDueDate3" ErrorMessage="Not a valid date (mm/dd/yyyy)" SetFocusOnError="True" ValidationExpression="((^(10|12|0?[13578])([/])(3[01]|[12][0-9]|0?[1-9])([/])((1[8-9]\d{2})|([2-9]\d{3}))$)|(^(11|0?[469])([/])(30|[12][0-9]|0?[1-9])([/])((1[8-9]\d{2})|([2-9]\d{3}))$)|(^(0?2)([/])(2[0-8]|1[0-9]|0?[1-9])([/])((1[8-9]\d{2})|([2-9]\d{3}))$)|(^(0?2)([/])(29)([/])([2468][048]00)$)|(^(0?2)([/])(29)([/])([3579][26]00)$)|(^(0?2)([/])(29)([/])([1][89][0][48])$)|(^(0?2)([/])(29)([/])([2-9][0-9][0][48])$)|(^(0?2)([/])(29)([/])([1][89][2468][048])$)|(^(0?2)([/])(29)([/])([2-9][0-9][2468][048])$)|(^(0?2)([/])(29)([/])([1][89][13579][26])$)|(^(0?2)([/])(29)([/])([2-9][0-9][13579][26])$))"></asp:RegularExpressionValidator> <br />
+        <asp:RegularExpressionValidator ID="reSchoolDueDate3" runat="server" CssClass="required" ControlToValidate="txtSchoolDueDate3" ErrorMessage="Not a valid date (mm/dd/yyyy)" SetFocusOnError="True" ValidationExpression="((^(10|12|0?[13578])([/])(3[01]|[12][0-9]|0?[1-9])([/])((1[8-9]\d{2})|([2-9]\d{3}))$)|(^(11|0?[469])([/])(30|[12][0-9]|0?[1-9])([/])((1[8-9]\d{2})|([2-9]\d{3}))$)|(^(0?2)([/])(2[0-8]|1[0-9]|0?[1-9])([/])((1[8-9]\d{2})|([2-9]\d{3}))$)|(^(0?2)([/])(29)([/])([2468][048]00)$)|(^(0?2)([/])(29)([/])([3579][26]00)$)|(^(0?2)([/])(29)([/])([1][89][0][48])$)|(^(0?2)([/])(29)([/])([2-9][0-9][0][48])$)|(^(0?2)([/])(29)([/])([1][89][2468][048])$)|(^(0?2)([/])(29)([/])([2-9][0-9][2468][048])$)|(^(0?2)([/])(29)([/])([1][89][13579][26])$)|(^(0?2)([/])(29)([/])([2-9][0-9][13579][26])$))"></asp:RegularExpressionValidator> <br />--%>
 <label><span class="required">*</span> Arrival Time: </label> <asp:TextBox CssClass="time" ID="txtArrivalTime" runat="server" size="11" maxlength="11" /> &nbsp; <asp:requiredfieldvalidator id="rfArrivalTime" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtArrivalTime" SetFocusOnError="True" ></asp:requiredfieldvalidator><br />
 <label><span class="required">*</span> Departure Time: </label> <asp:TextBox CssClass="time" ID="txtDepartureTime" runat="server" size="11" maxlength="11" /> &nbsp; <asp:requiredfieldvalidator id="rfDepartureTime" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtDepartureTime" SetFocusOnError="True" ></asp:requiredfieldvalidator><br />
 </fieldset><br />
-<fieldset>
-<legend>Previous Library Instruction</legend>
-Which databases will students receive instruction in prior to the visit to Milne Library? <br />
-<asp:TextBox ID="txtPreviousInstruction" runat="server" Height="75"  TextMode="MultiLine"/>
-</fieldset><br />
+
+
 <fieldset>
 <legend>Instruction Needs</legend>
-Which resources (databases, subject specific resources, collections, etc.) would you like your students to be introduced to at Milne Library?&nbsp;<br /><asp:TextBox ID="txtInstructionNeeds" runat="server" Height="75" TextMode="MultiLine"  /><br /><br />
+Which resources (databases, subject specific resources, collections, etc.) would you like your students to be introduced to at Milne Library?&nbsp;<br />
+    <asp:TextBox ID="txtInstructionNeeds" runat="server" Height="75" TextMode="MultiLine"  /><br /><br />
+
+</fieldset>
+
+
+<fieldset>
+<legend>Additional Information</legend>
+    Please provide any additional information you feel necessary here. <br />
+<asp:TextBox ID="txtPreviousInstruction" runat="server" Height="75"  TextMode="MultiLine"/> <br /> <br />
 <asp:Button ID="HSbtnSubmit" runat="server" class="" OnClick="HSbtnSubmit_Click" Text="Submit" />&nbsp;
 <asp:Button Text="Clear Form" ID="HSCancelButton" runat="server" CausesValidation="False" CommandName="Reset" OnClick="CancelButton_Click" />
-</fieldset>
+
+</fieldset><br />
+
 <asp:Label ID="HSlblErrorMessage" runat="server" />
 </asp:Panel> <!--End of HSInstruction Panel-->
 </div>	

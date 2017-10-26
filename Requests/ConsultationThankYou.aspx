@@ -4,14 +4,14 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
  <div id="rightSideContent">
-<div class="breadcrumb" style="margin:20px 0px 0px 0px;"><a href="https://www.geneseo.edu/">SUNY Geneseo</a> &raquo; <a href="https://www.geneseo.edu/library">Milne Library</a> &raquo; <a href="https://www.geneseo.edu/library/research-help">Research Help</a> &raquo; <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/Consultation.aspx" style="color:#b85533 !important;">Research &amp; Technology Consultations</a></div>
+<div class="breadcrumb" style="margin:20px 0px 0px 0px;"><a href="https://www.geneseo.edu/">SUNY Geneseo</a> &raquo; <a href="https://www.geneseo.edu/library">Milne Library</a> &raquo; <a href="https://www.geneseo.edu/library/ask-us">Ask Us</a> &raquo; <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/Consultation.aspx" style="color:#b85533 !important;">Consultations</a></div>
 
-<h1>Research &amp; Technology Consultations</h1>
+<h1>Research Consultations</h1>
 
 <h2>Thank you for your request</h2>
     <br />
 
-<p>A librarian or technology specialist will contact you via email to schedule your consultation in 2 or 3 weekdays.  If your project is due before this, you should go directly to the reference desk in Milne Library.</p> <br />
+<p>A librarian will contact you via email to schedule your consultation in 2 or 3 weekdays.  If your project is due before this, you should go directly to the reference desk in Milne Library.</p> <br />
 
 <p>If you have any questions, please contact us at <a href="mailto:askus@geneseo.libanswers.com">askus@geneseo.libanswers.com</a></p>
 

@@ -69,8 +69,11 @@
 <label><span class="required">*</span> Email Address: </label><asp:TextBox runat="server" size="12" maxlength="25" ID="txtEmail" title="Email" />&nbsp;<asp:RegularExpressionValidator ID="reEmail" ErrorMessage="*Must be a Geneseo edu address" CssClass="required" ControlToValidate="txtEmail" runat="server" ValidationExpression="[\w0-9\.-]*@geneseo\.edu" />
 <asp:requiredfieldvalidator id="rfEmail" runat="server" errormessage="Required" CssClass="required" controltovalidate="txtEmail" SetFocusOnError="True"></asp:requiredfieldvalidator>
 <%--<asp:RegularExpressionValidator ID="reEmail" ErrorMessage="*Invalid Email Address" CssClass="required" ControlToValidate="txtEmail" runat="server" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" />--%>
-<label>Additional email addresses, separated by commas: </label>    <asp:TextBox ID="txtAdditionalEmails" runat="server" Height="75" TextMode="MultiLine" title="Additional Email Addresses, separated by commas" />
-    <br />    <br />
+<label>&nbsp;<strong>If you are part of a group of students seeking a Group Consultation Session: </strong><br />Please list additional email addresses of all students in your group, separated by commas:<br /> 
+
+    </label>    <asp:TextBox ID="txtGroupEmails" runat="server" Height="75" TextMode="MultiLine" title="Additional Email Addresses, separated by commas" />
+    <br />
+    <br />    
 <!-- label><span class="required">&nbsp;</span>Phone Number: </label><asp:TextBox ID="txtPhone" runat="server" size="25" maxlength="25" title="Phone Number" /> <br / --> 
 <label><span class="required">*</span> Status/Class Standing: </label>
 <asp:DropDownList ID="ddlStatus" runat="server" AppendDataBoundItems="True" title="Select Class Standing" />&nbsp; <asp:requiredfieldvalidator id="rfStatus" runat="server" errormessage="Required" CssClass="required" controltovalidate="ddlStatus" SetFocusOnError="True" ></asp:requiredfieldvalidator><br />

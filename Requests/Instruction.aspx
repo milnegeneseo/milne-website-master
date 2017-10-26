@@ -4,6 +4,7 @@
     </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+       <script src='https://www.google.com/recaptcha/api.js'></script>
 <link href="https://eres.geneseo.edu/milne-styles-js/js/jquery-ui-1.10.3.custom-milne.min.css" rel="stylesheet" />
 <link href="https://intranetlib.geneseo.edu/Dataportal/Scripts/jquery-ui-milne.css" rel="stylesheet" />
 <script src="https://intranetlib.geneseo.edu/Dataportal/Scripts/jquery-ui.js"></script> 
@@ -256,6 +257,28 @@
                         <asp:ListItem Text="Other" Value="Other" title="Other" />
         </asp:DropDownList><br />--%>
 <%--<asp:TextBox ID="txtGoalsDetails" runat="server" Height="75"  TextMode="MultiLine"  title="Additional Skills, Goals, concepts" />--%>
+
+
+<label>
+    <span class="required">*</span> Will you be grading students' research/Library assignment for credit?</label>
+    <asp:RadioButtonList ID="rblGrading" runat="server" CssClass="rbl" RepeatDirection="Horizontal">
+        <asp:ListItem Text="Yes" Value="Yes" />
+        <asp:ListItem Text="No" Value="No" />
+    </asp:RadioButtonList>  
+        <asp:requiredfieldvalidator id="rfGrading" runat="server" errormessage="Required" CssClass="required" controltovalidate="rblGrading" SetFocusOnError="True" > </asp:requiredfieldvalidator>
+  
+   <br /> 
+
+
+
+
+
+
+
+
+
+
+
 </fieldset><br />
 <fieldset>
 <legend>Preferred Date of Instruction</legend>
@@ -379,6 +402,9 @@ Further details on the assignment: <br />
 <%--<legend>Additional information/comments/remarks</legend>--%>
 <legend></legend>
 <%--<asp:TextBox ID="txtComments" runat="server" Height="75"  TextMode="MultiLine"  Width="60%"/><br /><br />--%>
+     <br />
+    <div class="g-recaptcha" data-sitekey="6Lc4dDUUAAAAAEu7JWvuQAdsCz3k2D_73M4w68kf"></div>
+    <br />
 <asp:Button Text="Submit" ID="btnSubmit" OnClick="btnSubmit_Click" runat="server" class="" />&nbsp;
 <asp:Button Text="Clear Form" ID="CancelButton" runat="server" CausesValidation="False" CommandName="Reset" OnClick="CancelButton_Click" />
 </fieldset>	

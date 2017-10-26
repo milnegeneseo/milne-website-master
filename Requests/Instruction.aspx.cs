@@ -180,10 +180,10 @@ cmd.Parameters.AddWithValue("@SkillConcept2", ddlSkill2.SelectedValue);
         //Dim SmtpClient As New SmtpClient("137.238.1.161")
 
             mailMessage.From = new MailAddress(txtEmail.Text);
-          //  mailMessage.To.Add("rootl@geneseo.edu");
+          // mailMessage.To.Add("rootl@geneseo.edu");
            mailMessage.To.Add("libinstr@geneseo.edu");
             //mailMessage.To.Add("ha@geneseo.edu");
-           mailMessage.Bcc.Add("ha@geneseo.edu,rootl@geneseo.edu");
+         mailMessage.Bcc.Add("ha@geneseo.edu,rootl@geneseo.edu");
 
             if (rblType.SelectedValue == "Research")
             {
@@ -228,6 +228,8 @@ cmd.Parameters.AddWithValue("@SkillConcept2", ddlSkill2.SelectedValue);
       sb.AppendFormat("Skill/Concept #2: {0}" + Environment.NewLine +  "    ", ddlSkill2.SelectedValue);
      //   sb.AppendFormat("Skill/Concept #3: {0}" + Environment.NewLine +  "    ", ddlSkill3.SelectedValue);
    // sb.AppendFormat("Further Goal Details: {0}" + Environment.NewLine + Environment.NewLine, txtGoalsDetails.Text.Trim());
+
+      sb.AppendFormat("Grading students' research/Library assignment for credit? {0}" + Environment.NewLine + "    ", rblGrading.SelectedValue);
 
         sb.AppendFormat("Date of Instruction" + Environment.NewLine + "    ");
         sb.AppendFormat("1st Choice Date: {0}" + Environment.NewLine + "    ", txtDueDate.Text.Trim());
@@ -649,4 +651,5 @@ cmd.Parameters.AddWithValue("@SkillConcept2", ddlSkill2.SelectedValue);
     {
 
     }
+  
 }

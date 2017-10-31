@@ -14,14 +14,14 @@
     </script>
 
 <div id="rightSideContent" >
-        <div class="breadcrumb" style="margin:20px 0px 0px 0px;"><a href="https://www.geneseo.edu/">SUNY Geneseo</a> &raquo; <a href="https://www.geneseo.edu/library">Milne Library</a> &raquo; <a href="https://www.geneseo.edu/library/requests-services">Requests &amp; Services</a> &raquo; <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/CirculatingReserves.aspx" style="color:#b85533 !important;">Circulating Reserves</a></div>
+        <div class="breadcrumb" style="margin:20px 0px 0px 0px;"><a href="https://www.geneseo.edu/">SUNY Geneseo</a> &raquo; <a href="https://www.geneseo.edu/library">Milne Library</a> &raquo; <a href="https://www.geneseo.edu/library/requests-services">Requests &amp; Services</a> &raquo; <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/CirculatingReserves.aspx" style="color:#b85533 !important;">Course Reserves</a></div>
 
-    <h1>Put Materials on Circulating Reserve</h1> 
+    <h1>Put Course Materials on Reserve</h1> 
     
-    <p class="subheading">All circulating reserve materials must be returned to the Service Desk and are NOT renewable. The reserves are arranged by course instructor. </p>
+    <p class="subheading">All course reserve materials must be returned to the Service Desk and are NOT renewable. The reserves are arranged by course instructor. </p>
     <p class="subheading">Please note: </p>
     <ul class="subheading">
-    <li>All circulating reserve materials are NOT renewable. </li>
+    <li>All course reserve materials are NOT renewable. </li>
     <li>Reserves are arranged by course instructor. </li>
    <li> After submitting the form, materials must be turned in to the Service Desk. </li>
    <li> All reserve materials are removed at the end of the Spring semester. Any personal copies will be returned through campus mail.</li>

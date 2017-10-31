@@ -70,7 +70,8 @@
 <p></p>
     <p>Please schedule your Instruction Session <strong>at least ONE WEEK</strong> ahead of time.</p>
     <ul>
-    <li>For High School Instruction, please use the <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/HighSchoolInstruction.aspx">High School Instruction</a> form</li>
+        <li><a href="https://www.geneseo.edu/library/intd-105-library-instruction">INTD 105 Research Skills Instruction</a> Goals Information</li>
+        <li>For High School Instruction, please use the <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/HighSchoolInstruction.aspx">High School Instruction</a> form</li>
     <li>For Technology and Software Package Instruction, contact the <a href="https://www.geneseo.edu/library/steve-dresbach">Milne Library Technology Instructor.</a></li> 
 </ul>
 

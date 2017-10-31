@@ -121,6 +121,7 @@
     <input name="cboxDoYouNeed" id="cboxDoYouNeed3" type="checkbox" value="News Articles" />
     <input name="cboxDoYouNeed" id="cboxDoYouNeed4" type="checkbox" value="Citation Formatting" />--%>
 <asp:CheckBoxList ID="CheckboxListDoYouNeed" Title="What sources do you need? Please check all that apply." runat="server" OnSelectedIndexChanged="CheckboxList1_SelectedIndexChanged" RepeatDirection="Horizontal" CellPadding="0" CellSpacing="0" Width="80%" TextAlign="Right">
+        <asp:ListItem>Books</asp:ListItem>
         <asp:ListItem>Primary Sources</asp:ListItem>
         <asp:ListItem>Journal Articles</asp:ListItem>
         <asp:ListItem>News Articles</asp:ListItem>

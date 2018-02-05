@@ -29,12 +29,12 @@ public partial class Requests_Consultation : System.Web.UI.Page
         ddlDepartmentActive.DataBind();
         ddlDepartmentActive.Items.Insert(0, new ListItem("-- Select One --", "None"));
 
-        ds = ReferenceInstructionDropdownClass.getPatronType();
-        ddlStatus.DataSource = ds;
-        ddlStatus.DataTextField = ds.Columns["PatronTypeClassStand"].ToString();
-        ddlStatus.DataValueField = ds.Columns["PatronTypeClassStand"].ToString();
-        ddlStatus.DataBind();
-        ddlStatus.Items.Insert(0, new ListItem("-- Select One --", "None"));
+        //ds = ReferenceInstructionDropdownClass.getPatronType();
+        //ddlStatus.DataSource = ds;
+        //ddlStatus.DataTextField = ds.Columns["PatronTypeClassStand"].ToString();
+        //ddlStatus.DataValueField = ds.Columns["PatronTypeClassStand"].ToString();
+        //ddlStatus.DataBind();
+        //ddlStatus.Items.Insert(0, new ListItem("-- Select One --", "None"));
 
         ds = ReferenceInstructionDropdownClass.getMajor();
         ddlMajor.DataSource = ds;
@@ -81,8 +81,8 @@ public partial class Requests_Consultation : System.Web.UI.Page
 
         SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["DataPortalConnectionString"].ConnectionString);
 
-        string query = "INSERT INTO [AllFields] ([Location], [QuestionType], [PatronFirstN], [PatronLastN], [Email], [GroupEmails], [PatronTypeClassStand], [Major], [WhereHeard], [AssDueDate], [isCollege], [CourseNum], [CourseTitle], [Department], [CourseProfFirstN], [CourseProfLastN], [AssGroupProgram], [ProjDescr], [Date], [Time], [FormType], [Librarian1], [QuestionFormat], [Minutes], [ServiceType]) VALUES (@Location, @QuestionType, @FirstN, @LastN, @Email,@GroupEmails, @Status, @Major, @Referral, @DueDate, @isCollege, @CourseNum, @CourseTitle, @Department, @ProfFirstN, @ProfLastN, @AssocicatedGroup, @ProjDescr, @Date, @Time, @FormType, @Librarian1, @QuestionFormat, @Minutes, @ServiceType)";
-       // string query = "INSERT INTO [AllFields] ([Location], [QuestionType], [PatronFirstN], [PatronLastN], [Email], [PatronTypeClassStand], [Major], [AssDueDate],  [CourseNum], [CourseTitle], [Department], [CourseProfFirstN], [CourseProfLastN],  [ProjDescr], [Date], [Time], [FormType], [Librarian1], [QuestionFormat], [Minutes], [ServiceType]) VALUES (@Location, @QuestionType, @FirstN, @LastN, @Email, @Status, @Major,  @DueDate, @isCollege, @CourseNum, @CourseTitle, @Department, @ProfFirstN, @ProfLastN,  @ProjDescr, @Date, @Time, @FormType, @Librarian1, @QuestionFormat, @Minutes, @ServiceType)";
+       // string query = "INSERT INTO [AllFields] ([Location], [QuestionType], [PatronFirstN], [PatronLastN], [Email], [GroupEmails], [PatronTypeClassStand], [Major], [WhereHeard], [AssDueDate], [isCollege], [CourseNum], [CourseTitle], [Department], [CourseProfFirstN], [CourseProfLastN], [AssGroupProgram], [ProjDescr], [Date], [Time], [FormType], [Librarian1], [QuestionFormat], [Minutes], [ServiceType]) VALUES (@Location, @QuestionType, @FirstN, @LastN, @Email,@GroupEmails, @Status, @Major, @Referral, @DueDate, @isCollege, @CourseNum, @CourseTitle, @Department, @ProfFirstN, @ProfLastN, @AssocicatedGroup, @ProjDescr, @Date, @Time, @FormType, @Librarian1, @QuestionFormat, @Minutes, @ServiceType)";
+ string query = "INSERT INTO [AllFields] ([Location], [QuestionType], [PatronFirstN], [PatronLastN], [Email], [PatronTypeClassStand], [Major], [AssDueDate], [isCollege], [CourseNum], [CourseTitle], [Department], [CourseProfFirstN], [CourseProfLastN],  [ProjDescr], [Date], [Time], [FormType], [Librarian1], [QuestionFormat], [Minutes], [ServiceType]) VALUES (@Location, @QuestionType, @FirstN, @LastN, @Email, @Status, @Major,  @DueDate, @isCollege, @CourseNum, @CourseTitle, @Department, @ProfFirstN, @ProfLastN,  @ProjDescr, @Date, @Time, @FormType, @Librarian1, @QuestionFormat, @Minutes, @ServiceType)";
 
         SqlCommand cmd = new SqlCommand(query, conn);
 
@@ -93,7 +93,8 @@ public partial class Requests_Consultation : System.Web.UI.Page
         cmd.Parameters.AddWithValue("@LastN", txtLastName.Text);
         cmd.Parameters.AddWithValue("@Email", txtEmail.Text);
         cmd.Parameters.AddWithValue("@GroupEmails", txtGroupEmails.Text);
-        cmd.Parameters.AddWithValue("@Status", ddlStatus.SelectedValue);
+   //     cmd.Parameters.AddWithValue("@Status", ddlStatus.SelectedValue);
+       cmd.Parameters.AddWithValue("@Status", "    ");
         cmd.Parameters.AddWithValue("@Major", ddlMajor.SelectedValue);
        // cmd.Parameters.AddWithValue("@Referral", ddlReferral.SelectedValue);
         cmd.Parameters.AddWithValue("@Referral", "None"); 
@@ -155,7 +156,7 @@ public partial class Requests_Consultation : System.Web.UI.Page
         sb.AppendFormat("Email: {0}" + Environment.NewLine + "    ", txtEmail.Text.Trim());
         sb.AppendFormat("Additional Email addresses: {0}" + Environment.NewLine + "    ", txtGroupEmails.Text.Trim());
 /*         sb.AppendFormat("Phone: {0}" + Environment.NewLine + "    ", txtPhone.Text.Trim()); */
-        sb.AppendFormat("Status: {0}" + Environment.NewLine + "    ", ddlStatus.SelectedValue);
+       // sb.AppendFormat("Status: {0}" + Environment.NewLine + "    ", ddlStatus.SelectedValue);
         sb.AppendFormat("Major: {0}" + Environment.NewLine + "    ", ddlMajor.SelectedValue);
 /*         sb.AppendFormat("Referred By: {0}" + Environment.NewLine + Environment.NewLine, ddlReferral.SelectedValue); */
 

@@ -13,12 +13,29 @@ using System.Text;
 public partial class Requests_RoomRequest : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
+          
     {
+       // ddlRoom.Focus();
     }
+
+    protected void ddlRoom_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        if (ddlRoom.SelectedValue == "No Preference")
+            CourseInformationPanel.Visible = true;
+        if (ddlRoom.SelectedValue == "Room 104")
+            CourseInformationPanel.Visible = true;
+        if (ddlRoom.SelectedValue == "Room 208")
+            CourseInformationPanel.Visible = true;
+        if (ddlRoom.SelectedValue == "Lobby Table")
+            CourseInformationPanel.Visible = false;
+        Page.SetFocus(ddlRoom);
+        ddlRoom.Focus();
+    }
+
 
     protected void CheckBoxRequired_ServerValidate(object sender, ServerValidateEventArgs e)
     {
-        e.IsValid = (cbxAgree.Checked == true);
+       e.IsValid = (cbxAgree.Checked == true);
     }
 
     protected void btnSubmit_Click(object sender, EventArgs e)

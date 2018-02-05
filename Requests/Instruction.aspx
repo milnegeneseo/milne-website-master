@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
        <script src='https://www.google.com/recaptcha/api.js'></script>
 <link href="https://eres.geneseo.edu/milne-styles-js/js/jquery-ui-1.10.3.custom-milne.min.css" rel="stylesheet" />
 <link href="https://intranetlib.geneseo.edu/Dataportal/Scripts/jquery-ui-milne.css" rel="stylesheet" />
@@ -353,9 +353,17 @@
 <br />
     
  
-Further details on the assignment: <br />
-    <asp:TextBox ID="txtAssignmentDetails" runat="server" Height="75" TextMode="MultiLine"  Width="60%" />
+<label style="width: 80%;">Further details on the assignment:   <br />
+    <asp:TextBox ID="txtAssignmentDetails" runat="server" Height="75px" width="100%" TextMode="MultiLine" /></label>
     <br />
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
 
     <label>
     <span class="required">*</span> Will students already have topics?</label>
@@ -396,8 +404,8 @@ Further details on the assignment: <br />
                         <asp:ListItem Text="Other" Value="Other" />
 </asp:DropDownList>--%>
  <br /> 
-        <span class="required"> </span> Additional Information/Comments:</label> <br />  
-   <asp:TextBox ID="txtComments" runat="server" Height="75"  TextMode="MultiLine"  Width="60%"/>
+        <label style="width: 80%;"><span class="required"> </span> Additional Information/Comments:<br />  
+   <asp:TextBox ID="txtComments" runat="server" Height="75" width="100%" TextMode="MultiLine"  /></label> 
 </fieldset><br />
 <fieldset>
 <%--<legend>Additional information/comments/remarks</legend>--%>

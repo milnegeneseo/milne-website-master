@@ -75,8 +75,8 @@
     <br />
     <br />    
 <!-- label><span class="required">&nbsp;</span>Phone Number: </label><asp:TextBox ID="txtPhone" runat="server" size="25" maxlength="25" title="Phone Number" /> <br / --> 
-<label><span class="required">*</span> Status/Class Standing: </label>
-<asp:DropDownList ID="ddlStatus" runat="server" AppendDataBoundItems="True" title="Select Class Standing" />&nbsp; <asp:requiredfieldvalidator id="rfStatus" runat="server" errormessage="Required" CssClass="required" controltovalidate="ddlStatus" SetFocusOnError="True" ></asp:requiredfieldvalidator><br />
+<%--<label><span class="required">*</span> Status/Class Standing: </label>
+<asp:DropDownList ID="ddlStatus" runat="server" AppendDataBoundItems="True" title="Select Class Standing" />&nbsp; <asp:requiredfieldvalidator id="rfStatus" runat="server" errormessage="Required" CssClass="required" controltovalidate="ddlStatus" SetFocusOnError="True" ></asp:requiredfieldvalidator><br />--%>
 <label><span class="required">*</span> Major: </label>
 <asp:DropDownList ID="ddlMajor" runat="server" AppendDataBoundItems="True" title="Select Major" /> &nbsp;<asp:requiredfieldvalidator id="rfMajor" runat="server" errormessage="Required" CssClass="required" controltovalidate="ddlMajor" SetFocusOnError="True" ></asp:requiredfieldvalidator> <br />
 
@@ -95,7 +95,7 @@
 </div> &nbsp;<asp:requiredfieldvalidator id="rfResearchCollege" runat="server" errormessage="Required" CssClass="required" controltovalidate="rblResearchCollege" SetFocusOnError="True" > </asp:requiredfieldvalidator> <br />--%>
 <%-- College Yes Visibility --%>
 <%--<asp:Panel ID="collegeResearchYesPanel" runat="server" Visible="False" >--%>
-<label>Course or Workshop Title: </label><asp:TextBox ID="txtCourseTitle" runat="server" size="15" maxlength="30" title="Enter Course Title" /><br />
+<label>Course or Workshop Title: </label><asp:TextBox ID="txtCourseTitle" runat="server" size="15" maxlength="60" title="Enter Course Title" /><br />
 <label>Course Number (ABCD 123 Format): </label><asp:TextBox ID="txtCourseNumber" runat="server" size="8" maxlength="8" title="Enter Course number" />&nbsp;<asp:RegularExpressionValidator ID="reCourseNumber" SetFocusOnError="true" CssClass="required" ValidationExpression="^[A-Z]{4} [0-9]{3}$" ErrorMessage="Course Number should be in 'ABCD 123' format, Uppercase letters" ControlToValidate="txtCourseNumber" runat="server" /><br />
 <label>Department:</label>
 <asp:DropDownList runat="server" ID="ddlDepartmentActive" title="Select Department" /><br />
@@ -105,7 +105,7 @@
     <label>
     <span class="required">*</span> Topic of your assignment:
     </label>
-    <asp:TextBox ID="txtDescription" runat="server"  size="15" maxlength="30"  title="Topic of your paper" />&nbsp;<asp:RequiredFieldValidator ID="rfDescription" runat="server" controltovalidate="txtDescription" CssClass="required" errormessage="Required" SetFocusOnError="True"></asp:RequiredFieldValidator>
+    <asp:TextBox ID="txtDescription" runat="server"  size="15" maxlength="80"  title="Topic of your paper" />&nbsp;<asp:RequiredFieldValidator ID="rfDescription" runat="server" controltovalidate="txtDescription" CssClass="required" errormessage="Required" SetFocusOnError="True"></asp:RequiredFieldValidator>
 
     <br />
     <label>

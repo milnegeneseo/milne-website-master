@@ -1,4 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="RequestsMasterPage.master.cs" Inherits="Requests_RequestsMasterPage" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="AjaxControlToolkit" %>
 <!DOCTYPE html lang="en">
 <!--[if IEMobile 7]><html class="iem7"  lang="en" dir="ltr"><![endif]-->
 <!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7"  lang="en" dir="ltr"><![endif]-->
@@ -10,6 +11,7 @@
 <link rel="shortcut icon" href="https://www.geneseo.edu/sites/all/themes/geneseo/favicon.ico" type="image/vnd.microsoft.icon" />
     <title></title>
     <asp:ContentPlaceHolder id="head" runat="server">
+
     </asp:ContentPlaceHolder>
 <!-- HEADER -- styles, scripts and other information that goes in the 
 head of each document that takes the drupal template -->
@@ -92,7 +94,7 @@ background-color: #345290;"></div>
         <div style="float:left;"><a href="https://www.geneseo.edu/library"><img alt="Milne Library SUNY Geneseo" title="Milne Library SUNY Geneseo" src="https://eres.geneseo.edu/milne-logo/milne-library-logo.png" style="margin-top:-20px; width:85%;" /></a></div>     
         
         <form id="form1" runat="server">
-
+       <asp:ScriptManager runat="server" ID="scm" />
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">       
         </asp:ContentPlaceHolder>
 

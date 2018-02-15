@@ -148,14 +148,16 @@
 							<div class="widget_field_name">* By when do you need this?</div>
 							<div class="widget_field"><!--<#ERROR name="ERRORNotWantedAfter">--><input style="width: 200px !important;" readonly="readonly" id="NotWantedAfter" name="NotWantedAfter" type="text" size="10" class="f-name" tabindex="9" value="<#PARAM name="NotWantedAfter">"> <image style="cursor:pointer;" src="images/calendar-20px.png" alt="Select Date" onclick="displayDatePicker('NotWantedAfter', this);" /></div>
 							
-							<div class="widget_field_name">Should Milne purchase or borrow this?</div>
-							<div class="widget_field">
-								<!--<#ERROR name="ERRORGISTWeb.PurchaseRecommendation">--><select id="GISTWeb.PurchaseRecommendation" name="GISTWeb.PurchaseRecommendation" size="1" class="f-name" tabindex="13">
-									<option selected value="no">Borrow</option>
+						<!--Purchase or Borrow option is commented out; budget constraints as of 02/14/2018 -->
+							<!--div class="widget_field_name">Should Milne purchase or borrow this?</div-->
+							<!--div class="widget_field" -->
+								<!--<#ERROR name="ERRORGISTWeb.PurchaseRecommendation">--><!--select id="GISTWeb.PurchaseRecommendation" name="GISTWeb.PurchaseRecommendation" size="1" class="f-name" tabindex="13">
+									<option selected><#DatabaseTableField Table="GISTWeb" Field="PurchaseRecommendation"></option>
+									<option value="no">Borrow</option>
 									<option value="yes">Purchase</option>
 									<option value="no">Not sure</option>
 								</select>
-							</div>
+							</div-->
 						
 							<div class="widget_field_name">How would you like this delivered?</div>
 							<div class="field">

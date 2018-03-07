@@ -408,7 +408,7 @@ margin:0px !important;
 /** Databases - center left column on home page */
 .databases{
 float:left;
-width: 45%;
+width: 42%;
 margin-right: 4em;
 padding: 10px 10px 10px 5px; 
 /*background-color: #fffbf0;*/
@@ -420,7 +420,7 @@ background-color: #ffffea;
 
 .research-guides{
 float:left;
-width: 45%;
+width: 48%;
 background-color: #ffffea;
 padding: 10px 10px 10px 5px; 
 }
@@ -430,13 +430,13 @@ padding: 10px 10px 10px 5px;
 @media only screen and (max-width: 1440px) {
 .research-guides {
 float:left;
-width: 47%;
+width: 48%;
 padding: 10px 10px 1px 5px; 
 }
 
 .databases{
 float:left;
-width:47%;
+width:42%;
 margin-right: 1em;
 padding: 10px 10px 1px 5px; 
 }

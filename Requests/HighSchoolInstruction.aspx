@@ -3,12 +3,10 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<link href="https://eres.geneseo.edu/milne-styles-js/js/jquery-ui-1.10.3.custom-milne.min.css" rel="stylesheet" />
-<link href="https://intranetlib.geneseo.edu/Dataportal/Scripts/jquery-ui-milne.css" rel="stylesheet" />
-<script src="https://intranetlib.geneseo.edu/Dataportal/Scripts/jquery-ui.js"></script> 
-<script type="text/javascript" src="https://intranetlib.geneseo.edu/Dataportal/Scripts/jquery.ui.timepicker.js"></script>
-    <script type="text/javascript">
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<link href="../Scripts/jquery-ui-milne.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-ui.js"></script> 
+        <script src="../Scripts/jquery.ui.timepicker.js"></script>    <script type="text/javascript">
         $(document).ready(function () {
           //  $('#< %= txtDueDate.ClientID %>').attr('readonly', 'readonly').datepicker({ });
          //   $('#< %= txtDueDate1.ClientID %>').datepicker({});
@@ -64,7 +62,7 @@
         }
     </script>
 
-<div class="breadcrumb" style="margin:20px 0px 0px 0px;"><a href="https://www.geneseo.edu/">SUNY Geneseo</a> &raquo; <a href="https://www.geneseo.edu/library">Milne Library</a> &raquo; <a href="https://www.geneseo.edu/library/requests-services">Requests &amp; Services</a> &raquo; <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/HighSchoolInstruction.aspx" style="color:#b85533 !important;">High School Instruction</a></div>
+<div class="breadcrumb" style="margin:20px 0px 0px 0px;"><a href="https://www.geneseo.edu/">SUNY Geneseo</a> &raquo; <a href="https://www.geneseo.edu/library">Milne Library</a> &raquo; <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/HighSchoolInstruction.aspx" style="color:#b85533 !important;">High School Instruction</a></div>
 <h1>High School Instruction Request Form</h1> 
     <p></p>
     <p>Requests for high school class visits should be made by either the <strong>high school library media specialist</strong> or the <strong>teacher</strong> of the class visiting the library. </p>

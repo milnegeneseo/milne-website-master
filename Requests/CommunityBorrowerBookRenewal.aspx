@@ -2,11 +2,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <link href="https://eres.geneseo.edu/milne-styles-js/js/jquery-ui-1.10.3.custom-milne.min.css" rel="stylesheet" />
-<link href="https://intranetlib.geneseo.edu/Dataportal/Scripts/jquery-ui-milne.css" rel="stylesheet" />
-<script src="https://intranetlib.geneseo.edu/Dataportal/Scripts/jquery-ui.js"></script> 
-<script type="text/javascript" src="https://intranetlib.geneseo.edu/Dataportal/Scripts/jquery.ui.timepicker.js"></script>
+<link href="../Scripts/jquery-ui-milne.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-ui.js"></script> 
+        <script src="../Scripts/jquery.ui.timepicker.js"></script>
 <style>
 .modalDialog {
     position: fixed;
@@ -60,7 +60,7 @@
     background: #00d9ff;
 </style>
 <div id="rightSideContent" >
-<div class="breadcrumb" style="margin:20px 0px 0px 0px;"><a href="https://www.geneseo.edu/">SUNY Geneseo</a> &raquo; <a href="https://www.geneseo.edu/library">Milne Library</a> &raquo; <a href="https://www.geneseo.edu/library/requests-services">Requests &amp; Services</a> &raquo; <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/CommunityBorrowerBookRenewal.aspx" style="color:#b85533 !important;">Alumni & Community Book Renewals</a></div>
+<div class="breadcrumb" style="margin:20px 0px 0px 0px;"><a href="https://www.geneseo.edu/">SUNY Geneseo</a> &raquo; <a href="https://www.geneseo.edu/library">Milne Library</a> &raquo;&nbsp; <a href="http://intranetlib.geneseo.edu/DataPortal/Requests/CommunityBorrowerBookRenewal.aspx" style="color:#b85533 !important;">Alumni & Community Book Renewals</a></div>
     <h1>Community Borrower Book Renewals</h1>       
     <p class="subheading">As a teaching institution, our goal to encourage life-long learning habits and we welcome our community members to access and use our collections. Please note that we may be unable to honor renewal requests for a variety of reasons, including overdue status or on hold for another user.</p>
     <p class="subheading"><strong>For further information, please refer to Milne's </strong> <a href="https://www.geneseo.edu/library/library-policies"><strong>Loan Policies</strong></a><strong>. </strong></p>

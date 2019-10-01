@@ -70,12 +70,12 @@ public partial class Requests_Instruction : System.Web.UI.Page
     {
         SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["DataPortalConnectionString"].ConnectionString);
 
-        string query = "INSERT INTO [AllFields] ([InstructionType], [CourseProfFirstN], [CourseProfLastN], [Email], [Phone], [PlannedNumStudents], [isCollege], [CourseNum], [CourseTitle], [Department], [AssGroupProgram], [NonCollWorkTitle], [LibSkillConcept1], [LibSkillConcept2], [LibSkillConcept3], [LibGoalsDetails], [Date], [Time], [LibHSEndTime], [LibGearTowards], [LibHaveTopics], [LibAssessDetails], [LibAssessStrat1], [LibAssessStrat2], [Comments], [FormType], [Librarian1], [Librarian2], [QuestionFormat], [Minutes], [Librarian1PrepTime], [Librarian2PrepTime], [StudFeedMinutes], [ServiceType], [isFacultyWorkshop]) VALUES (@InstructionType, @FirstN, @LastN, @Email, @Phone, @StudentNumber, @isCollege, @CourseNum, @CourseTitle, @Department, @AssocicatedGroup, @WorkshopTitle, @SkillConcept1, @SkillConcept2, @SkillConcept3, @GoalsDetails, @Date, @StartTime, @EndTime, @GearTowards, @HaveTopics, @AssessDetails, @Strategy1, @Strategy2, @Comments, @FormType, @Librarian1, @Librarian2, @QuestionFormat, @Minutes, @PrepTime1, @PrepTime2, @FeedMinutes, @ServiceType,@isFacultyWorkshop)";
+        string query = "INSERT INTO [AllFields] ([InstructionType], [CourseProfFirstN], [CourseProfLastN], [Email], [Phone], [PlannedNumStudents], [isCollege], [CourseNum], [CourseSection],  [CourseTitle], [Department], [AssGroupProgram], [NonCollWorkTitle], [LibSkillConcept1], [LibSkillConcept2], [LibSkillConcept3], [LibGoalsDetails], [Date], [Time], [LibHSEndTime], [LibGearTowards], [LibHaveTopics], [LibAssessDetails], [LibAssessStrat1], [LibAssessStrat2], [Comments], [FormType], [Librarian1], [Librarian2], [QuestionFormat], [Minutes], [Librarian1PrepTime], [Librarian2PrepTime], [StudFeedMinutes], [ServiceType], [isFacultyWorkshop]) VALUES (@InstructionType, @FirstN, @LastN, @Email, @Phone, @StudentNumber, @isCollege, @CourseNum, @CourseSection, @CourseTitle, @Department, @AssocicatedGroup, @WorkshopTitle, @SkillConcept1, @SkillConcept2, @SkillConcept3, @GoalsDetails, @Date, @StartTime, @EndTime, @GearTowards, @HaveTopics, @AssessDetails, @Strategy1, @Strategy2, @Comments, @FormType, @Librarian1, @Librarian2, @QuestionFormat, @Minutes, @PrepTime1, @PrepTime2, @FeedMinutes, @ServiceType,@isFacultyWorkshop)";
 
-        //if (!string.IsNullOrEmpty(txtDueDate2.Text))
-        //{
-        //    query += "INSERT INTO [AllFields] ([InstructionType], [CourseProfFirstN], [CourseProfLastN], [Email], [Phone], [PlannedNumStudents], [isCollege], [CourseNum], [CourseTitle], [Department], [AssGroupProgram], [NonCollWorkTitle], [LibSkillConcept1], [LibSkillConcept2], [LibSkillConcept3], [LibGoalsDetails], [Date], [Time], [LibHSEndTime], [LibGearTowards], [LibHaveTopics], [LibAssessDetails], [LibAssessStrat1], [LibAssessStrat2], [Comments], [FormType], [Librarian1], [Librarian2], [QuestionFormat], [Minutes], [Librarian1PrepTime], [Librarian2PrepTime], [StudFeedMinutes], [ServiceType], [isFacultyWorkshop]) VALUES (@InstructionType, @FirstN, @LastN, @Email, @Phone, @StudentNumber, @isCollege, @CourseNum, @CourseTitle, @Department, @AssocicatedGroup, @WorkshopTitle, @SkillConcept1, @SkillConcept2, @SkillConcept3, @GoalsDetails, @Date2, @StartTime, @EndTime, @GearTowards, @HaveTopics, @AssessDetails, @Strategy1, @Strategy2, @Comments, @FormType, @Librarian1, @Librarian2, @QuestionFormat, @Minutes, @PrepTime1, @PrepTime2, @FeedMinutes, @ServiceType,@isFacultyWorkshop)";
-        //}
+      //  if (!string.IsNullOrEmpty(txtDueDate2.Text))
+      //  {
+      //     query += "INSERT INTO [AllFields] ([InstructionType], [CourseProfFirstN], [CourseProfLastN], [Email], [Phone], [PlannedNumStudents], [isCollege], [CourseNum], [CourseSection],  [CourseTitle], [Department], [AssGroupProgram], [NonCollWorkTitle], [LibSkillConcept1], [LibSkillConcept2], [LibSkillConcept3], [LibGoalsDetails], [Date], [Time], [LibHSEndTime], [LibGearTowards], [LibHaveTopics], [LibAssessDetails], [LibAssessStrat1], [LibAssessStrat2], [Comments], [FormType], [Librarian1], [Librarian2], [QuestionFormat], [Minutes], [Librarian1PrepTime], [Librarian2PrepTime], [StudFeedMinutes], [ServiceType], [isFacultyWorkshop]) VALUES (@InstructionType, @FirstN, @LastN, @Email, @Phone, @StudentNumber, @isCollege, @CourseNum, @CourseSection, @CourseTitle, @Department, @AssocicatedGroup, @WorkshopTitle, @SkillConcept1, @SkillConcept2, @SkillConcept3, @GoalsDetails, @Date2, @StartTime, @EndTime, @GearTowards, @HaveTopics, @AssessDetails, @Strategy1, @Strategy2, @Comments, @FormType, @Librarian1, @Librarian2, @QuestionFormat, @Minutes, @PrepTime1, @PrepTime2, @FeedMinutes, @ServiceType,@isFacultyWorkshop)";
+      //}
 
         //if (!string.IsNullOrEmpty(txtDueDate3.Text))
         //{
@@ -109,26 +109,26 @@ public partial class Requests_Instruction : System.Web.UI.Page
 
         SqlCommand cmd = new SqlCommand(query, conn);
 
-        cmd.Parameters.AddWithValue("@InstructionType", rblType.SelectedValue);
+        cmd.Parameters.AddWithValue("@InstructionType", "Research");
         cmd.Parameters.AddWithValue("@FirstN", txtFirstName.Text);
         cmd.Parameters.AddWithValue("@LastN", txtLastName.Text);
         cmd.Parameters.AddWithValue("@Email", txtEmail.Text);
         cmd.Parameters.AddWithValue("@Phone", txtPhone.Text);
         cmd.Parameters.AddWithValue("@StudentNumber", txtStudentNumber.Text);
         cmd.Parameters.AddWithValue("@isCollege", rblCollege.SelectedValue);
-        cmd.Parameters.AddWithValue("@isFacultyWorkshop", rblisFacultyWorkshop.SelectedValue);
+        cmd.Parameters.AddWithValue("@isFacultyWorkshop", "No");
         cmd.Parameters.AddWithValue("@CourseNum", txtCourseNumber.Text);
         cmd.Parameters.AddWithValue("@CourseTitle", txtCourseTitle.Text);
+        cmd.Parameters.AddWithValue("@CourseSection", txtCourseSection.Text);
         cmd.Parameters.AddWithValue("@Department", ddlDepartmentActive.SelectedValue);
         cmd.Parameters.AddWithValue("@AssocicatedGroup", txtAssociatedGroup.Text);
         cmd.Parameters.AddWithValue("@WorkshopTitle", txtWorkshop.Text);
         cmd.Parameters.AddWithValue("@SkillConcept1", ddlSkill1.SelectedValue);
-cmd.Parameters.AddWithValue("@SkillConcept2", ddlSkill2.SelectedValue);
-        //cmd.Parameters.AddWithValue("@SkillConcept3", ddlSkill3.SelectedValue);
+        cmd.Parameters.AddWithValue("@SkillConcept2", ddlSkill2.SelectedValue);
         cmd.Parameters.AddWithValue("@SkillConcept3", "    ");
-         cmd.Parameters.AddWithValue("@GoalsDetails", "    ");
+        cmd.Parameters.AddWithValue("@GoalsDetails", "    ");
         cmd.Parameters.AddWithValue("@Date", txtDueDate.Text);
-      //  cmd.Parameters.AddWithValue("@Date2", txtDueDate2.Text);
+    //    cmd.Parameters.AddWithValue("@Date2", txtDueDate2.Text);
       //  cmd.Parameters.AddWithValue("@Date3", txtDueDate3.Text);
      //   cmd.Parameters.AddWithValue("@Date4", txtDueDate4.Text);
      //   cmd.Parameters.AddWithValue("@Date5", txtDueDate5.Text);
@@ -180,10 +180,10 @@ cmd.Parameters.AddWithValue("@SkillConcept2", ddlSkill2.SelectedValue);
         //Dim SmtpClient As New SmtpClient("137.238.1.161")
 
             mailMessage.From = new MailAddress(txtEmail.Text);
-          // mailMessage.To.Add("rootl@geneseo.edu");
-           mailMessage.To.Add("libinstr@geneseo.edu");
+         //   mailMessage.To.Add("rootl@geneseo.edu");
+         mailMessage.To.Add("libinstr@geneseo.edu");
             //mailMessage.To.Add("ha@geneseo.edu");
-         mailMessage.Bcc.Add("ha@geneseo.edu,rootl@geneseo.edu");
+            mailMessage.Bcc.Add("rootl@geneseo.edu");
 
             if (rblType.SelectedValue == "Research")
             {
@@ -200,55 +200,52 @@ cmd.Parameters.AddWithValue("@SkillConcept2", ddlSkill2.SelectedValue);
 
         StringBuilder sb = new StringBuilder();
 
-        sb.AppendFormat("Faculty Information" + Environment.NewLine + "    ");
-        sb.AppendFormat("Name: {0}" + Environment.NewLine + "    ", txtFirstName.Text.Trim() + " " + txtLastName.Text.Trim());
-        sb.AppendFormat("Email: {0}" + Environment.NewLine + "    ", txtEmail.Text.Trim());
-        sb.AppendFormat("Office Phone: {0}" + Environment.NewLine + Environment.NewLine, txtPhone.Text.Trim()); 
-
-        sb.AppendFormat("Course Information" + Environment.NewLine + "    ");
-        sb.AppendFormat("Is this a Faculty Workshop? {0}" + Environment.NewLine + "    ", rblisFacultyWorkshop.SelectedValue);
-        sb.AppendFormat("Planned Number of Students: {0}" + Environment.NewLine + "    ", txtStudentNumber.Text.Trim());
-
+        sb.AppendFormat("Faculty Information" + Environment.NewLine + "            ");
+        sb.AppendFormat("Name:     {0}" + Environment.NewLine + "            ", txtFirstName.Text.Trim() + " " + txtLastName.Text.Trim());
+        sb.AppendFormat("Email:     {0}" + Environment.NewLine + "            ", txtEmail.Text.Trim());
+        sb.AppendFormat("Contact Phone:     {0}" + Environment.NewLine + "            ", txtPhone.Text.Trim());
+        sb.AppendFormat("Department:     {0}" + Environment.NewLine  + Environment.NewLine, ddlDepartmentActive.SelectedValue);
+        sb.AppendFormat("Course Information" + Environment.NewLine + "            ");
+        // sb.AppendFormat("Is this a Faculty Workshop? {0}" + Environment.NewLine + "    ", rblisFacultyWorkshop.SelectedValue);
         if (rblCollege.SelectedValue == "Yes")
         {
-            sb.AppendFormat("Course Number: {0}" + Environment.NewLine + "    ", txtCourseNumber.Text.Trim());
-            sb.AppendFormat("Course Title: {0}" + Environment.NewLine + "    ", txtCourseTitle.Text.Trim());
-            sb.AppendFormat("Department: {0}" + Environment.NewLine + "    ", ddlDepartmentActive.SelectedValue);
-            sb.AppendFormat("Regular Semester Classroom Location: {0}" + Environment.NewLine + Environment.NewLine, txtLocation.Text.Trim());
-        }
+            sb.AppendFormat("Course Number:     {0}" + Environment.NewLine + "            ", txtCourseNumber.Text.Trim());
+            sb.AppendFormat("Section:     {0}" + Environment.NewLine + "            ", txtCourseSection.Text.Trim());
+            sb.AppendFormat("Course/Workshop Title:     {0}" + Environment.NewLine + "            ", txtCourseTitle.Text.Trim());
 
+        }
         else if (rblCollege.SelectedValue == "No")
         {
-            sb.AppendFormat("Associated Group or Program: {0}" + Environment.NewLine + "    ", txtAssociatedGroup.Text.Trim());
+            sb.AppendFormat("Associated Group or Program: {0}" + Environment.NewLine + "            ", txtAssociatedGroup.Text.Trim());
             sb.AppendFormat("Workshop (Non College) Title: {0}" + Environment.NewLine + Environment.NewLine, txtWorkshop.Text.Trim());
         }
+  //      sb.AppendFormat("Scheduling Information" + Environment.NewLine + "            ");
+        sb.AppendFormat("Planned Number of Students:     {0}" + Environment.NewLine + "            ", txtStudentNumber.Text.Trim());
+        sb.AppendFormat("Campus Classroom Location:     {0}" + Environment.NewLine + "            ",  txtLocation.Text.Trim());
+        sb.AppendFormat("Preferred Location:     {0}" + Environment.NewLine + Environment.NewLine, ddlPreferredLocation.SelectedValue);
 
-        sb.AppendFormat("Goals of Instruction" + Environment.NewLine + "    ");
-        sb.AppendFormat("Skill/Concept #1: {0}" + Environment.NewLine +  "    ", ddlSkill1.SelectedValue);
-      sb.AppendFormat("Skill/Concept #2: {0}" + Environment.NewLine +  "    ", ddlSkill2.SelectedValue);
-     //   sb.AppendFormat("Skill/Concept #3: {0}" + Environment.NewLine +  "    ", ddlSkill3.SelectedValue);
-   // sb.AppendFormat("Further Goal Details: {0}" + Environment.NewLine + Environment.NewLine, txtGoalsDetails.Text.Trim());
+        sb.AppendFormat("Date of Instruction" + Environment.NewLine + "            ");
+        sb.AppendFormat("1st Choice Date:     {0}" + Environment.NewLine + "            ", txtDueDate.Text.Trim());
+        sb.AppendFormat("2nd Choice Date:     {0}" + Environment.NewLine + "            ", txtDueDate1.Text.Trim());
+        sb.AppendFormat("Additional/Alternative Date:     {0}" + Environment.NewLine + "            ", txtDueDate2.Text.Trim());
+        sb.AppendFormat("Class Start Time:     {0}" + Environment.NewLine + "            ", txtStartTime.Text.Trim());
+        sb.AppendFormat("Class End Time:     {0}" + Environment.NewLine + Environment.NewLine, txtEndTime.Text.Trim());
 
-      sb.AppendFormat("Grading students' research/Library assignment for credit? {0}" + Environment.NewLine + "    ", rblGrading.SelectedValue);
 
-        sb.AppendFormat("Date of Instruction" + Environment.NewLine + "    ");
-        sb.AppendFormat("1st Choice Date: {0}" + Environment.NewLine + "    ", txtDueDate.Text.Trim());
-        sb.AppendFormat("2nd Choice Date: {0}" + Environment.NewLine + "    ", txtDueDate1.Text.Trim());
-      //  sb.AppendFormat("Additional/Alternative Date: {0}" + Environment.NewLine + "    ", txtDueDate2.Text.Trim());
-      //  sb.AppendFormat("Additional/Alternative Date: {0}" + Environment.NewLine + "    ", txtDueDate3.Text.Trim());
-      //  sb.AppendFormat("Additional/Alternative Date: {0}" + Environment.NewLine + "    ", txtDueDate4.Text.Trim());
-      //  sb.AppendFormat("Additional/Alternative Date: {0}" + Environment.NewLine + "    ", txtDueDate5.Text.Trim());
-      //  sb.AppendFormat("Additional/Alternative Date: {0}" + Environment.NewLine + "    ", txtDueDate6.Text.Trim());
-      //  sb.AppendFormat("Additional/Alternative Date: {0}" + Environment.NewLine + "    ", txtDueDate7.Text.Trim());
-       // sb.AppendFormat("Additional/Alternative Date: {0}" + Environment.NewLine + "    ", txtDueDate8.Text.Trim());
+     //   sb.AppendFormat("Instruction Request Details" + Environment.NewLine + "    ");
 
-        sb.AppendFormat("Class Start Time: {0}" + Environment.NewLine + "    ", txtStartTime.Text.Trim());
-        sb.AppendFormat("Class End Time: {0}" + Environment.NewLine + Environment.NewLine, txtEndTime.Text.Trim());
+        sb.AppendFormat("Goals of Instruction" + Environment.NewLine + "            ");
+        sb.AppendFormat("Skill/Concept #1:     {0}" + Environment.NewLine + "            ", ddlSkill1.SelectedValue);
+        sb.AppendFormat("Skill/Concept #2:     {0}" + Environment.NewLine + "            ", ddlSkill2.SelectedValue);
+       sb.AppendFormat("Grading students' research/Library assignment for credit?     {0}" + Environment.NewLine + "            ", rblGrading.SelectedValue);
 
-        sb.AppendFormat("Instruction Request Details" + Environment.NewLine + "    ");
-        sb.AppendFormat("Geared Towards Specific Assignment? {0}" + Environment.NewLine + "    ", rblAssignment.SelectedValue);
-        sb.AppendFormat("Already Have Topics? {0}" + Environment.NewLine + "    ", rblTopics.SelectedValue);
-        sb.AppendFormat("Further Assignment Details: {0}" + Environment.NewLine + "    ", txtAssignmentDetails.Text.Trim());
+
+
+
+
+        sb.AppendFormat("Geared Towards Specific Assignment? {0}" + Environment.NewLine + "            ", rblAssignment.SelectedValue);
+        sb.AppendFormat("Already Have Topics? {0}" + Environment.NewLine + "            ", rblTopics.SelectedValue);
+        sb.AppendFormat("Further Assignment Details: {0}" + Environment.NewLine + Environment.NewLine + "            ", txtAssignmentDetails.Text.Trim());
       //  sb.AppendFormat("Formal Assessment Strategy #1: {0}" + Environment.NewLine + "    ", ddlAssessment1.SelectedValue);
       //  sb.AppendFormat("Formal Assessment Strategy #2: {0}" + Environment.NewLine + Environment.NewLine, ddlAssessment2.SelectedValue);
 
@@ -382,6 +379,11 @@ cmd.Parameters.AddWithValue("@SkillConcept2", ddlSkill2.SelectedValue);
         ClearFields(Page);
    
     }
+
+
+
+
+
 
     //protected void rblType_SelectedIndexChanged(object sender, EventArgs e)
     //{
@@ -645,11 +647,4 @@ cmd.Parameters.AddWithValue("@SkillConcept2", ddlSkill2.SelectedValue);
 
 
 
-
-
-    protected void rblisFacultyWorkshop_SelectedIndexChanged(object sender, EventArgs e)
-    {
-
-    }
-  
 }

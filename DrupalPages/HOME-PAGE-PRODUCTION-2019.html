@@ -1,4 +1,4 @@
-<script>
+<script type="text/javascript">
      function searchPrimo() {
           document.getElementById("primoQuery").value = "any,contains," + document.getElementById("primoQueryTemp").value.replace(/[,]/g, " ");
           document.forms["searchForm"].submit();
@@ -7,6 +7,22 @@
           document.getElementById("primoQueryJournals").value = "any,contains," + document.getElementById("primoQueryTempJournals").value.replace(/[,]/g, " ");
           document.forms["searchFormJournals"].submit();
      }
+
+/**
+* Function that registers a click on an outbound link in Analytics.
+* This function takes a valid URL string as an argument, and uses that URL string
+* as the event label. Setting the transport method to 'beacon' lets the hit be sent
+* using 'navigator.sendBeacon' in browser that support it.
+*/
+var getOutboundLink = function(url) {
+  gtag('event', 'click', {
+    'event_category': 'outbound',
+    'event_label': url,
+    'transport_type': 'beacon',
+    'event_callback': function(){document.location = url;}
+  });
+}
+
 </script>
 <div class="row">
 <div class="col m8">
@@ -28,12 +44,12 @@
 <div class="col s12" id="milne">
 <div class="tabcontent">
 <form action="https://glocat.geneseo.edu/discovery/search" enctype="application/x-www-form-urlencoded; charset=utf-8" id="glocat" method="get" name="searchForm" onsubmit="searchPrimo()" target="_self"><!-- Customizable Parameters --><input name="vid" type="hidden" value="01SUNY_GEN:01SUNY_GEN" /> <input name="tab" type="hidden" value="Everything" /> <input name="search_scope" type="hidden" value="MyInst_and_CI" /> <input id="primoQuery" name="query" type="hidden" />
-<div class="quicksearch" style="float:left;"><input aria-label="Search GLOCAT for anything" class="query" id="primoQueryTemp" name="q" onblur="if(this.value == '') { this.value = 'Search GLOCAT for anything'; }" onfocus="if(this.value == 'Search GLOCAT for anything') { this.value = ''; }" size="48" type="text" value="Search GLOCAT for anything" /></div>
+<div class="quicksearch" style="float:left;"><input aria-label="Search GLOCAT for anything" class="query" id="primoQueryTemp" name="q" onblur="if(this.value == '') { this.value = 'Search GLOCAT for anything'; }" onfocus="if(this.value == 'Search GLOCAT for anything') { this.value = ''; }" size="45" type="text" value="Search GLOCAT for anything" /></div>
 &nbsp; <!-- Search Button -->
 
-<div class="quicksearch" style="float:right;"><input alt="Search" id="go" onclick="searchPrimo()" title="Search" type="button" value="Search" /></div>
+<div class="quicksearch" style="float:right;"><input alt="Search" id="go" onclick="searchPrimo()" title="Search" type="button" value="Search" /> <input name="dblist" type="hidden" value="638,215,235,249,263,287" /></div>
 
-<div style="clear:both; float:left;"><a class="quicksearchbutton" href="https://glocat.geneseo.edu/discovery/search?vid=01SUNY_GEN:01SUNY_GEN&amp;mode=advanced" onclick="getOutboundLink('https://glocat.geneseo.edu/discovery/search?vid=01SUNY_GEN:01SUNY_GEN&amp;mode=advanced'); return false;" title="Open Advanced Search">Advanced Search</a> <input name="dblist" type="hidden" value="638,215,235,249,263,287" /></div>
+<div style="clear:both; float:left;"><a class="quicksearchbutton" href="https://glocat.geneseo.edu">GLOCAT Home</a> |&nbsp;<a class="quicksearchbutton" href="https://go.geneseo.edu/GLOCatAccount">GLOCAT Account</a>&nbsp;|&nbsp;<a class="quicksearchbutton" href="https://go.geneseo.edu/GLOCCatAdvancedSearch" title="Open Advanced Search">Advanced Search</a></div>
 </form>
 </div>
 </div>
@@ -41,7 +57,7 @@
 <div class="col s12" id="journals">
 <div class="tabcontent">
 <form action="https://glocat.geneseo.edu/discovery/jsearch" enctype="application/x-www-form-urlencoded; charset=utf-8" id="journals" method="get" name="searchFormJournals" onsubmit="searchPrimoJournals()" target="_self"><!-- Customizable Parameters --><input name="vid" type="hidden" value="01SUNY_GEN:01SUNY_GEN" /><input name="tab" type="hidden" value="jsearch_slot" /><input name="mode" type="hidden" value="basic" /><!-- Fixed parameters --> <input name="displayMode" type="hidden" value="full" /><input name="bulkSize" type="hidden" value="10" /> <input name="highlight" type="hidden" value="true" /> <input name="dum" type="hidden" value="true" /> <input id="primoQueryJournals" name="query" type="hidden" /> <input name="displayField" type="hidden" value="all" /> <!-- Enable this if "Expand My Results" is enabled by default in Views Wizard --> <input name="pcAvailabiltyMode" type="hidden" value="true" />
-<div class="quicksearch" style="float:left;"><input aria-label="Enter Journal keyword, Title, or ISSN" class="query" id="primoQueryTempJournals" name="q" onblur="if(this.value == '') { this.value = 'Enter Journal keyword, Title, or ISSN'; }" onfocus="if(this.value == 'Enter Journal keyword, Title, or ISSN') { this.value = ''; }" size="48" type="text" value="Enter Journal keyword, Title, or ISSN" /></div>
+<div class="quicksearch" style="float:left;"><input aria-label="Enter Journal keyword, Title, or ISSN" class="query" id="primoQueryTempJournals" name="q" onblur="if(this.value == '') { this.value = 'Enter Journal keyword, Title, or ISSN'; }" onfocus="if(this.value == 'Enter Journal keyword, Title, or ISSN') { this.value = ''; }" size="45" type="text" value="Enter Journal keyword, Title, or ISSN" /></div>
 &nbsp; <!-- Search Button -->
 
 <div class="quicksearch" style="float:right;"><input alt="Search" id="go" onclick="searchPrimoJournals()" title="Search" type="button" value="Search" /></div>
@@ -52,7 +68,7 @@
 <div class="col s12" id="databases">
 <div class="tabcontent">
 <form action="https://libguides.geneseo.edu/az.php">
-<div class="quicksearch" style="float:left;"><input alt="Database Search by name, title, or Subject keywords" aria-label="Search Databases by name, title, keywords" class="query" id="watermark" name="q" onblur="if(this.value == '') { this.value = 'Enter Database Title, name, or Subject keywords'; }" onfocus="if(this.value == 'Enter Database Title, name, or Subject keywords') { this.value = ''; }" size="48" type="text" value="Enter Database Title, name, or Subject keywords" /></div>
+<div class="quicksearch" style="float:left;"><input alt="Database Search by name, title, or Subject keywords" aria-label="Search Databases by name, title, keywords" class="query" id="watermark" name="q" onblur="if(this.value == '') { this.value = 'Enter Database Title, name, or Subject keywords'; }" onfocus="if(this.value == 'Enter Database Title, name, or Subject keywords') { this.value = ''; }" size="45" type="text" value="Enter Database Title, name, or Subject keywords" /></div>
 
 <div class="quicksearch" style="float:right;"><input alt="Search" class="quicksearchbutton" type="submit" value="Search" /></div>
 </form>
@@ -85,22 +101,23 @@
 	<li><a href="https://proxy.geneseo.edu/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=a9h&amp;direct=true&amp;site=ehost-live">Academic Search Complete</a></li>
 	<li><a href="https://fb7hk6nl8u.search.serialssolutions.com/?SS_Page=refiner&amp;SS_RefinerEditable=yes">Citation Linker</a></li>
 	<li><a href="https://proxy.geneseo.edu/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=eric">ERIC</a></li>
-	<li><a href="https://libguides.geneseo.edu/HeinOnline">HeinOnline </a><!-- a href="https://proxy.geneseo.edu/login?url=https://webofknowledge.com/"><img alt="New Database!" src="/sites/default/files/sites/library/databases-guides-icons/new-flag.png" style="width: 38px; height: 18px;" /><img alt="Trial Database!" src="/sites/default/files/sites/library/databases-guides-icons/trial-flag.png" style="height: 18px; width: 38px;" /></a --></li>
+	<li><a href="https://libguides.geneseo.edu/HeinOnline">HeinOnline </a></li>
 	<li><a href="https://proxy.geneseo.edu/login?url=http://www.jstor.org/search">JSTOR</a></li>
 	<li><a href="https://proxy.geneseo.edu/login?url=http://search.ebscohost.com/login.aspx?authtype=ip,uid&amp;profile=ehost&amp;defaultdb=mzh">MLA</a></li>
 	<li><a href="https://proxy.geneseo.edu/login?url=http://www.nexisuni.com/">Nexis Uni</a></li>
 	<li><a href="https://proxy.geneseo.edu/login?url=http://search.proquest.com/index?accountid=11072&amp;selectids=1000001,1007161,1006481,1007106,10000025,1007200">ProQuest</a></li>
 	<li><a href="https://proxy.geneseo.edu/login?url=http://search.proquest.com/psycinfo/advanced?accountid=11072">PsycInfo</a></li>
 	<li><a href="https://proxy.geneseo.edu/login?url=http://www.sciencedirect.com">ScienceDirect</a></li>
-	<!-- li><a href="https://proxy.geneseo.edu/login?url=https://webofknowledge.com/">Web of Science <img alt="New Database!" src="/sites/default/files/sites/library/databases-guides-icons/new-flag.png" style="width: 38px; height: 18px;" /><img alt="New Database!" src="/sites/default/files/sites/library/databases-guides-icons/trial-flag.png" style="height: 18px; width: 38px;" /></a></li -->
+	<li><a href="https://proxy.geneseo.edu/login?url=http://webofknowledge.com/WOS">Web of Science</a></li>
+	
 	<li><a href="https://proxy.geneseo.edu/login?url=http://firstsearch.oclc.org/fsip?dbname=WorldCat&amp;done=referer">WorldCat Classic</a></li>
 </ul>
 
-<p style="padding:0px 0px 5px 0px;"><a href="https://libguides.geneseo.edu/az.php" onclick="getOutboundLink('https://libguides.geneseo.edu/az.php');return false;"><span aria-hidden="true" class="material-icons" style="vertical-align: text-bottom !important;">storage</span> More Databases</a></p>
+<p style="padding:0px 0px 5px 0px;"><a href="https://libguides.geneseo.edu/az.php"><span aria-hidden="true" class="material-icons" style="vertical-align: text-bottom !important;">storage</span> More Databases</a></p>
 </div>
 <!-- end left -->
 
-<div class="research-guides"><!-- div style="border:1px solid #dddddd; border-radius: 4px; padding:5px 5px 10px 10px; margin:15px 0px 15px 0px; width:48%;" -->
+<div class="research-guides">
 <h2 style="color:#333333 !important;font-size:1.9rem;line-height:110%;margin:1rem 0 0.8rem;">Research Guides</h2>
 
 <ul style="list-style:none !important; list-style-type: none !important; line-height: 1.2em !important;margin-bottom: 0px !important;">
@@ -117,7 +134,7 @@
 	<li><a href="https://libguides.geneseo.edu/psychology">Psychology</a></li>
 </ul>
 
-<p style="padding:0px 0px 5px 0px;"><a href="https://libguides.geneseo.edu/" onclick="getOutboundLink('https://libguides.geneseo.edu/'); return false;"><span aria-hidden="true" class="material-icons" style="vertical-align: text-bottom !important;">local_library</span> More Research Guides</a></p>
+<p style="padding:0px 0px 5px 0px;"><a href="https://libguides.geneseo.edu/"><span aria-hidden="true" class="material-icons" style="vertical-align: text-bottom !important;">local_library</span> More Research Guides</a></p>
 </div>
 <!-- end right --></div>
 </div>
@@ -141,7 +158,7 @@
 </div>
 
 <p><!--content --></p>
-<!--div class="promos" style="margin:10px auto;"><a href="https://news.milne-library.org/milne-library-joins-acrl-diversity-alliance/"><img alt="Milne Library is a member of the ACRL Diversity Alliance - committed to equality" src="https://www.geneseo.edu/sites/default/files/sites/library/diversity-alliance-COMMITTED_new-colors.jpg" style="width: 200px; display:block;margin:auto;" /></a></div --></div>
+</div>
 <link href="https://librarydataportal.geneseo.edu/External/milne-library-wp-api-5thumbs/drupal-milne-news-feed-thumb.css" rel="stylesheet" type="text/css" /><script src="https://librarydataportal.geneseo.edu/External/milne-library-wp-api-5thumbs/vue.min.js"></script><script src="//eres.geneseo.edu/milne-library-wp-api-5thumbs/vue-resource.min.js"></script><script src="https://librarydataportal.geneseo.edu/External/milne-library-wp-api-5thumbs/drupal-milne-news-feed-thumb.js"></script>
 <p>&nbsp;</p>
 
